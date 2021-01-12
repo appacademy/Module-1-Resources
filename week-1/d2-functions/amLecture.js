@@ -27,6 +27,30 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+// // ====== Functions ======:
+function averageOfFour(arg1, arg2, arg3, arg4) {
+    // Your code here 
+    //  * (HINT: use variables, + operator, and / operator)
+}
+
+
+
+
+
+
+
+
+
 // // ====== Conditionals ===:
 // let myBoolean = false;
 
@@ -83,10 +107,9 @@
 
 // array.push(4);
 // array.push(5);
-// array.push(6);
 // array.push("sup");
 
 // console.log(array); // => ?
 // console.log(array[0]); // => ?
 // console.log(array[array.length - 1]); // => ?
-// console.log(array.length); // => 4
+// console.log(array.length); // => ?
