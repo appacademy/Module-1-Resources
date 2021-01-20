@@ -4,7 +4,7 @@
 /**
  * `let` is BLOCK scoped and CAN be reassigned.
  */
-function blcokScope() {
+function blockScope() {
     let test = "upper scope";
     if (true) {
         let test = "lower scope";
@@ -17,7 +17,7 @@ function blcokScope() {
 
 
 /**
- * `const` is BLOCK scoped and CANNOT be reassigned.
+ * `const` is BLOCK scoped and CANNOT be reassigned. But can be mutated
 */
 function constBlockScoped() {
     const test = ["upper scope"];

@@ -52,5 +52,5 @@ const elephantParade = elephantCollector(); // ?
 
 console.log(elephantParade)  // ?
 
-console.log(/* your code here*/)  // ?
-console.log(/* your code here*/)  // ?
+console.log(elephantParade("Obi"))
+console.log(elephantParade("Gerald"))

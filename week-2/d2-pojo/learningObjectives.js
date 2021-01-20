@@ -48,8 +48,6 @@ let obj2 = { [keyName]: 2 } // ob2 => {"two": 2}
 console.log(obj2);
 
 
-
-
 // --------------------------------------------------------------------
 
 
@@ -178,10 +176,10 @@ let { apple: newApple, banana: newBanana } = obj5;
 let object = { animal: { name: "Fiona", species: "Hippo" } };
 
 let {
-  animal: { species: newHippo }
+  animal: { species }
 } = object;
-
-// console.log(newHippo); // => 'Hippo'
+debugger
+console.log(newHippo); // => 'Hippo'
 
 
 

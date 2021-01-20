@@ -5,17 +5,10 @@
  *      let & const -> block scoped
  */
 
-
+// SHOW IMAGE FROM IMAGES FOLDER
 /* Global Scope */
-
-let apple = "apple";        // apple is defined in the global scope  
-console.log(apple)          // "apple"
-function sayApple() {
-    console.log(apple);     // using global apple 
-}
-sayApple();                 // "apple" 
-
-
+let apple = "apple"
+console.log(apple)
 
 /* Function or Local Scope */
 
@@ -26,7 +19,11 @@ function sayPotato(){
 sayPotato();                // 'hello this is potato'
 console.log(potato)         //  ?
 
-
+let apple = "apple";        // apple is defined in the global scope          // "apple"
+function sayApple() {
+    console.log(apple);     // using global apple 
+}
+sayApple();                 
 
 /* Block Scope */
 

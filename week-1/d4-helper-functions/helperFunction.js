@@ -26,20 +26,6 @@ let extractEvens = function (numbers) {
 let evensArr = [3, 5, 4, 7, 8];
 console.log(extractEvens(evensArr));
 
-let b = function () {
-  console.log('starting b')
-  console.log('ending b')
-}
-
-let a = function () {
-  console.log('starting a')
-  b();
-  console.log('ending a')
-}
-
-// a();
-
-
 let isPrime = function (num) {
   if (num < 2) {
     return false;

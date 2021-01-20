@@ -7,15 +7,21 @@ let result = veggies.every( function(ele) {
 
 console.log(result);
 
-
-
 function myEvery(array, cb) {
     for (let i = 0; i < array.length; i++) {
-        /* your code here*/        
+        if (cb(array[i]) === false){
+            return false
+        }
     }
     return true;
 }
 
-let result2 = myEvery(veggies, containsA);
+let result2 = myEvery(veggies, function containsA(ele) {
+    return ele.includes("a");
+});
 
-console.log(result2);
+function containsA(ele) {
+    return ele.includes("a");
+}
+
+let result2 = myEvery(veggies, containsA);

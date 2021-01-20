@@ -22,12 +22,6 @@
 // REFERENCE :
   // Object
 
-
-
-
-
-
-
 // ------------------------------------------------
 
 // Setting variables equal to each other and memory.
@@ -40,52 +34,33 @@
   // and then change one of those variables, both variables will change.
 
 
-
-
 // Primitive example:
 
 let prim1 = 'old value';
 let prim2 = prim1; // 'old value'
 
-// console.log('\n --- Primitive --- \n \nBefore the change: \n');
 // console.log(prim1);
 // console.log(prim2);
 
-// // reassign prim1
-// prim1 = 'new value';
-
-// console.log('\n \nAfter the change: \n');
-// console.log(prim1); // ?? changed
-// console.log(prim2); // ?? unchanged
-
-
-
-
-
-
-
+// reassign prim1
+prim1 = 'new value';
+debugger
 
 
 //  Reference example:
 
 let ref1 = { key: 'old value'};
-let ref2 = ref1; // MAKE A COPY to break connection
+let ref2 = ref1; 
 
-// console.log('\n \n \n --- Reference --- \n \nBefore the change: \n');
-console.log(ref1);
-console.log(ref2);
+debugger
 
 // mutating ref1
 ref1.newKey = 'kiwi'
 ref2.updatingRefTwo = true;
-
+debugger
 
 // Reassignment shown below creates a new array 
-  // rather than mutating the array.
-  // This would not change the value in ref2
-// ref1 = ['new value'];
-
-console.log('\n \nAfter the change: \n');
-console.log(ref1);
-console.log(ref2);
-// console.log('\n');
+// rather than mutating the array.
+// This would not change the value in ref2
+ref1 = ['new value'];
+debugger

@@ -1,5 +1,12 @@
 let greaterResult = function (num, cb1, cb2) {
-    /* your code here */
+    let res1 = cb1(num)
+    let res2 = cb2(num)
+
+    if (res1 > res2){
+      return cb1(num)
+    }else{
+      return cb2(num)
+    }
 }
 
 

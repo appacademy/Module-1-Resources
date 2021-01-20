@@ -7,12 +7,6 @@
 //      Extracting values in the function parameters from a passed in argument
 
 
-
-
-
-
-
-
 // ---------------------------------------------------------
 // Array Destructuring Vs. 
 // Object Destructing
@@ -21,7 +15,8 @@
 // Array - order matters
 let colors = ['red', 'orange', 'yellow' ];
 let [ firstColor, secondColor, banana ] = colors;
-// console.log(banana); // 'yellow'
+
+// debugger
 
 
 // Object - order does NOT matter 
@@ -30,16 +25,10 @@ let instructorObject = {
   s: 'Sergey',
   r: 'Rose'
 };
+
 // let { b, s, r } = instructorObject;
 let { r, b, s } = instructorObject;
-
-// console.log(b); // 'Bart'
-// console.log(s); // 'Sergey'
-// console.log(r); // 'Rose'
-
-
-
-
+debugger  
 
 // ---------------------------------------------------------
 // Alias Destructuring - (fancy obj dest)
@@ -52,13 +41,11 @@ let data = {
   thingz: ['pomegranate', 'mango', 'strawberry']
 }
 
-let { thingz: fruit } = data;
+let { thingz: fruit, username: papaya } = data;
+// debugger
 // fruit.push('mangooo')
 // console.log(fruit)
 // console.log(data["thingz"])
-
-
-
 
 
 

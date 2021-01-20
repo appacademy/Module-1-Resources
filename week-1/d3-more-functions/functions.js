@@ -6,9 +6,6 @@ function sayHello1() {
 sayHello1();
 
 
-console.log('--------');
-
-
 // function expression syntax
 // setting a variable to an anonymous function
 let sayHello2 = function() {
