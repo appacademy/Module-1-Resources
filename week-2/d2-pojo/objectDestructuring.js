@@ -48,8 +48,6 @@ let { thingz: fruit, username: papaya } = data;
 // console.log(data["thingz"])
 
 
-
-
 // ---------------------------------------------------------
 // Nested destructuring
 // Access the values stored in objects
@@ -73,19 +71,12 @@ let dog = {
 
 let { owner: { firstName } } = dog;
 // console.log(firstName);
+let {owner: {treats: { regular } } } = dog
+debugger
 let { tricks: [ trick1, trick2, trick3 ] } = dog;
 
 // console.log('This dog is loved by ' + firstName);
 // console.log('This dog can ' + trick1 + " and " + trick3 );
-
-
-
-
-
-
-
-
-
 
 // -----------------------------------------------------------
 // Destructuring Objects for function parameters.

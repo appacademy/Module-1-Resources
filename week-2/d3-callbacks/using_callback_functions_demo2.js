@@ -7,6 +7,7 @@ let superAdd = function (num1, num2, cb) {
 console.log(superAdd(6,3,Math.sqrt));
 
 //---------------------------------------------
+// exploring how flexible javascript functions are
 let foo = function(a, b, c) {
     console.log(a)
     console.log(b)

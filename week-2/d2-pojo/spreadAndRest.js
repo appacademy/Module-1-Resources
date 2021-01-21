@@ -7,46 +7,13 @@ function smoothie(ingredient1, ingredient2) {
 // smoothie('mango', 'strawberry');
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // What if we had a lot more arguments / smoothie ingredients ?
 
 
 // We can use rest parameters to make the function more dynamic and 
   // take in any number of arguments.
 
-function restSmoothie(arg1,...allIngredients) {
+function restSmoothie(...allIngredients) {
   let res = 'Contains: ';
   // for (let i = 0; i < allIngredients.length; i++) { 
   //   res = res + ' and ' + allIngredients[i];
@@ -103,8 +70,6 @@ debugger
 combinedInstructors['j2'] = 'julia'
 delete combinedInstructors['j3']
 debugger
-
-
 
 // spread in a function 
 function spreadDemo(dog1, dog2, dog3) {

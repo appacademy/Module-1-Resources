@@ -22,8 +22,6 @@ let myObject = {};
 //  1.BRACKET notation
 myObject["Adrian Rampy"] = "PST";
 myObject["adrian"] = "EST";
-console.log(myObject.adrian) 
-console.log(myObject["Adrian Rampy"]) 
 
 // DYNAMICALLY add key-value pairs
 let key = 'Justin N';
@@ -36,13 +34,12 @@ myObject.emily = '?';
 
 let banana = 'Miah';
 myObject.banana = 'EST';
-console.log(myObject)
 
 // iteration through an object 
 values = Object.values(myObject)
 keys = Object.keys(myObject)
 
 for (const key in myObject){
-  debugger
+  // debugger
   console.log(key)
 }
