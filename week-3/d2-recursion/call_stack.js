@@ -1,17 +1,22 @@
+debugger
 function foo() {
-  console.log("a");
+  debugger
   bar();
-  console.log("e");
+  debugger
+  let banana = "banana"
 }
 
 function bar() {
-  console.log("b");
+  debugger
   baz();
-  console.log("d");
+  debugger
+  let banana = "banana"
 }
 
 function baz() {
-  console.log("c");
+  debugger
+  let banana = "banana"
+  debugger
 }
-
+debugger
 foo();

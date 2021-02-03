@@ -5,9 +5,9 @@ function rec_sum(n) {
     return 1;
   }
   debugger
-  sum = rec_sum(n-1);
+  let sum = rec_sum(n-1);
   debugger
   return sum + n 
 }
-
+debugger
 rec_sum(3)

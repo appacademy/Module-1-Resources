@@ -9,3 +9,5 @@ function countdown(num) {
   debugger
   return num
 }
+debugger
+countdown(2)
