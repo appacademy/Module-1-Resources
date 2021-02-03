@@ -27,12 +27,12 @@
   * Find the character at a certain index in a string.
   * Concatenate two strings together.
   * Find the first instance of a character in a string.
-  * Create a new string from a sub-section of another string.
+  * Create a new string from a sub-section of a given string.
 * Arrays
   * Describe the properties of an array.
   * Create an array.
   * Find the length of an array.
-  * Find and/or change the element at a certain index in an array.
+  * Find *or change* the element at a certain index in an array.
   * Concatenate two arrays together.
   * Find the first instance of an element in an array.
   * Create a new array from a sub-section of a given array.
