@@ -17,7 +17,7 @@
 * Organization is key when going through a fast course such as App Academy.  As a result here is a reccommended file structure that students can follow:
 * `app_academy` (**folder**)
   * `week_1` (**folder**)
-    * `w1d1`
+    * `w1d1` (**folder**)
       * `projects` (**folder**)
         * `file1.js` (**file**)
         * `file2.js` (**file**)
@@ -32,7 +32,7 @@
         * ...
     * `w#d#...`
   * `week_2` (**folder**)
-    * `w2d1`
+    * `w2d1` (**folder**)
       * `projects` (**folder**)
         * `file1.js` (**file**)
         * `file2.js` (**file**)
