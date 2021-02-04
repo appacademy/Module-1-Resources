@@ -2,6 +2,44 @@
     - Welcome Lecture
     - Morning Lecture
     - Solo Work!
+---
+
+## Lecture Slides
+
+- All of the lecture slides and code from the demo can be found in module 1 resources repository!
+
+---
+## Typical Lecture Format
+
+- Morning boost
+- Watch videos 
+- lecture on videos
+
+---
+
+## Online Lecture Etiquette
+
+- Keep the chat focused on the material (no side conversations)
+- There will be allocated question time - avoid asking questions in the middle of the lecturer presenting
+- Keep microphone muted at all times (unless asked to speak)
+
+---
+
+## A Quick word about Questions
+
+1. How relevant is it to everyone?
+2. Will the answer help today?
+3. How much space am I taking?
+4. Am I just showing off?
+
+---
+
+## Participate!
+
+- Volunteer to answer questions posed by the lecturer
+- Don't be afraid of saying the wrong thing
+
+---
 
 # `How To Learn`
 - Passive
@@ -15,17 +53,13 @@
 -  Repetition:
     - You'll notice repeating information throughout the course...
     - `This is intentional! `
-
-<br></br>
-<br></br>
-
+---
 # `What is 'Debugging'?`
 - The process of both identifying an error (aka 'Bug') in your code 
 as well as the process of fixing it. 
+- Go over Google developer tools
 
-<br></br>
-<br></br>
-
+---
 # `Data Types in Java Script`
 - Even broader, all programming languages have ways of identifying types of information, or data. 
 - In JS, data falls into the following general categories:
@@ -36,9 +70,7 @@ as well as the process of fixing it.
   - `Objects` - { key1: "value1", key2: "value2" }
 - Today we'll talk about the first two above. 
 
-<br></br>
-<br></br>
-
+---
 # `The Number Type`  
 - NOTE: `console.log` is a function in javascript which 'prints' or 'logs' the return value of the inputted code to your console.
 
@@ -53,9 +85,7 @@ as well as the process of fixing it.
     console.log(26 % 5); //5r1 -> 1
     console.log(27 % 5); //4r2 -> 2
 ```
-<br></br>
-<br></br>
-
+---
 # `Boolean Type`
 - What is it?
     - `true` or `false` 
@@ -87,10 +117,8 @@ as well as the process of fixing it.
 | true  | false | true   |
 | false | true  | true   |
 | false | false | false  |
-    
-<br></br>
-<br></br>
 
+---
 # `Comparison Operators`
 
 ```javascript
@@ -114,9 +142,7 @@ as well as the process of fixing it.
     console.log(5 == '5');  // true (types are coerced)
     console.log([] == 0);   // true (can be unpredictable)
 ```
-<br></br>
-<br></br>
-
+---
 # `Variables (with 'let' keyword)`
 
 ```javascript
