@@ -19,6 +19,7 @@
 
 ---
 ### Windows WSL Setup
+* skip if you're a mac user
 
 ---
 ### Installing Node
@@ -34,6 +35,35 @@
 
 ---
 ### Folder structure 
-```
-
-```
+* `app_academy` (**folder**)
+  * `week_1` (**folder**)
+    * `w1d1` (**folder**)
+      * `projects` (**folder**)
+        * `file1.js` (**file**)
+        * `file2.js` (**file**)
+        * `file3.js` (**file**)
+        * `file4.js` (**file**)
+        * ...
+      * `homework` (**folder**)
+        * `file1.js` (**file**)
+        * `file2.js` (**file**)
+        * `file3.js` (**file**)
+        * `file4.js` (**file**)
+        * ...
+    * `w#d#...`
+  * `week_2` (**folder**)
+    * `w2d1` (**folder**)
+      * `projects` (**folder**)
+        * `file1.js` (**file**)
+        * `file2.js` (**file**)
+        * `file3.js` (**file**)
+        * `file4.js` (**file**)
+        * ...
+      * `homework` (**folder**)
+        * `file1.js` (**file**)
+        * `file2.js` (**file**)
+        * `file3.js` (**file**)
+        * `file4.js` (**file**)
+        * ...
+    * `w#d#...`
+  * `week_#...`
