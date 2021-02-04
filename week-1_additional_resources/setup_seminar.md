@@ -31,3 +31,9 @@
 
 ---
 ### Installing GIT
+
+---
+### Folder structure 
+```
+
+```
