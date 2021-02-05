@@ -99,7 +99,7 @@ console.log(2 === 2.1);  // false
 console.log(2 === 2);    // true
 console.log(2 !== 2.1);  // true
 
-Two equality operators, === and ==
+// Two equality operators, === and ==
 console.log(5 === '5'); // false
 console.log(5 == '5');  // true (types are coerced)
 console.log( [] == 0 ); // true (can be unpredictable)
