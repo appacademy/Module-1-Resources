@@ -9,10 +9,8 @@
 3. ![lectures_2](./images/lectures_2.png)
 2. ![lectures_3](./images/lectures_3.png)
 
-
 ## Weekly Additional Resources
 * These resources are additional resources that are relevant to the current week you're in. Feel free to explore and find some helpful resources that include cheat sheets and additional practice. 
-
 ## Reccomended Folder Structure 
 * Organization is key when going through a fast course such as App Academy.  As a result here is a reccommended file structure that students can follow:
 * `app_academy` (**folder**)
@@ -48,6 +46,15 @@
     * `w#d#...`
   * `week_#...`
 
+## Using This Repository (Staff)
+* In order to contribute to this repo, please make sure that you create a pull request so that It can be reviewed by the modular instructor
+* EOD lectures will live within the cohorts branch and within the appropriate day. 
+* EX:
+  * week1_lectures
+    * d1_expressions
+      * file.js
+      * file.js
+      * eod.js (This is the end of day file)
 
 
 
