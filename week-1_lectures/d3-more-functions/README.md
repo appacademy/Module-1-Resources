@@ -111,16 +111,20 @@
 
 ## Array Methods
 
+`Video Lectures`
+
+- [Array Push, Pop, Shift, Unshift Demo]
+
 `Array#push` | MDN: [Array.prototype.push]
 
 - Syntax
 
   ```js
-   arr.push(ele1, ele2) // how ever many elements you want to add
+  arr.push(ele1, ele2) // n amount of elements
   ```
 
 - Description
-  - Adds one or more elements to the end of an array and returns the new length of the array.
+  - Adds one or more elements to the _end_ of an array and returns the new length of the array.
   - **mutates the array it is called on**
 - Parameters
   - The element(s) to add to the end of the array.
@@ -128,91 +132,148 @@
   - The new length property of the object upon which the method was called.
 
     ```js
-    let animals = ["elephant", "bear", "dog"];
+    let animals = ["ant", "bear", "dog"];
 
-    animals.push("mouse") // appends "mouse"
-    const animalLength = animals.push("cat"); // appends "cat" returns length
+    // appends "cat" to animals && returns length
+    let animalLength = animals.push("cat"); 
 
-    console.log(animals, animalLength); // ["elephant", "bear", "dog", "mouse", "cat"], 5
+    console.log(animals); // ["ant", "bear", "dog", "cat"]
+    console.log(animalLength); // 4
     ```
 
-`Array#pop` ||  MDN: [Array.prototype.pop]
+`Array#pop` |  MDN: [Array.prototype.pop]
+
+- Syntax
+
+  ```js
+  arr.pop()
+  ```
 
 - Description
-  - Removes the last element from an array and returns that element. This method changes the length of the array.
+  - Removes the _last_ element from an array and returns that element. This method changes the length of the array.
   - **mutates the array it is called on**
 - Parameters
   - None
 - Return value
   - The removed element from the array; undefined if the array is empty.
 
+  ```js
+  let dogs = ['Fido', 'Rover'];
+
+  //removes Rover from dogs and returns Rover
+  let lastDog = dogs.pop();
+
+  console.log(dogs); // ['Fido']
+  console.log(lastDog); // 'Rover'
+  ```
+
+`Array#unshift` | MDN: [Array.prototype.unshift]
+
+- Syntax
+
+  ```js
+  arr.unshift(ele1, ele2) // n amount of elements
+  ```
+
+- Description
+  - Adds one or more elements to the _beginning_ of an array and returns the new length of the array.
+  - **mutates the array it is called on**
+- Parameters
+  - The element(s) to add to the end of the array.
+- Return value
+  - The new length property of the object upon which the method was called.
+
+  ```js
+  let cats = ['Whiskers', 'Garfield']
+
+  // adds Jasper to cats && returns length
+  let catsLength = cats.unshift('Jasper');
+
+  console.log(cats); // ['Jasper', 'Whiskers', 'Garfield']
+  console.log(catsLength) // 3
+  ```
+
+`Array#shift` | MDN: [Array.prototype.shift]
+
+- Syntax
+
+  ```js
+  arr.shift()
+  ```
+
+- Description
+  - Removes the _first_ element from an array and returns that element. This method changes the length of the array.
+  - **mutates the array it is called on**
+- Parameters
+  - None
+- Return value
+  - The removed element from the array; undefined if the array is empty.
+
+  ```js
+  let cats = ['Paprika', 'Whiskers', 'Garfield'];
+  //removes 'Paprika' from cats and returns 'Paprika'
+  let firstCat = cats.shift();
+
+  console.log(firstCat); // 'Paprika'
+  console.log(cats); // ['Whiskers', 'Garfield']
+  ```
+  
+`Code it out`
+
+- [arrayMethods]
+
+## Nested Loops
+
+`Video Lectures`
+
+- [Nested Loops]
+- [Pairs in Array]
+- [Unique Pairs in Array]
+
+`Nested Loops`
+
 ```js
-let dogs = ['Fido', 'Rover'];
-debugger
-
-dogs.pop(); // removes Rover from array
-debugger
-
-let lastDog = dogs.pop() // removed Fido from array, returns Fido
-debugger
-
-lastDog = dogs.pop()
-```
-
-`Array.prototype.shift` or `Array#shift`
-
-- doesn't take any arguments and removes the first element in the array
-- mutates the array it is called on
-- returns the removed element
-
-```javascript
-let cats = ['Paprika', 'Whiskers', 'Garfield'];
-
-let firstCat = cats.shift();
-
-console.log(firstCat); // 'Paprika'
-console.log(cats); // ['Whiskers', 'Garfield']
-```
-
-`Array.prototype.unshift` or `Array#unshift`
-
-- takes a single argument and adds the argument to the beginning of the array
-- mutates the array it is called on
-- returns the length of the mutated array
-
-```javascript
-let cats = ['Whiskers', 'Garfield']
-
-cats.unshift('Sennacy');
-
-console.log(cats); // ['Sennacy', 'Whiskers', 'Garfield']
-console.log(beforeUnshift === cats);
-```
-
-## [Nested Loops]
-
-```javascript
-for (let i = 0; i < 3; i++) {
-  for (let j = 0; j < 4; j++) {
+for (let i = 0; i < 4; i++) {
+  for (let j = 0; j < 5; j++) {
     console.log(i, j);
   }
 }
 ```
 
-## [Pairs In Arrays]
+`Pairs In Arrays`
 
-- Nested loops with arrays
+```js
+let dogs = ['belka', 'strelka', 'laika', 'dezik']
 
-### Pairs In Arrays
+for(let i = 0; i < dogs.length; i++) {
+  let dog1 = dogs[i];
+  for(let j = 0; j < dogs.length; j++) {
+    let dog2 = dogs[j]
+    console.log(dog1, dog2)
+  }
+}
+```
 
-![Pairs In Arrays](./images/pairs_in_arrays.png)
+![Pairs In Arrays]
 
-### Unique Pairs In Arrays
+`Unique Pairs In Arrays`
 
-![Unique Pairs In Arrays](./images/unique_pairs_in_arrays.png)
+![Unique Pairs In Arrays]
 
+<!-- Change per cohort -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/wednesday-morning-boost
 [Function Expression Syntax Demo]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/function-expression-syntax-demo
+[Array Push, Pop, Shift, Unshift Demo]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/array-push--pop--shift--unshift-demo
+[Nested Loops]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/nested-loops
+[Pairs in Array]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/pairs-in-array
+[Unique Pairs in Array]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/unique-pairs-in-array
+<!-- Constant Links -->
 [sum]: ./snippets/sum.js
+[arrayMethods]: ./snippets/arrayMethods.js
 [Array.prototype.push]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 [Array.prototype.pop]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
+[Array.prototype.shift]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
+[Array.prototype.unshift]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
+
+[Unique Pairs In Arrays]: ./images/unique_pairs_in_arrays.png
+[Pairs In Arrays]: ./images/pairs_in_arrays.png
