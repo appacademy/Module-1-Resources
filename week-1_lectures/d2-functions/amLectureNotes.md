@@ -293,7 +293,7 @@
 
   let array4 = array1.concat(array2, array3)
 
-  console.log(array4) // [1, 2, 3, 4, 5, 6]
+  console.log(array4) // [1, 2, 3, 4, 5, 6, 7]
   ```
 
   - Code it out
