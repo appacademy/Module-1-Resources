@@ -39,6 +39,6 @@ console.log(aString()); // prints:
 /************************************************/
 
 console.log('Problem 5');
-printAString; // prints:
+console.log(printAString); // prints:
 
 /************************************************/
