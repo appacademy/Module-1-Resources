@@ -154,6 +154,7 @@
 
 `Syntax`
 
+- a keyword: `if` `else if` `else`
 - `if` & `else if` require a condition inside of parenthesis
   - these will evaluate the `truthy-ness` of what is inside of the parentheses
   - [Falsy Values]
@@ -221,7 +222,7 @@
 
   ```js
   for (let i = 0; i < 5; i++) {
-  console.log('hello world');
+    console.log('hello world');
   }
   ```
 
