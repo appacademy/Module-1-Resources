@@ -4,7 +4,7 @@
 
 ## String Type
 
-`Video Lectures`
+`Video Lectures`: 20 mins
 
 - [String Type Lecture]
 - [String Type Demo]
@@ -85,7 +85,7 @@
 
 ## Functions
 
-`Video Lectures`
+`Video Lectures`: 20 mins
 
 - [Function Lecture]
 - [Average Walkthrough]
@@ -148,7 +148,7 @@
 
 ## Conditionals
 
-`Video Lectures`
+`Video Lectures`: 12 mins
 
 - [Conditionals Demo]
 
@@ -183,7 +183,7 @@
 
 ## Loops
 
-`Video Lectures`
+`Video Lectures`: 12 mins
 
 - [Loop Demo]
 
@@ -231,15 +231,24 @@
 
 ## Array Data Type
 
-`Video Lectures`
+`Video Lectures`: 15 mins
 
 - [Array Lecture]
 
-`Syntax`
+`Info to know`
 
 - An array holds a `ORDERED LIST` of data
-- We can call each item in an array and `element`
-- An array is written with square brackets [] with each element separated by a comma ','
+- We can call each item in an array an `element`
+- Index starts at 0
+
+`Syntax`
+
+- An array is written with square brackets [] with each element separated by a comma
+
+  ```js
+  let arr = [1, "hello", false, NaN, [1, 2, 3]]
+  ```
+
 - Code it out
   - [arrayInit]
   <!-- - [arrayInit-solution] -->
@@ -252,6 +261,7 @@
   let array = ["dog", "cat", "turtle"]
 
   console.log(array[1]) // "cat"
+  console.log(array[array.length - 1]) // finds last element // "turtle"
   ```
 
 - `.indexOf(element)` - finds the index of the first given element in an array. If not found, returns -1.
@@ -289,7 +299,10 @@
     - `LEVEL UP!` - [concat]
     <!-- - [concat-solution] -->
 
-- Other common methods you will use often: (Not needed _today_, but why not take a look at them on MDN)
+`More Methods`
+
+Other common methods you will use often: (Not needed _today_, but why not take a look at them on MDN)
+
 - Array.prototype.push
 - Array.prototype.pop
 - Array.prototype.shift
