@@ -45,7 +45,7 @@
 - Passive
     - Readings, Flashcards, Videos, Discussions
 - Active
-    - Coding, Quizzes, Assessments
+    - Coding, Quizzes, Assessments, Tinkering 
 - Desirable Difficulty
     - You should `feel challenged` throughout the course
     - At the same time, we aren't asking you to build a full app this week
@@ -53,11 +53,21 @@
 -  Repetition:
     - You'll notice repeating information throughout the course...
     - `This is intentional! `
+
 ---
 # `What is 'Debugging'?`
 - The process of both identifying an error (aka 'Bug') in your code 
 as well as the process of fixing it. 
 - Go over Google developer tools
+
+---
+
+### Console.log and Comments 
+
+```javascript 
+console.log("hello world");
+console.log("how are you");
+```
 
 ---
 # `Data Types in Java Script`
@@ -68,8 +78,7 @@ as well as the process of fixing it.
   - `Strings` - "Hello World!"
   - `Arrays` - [ 0, 1, 2 ]
   - `Objects` - { key1: "value1", key2: "value2" }
-- Today we'll talk about the first two above. 
-
+- We will be talking about the first three today
 ---
 # `The Number Type`  
 - NOTE: `console.log` is a function in javascript which 'prints' or 'logs' the return value of the inputted code to your console.
@@ -87,8 +96,6 @@ as well as the process of fixing it.
 ```
 ---
 # `Boolean Type`
-- What is it?
-    - `true` or `false` 
 
 - Not Operator (!)
     - Flips the value of a boolean
@@ -111,12 +118,12 @@ as well as the process of fixing it.
     - `true || false` -> true
     
 
-| A     | B     | A \|\| B |
-|:-----:|:-----:|:------:|
-| true  | true  | true   |
-| true  | false | true   |
-| false | true  | true   |
-| false | false | false  |
+| A     | B     | A || B |
+|:-----:|:-----:|:------:  |
+| true  | true  | true     |
+| true  | false | true     |
+| false | true  | true     |
+| false | false | false    |
 
 ---
 # `Comparison Operators`
@@ -141,6 +148,8 @@ as well as the process of fixing it.
     console.log(5 === '5'); // false
     console.log(5 == '5');  // true (types are coerced)
     console.log([] == 0);   // true (can be unpredictable)
+
+    // https://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
 ```
 ---
 # `Variables (with 'let' keyword)`
@@ -175,4 +184,28 @@ as well as the process of fixing it.
     console.log(age); // 15
 ```
 
+---
+
+### Asking Great Coding Questions 
+
+* When should I ask a questions?
+    * Follow 15 minute rule
+    * Getting paid 50$/hr 
+
+---
+
+### What Makes a Good Questions? 
+
+* It's Specific 
+* It's Clear and Concise 
+* It Shows that You've Put Work Into It
+
+---
+
+### Utilizing Online Resources and Documentation 
+
+* Google it!
+* Use MDN Docs 
+    * Will be allowed to use MDN Docs on assessment
+    
 ---

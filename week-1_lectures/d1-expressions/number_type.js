@@ -2,15 +2,8 @@
  * The number type
  * - Number Operations (+, -, *, etc...)
  * - P.E.M.D.A.S.
- *  -> 3 + 5 - 2 * 1 / 6
+ * Parenthesis, Exponents, Multiplication, Division, Addition, Subtraction
  * - Modulo
- * 
- * Boolean type
- * Boolean logic (and, or)
- *
- * Variables with let
- *
- * Comparison Operators
  */
 
 

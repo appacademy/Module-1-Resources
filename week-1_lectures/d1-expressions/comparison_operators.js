@@ -17,3 +17,5 @@
     console.log(5 === '5'); // false
     console.log(5 == '5');  // true (types are coerced)
     console.log([] == 0);   // true (can be unpredictable)
+
+    // https://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons

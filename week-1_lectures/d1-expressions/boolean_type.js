@@ -17,16 +17,13 @@ NaN
 //      - AND (&&) - (*)- returns true ONLY when both sides are true. 
 //      - OR (||) - (+) - returns false ONLY when both sides are false. 
 
-console.log(true && true)  // 1 * 1 => 1 => true
-console.log(true && false) // 1 * 0 => 0 => false
+console.log(true && true)  
+console.log(true && false) 
 
-console.log(true || true)  // 1 + 1 => 2 => true
-console.log(true || false) // 1 + 0 => 1 => true
-console.log(false || false) // 0 + 0 => 0 => false
-console.log(false || true ) // 0 + 1 => 1 => true
-
-
-
+console.log(true || true)  
+console.log(true || false) 
+console.log(false || false) 
+console.log(false || true ) 
 
 
 debugger
