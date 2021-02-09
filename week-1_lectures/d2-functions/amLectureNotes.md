@@ -10,6 +10,7 @@
 - [String Type Demo]
 
 `Syntax`
+
 - Must use single-quotes (') or double quotes (")
 
   ```js
@@ -73,7 +74,7 @@
 
 `Concatenate`
 
-- Use `+` to concatenate (join) strings together 
+- Use `+` to concatenate (join) strings together
 
   ```js
   let str1 = 'hello_';
