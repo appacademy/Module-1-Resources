@@ -21,7 +21,7 @@
 // function addTwo(num1, num2) {
 //     return num1 + num2;
 // }
-// console.log(addtwo(1, 2)); // 3
+// console.log(addTwo(1, 2)); // 3
 
 
 
@@ -65,7 +65,7 @@ function averageOfFour(arg1, arg2, arg3, arg4) {
 //     console.log("this is a truthy value");
 // }
 // if (myBoolean < 10 ) {
-//     console.log("this is a falsey value");
+//     console.log("this is a falsy value");
 // }
 
 // // 'else' is mutually exclusive:

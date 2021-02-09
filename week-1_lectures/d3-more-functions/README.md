@@ -1,40 +1,76 @@
-## [Functions]
-**Function declaration syntax**
-- function name is built into the declaration of the function
+# Week 1 Day 2
 
-```javascript
-function sayHello1() {
-  console.log('hello');
-  console.log('bye');
-}
-```
+## Morning Boost
 
-**Function expression syntax**
-- setting a variable to an anonymous function
+- [Morning Boost]
 
-```javascript
-let sayHello2 = function() {
-  console.log('hello');
-  console.log('bye');
-};
-```
+## Function Expression Syntax
 
-Functions are **first class objects**
-- functions can be saved to variables
+`Video Lectures`
 
-```javascript
-// examples of what can be saved to a variable
+- [Function Expression Syntax Demo]
 
-let name = 'Alvin'
-let age = 1000;
-let getAvg = function(num1, num2) {
-  return (num1 + num2)/2
-};
-```
+`First Class Objects`
 
-## [Mutability]
-**Immutable** Types
-- Cannot be mutated
+- First Class Objects can be
+  1. Stored in a variable, object, or array (objects later)
+  2. passed as an argument to a function (next week - callback)
+  3. returned from a function (next week - callback)
+
+- Functions are first class objects!
+
+    ```js
+    // examples of what can be saved to a variable
+
+    let name = 'Alvin'
+    let age = 1000;
+    let getAvg = function(num1, num2) {
+        return (num1 + num2)/2
+    };
+
+    let anotherAvg = getAvg;
+    console.log(name, age, anotherAvg(4, 2)) // "Alvin", 1000, 3
+
+    const arr = [getAvg, name, age];
+    const avg2 = arr[0];
+
+    console.log(avg2(6, 4)); // 5
+    ```
+
+`Syntax`
+
+- variable assignment (`name`)
+- `function` keyword
+- parenthesis with the function's `parameter(s)`
+- `code block`
+- `semi-colon`
+
+    ```js
+    // function declaration syntax
+    function sayHello1() {
+    console.log('hello');
+    console.log('bye');
+    }
+    // function expression syntax
+    let sayHello2 = function() {
+    console.log('hello');
+    console.log('bye');
+    };
+    ```
+
+`Code it out`
+
+- [sum]
+
+## Mutability
+
+`Video Lectures`
+
+- [Function Expression Syntax Demo]
+
+`Immutable Types`
+
+- Cannot be mutated (changed)
 - Examples
   - Number, e.g. `122`
   - `NaN`
@@ -42,41 +78,89 @@ let getAvg = function(num1, num2) {
   - `null`
   - String, e.g. `abc`
 
-**Mutable** Types
+  ```js
+  let str = abc
+
+  str[1] = 'x';
+
+  console.log(str) // 'abc';
+  ```
+
+- re-assignable != mutable
+
+    ```js
+    let str = 'abc';
+    str += 'd'; // str = str + 'd';
+    console.log(str) // 'abcd'
+    ```
+
+`Mutable Types`
+
 - Can be mutated
 - Examples
   - Arrays, e.g. `['a', 'b', 'c']`
   - Objects (we will see this later)
 
-## [Array Functions]
-`Array.prototype.push`
-- This is how it will show up on MDN. We also like to use the notation, `Array#push`
-- takes a single argument and adds the argument passed in to the end of the array that it is called on
-- mutates the array it is called on
-- returns the length of the mutated array
+      ```js
+      let arr = ["a", "b", "c"];
 
-```javascript
-let people = ['Gordon', 'Soon-Mi', 'Angela'];
-people.push('Justin');
+      arr[1] = "x";
 
-console.log(people); // ['Gordon', 'Soon-Mi', 'Angela', 'Justin']
-```
+      console.log(arr) // [1, 2, 3];
+      ```
 
-`Array.prototype.pop` or `Array#pop`
-- doesn't take any arguments and removes the last element in the array
-- mutates the array it is called on
-- returns the removed element
+## Array Methods
 
-```javascript
-let dogs = ['Fido', 'Digby', 'Fluffy'];
+`Array#push` | MDN: [Array.prototype.push]
 
-const lastDog = dogs.pop();
+- Syntax
 
-console.log(lastDog); // 'Fluffy'
-console.log(dogs); // ['Fido', 'Digby']
+  ```js
+   arr.push(ele1, ele2) // how ever many elements you want to add
+  ```
+
+- Description
+  - Adds one or more elements to the end of an array and returns the new length of the array.
+  - **mutates the array it is called on**
+- Parameters
+  - The element(s) to add to the end of the array.
+- Return value
+  - The new length property of the object upon which the method was called.
+
+    ```js
+    let animals = ["elephant", "bear", "dog"];
+
+    animals.push("mouse") // appends "mouse"
+    const animalLength = animals.push("cat"); // appends "cat" returns length
+
+    console.log(animals, animalLength); // ["elephant", "bear", "dog", "mouse", "cat"], 5
+    ```
+
+`Array#pop` ||  MDN: [Array.prototype.pop]
+
+- Description
+  - Removes the last element from an array and returns that element. This method changes the length of the array.
+  - **mutates the array it is called on**
+- Parameters
+  - None
+- Return value
+  - The removed element from the array; undefined if the array is empty.
+
+```js
+let dogs = ['Fido', 'Rover'];
+debugger
+
+dogs.pop(); // removes Rover from array
+debugger
+
+let lastDog = dogs.pop() // removed Fido from array, returns Fido
+debugger
+
+lastDog = dogs.pop()
 ```
 
 `Array.prototype.shift` or `Array#shift`
+
 - doesn't take any arguments and removes the first element in the array
 - mutates the array it is called on
 - returns the removed element
@@ -91,6 +175,7 @@ console.log(cats); // ['Whiskers', 'Garfield']
 ```
 
 `Array.prototype.unshift` or `Array#unshift`
+
 - takes a single argument and adds the argument to the beginning of the array
 - mutates the array it is called on
 - returns the length of the mutated array
@@ -105,6 +190,7 @@ console.log(beforeUnshift === cats);
 ```
 
 ## [Nested Loops]
+
 ```javascript
 for (let i = 0; i < 3; i++) {
   for (let j = 0; j < 4; j++) {
@@ -114,17 +200,19 @@ for (let i = 0; i < 3; i++) {
 ```
 
 ## [Pairs In Arrays]
+
 - Nested loops with arrays
 
 ### Pairs In Arrays
-![Pairs In Arrays](./pairs_in_arrays.png)
+
+![Pairs In Arrays](./images/pairs_in_arrays.png)
 
 ### Unique Pairs In Arrays
-![Unique Pairs In Arrays](./unique_pairs_in_arrays.png)
 
+![Unique Pairs In Arrays](./images/unique_pairs_in_arrays.png)
 
-[Functions]: ./functions.js
-[Mutability]: ./mutability.js
-[Array Functions]: ./array_functions.js
-[Nested Loops]: ./nested_loops.js
-[Pairs In Arrays]: ./pairs_in_arrays.js
+[Morning Boost]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/wednesday-morning-boost
+[Function Expression Syntax Demo]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/function-expression-syntax-demo
+[sum]: ./snippets/sum.js
+[Array.prototype.push]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
+[Array.prototype.pop]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
