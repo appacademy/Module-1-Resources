@@ -7,9 +7,6 @@ Instructions:
 
 // Code below this line
 
-console.log('Elephant'.length);
-console.log('h593lkd'.length);
 console.log('boot'.length);
 console.log(''.length);
 console.log('2'.length);
-console.log('length'.length);

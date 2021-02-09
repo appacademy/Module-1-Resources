@@ -80,7 +80,7 @@
   let str1 = 'hello_';
   let str2 = 'world';
   let str3 = str1 + str2
-  console.log(str3); 
+  console.log(str3); // 'hello_world' 
   ```
 
 ## Functions
@@ -128,8 +128,8 @@
   - **If you want to print to the console, you must have a console.log**
 
     ```js
-    addTwo(3 + 4); //nothing will print
-    console.log(addTwo(4 + 4)) // 8
+    addTwo(3, 4); //nothing will print
+    console.log(addTwo(4, 4)) // 8
     ```
 
   - Code it out
@@ -275,12 +275,12 @@
 
 `Methods`
 
-- `.length()` - returns the number of elements in an array
+- `.length` - returns the number of elements in an array
 
   ```js
   let array = ["dog", "cat", "turtle"]
 
-  console.log(array.length()) // 3
+  console.log(array.length) // 3
   ```
 
 - `.concat(arr)` - allows us to join arrays together.
