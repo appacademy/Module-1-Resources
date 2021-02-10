@@ -6,38 +6,34 @@
 
 ## Function Expression Syntax
 
-`Video Lectures`
+`Video Lectures`: 12 mins
 
 - [Function Expression Syntax Demo]
 
 `First Class Objects`
 
 - First Class Objects can be
-  1. Stored in a variable, object, or array (objects later)
-  2. passed as an argument to a function (next week - callback)
-  3. returned from a function (next week - callback)
+  1. Stored in a variable, object, or array (objects next week)
+  2. passed as an argument to a function (next week)
+  3. returned from a function (next week)
 
 - Functions are first class objects!
 
     ```js
-    // examples of what can be saved to a variable
-
     let name = 'Alvin'
     let age = 1000;
     let getAvg = function(num1, num2) {
         return (num1 + num2)/2
     };
 
-    let anotherAvg = getAvg;
-    console.log(name, age, anotherAvg(4, 2)) // "Alvin", 1000, 3
+    console.log(name, age, getAvg(4, 2)) // "Alvin", 1000, 3
 
     const arr = [getAvg, name, age];
-    const avg2 = arr[0];
-
-    console.log(avg2(6, 4)); // 5
+   
+    console.log(arr[0](6,4)); // 5
     ```
 
-`Syntax`
+`Function Expression Syntax`
 
 - variable assignment (`name`)
 - `function` keyword
@@ -64,7 +60,7 @@
 
 ## Mutability
 
-`Video Lectures`
+`Video Lectures`: 9 mins
 
 - [Function Expression Syntax Demo]
 
@@ -96,7 +92,7 @@
 
 `Mutable Types`
 
-- Can be mutated
+- Can be mutated (changed)
 - Examples
   - Arrays, e.g. `['a', 'b', 'c']`
   - Objects (we will see this later)
@@ -111,7 +107,7 @@
 
 ## Array Methods
 
-`Video Lectures`
+`Video Lectures`: 20 mins
 
 - [Array Push, Pop, Shift, Unshift Demo]
 
@@ -224,7 +220,7 @@
 
 ## Nested Loops
 
-`Video Lectures`
+`Video Lectures`: 30 mins
 
 - [Nested Loops]
 - [Pairs in Array]
