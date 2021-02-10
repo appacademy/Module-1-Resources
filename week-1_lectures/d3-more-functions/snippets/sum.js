@@ -16,4 +16,4 @@ function expression syntax
 
 
 
-console.log(sum(3 + 4)); // 7
+console.log(sum(3, 4)); // 7
