@@ -1,4 +1,4 @@
-# Week 1 Day 2
+# Week 1 Day 3
 
 ## Morning Boost
 
