@@ -8,6 +8,10 @@ Take the array defined below and
 
 Then print the array
 */
-
+let dogs = ['Rosie', 'Copper'];
 //Code Below this line
+
+
+
+console.log(dogs)
 
