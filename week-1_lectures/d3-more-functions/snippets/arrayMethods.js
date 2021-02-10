@@ -9,13 +9,9 @@ Take the array defined below and
 Then print the array
 */
 
+let dogs = ['Rosie', 'Copper'];
 //Code Below this line
 
-let dogs = ['Rosie', 'Copper']
 
-dogs.shift();
-dogs.push('Biff', "Buster");
-dogs.unshift('Luna');
-dogs.pop();
 
 console.log(dogs)

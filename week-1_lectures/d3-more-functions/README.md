@@ -44,13 +44,13 @@
     ```js
     // function declaration syntax
     function sayHello1() {
-    console.log('hello');
-    console.log('bye');
+      console.log('hello');
+      console.log('bye');
     }
     // function expression syntax
     let sayHello2 = function() {
-    console.log('hello');
-    console.log('bye');
+      console.log('hello');
+      console.log('bye');
     };
     ```
 
@@ -283,6 +283,5 @@ for(let i = 0; i < dogs.length; i++) {
 [Array.prototype.pop]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
 [Array.prototype.shift]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift
 [Array.prototype.unshift]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift
-
 [Unique Pairs In Arrays]: ./images/unique_pairs_in_arrays.png
 [Pairs In Arrays]: ./images/pairs_in_arrays.png
