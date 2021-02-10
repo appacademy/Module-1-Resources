@@ -11,7 +11,7 @@ Then print the array
 
 //Code Below this line
 
-const dogs = ['Rosie', 'Copper']
+let dogs = ['Rosie', 'Copper']
 
 dogs.shift();
 dogs.push('Biff', "Buster");
