@@ -62,7 +62,7 @@
 
 `Video Lectures`: 9 mins
 
-- [Function Expression Syntax Demo]
+- [Mutability Demo]
 
 `Immutable Types`
 
@@ -271,6 +271,7 @@ for(let i = 0; i < dogs.length; i++) {
 <!-- Change per cohort -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/wednesday-morning-boost
 [Function Expression Syntax Demo]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/function-expression-syntax-demo
+[Mutability Demo]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/mutability-demo
 [Array Push, Pop, Shift, Unshift Demo]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/array-push--pop--shift--unshift-demo
 [Nested Loops]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/nested-loops
 [Pairs in Array]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/pairs-in-array
