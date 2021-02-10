@@ -175,7 +175,7 @@
   - Adds one or more elements to the _beginning_ of an array and returns the new length of the array.
   - **mutates the array it is called on**
 - Parameters
-  - The element(s) to add to the end of the array.
+  - The element(s) to add to the beginning of the array.
 - Return value
   - The new length property of the object upon which the method was called.
 
