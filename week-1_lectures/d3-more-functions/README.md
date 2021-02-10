@@ -75,7 +75,7 @@
   - String, e.g. `abc`
 
   ```js
-  let str = abc
+  let str = "abc"
 
   str[1] = 'x';
 
