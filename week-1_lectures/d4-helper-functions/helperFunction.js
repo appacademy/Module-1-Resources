@@ -5,9 +5,33 @@
   // The logic inside the functin will run when we invoke the function.
 
 
+
+// we're going to be solving a problem that extracts even numbers from an array
+
+
+
+
+
+
+
+
+
+debugger
 let isEven = function (num) {
+  debugger
   return num % 2 === 0;
 };
+
+debugger
+isEven
+
+
+
+
+
+
+
+
 
 let extractEvens = function (numbers) {
   let evens = [];
@@ -25,6 +49,28 @@ let extractEvens = function (numbers) {
 
 let evensArr = [3, 5, 4, 7, 8];
 console.log(extractEvens(evensArr));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// we're going to solving a problem that grabs all primes from an array
+
+
+
+
+
+
+
 
 let isPrime = function (num) {
   if (num < 2) {

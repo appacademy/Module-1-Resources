@@ -1,0 +1,1 @@
+* There are no slides for this day, please reference helperFunction.js file
