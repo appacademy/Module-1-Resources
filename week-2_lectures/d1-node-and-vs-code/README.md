@@ -12,18 +12,19 @@
 | pwd | Print working directory |
 
 ---
+### forEach Demo 
 
-### Git
- * What is git? 
- * Draw pictures 
- * Git does not track folders, only tracks files
+---
 
+### map Demo
 
-### Git Commands
+---
 
-  * git status
-  * git add 
-  * git commit 
-  * git log 
-  * git reset 
-  * git reset --hard (Dont use unless you know exactly what you're doing)
+### filter Demo 
+
+---
+
+### reduce Demo
+
+---
+
