@@ -2,6 +2,8 @@
 
 ## [Morning Boost]
 
+___
+
 ## Callbacks
 
 `Video Lectures`: 30 mins
@@ -94,6 +96,8 @@
 
 - [useACallback]
 
+___
+
 ## My Array Methods
 
 `Video Lectures`: 20 mins
@@ -105,6 +109,8 @@
 
 - [My .filter]
 - [My .every]
+
+___
 
 ## Pair Programming Demo
 
@@ -141,6 +147,8 @@
 `Pairing Git Flow`
 
 - [Git Flow]
+
+___
 
 <!-- Links per cohort -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-2-feb-2021-cohort-1-online/wednesday-morning-boost
