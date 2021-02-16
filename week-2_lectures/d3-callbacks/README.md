@@ -101,7 +101,7 @@
 
 ## Pair Programming Demo
 
-`Video Lectures`
+`Video Lectures`: 7 mins
 
 - [Pair Programming]
 
