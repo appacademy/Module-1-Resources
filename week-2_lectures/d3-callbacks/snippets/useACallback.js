@@ -25,4 +25,4 @@ let upper = function (str) {
     // Your code here
 }
 
-console.log(// Your code here);
+console.log(/* Your code here*/);
