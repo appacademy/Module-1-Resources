@@ -96,10 +96,13 @@
 
 ## My Array Methods
 
-`Video Lectures`: 40 mins
+`Video Lectures`: 20 mins
 
 - [My .forEach]
 - [My .map]
+
+(Save these for the project)
+
 - [My .filter]
 - [My .every]
 
@@ -109,17 +112,14 @@
 
 - [Pair Programming]
 
-`Pairing Git Flow`
-
-- [Git Flow]
-
 `My Thoughts`
 
 - FAQ
   - What if my pair is struggling with the material?
     - Pay it forward! Try to explain concepts they struggle with.\
       Play it like you're the Senior Dev and you're helping a\
-      Junior Dev understand a new concept.
+      Junior Dev understand a new concept. It'll be slow, but you can\
+      flex those 'explaining muscles'.
   - What if I'M struggling with the material?
     - Be honest. Let your pair know that you're unsure of the material.\
       Be okay with trying things and being wrong.\
@@ -132,11 +132,15 @@
   - Set up your switching system and STICK TO IT. Set alarms so you're\
     always switching between driver and navigator. Even when a TA comes in\
     makes sure you're sticking to the system.
-  - If you've deferred, don't leave your partner in the dust. When you go\
-    into a job interview, you're going to be asked to explain code, so get\
-    your practice in now! If you can't say, out-loud, and explain a concept\
-    to your pair, maybe you don't know it as deeply as you think.
+  - If you're more experienced, don't leave your partner in the dust.\
+    When you go into a job interview, you're going to be asked to explain code,\
+    so get your practice in now! If you can't say, out-loud, and explain a\
+    concept to your pair, maybe you don't know it as deeply as you think.
   - Be honest in your pair reports.
+
+`Pairing Git Flow`
+
+- [Git Flow]
 
 <!-- Links per cohort -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-2-feb-2021-cohort-1-online/wednesday-morning-boost
