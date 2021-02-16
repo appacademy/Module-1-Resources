@@ -1,0 +1,154 @@
+# W2 D3
+
+## [Morning Boost]
+
+## Callbacks
+
+`Video Lectures`: 30 mins
+
+- [Using Callback Functions 1]
+  - [Code from Lecture](./snippets/using_callback_functions_demo1.js)
+- [Using Callback Functions 2]
+  - [Code from Lecture](./snippets/using_callback_functions_demo2.js)
+- [Multiple Callbacks]
+  - [Code from Lecture](./snippets/multiple_callbacks_demo.js)
+
+`Vocabulary`
+
+- First Class Object | MDN: [First-class Function]
+
+  1. Stored in a variable, object, or array (last week, more today)
+  2. Passed as an argument to a function (today)
+  3. Returned from a function (today/more tomorrow)
+
+- Higher Order Function
+  - A function that intakes and/or returns another function.
+
+- Callback
+  - A function passed into another function
+
+`First Class Objects`
+
+- Stored in a variable, object, or array
+
+  ```js
+  let func1 = function(){
+    console.log('I\'m stored in a variable');
+  };
+
+  let arr = [function(){
+    console.log('I\'m stored in an array');
+  }];
+
+  let obj = {
+    func: function(){
+      console.log('I\'m stored in an object');
+    }
+  };
+
+  console.log(func1());
+  console.log(arr[0]());
+  console.log(obj.func());
+  ```
+
+- Passed as an argument to a function
+
+  ```js
+  let higherOrderFunction = function(callback){
+    callback();
+  };
+
+  let intoAFunction = function() {
+    console.log('I\'m being passed into a function');
+  };
+
+  let intoAFunctionPt2 = function() {
+    console.log('I\'m ALSO being passed into a function');
+  }
+
+  higherOrderFunction(intoAFunction);
+  higherOrderFunction(intoAFunctionPt2);
+  ```
+
+- Returned from a function
+
+  ```js
+  function HOF(){
+    return function(){
+      console.log('I\'m being returned from a function');
+    }
+  }
+
+  console.log(HOF()); // this will be the inner function
+
+  HOF()(); // this will invoke the inner function
+
+  let returnFromFunc = HOF(); // we could also save it to a variable
+
+  console.log(returnFromFunc); // this will be the inner function
+
+  returnFromFunc(); // then call the variable
+  ```
+
+## My Array Methods
+
+`Video Lectures`: 40 mins
+
+- [My .forEach]
+- [My .map]
+- [My .filter]
+- [My .every]
+
+## Pair Programming Demo
+
+`Video Lectures`
+
+- [Pair Programming]
+
+`Pairing Git Flow`
+
+- [Git Flow]
+
+`My Thoughts`
+
+- FAQ
+  - What if my pair is struggling with the material?
+    - Pay it forward! Try to explain concepts they struggle with.\
+      Play it like you're the Senior Dev and you're helping a\
+      Junior Dev understand a new concept.
+  - What if I'M struggling with the material?
+    - Be honest. Let your pair know that you're unsure of the material.\
+      Be okay with trying things and being wrong.\
+      Don't be embarrassed, it's normal.
+  - What if BOTH of us are struggling with the material?!?
+    - This WILL happen, and that's fine! The point of projects are to\
+      actively LEARN, not to already know. Code until you're stuck for\
+      20 mins, then call a TA in for help.
+- Some important notes
+  - Set up your switching system and STICK TO IT. Set alarms so you're\
+    always switching between driver and navigator. Even when a TA comes in\
+    makes sure you're sticking to the system.
+  - If you've deferred, don't leave your partner in the dust. When you go\
+    into a job interview, you're going to be asked to explain code, so get\
+    your practice in now! If you can't say, out-loud, and explain a concept\
+    to your pair, maybe you don't know it as deeply as you think.
+  - Be honest in your pair reports.
+
+<!-- Links per cohort -->
+[Morning Boost]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-2-feb-2021-cohort-1-online/wednesday-morning-boost
+[Using Callback Functions 1]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-2-feb-2021-cohort-1-online/using-callback-functions-demo-1
+[Using Callback Functions 2]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-2-feb-2021-cohort-1-online/using-callback-functions-demo-1
+[Multiple Callbacks]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-2-feb-2021-cohort-1-online/using-callback-functions-demo-1
+[My .forEach]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-2-feb-2021-cohort-1-online/my-for-each-demo
+[My .map]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-2-feb-2021-cohort-1-online/my-map-demo
+[My .filter]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-2-feb-2021-cohort-1-online/my-filter-demo
+[My .every]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-2-feb-2021-cohort-1-online/my-every-demo
+[Pair Programming]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-2-feb-2021-cohort-1-online/my-every-demo
+
+<!-- Constant Links -->
+[First-class Function]: https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function
+[myForEach]: ./snippets/myForEach.js
+[myMap]: ./snippets/myMap.js
+[myFilter]: ./snippets/myFilter.js
+[myEvery]: ./snippets/myEvery.js
+[Git Flow]: https://github.com/appacademy/Module-1-Resources/blob/main/week-2_additional_resources/gitFlow.md
