@@ -90,6 +90,10 @@
   returnFromFunc(); // then call the variable
   ```
 
+`Code it out`
+
+- [useACallback]
+
 ## My Array Methods
 
 `Video Lectures`: 40 mins
@@ -147,6 +151,7 @@
 
 <!-- Constant Links -->
 [First-class Function]: https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function
+[useACallback]: ./snippets/useACallback.js
 [myForEach]: ./snippets/myForEach.js
 [myMap]: ./snippets/myMap.js
 [myFilter]: ./snippets/myFilter.js
