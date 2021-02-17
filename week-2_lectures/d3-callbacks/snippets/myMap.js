@@ -8,10 +8,10 @@ let newPeeps = peeps.map( function(el) {
 console.log(newPeeps);
 
 //Now we're going to make our own
-let myMap = function(arr, cb) {
+let myMap = function(array, cb) {
     let newArray = [];
 
-    for (let i = 0; i < arr.length; i++) {
+    for (let i = 0; i < array.length; i++) {
         let el = array[i];
         let res = cb(el, i, array);
         newArray.push(res);
