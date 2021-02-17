@@ -37,7 +37,7 @@
 // Primitive example:
 
 let prim1 = 'old value';
-let prim2 = prim1; // 'old value'
+let prim2 = prim1; // 'old value
 
 // console.log(prim1);
 // console.log(prim2);

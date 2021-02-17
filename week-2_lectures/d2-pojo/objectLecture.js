@@ -26,9 +26,8 @@ myObject["adrian"] = "EST";
 // DYNAMICALLY add key-value pairs
 let key = 'Justin N';
 myObject[key] = 'PST';
-myObject["Justin"] = 'PST';
+myObject["Justin N"] = 'PST';
 
-// We can only use dot notation if we know EXACTLY what a key will be.
 myObject.miah = 'EST';
 myObject.emily = '?';
 

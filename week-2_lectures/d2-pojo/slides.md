@@ -7,13 +7,30 @@
 
 ## Agenda
 
-+ Review
++ PrimitiveVsReference
++ Objects
++ Object Destructuring
++ Spread and Rest 
 + Git Overview
 + Git Demos
   + Repos
   + Reset
   + Remotes
-  + Branches
+
+---
+
+### Primitive Vs Reference
+
+---
+### Objects
+
+---
+
+### Object Destructuring
+
+---
+
+### Spread and Rest
 
 ---
 
@@ -21,7 +38,6 @@
 ## Lecture Learning Goals
 
 + Understand the fundamentals of Git
-+ Gain some perspective on Git in your field and your own work
 + Learn how to get credit for your work
 
 
@@ -31,9 +47,6 @@
 
 + Git is a version control system (VCS)
 + Created by Linus Torvalds in 2005 for the Linux Kernel
-
-
-
 
 
 ---
