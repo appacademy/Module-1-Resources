@@ -1,27 +1,26 @@
-// An array of composers
-let composers = ['Bach', 'Hayden', 'Mozart', 'Beethoven', 'Chopin'];
+let peeps = ['kafele', 'cindy', 'jon', 'paloma'];
 
-// Built in forEach
-composers.forEach(function (composer, i) {
-    console.log(composer + ' is at idx ' + i);
+//This is how we have been using forEach
+peeps.forEach(function (el, i, array) {
+    console.log(el + 'is at idx ' + i);
+    console.log(array);
 });
 
-// my forEach
-let myForEach = function (cb) {
-    for (let i = 0; i < this.length; i++) {
-        cb(this[i], i, this);
+//Now we are going to create our own forEach
+let myForEach = function (array, cb) {
+    /** your code here */
+    for (let i = 0; i < array.length; i++) {
+        let el = array[i];
+        cb(el, i, array);
     }
 };
 
-composers.myForEach = myForEach;
-console.log(composers.forEach)
-
-composers.myForEach(function (composer, i) {
-    console.log(composer + ' is at idx ' + i);
+myForEach(peeps, function (el, i) {
+    console.log(el + 'is at idx ' + i);
 });
 
-let callback = function (composer, i) {
-    console.log(composer + ' is at idx ' + i);
+let func = function (el, i) {
+    console.log(el + 'is at idx ' + i);
 };
 
-composers.myForEach(callback);
+myForEach(peeps, func);
