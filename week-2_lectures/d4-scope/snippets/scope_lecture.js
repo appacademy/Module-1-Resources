@@ -1,35 +1,36 @@
 /* Scope Lecture */
 
 /*********** Problem 1 ***********/
-const bear = { sound: 'rawr' }
+const bear = { sound: 'rawr' };
 /* 
-What is the scope of line 2?
-Answer:
+What is the scope?
+Answer: global
+
 */
 /*********** Problem 2 ***********/
 function bearMaker(name) {
-    return "I'm " + name + "the bear Rawr!";
+    return "I'm " + name + 'the bear Rawr!';
 }
 /* 
-What is the scope for lines 8-10? 
+What is the scope? 
 Answer:
-*/ 
+*/
 /*********** Problem 3 ***********/
 if (true) {
-    let candle = "fire!";
+    let candle = 'fire!';
     console.log(fire);
 }
 /* 
-What is the scope for lines 16-19?
+What is the scope?
 Answer:
-*/ 
+*/
 /*********** Problem 4 ***********/
 let newBear = 'Lewis';
 function bearMaker(name) {
-    let bearMaker = "I'm " + name + "the bear Rawr!";
+    let bearMaker = "I'm " + name + 'the bear Rawr!';
     return bearMaker;
 }
-console.log( bearMaker('Miley') ) 
+console.log(bearMaker('Miley'));
 /* 
 What variables does `bearMaker` func have access to? 
 Answer:
@@ -43,7 +44,7 @@ function garden() {
     }
     flowerBed();
 }
-garden()
+garden();
 /* 
 What will print to the console? 
 Answer:
@@ -58,7 +59,7 @@ function garden2() {
     }
     flowerBed();
 }
-garden2()
+garden2();
 /* 
 What will print to the console? 
 Answer:

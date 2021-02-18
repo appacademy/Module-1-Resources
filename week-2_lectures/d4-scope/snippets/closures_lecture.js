@@ -12,7 +12,7 @@ function appleTree() {
 }
 console.log(appleTree());
 /* 
-What will print to the console from line 13? 
+What will print to the console? 
 Answer:
 */
 /*********** Problem 2 ***********/
@@ -28,7 +28,7 @@ function appleTree2() {
 }
 console.log(appleTree2());
 /* 
-What will print to the console from line 29? 
+What will print to the console? 
 Answer:
 */
 /*********** Problem 3 ***********/
@@ -43,13 +43,13 @@ function treeMaker() {
     return addTree; // remember, we are returning a function here
 }
 
-const treeFunc = treeMaker(); 
+const treeFunc = treeMaker();
 console.log(treeFunc);
 console.log(treeFunc('Pine'));
 /* 
-What will print to the console from line 46? 
+What will print to the console from the first console.log? 
 Answer:
-What will print to the console from line 48? 
+What will print to the console from the second console.log?
 Answer:
 */
 /*********** Problem 4 ***********/
@@ -63,26 +63,25 @@ function createCounter() {
     };
 }
 let counter1 = createCounter();
-console.log(counter1); 
-console.log(counter1()); 
-console.log(counter1()); 
+console.log(counter1);
+console.log(counter1());
+console.log(counter1());
 
 let counter2 = createCounter();
-console.log(counter2); 
-console.log(counter2()); 
+console.log(counter2);
+console.log(counter2());
 console.log(counter2());
 /* 
-What will print to the console from line 66? 
+What will print to the console from the first console.log?
 Answer:
-What will print to the console from line 67? 
+What will print to the console from the second console.log?
 Answer:
-What will print to the console from line 68? 
+What will print to the console from the third console.log?
 Answer:
-What will print to the console from line 71? 
+What will print to the console from the fourth console.log?
 Answer:
-What will print to the console from line 72? 
+What will print to the console from the fifth console.log?
 Answer:
-What will print to the console from line 73? 
+What will print to the console from the sixth console.log?
 Answer:
 */
-

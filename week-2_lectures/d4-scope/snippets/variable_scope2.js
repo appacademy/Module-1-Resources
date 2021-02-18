@@ -1,86 +1,45 @@
-/* Variables & Scope Code Demo Part 2 */
+/* Variables & Scope Code Demo Part 1 */
 
 /*********** Problem 1 ***********/
-function blockScope() {
-    let test = 'upper scope';
-    //let test = "whoops";
-    //test = "whoops";
-    if (true) {
-        let test = 'lower scope';
-        console.log(test);
-    }
-    console.log(test);
-}
-blockScope();
+let apple = 'apple';
+console.log(apple);
 /* 
-What will print to the console from line 10? 
-Answer:
-What will print to the console from line 12?
-Answer:
-What error will occur if we comment in line 6?
-Answer:
-What will print to the console from line 12 if we comment in line 7?
+What will print to the console? 
 Answer:
 */
 /*********** Problem 2 ***********/
-function constBlockScoped() {
-    let test = 'upper scope';
-    //let test = "whoops";
-    //test = "whoops";
-    if (true) {
-        let test = 'lower scope';
-        console.log(test);
-    }
-    console.log(test);
+function sayPotato() {
+    let potato = 'hello this is potato';
+    console.log(potato);
 }
-constBlockScoped();
+sayPotato();
+// console.log(potato);
 /* 
-What will print to the console from line 32? 
+What will print to the console from the first console.log?
 Answer:
-What will print to the console from line 34?
-Answer:
-What error will occur if we comment in line 28?
-Answer:
-What error will occur if we comment in line 29?
+What will print to the console from the second console.log?
 Answer:
 */
 /*********** Problem 3 ***********/
-function varStringMachine() {
-    var string = "I'm function scoped!";
-    // var string = "I'm a new string"
-    // string = "I'm also a new string"
-    if (true) {
-        var string = "I've been reassigned from within a block";
-        console.log(string);
-    }
-    console.log(string);
+let apple2 = 'apple';
+function sayApple() {
+    console.log(apple2);
 }
-varStringMachine();
+sayApple();
 /* 
-What will print to the console from line 52? 
-Answer:
-What will print to the console from line 24?
-Answer:
-What error will occur if we comment in line 50?
-Answer:
-What will print to the console from line 56 if we comment in line 51?
+What will print to the console? 
 Answer:
 */
 /*********** Problem 4 ***********/
-function hoistVar() {
-    console.log(dog);
-    var dog = 'dog';
+let carrot = 'snake';
+if (true) {
+    let carrot = 'carrot';
+    console.log(carrot);
 }
+console.log(carrot);
 /* 
-What will print to the console from line 71? 
+What will print to the console from the first console.log?
 Answer:
-*/
-/*********** Problem 5 ***********/
-function hoistLetAndConst() {
-    // console.log(cat);
-    let cat = 'cat';
-}
-/* 
-What error will occur if we comment in line 80?
+What will print to the console from the second console.log?
 Answer:
 */
