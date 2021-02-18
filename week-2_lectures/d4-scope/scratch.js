@@ -1,18 +1,11 @@
-// Multiline
-let printName = (name) => {
-  let str = 'My name is '
-  console.log(str + name);
-};
-
-printName('Mylo');
-// Single Line
-let returnName = (name) => 'My name is ' + name;
-
-console.log(returnName('Mylo'));
-
-// Anonymous callback
-let arr = [1, 2, 3];
-
-let addOne = arr.map((num) => num + 1);
-
-console.log(addOne);
+function varStringMachine() {
+    var string = "I'm function scoped!";
+    var string = "I'm a new string"
+    string = "I'm also a new string"
+    if (true) {
+        var string = "I've been reassigned from within a block";
+        console.log(string);
+    }
+    console.log(string);
+}
+varStringMachine();;

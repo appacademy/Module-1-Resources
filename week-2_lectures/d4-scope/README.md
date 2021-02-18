@@ -17,11 +17,11 @@
 `Video Lectures`: 45 minutes
 
 - [Scope Lecture]
-  - [Video Code](./snippets/scope_lecture.js)
+  - [Code Along](./snippets/scope_lecture.js)
 - [Variables & Scope Code Demo Part 1]
-  - [Video Code](./snippets/variable_scope1.js)
+  - [Code Along](./snippets/variable_scope1.js)
 - [Variables & Scope Code Demo Part 2]
-  - [Video Code](./snippets/variable_scope2.js)
+  - [Code Along](./snippets/variable_scope2.js)
 
 `Overview`
 
@@ -84,9 +84,9 @@
 `Video Lectures`: 30 mins
 
 - [Closure Lecture]
-  - [Video Code](./snippets/closures_lecture.js)
+  - [Code Along](./snippets/closures_lecture.js)
 - [Closure Code Demo]
-  - [Video Code](./snippets/closure_code_demo.js)
+  - [Code Along](./snippets/closure_code_demo.js)
 
 `Overview`
 
@@ -116,7 +116,7 @@ JulyToDec(0);
 `Video Lectures` : 10 mins
 
 - [Arrow Functions Code Demo]
-  - [Video Code](./snippets/arrow_functions.js)
+  - [Code Along](./snippets/arrow_functions.js)
 
 `Overview`
 

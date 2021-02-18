@@ -1,45 +1,87 @@
-/* Variables & Scope Code Demo Part 1 */
+/* Variables & Scope Code Demo Part 2 */
 
 /*********** Problem 1 ***********/
-let apple = 'apple';
-console.log(apple);
+function blockScope() {
+    let test = 'upper scope';
+    //let test = "whoops";
+    //test = "whoops";
+    if (true) {
+        let test = 'lower scope';
+        console.log(test);
+    }
+    console.log(test);
+}
+blockScope();
 /* 
-What will print to the console? 
+What will print to the console from the first console.log?
+Answer:
+What will print to the console from the second console.log?
+Answer:
+What error will occur if we comment in the first comment?
+Answer:
+What will print to the console if we comment in the second comment?
 Answer:
 */
 /*********** Problem 2 ***********/
-function sayPotato() {
-    let potato = 'hello this is potato';
-    console.log(potato);
+function constBlockScoped() {
+    const test = 'upper scope';
+    //let test = "whoops";
+    //test = "whoops";
+    if (true) {
+        const test = 'lower scope';
+        console.log(test);
+    }
+    console.log(test);
 }
-sayPotato();
-// console.log(potato);
+constBlockScoped();
 /* 
 What will print to the console from the first console.log?
 Answer:
 What will print to the console from the second console.log?
 Answer:
+What error will occur if we comment in the first comment?
+Answer:
+What error will occur if we comment in the second comment?
+Answer:
 */
 /*********** Problem 3 ***********/
-let apple2 = 'apple';
-function sayApple() {
-    console.log(apple2);
+function varStringMachine() {
+    var string = "I'm function scoped!";
+    // var string = "I'm a new string"
+    // string = "I'm also a new string"
+    if (true) {
+        var string = "I've been reassigned from within a block";
+        console.log(string);
+    }
+    console.log(string);
 }
-sayApple();
+varStringMachine();
+/* 
+What will print to the console from the first console.log?
+Answer:
+What will print to the console from the second console.log?
+Answer:
+What will print to the console if we comment in the first comment?
+Answer:
+What will print to the console from the second console.log if we comment
+in the second comment?
+Answer:
+*/
+/*********** Problem 4 ***********/
+function hoistVar() {
+    console.log(dog);
+    var dog = 'dog';
+}
 /* 
 What will print to the console? 
 Answer:
 */
-/*********** Problem 4 ***********/
-let carrot = 'snake';
-if (true) {
-    let carrot = 'carrot';
-    console.log(carrot);
+/*********** Problem 5 ***********/
+function hoistLetAndConst() {
+    // console.log(cat);
+    let cat = 'cat';
 }
-console.log(carrot);
 /* 
-What will print to the console from the first console.log?
-Answer:
-What will print to the console from the second console.log?
+What error will occur if we comment in the first comment?
 Answer:
 */
