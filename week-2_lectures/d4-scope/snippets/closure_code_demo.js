@@ -1,13 +1,6 @@
-/** closures code demo */
-/**
- * When an inner function uses or changes variables 
- *      in an outer function.
- * 
- * Note, in JS we can access outer scopes FROM inner scopes
- *       (aka work our way out), but CANNOT access inner scopes 
- *       FROM outer scopes (aka work our way in). 
- */
+/** Closures Code Demo */
 
+/*********** Problem 1 ***********/
 function pizzaMaker(food) {
     // we are inside the `outer` function
     let order = "I'd like a pizza with ";
@@ -20,11 +13,12 @@ function pizzaMaker(food) {
     return oven();
 }
 
-console.log(pizzaMaker("cheese"));  // ? 
-
-
-// --------------------
-
+console.log(pizzaMaker("cheese"));
+/* 
+What will print to the console from line 16? 
+Answer:
+*/
+/*********** Problem 2 ***********/
 function groceryList(list) {
     let groceries = list;       
 
@@ -35,10 +29,12 @@ function groceryList(list) {
     addItem();
     return groceries;
 }
-console.log( groceryList(['milk', 'eggs']) );
-
-// --------------------
-
+console.log( groceryList(['milk', 'eggs']));
+/* 
+What will print to the console from line 32? 
+Answer:
+*/
+/*********** Problem 3 ***********/
 function elephantCollector() {
     const elephants = [ 'dumbo' ];
 
@@ -48,9 +44,15 @@ function elephantCollector() {
     }
 }
 
-const elephantParade = elephantCollector(); // ?
-
-console.log(elephantParade)  // ?
-
+const elephantParade = elephantCollector();
+console.log(elephantParade) 
 console.log(elephantParade("Obi"))
 console.log(elephantParade("Gerald"))
+/* 
+What will print to the console from line 48? 
+Answer:
+What will print to the console from line 49? 
+Answer:
+What will print to the console from line 50? 
+Answer:
+*/
