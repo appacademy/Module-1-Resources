@@ -57,9 +57,9 @@
 `Video Lectures`
 
 - [setTimeout Lecture]
-  - [Code Along]()
+  - [Code Along](./snippets/setTimeout_lecture.js)
 - [setInterval Lecture]
-  - [Code Along]()
+  - [Code Along](./snippets/setInterval_lecture.js)
 
 <!-- Links per cohort -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/thursday-morning-boost
