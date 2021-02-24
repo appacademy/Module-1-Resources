@@ -4,7 +4,7 @@
 
 ## Function Hoisting
 
-`Video Lecture`
+`Video Lecture`: 20 mins
 
 - [Function Hoisting Lecture]
   - [Video Code](./snippets/function_hoisting.js)

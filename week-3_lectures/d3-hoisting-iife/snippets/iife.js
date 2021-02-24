@@ -10,7 +10,7 @@ function runNow() {
 runNow();
 
 /*
-Since I'm going to run it, immediately invoke it and never call it again,
+Since I'm going to define it, immediately invoke it and never call it again,
 I can use Immediately Invoked Function Expression.
 */
 
@@ -19,7 +19,7 @@ I can use Immediately Invoked Function Expression.
 })();
 
 /* 
-When saving an IFFE to a variable, you're NOT saving the variable, but the 
+When saving an IFFE to a variable, you're NOT saving the function, but the 
 return value of that function, the function itself is not reusable.
 */
 
