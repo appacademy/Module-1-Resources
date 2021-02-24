@@ -33,6 +33,10 @@
 
 ![threading]
 
+`Event Loop`
+
+- [Event Loop Reading]
+
 `Async vs. Sync`
 
 - What does Synchronous mean?
@@ -68,5 +72,6 @@
 [Synchronous vs Asynchronous]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/synchronous-vs-asynchronous-lecture
 [setTimeout Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/settimeout-lecture
 [setInterval Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/setinterval-lecture
+[Event Loop Reading]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/the-message-queue-and-event-loop
 <!-- constant links -->
 [threading]: /threading.png
