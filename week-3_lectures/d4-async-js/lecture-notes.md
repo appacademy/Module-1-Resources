@@ -5,22 +5,22 @@
 `Vocabulary`
 
 - Thread of execution
-  - A sequence of commands
+  - A sequence of tasks
 - Single-threaded execution
-  - Only ONE command can be processed at a time
+  - Only ONE task can be processed at a time
 - Multi-threaded execution
-  - Multiple commands can be process at a time
+  - Multiple tasks can be process at a time
 - Event Loop
-  - The model of execution that JavaScript uses
+  - The model of execution
   - Two parts in JS
     - Call Stack
       - Tracks the 'current task in progress'
     - Message Queue
-      - Tracks the order in which handle 'to-do' tasks.
+      - Tracks the 'to-do' tasks.
 
 ## Threading, Event Loop, Async
 
-`Video Lectures`
+`Video Lectures`: 30 mins
 
 - [Threading Lecture]
   - _[Code Along](./snippets/threading.js)_
@@ -57,12 +57,16 @@
 `Video Lectures`
 
 - [setTimeout Lecture]
+  - [Code Along]()
 - [setInterval Lecture]
+  - [Code Along]()
 
 <!-- Links per cohort -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/thursday-morning-boost
 [Threading Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/threading-lecture
 [Event Loop Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/event-loop-lecture
 [Synchronous vs Asynchronous]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/synchronous-vs-asynchronous-lecture
+[setTimeout Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/settimeout-lecture
+[setInterval Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/setinterval-lecture
 <!-- constant links -->
 [threading]: /threading.png

@@ -1,16 +1,5 @@
 /* Threading */
 
-/* 
-In your own words, what is the thread of execution? 
-
-
-What's the difference between single-threaded and multi-threaded?
-
-
-Is JavaScript single-threaded or multi-threaded?
-
-*/
-
 /********** Problem 1  ***********/
 
 function nextTask() {
@@ -45,4 +34,14 @@ Answer:
 
 */
 
+/* 
+Comprehension Questions:
+In your own words, what is the thread of execution? 
 
+
+What's the difference between single-threaded and multi-threaded?
+
+
+Is JavaScript single-threaded or multi-threaded?
+
+*/

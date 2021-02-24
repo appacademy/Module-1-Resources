@@ -1,10 +1,18 @@
-function blockingTheThread() {
-    while (true) {}
+function intervalCount(cb, count, delay) {
+    const intervalObj = setInterval(function () {
+        cb();
+        count--;
+
+        if (count === 0) {
+            clearInterval(intervalObj);
+        }
+    }, delay);
 }
 
-setTimeout(function () {
-    console.log('times up!');
-}, 1000);
-
-blockingTheThread(); // prints:
-
+intervalCount(
+    function () {
+        console.log('hello');
+    },
+    5,
+    1000
+);
