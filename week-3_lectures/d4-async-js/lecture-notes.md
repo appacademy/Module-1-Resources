@@ -58,7 +58,7 @@
 
 ## setTimeout & setInterval
 
-`Video Lectures`
+`Video Lectures`: 22 mins
 
 - [setTimeout Lecture]
   - [Code Along](./snippets/setTimeout_lecture.js)
