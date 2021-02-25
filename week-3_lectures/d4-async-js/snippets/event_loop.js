@@ -5,7 +5,7 @@ function somethingSlow(n) {
     if (n < 2) {
         return n;
     }
-    return fib(n - 1) + fib(n - 2);
+    return somethingSlow(n - 1) + somethingSlow(n - 2);
 }
 
 function foo() {
