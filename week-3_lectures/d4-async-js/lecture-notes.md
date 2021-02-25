@@ -65,6 +65,10 @@
 - [setInterval Lecture]
   - [Code Along](./snippets/setInterval_lecture.js)
 
+## User Input
+
+- [Readline Docs]
+
 <!-- Links per cohort -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/thursday-morning-boost
 [Threading Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/threading-lecture
@@ -75,3 +79,4 @@
 [Event Loop Reading]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/the-message-queue-and-event-loop
 <!-- constant links -->
 [threading]: /threading.png
+[Readline Docs]: https://nodejs.org/api/readline.html
