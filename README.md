@@ -38,11 +38,13 @@ resources located here.
         git pull
         ```
 
+    4. You can then DRAG/DROP the days folder into your own lecture folder
+
 ## Lectures
 
-- Each lecture have notes and coding examples that you should follow along with. The lecture notes for the day will be called `README.md` and its associated code snippets will be linked within that document. Just like this:
+- Each lecture has notes and coding examples that you should follow along with. The lecture notes for the day will be called `README.md` and its associated code will be linked within the `README.md`. Just like this:
 
-- [Code it out](./example.js)
+  - [Code it out](./example.js)
 
 ## Weekly Additional Resources
 
