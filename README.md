@@ -8,35 +8,35 @@
 
 - Cloning this repo is the first step to taking advantage of the
 resources located here.
-- To review from your pre-course work you can run the following command
-to create a _local_ repository on your computer
+  - To review from your pre-course work you can run the following command
+  to create a _local_ repository on your computer
 
-```bash
-git clone https://github.com/appacademy/Module-1-Resources.git
-```
+    ```bash
+    git clone https://github.com/appacademy/Module-1-Resources.git
+    ```
 
 ## Updating this repo (DAILY)
 
 - Git is an amazing tool that allows you to have the most up-to-date
   code your lecturer has written with a few simple steps
 
-1. Navigate to the Module-1-Resources repo
+    1. Navigate to the Module-1-Resources repo
 
-      ```bash
-      cd ~/app_academy/Module-1-Resources
-      ```
+          ```bash
+          cd ~/app_academy/Module-1-Resources
+          ```
 
-2. Clear any changes you many have made locally
+    2. Clear any changes you many have made locally
 
-    ```bash
-    git reset --hard
-    ```
+        ```bash
+        git reset --hard
+        ```
 
-3. Pull down any changes the lecture may have made while prepping
+    3. Pull down any changes the lecture may have made while prepping
 
-    ```bash
-    git pull
-    ```
+        ```bash
+        git pull
+        ```
 
 ## Lectures
 
