@@ -25,7 +25,7 @@ ___
 
 - A DESKTOP THAT SLAPS - Your mileage may vary, but for most a/A students: Zoom, Slack, Chrome, VScode, and terminal windows are often running simultaneously. It's worthwhile to learn how to configure your OS desktop for quick navigation. Simple keystrokes and gestures can quickly split applications across the screen and invoke multiple desktops.
 - THEMED MACHINE - All applications mentioned have worlds of themes to explore that install in a snap. Have fun with that!
-- BROWSER BOOKMARKS - Keep yourself from getting lost in "Tab Town" with a system for bookmarks during a/A. It can be helpful to have one folder with sub-folders of categories and another at-your-fingertips folder for current endeavors where urls can be sorted into the categories or removed if no longer needed.  
+- BROWSER BOOKMARKS - Keep yourself from getting lost in "Tab Town" with a system for bookmarks during a/A. It can be helpful to have one folder with sub-folders of categories and another at-your-fingertips folder for current endeavors where urls can be sorted into the categories or removed if no longer needed.
 
 ![Bookmarks Example](./bookmarks.png "Bookmarks Example")
 ___
@@ -34,9 +34,24 @@ ___
 
 #### Build routines around directory structures
 
-- Here's one strategy for keeping a/A files organized - a folder for each week. Within that, a "projects" folder specifically for module projects and a "study" folder for demos, practices tests, etc. A "sandbox" file is exactly what it sounds like! It's a common name for files to scribble code or quick notes that's kept handy in a top-level directory. - "w1a" stands for "Week1 Assessment" - you will need to clone assessment files on most Mondays.
+- Here's App Academy's recommended file structure. Create all the needed folders at once, or make it part of your routine to add new weeks systematically. A messy file system in coding is way worse than a messy desk!:
 
-![Dir Example](./tree.png "Dir Example")
+- `app_academy` (**folder**)
+  - `Module-1-Resources` (**folder**)
+  - `week_1` (**folder**)
+    - `w1d1` (**folder**)
+      - `lecture`(**folder**)
+        - `README.md`
+        - ...
+      - `projects` (**folder**)
+        - `file1.js` (**file**)
+        - `file2.js` (**file**)
+        - ...
+      - `homework` (**folder**)
+        - `file1.js` (**file**)
+        - `file2.js` (**file**)
+        - ..
+
 ___
 
 ### Homework Helpers
