@@ -18,14 +18,15 @@ ___
 * A DESKTOP THAT SLAPS - Your mileage may vary, but for most a/A students: Zoom, Slack, Chrome, VScode, and terminal windows are often running simultaneously. It's worthwhile to learn how to configure your OS desktop for quick navigation. Simple keystrokes and gestures can quickly split applications across the screen and invoke multiple desktops. 
 * THEMED MACHINE - All applications mentioned have worlds of themes to explore that install in a snap. Have fun with that!
 * BROWSER BOOKMARKS - Keep yourself from getting lost in "Tab Town" with a system for bookmarks during a/A. It can be helpful to have one folder with sub-folders of categories and another at-your-fingertips folder for current endeavors where urls can be sorted into the categories or removed if no longer needed.  
+
 ![Bookmarks Example](./dont_panic_images/bookmarks.png "Bookmarks Example")
 ___
 
 ### Tree of Code
 #### Build routines around directory structures:
-* Here's one strategy for keeping a/A files organized - a folder for each week. Within that, a "projects" folder specifically for module projects and a "study" folder for demos, practices tests, etc. A "sandbox" file is exactly what it sounds like! It's a common name for files to scribble code or quick notes that's kept handy in a top-level directory.
+* Here's one strategy for keeping a/A files organized - a folder for each week. Within that, a "projects" folder specifically for module projects and a "study" folder for demos, practices tests, etc. A "sandbox" file is exactly what it sounds like! It's a common name for files to scribble code or quick notes that's kept handy in a top-level directory. * "w1a" stands for "Week1 Assessment" - you will need to clone assessment files on most Mondays.
+
 ![Dir Example](./dont_panic_images/tree.png "Dir Example")
-* "w1a" stands for "Week1 Assessment" - you will need to clone assessment files on most Mondays.
 ___
 
 ### Homework Helpers
@@ -39,9 +40,6 @@ ___
 #### Some alternative audio/ambience ideas to looping over your favorite playlists and palatable study music genres while you code:
 
 * Best of ASMR Ambience YouTube Playlist: https://www.youtube.com/playlist?list=PLbHKQRU4EeQY3YKtOMMmVtkIOadBSXbzD
-* Flow Coding YouTube Playlist: https://www.youtube.com/playlist?list=PLbHKQRU4EeQain9SvySK83azPxbOItY__
-
-
-
+* Flow Coding YouTube Playlist: https://youtube.com/playlist?list=PLbHKQRU4EeQain9SvySK83azPxbOItY__
 
 
