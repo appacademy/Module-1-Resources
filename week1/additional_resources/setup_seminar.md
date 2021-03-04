@@ -45,6 +45,8 @@
         - `file2.js` (**file**)
         - ...
 
+Link to [Module-1-Resources] - `https://github.com/appacademy/Module-1-Resources.git`
+
 ---
 
 ### Windows only - Pinning your home directory
@@ -85,3 +87,5 @@
 - Make sure that in their GUI ~/ is pinned somewhere easily accessible
 
 ---
+
+[Module-1-Resources]: https://github.com/appacademy/Module-1-Resources
