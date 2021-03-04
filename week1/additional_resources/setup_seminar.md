@@ -50,3 +50,36 @@
 ### Windows only - Pinning your home directory
 
 ---
+
+### Checking Setups (Staff)
+
+## Chrome
+
+- Check for installation
+
+## VSCode
+
+- run `code .`
+
+## Windows - WSL Remote
+
+- Check their extension on VSCode to make sure WSL-Remote is installed
+
+## NodeJs
+
+- run `which node`
+  - should show path with .../.nvm/...
+
+## Mocha
+
+- run `which mocha`
+  - should show path with .../.nvm/...
+
+## File Structure
+
+- Check for W1D1 structure
+  - Windows should be at ~/
+
+## Windows - Pinned to GUI
+
+- Make sure that in their GUI ~/ is pinned somewhere easily accessible
