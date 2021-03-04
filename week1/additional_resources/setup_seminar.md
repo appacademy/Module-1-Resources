@@ -23,25 +23,7 @@
 
 ---
 
-### Windows WSL Setup
-
-- skip if you're a mac user
-
----
-
-### Installing Node
-
----
-
-### Installing Mocha Globally
-
----
-
-### Install VSCODE
-
----
-
-### Installing GIT
+### [Unified setup](https://github.com/appacademy/unified-setup/)
 
 ---
 
@@ -62,3 +44,9 @@
         - `file1.js` (**file**)
         - `file2.js` (**file**)
         - ...
+
+---
+
+### Windows only - Pinning your home directory
+
+---
