@@ -83,3 +83,5 @@
 ### Windows - Pinned to GUI
 
 - Make sure that in their GUI ~/ is pinned somewhere easily accessible
+
+---
