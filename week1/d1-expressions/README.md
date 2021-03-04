@@ -1,13 +1,16 @@
 # `W1D1 - Welcome!`
 
-    - Welcome Lecture
-    - Morning Lecture
-    - Solo Work!
+- Welcome Lecture
+- Morning Lecture
+- Solo Work!
+
 ---
 
-## Lecture Slides
+## Lecture Notes
 
-- All of the lecture slides and code from the demo can be found in module 1 resources repository!
+- All of the lecture notes and code from the videos can be found in [Module-1-Resources] repository!
+
+- Link to today's notes: `https://github.com/appacademy/Module-1-Resources/tree/main/week1/d1-expressions`
 
 ---
 
@@ -15,96 +18,110 @@
 
 - Morning boost
 - Watch videos
-- lecture on videos
+- Video Discussion
 - `Code it out`
 
 ---
 
 ## Online Lecture Etiquette
 
-- Keep the chat focused on the material (no side conversations)
-- There will be allocated question time - avoid asking questions in the middle of the lecturer presenting
-- Keep microphone muted at all times (unless asked to speak)
+- Keep the chat focused on the material
+- Avoid asking questions in the middle of the lecturer presenting
+  - Lecture Questions Slack channel
+  - Q&A time
+- Keep microphone muted at all times, unless asked to speak
 
 ---
 
-## A Quick word about Questions
+## Live Lecture - Before you ask
 
-1. How relevant is it to everyone?
-2. Will the answer help today?
-3. How much space am I taking?
-4. Am I just showing off?
+1. Is my question relevant to ***everyone***?
+    - Lecture questions channel
+      - Give screenshots
+      - Be specific
+2. Will the answer help ***today***?
+    - Out of scope can derail new learners
+      - DM a TA, or try the lecture question channel
+3. Has this been answered, but I need a different explanation?
+    - Sometimes my explanations don't stick!
+      - Lecture questions channel
+4. Do I need verification that I'm right?
+    - Lecture questions channel
+      - Share your explanation
 
 ---
 
 ## Participate
 
-- Volunteer to answer questions posed by the lecturer
+- Raise your hand to answer questions posed by the lecturer
+- Use the participation thread if a general question is asked.
 - Don't be afraid of saying the wrong thing
+  - SWE is being `wrong` 95% of the time
 
 ---
 
-## `How To Learn`
+## LET'S BEGIN
 
-- Passive
-  - Readings, Flashcards, Videos, Discussions
-- Active
-  - Coding, Quizzes, Assessments, Tinkering
-- Desirable Difficulty
-  - You should `feel challenged` throughout the course
-  - At the same time, we aren't asking you to build a full app this week
-  - Difficulty and complexity will increase throughout the course
-- Repetition:
-  - You'll notice repeating information throughout the course...
-  - `This is intentional!`
+`Video Lecture` : 15 mins
 
----
+- [How to Learn]
+  - [Video Code](./code-it-out/how-to-learn.js)
+- [Intro to Debugging]
+  - [Video Code](./code-it-out/debugging.js)
 
-## `What is 'Debugging'?`
+`How to Debug`
 
-- The process of both identifying an error (aka 'Bug') in your code
-as well as the process of fixing it.
-- Go over Google developer tools
+- console.log()
+  - allows us to print something to the console
+  - NOTHING will print to the console if you omit
+  console.log()
 
----
+- Comments
+  - We can 'comment out' code to see if that's why we're getting an error
+  - We can put explanations next to lines of code
+  so we remember what it does during our study time
 
-### Console.log and Comments
+- Errors
+  - Your BEST FRIEND as a developer
+  - Reading Errors
+    - Look at the type
+    - Look for a file/line number
+    - If you can tell a TA where an error is occurring
+    in your code and what that error message says,
+    you're well on your way to being an expert
+    debugger.
 
     ```js
-      console.log("hello world");
-      console.log("how are you");
+    console.log('hello world');
+    "hello world";
+
+    // this is a single line comment
+
+    /* 
+    This 
+    is 
+    a multiline
+    comment    
+    */
     ```
 
----
+## Data Types in JavaScript
 
-## `Data Types in Java Script`
+`Video Lectures`
 
-- Even broader, all programming languages have ways of identifying types of information, or data.
-- In JS, data falls into the following general categories:
-  - `Numbers` - (1, 2, 3, ... )
-  - `Booleans` - true / false
-  - `Strings` - "Hello World!"
-  - `Arrays` - [ 0, 1, 2 ]
-  - `Objects` - { key1: "value1", key2: "value2" }
-- We will be talking about the first three today
+- [Number Type Demo]
+- [Boolean Type Lecture]
+- [Boolean Type Lecture]
 
 ---
 
 ## `The Number Type`
 
-- NOTE: `console.log` is a function in javascript which 'prints' or 'logs' the return value of the inputted code to your console.
-
-      ```js
-          console.log(1 + 1);   // 2
-          console.log(2.5 - 2); // 0.5
-          console.log(3 * 4);   // 12 
-          console.log(10 / 2);  // 5
-
-          // Modulo (%) calculates remainder 
-          console.log(25 % 5); //5r0 -> 0
-          console.log(26 % 5); //5r1 -> 1
-          console.log(27 % 5); //4r2 -> 2
-      ```
+- We can have whole numbers, decimals, and negative numbers
+- PEMDAS
+  - Order of Operations
+- Modulo
+  - Returns the `remainder` of a division expression
 
 ---
 
@@ -222,3 +239,9 @@ as well as the process of fixing it.
   - Will be allowed to use MDN Docs on assessment
 
 ---
+<!-- link per cohort -->
+[How to Learn]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/how-to-learn
+[Intro to Debugging]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/intro-to-debugging
+
+<!-- constant links -->
+[Module-1-Resources]: https://github.com/appacademy/Module-1-Resources

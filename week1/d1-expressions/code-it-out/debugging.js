@@ -1,6 +1,8 @@
-// right click on google chrome page and click inspect option 
+/* 
+What is Debugging?
 
-// click sources tab on top of panel that opens
 
-// click snippets tab on left side of panel 
+How often will you be wrong, and need to debug?
+
+*/
 

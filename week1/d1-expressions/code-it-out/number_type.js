@@ -1,26 +1,50 @@
-/**
- * The number type
- * - Number Operations (+, -, *, etc...)
- * - P.E.M.D.A.S.
- * Parenthesis, Exponents, Multiplication, Division, Addition, Subtraction
- * - Modulo
- */
+/*
+
+Instructions: 
+For each example, write what will print to the console
+
+*/
+/***** Problem 1 *****/
+
+console.log(1 + 1); // prints:
+console.log(2.5 - 2); // prints:
+console.log(3 * 4); // prints:
+console.log(99 / 9); // prints:
+console.log(9 / 2); // prints:
+console.log(-3 * 3); // prints:
+
+/***** Problem 2 *****/
+
+console.log(3 + 2 * 4); // prints:
+console.log((3 + 2) * 4); // prints:
+/* 
+Why does this behavior occur?
+Hint: PEMDAS
+
+*/
+
+/***** Problem 3 *****/
+console.log(22 % 5); // prints:
+console.log(23 % 5); // prints:
+console.log(24 % 5); // prints:
+console.log(25 % 5); // prints:
+console.log(26 % 5); // prints:
+
+/* 
+What is this "%" symbol called, and what does it do?
 
 
-// 1. THE NUMBER TYPE
-// console.log() is a function given to you by JS. 
-//      it prints out the output of whatever is inside the '()'. 
+*/
+/***** Problem 4 *****/
+console.log(10 % 2); // prints:
+console.log(10 % 3); // prints:
+console.log(4 % 10); // prints:
 
-console.log(1 + 1);   // => console.log(2) => 2
-console.log(2.5 - 2); // 0.5
-console.log(3 * 4);   // 12 
-console.log(10 / 2);  // 5
+/**** Bonus ****/
+/* 
+How could you write an mathematical expression to 
+check and see if a number is even?
 
-// Modulo (%) calculates remainder 
-console.log( 10 % 2); // 0
-console.log( 10 % 3); // 1
-console.log( 10 % 4); // 2
-console.log( 10 % 5); // 0
+How would you know if it's even or odd?
 
-// How is a number even or odd?
-//  - If a number is EVEN, it is divisible by 2. 
+*/
