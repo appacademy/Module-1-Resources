@@ -114,7 +114,7 @@
   - [Video Code](./code-it-out/number-type.js)
 - [Boolean Type Lecture]
 - [Boolean Type Demo]
-  - [Video Code](./code-it-out/how-to-learn.js)
+  - [Video Code](./code-it-out/boolean-type.js)
 
 ### The Number Type
 
