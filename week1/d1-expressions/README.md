@@ -158,7 +158,7 @@
 
 ## Variables
 
-`Video Lectures`
+`Video Lectures`: 15 mins
 
 - [Variables Demo]
   - [Video Code](./code-it-out/variables.js)
