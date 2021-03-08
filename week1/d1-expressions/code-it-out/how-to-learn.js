@@ -15,6 +15,4 @@ of each?
 What is Desirable Difficulty?
 
 
-What is Debugging?
-
 */

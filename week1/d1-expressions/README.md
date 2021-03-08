@@ -9,7 +9,6 @@
 ## Lecture Notes
 
 - All of the lecture notes and code from the videos can be found in [Module-1-Resources] repository!
-
 - Link to today's notes: `https://github.com/appacademy/Module-1-Resources/tree/main/week1/d1-expressions`
 
 ---
@@ -105,122 +104,139 @@
     */
     ```
 
-## Data Types in JavaScript
-
-`Video Lectures`
-
-- [Number Type Demo]
-- [Boolean Type Lecture]
-- [Boolean Type Lecture]
-
 ---
 
-## `The Number Type`
+## Data Types in JavaScript
+
+`Video Lectures`: 20 mins
+
+- [Number Type Demo]
+  - [Video Code](./code-it-out/number-type.js)
+- [Boolean Type Lecture]
+- [Boolean Type Demo]
+  - [Video Code](./code-it-out/how-to-learn.js)
+
+### The Number Type
 
 - We can have whole numbers, decimals, and negative numbers
-- PEMDAS
-  - Order of Operations
+- Order of Operations
+  - P.E.M.D.A.S.
 - Modulo
   - Returns the `remainder` of a division expression
 
----
-
-## `Boolean Type`
+### Boolean Type
 
 - `Not` Operator (!)
-  - Flips the value of a boolean
-  - `!true` -> `false` instead of `true`
+  - Reverses a boolean
 
-- The "And" Operator
-  - Only true if both sides are true
-  - `true && false` -> false
+    | A     |   !A   |
+    |:-----:|:------:|
+    | true  | false  |
+    | false | true   |
 
-| A     | B     | A && B |
-|:-----:|:-----:|:------:|
-| true  | true  | true   |
-| true  | false | false  |
-| false | true  | false  |
-| false | false | false  |
+- The `And` Operator (&&)
+  - Only true if _both_ sides are true
+
+    | A     | B     | A && B |
+    |:-----:|:-----:|:------:|
+    | true  | true  | true   |
+    | true  | false | false  |
+    | false | true  | false  |
+    | false | false | false  |
 
 - The `Or` Operator (||)
-  - True if either side is true
-  - `true || false` -> true
+  - True if _either_ side is true
 
-| A     | B     | A || B |
-|:-----:|:-----:|:------:  |
-| true  | true  | true     |
-| true  | false | true     |
-| false | true  | true     |
-| false | false | false    |
-
----
-
-## `Comparison Operators`
-
-    ```js
-        // Less than/Greater than
-        console.log(5 < 9);      // true
-        console.log(5 > 9);      // false
-        console.log('a' < 'b');  // true (dictionary order)
-        console.log('cat' < 'cats'); // true (dictionary order)
-
-        // Inclusive comparison
-        console.log(7 <= 10);    // true
-        console.log(10 >= 10);   // true 
-
-        // Equality === and !==
-        console.log(2 === 2);    // true
-        console.log(2 === 2.1);  // false
-        console.log(2 !== 2.1);  // true
-
-        // Two equality operators, === and ==
-        console.log(5 === '5'); // false
-        console.log(5 == '5');  // true (types are coerced)
-        console.log([] == 0);   // true (can be unpredictable)
-
-        // https://stackoverflow.com/questions/359494/which-equals-operator-vs-should-be-used-in-javascript-comparisons
-    ```
----
-
-## `Variables (with 'let' keyword)`
-
-    ```js
-        // initialization:
-        //   - declaration, creating the space for the variable
-        //   - assignment, giving a value to the variable
-
-        let state;  // declaration using javascript 'let'
-        console.log(state);
-        state = 'California'; // assignment
-        console.log(state);
-
-        let city = 'Sacramento'; // both (i.e. initialized in one line)
-        console.log(city);
-
-        // more assignment
-        let age = 5;
-        console.log(age); // 5
-        age + 5;          // no assignment used, i.e. change not permanent
-        console.log(age); // 5
-        age = age + 5;    // assignment is used, change is permanent
-        console.log(age); // 10
-        age += 5;         // assignment is used, this is shorthand
-        console.log(age); // 15
-
-        // Using ++ and -- 
-        age++;
-        console.log(age); // 16
-        age--;
-        console.log(age); // 15
-    ```
+    | A     | B     | A \|\| B |
+    |:-----:|:-----:|:------:|
+    | true  | true  | true   |
+    | true  | false | true   |
+    | false | true  | true   |
+    | false | false | false  |
 
 ---
 
-### Asking Great Coding Questions
+## Variables
+
+`Video Lectures`
+
+- [Variables Demo]
+  - [Video Code](./code-it-out/variables.js)
+
+### Variable Discussion
+
+- The `=` operator is the `assignment operator`
+  - Left of the `assignment operator`
+    - Creates a space in memory with that name
+    - Think of it like writing a name on a box
+  - Right of the `assignment operator`
+    - The `value` that will be assigned to the namespace
+    - Think of it like the object you put in a box.
+- Three parts of a variable
+
+  ```js
+    let name; // declaration (undefined)
+
+    name = 'Leroy' // assignment / reassignment
+
+    let name2 = "Jenkins" // initialization
+
+    console.log(name, name2);
+  ```
+
+---
+
+## Comparison Operators
+
+`Video Lectures`: 15 mins
+
+- [Comparison Operators Demo]
+  - [Video Code](./code-it-out/comparison-operators.js)
+
+### Comparison Discussion
+
+- Compares two elements and evaluates to a boolean
+
+  ```js
+      // Less than/Greater than
+      console.log(5 < 9);      // true
+      console.log(5 > 9);      // false
+      console.log('a' < 'b');  // true (dictionary order)
+      console.log('cat' < 'cats'); // true (dictionary order)
+
+      // Inclusive comparison (... or equal to)
+      console.log(7 <= 10);    // true
+      console.log(10 >= 10);   // true 
+
+  ```
+
+- Equality
+  - `=` is an assignment operator
+  - `==` coerces data to check equality, hard to predict; **do not use**
+  - `===` strict equality
+  - `!==` strict NOT equal
+
+  ```js
+    // Equality === and !==
+    console.log(2 === 2);    // true
+    console.log(2 === 2.1);  // false
+    console.log(2 !== 2.1);  // true
+
+    // Two equality operators, === and ==
+    console.log(5 === '5'); // false
+    console.log(5 == '5');  // true (types are coerced)
+    console.log([] == 0);   // true (can be unpredictable)
+  ```
+
+---
+
+## Project Time
+
+### [Asking Great Coding Questions]
 
 - When should I ask a questions?
   - Follow 15 minute rule
-  - Getting paid 50$/hr
+  - Pretend you're a Jr. Dev getting paid $50/hr
 
 ---
 
@@ -242,6 +258,12 @@
 <!-- link per cohort -->
 [How to Learn]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/how-to-learn
 [Intro to Debugging]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/intro-to-debugging
+[Number Type Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/number-type-demo
+[Boolean Type Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/boolean-type-lecture
+[Boolean Type Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/boolean-type-demo
+[Variables Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/variables-demo
+[Asking Great coding Questions]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/asking-great-coding-questions
+[Comparison Operators Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/comparison-operators-demo
 
 <!-- constant links -->
 [Module-1-Resources]: https://github.com/appacademy/Module-1-Resources
