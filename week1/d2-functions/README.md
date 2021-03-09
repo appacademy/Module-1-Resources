@@ -18,27 +18,21 @@
   "hello"
   "What's up?"
   'We said "goodbye" to them.'
+  // escape character (\)
+  'What\'s up?' // <- valid string
   // be consistent
   'hello" <- not a valid string
   ```
-
-- Code it out
-  - [stringInit]
-  <!-- - [stringInit-solution] -->
 
 `Length`
 
 - The `.length` method returns the number of characters in a string:
 
   ```js
-  console.log("kale".length);   // 4
-  console.log("potato".length); // 6
-  console.log("".length);       // 0
+  console.log("kale".length);   // 
+  console.log("potato".length); // 
+  console.log("".length);       // 
   ```
-
-- Code it out
-  - `LEVEL UP!` - [whatLength]
-  <!-- - [whatLength-solution] -->
 
 `Indexing`
 
@@ -50,27 +44,25 @@
       | char  | d | o | g | s |
 
 - Refer to a singe character of sting using `bracket notation`
+  - Often a TA will say something like, "console.log the string **at** 3"
+    - this means `console.log(string[3])`
 
   ```js
-  console.log("dogs"[0]); // d
-  console.log("dogs"[1]); // o
-  console.log("dogs"[2]); // g
-  console.log("dogs"[3]); // s
+  console.log("dogs"[0]); // 
+  console.log("dogs"[1]); // 
+  console.log("dogs"[2]); // 
+  console.log("dogs"[3]); // 
   ```
 
 - Find the index of _the first_ given character with `indexOf`
 
   ```js
-  console.log("dogs".indexOf("g")); // 2
-  console.log("dogs".indexOf("s")); // 3
-  console.log("dogs".indexOf("x")); //-1
-  console.log("dogs".indexOf("q")); //-1
-  console.log("dogs".indexOf("o")); // 1
+  console.log("doggos".indexOf("d")); // 
+  console.log("doggos".indexOf("s")); // 
+  console.log("doggos".indexOf("x")); //
+  console.log("doggos".indexOf("g")); //
+  console.log("doggos".indexOf("o")); // 
   ```
-
-- Code it out
-  - `LEVEL UP!` - [whatIdx]
-  <!-- - [whatIdx-solution] -->
 
 `Concatenate`
 
@@ -101,14 +93,18 @@
 `Syntax`
 
 - `declaring` a function
-  - the `function` key word
-  - a `name` for your function
-  - `parameters` inside of parentheses `()`
-    - If none, use empty parentheses
-  - `code block` to be run inside of curly braces `{}`
-  - return value
-    - By default, js functions will return `undefined`.
-    - **`return` will stop the execution of your code!!**
+  - blueprint
+
+    ```js
+    function aName (optionalParams) {
+      // may have a return value
+    }
+    ```
+
+  - Some notes on return
+    - sets the function equal to the return
+      - By default, functions will return `undefined`
+    - stops the rest of your code from running
 
     ```js
     function addTwo(num1, num2) {
@@ -117,34 +113,22 @@
     }
     ```
 
-  - Code it out
-    - [writeAFunction]
-    <!-- - [writeAFunction-solution] -->
-
 - `invoking` a function
-  - the `name` of a `declared` function
-  - `arguments` inside of parentheses
-    - If none, use empty parentheses
-  - **If you want to print to the console, you must have a console.log**
-
-    ```js
-    addTwo(3, 4); //nothing will print
-    console.log(addTwo(4, 4)) // 8
-    ```
-
-  - Code it out
-    - [callAFunction]
-    <!-- - [callAFunction-solution] -->
+  - blueprint
+  
+  ```js
+    aName(optionalArgs)
+    // if no args
+    aName();
+  ```
 
 `Why Functions?`
 
 - Blocks of code that we can invoke multiple times
 - Prevent us from having to rewrite code
-
-`Code it out`
-
-- `LEVEL UP!` - [whatWillPrint]
-  <!-- - [whatWillPrint-solution] -->
+- console.log() vs return `**WEE-WOO-WEE-WOO**`
+      - console.log we call a SIDE EFFECT, it doesn't effect the VALUE
+      - return makes the function's VALUE equal to something when it's invoked
 
 ## Conditionals
 
@@ -174,14 +158,6 @@
   }
   ```
 
-`Code it out`
-
-- [ifElsePrint]
-  <!-- - [ifElsePrint-solution] -->
-- `LEVEL UP!` - [truthyFalsy]
-  - [Falsy Values]
-  <!-- - [truthyFalsy-solution] -->
-
 ## Loops
 
 `Video Lectures`: 12 mins
@@ -206,10 +182,6 @@
   }
   ```
 
-  - Code it out
-    - [firstWhile]
-    <!-- - [firstWhile-solution] -->
-
 `For Loop`
 
 - Syntax
@@ -225,10 +197,6 @@
     console.log('hello world');
   }
   ```
-
-  - Code it out
-    - [firstFor]
-    <!-- - [firstFor-solution] -->
 
 ## Array Data Type
 
@@ -249,10 +217,6 @@
   ```js
   let arr = [1, "hello", false, NaN, [1, 2, 3]]
   ```
-
-- Code it out
-  - [arrayInit]
-  <!-- - [arrayInit-solution] -->
 
 `Indexing`
 
@@ -296,10 +260,6 @@
   console.log(array4) // [1, 2, 3, 4, 5, 6, 7]
   ```
 
-  - Code it out
-    - `LEVEL UP!` - [concat]
-    <!-- - [concat-solution] -->
-
 `More Methods`
 
 Other common methods you will use often: (Not needed _today_, but why not take a look at them on MDN)
@@ -312,39 +272,28 @@ Other common methods you will use often: (Not needed _today_, but why not take a
 - Array.prototype.splice
 
 <!-- Links to change for each cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/tuesday-morning-boost
-[String Type Lecture]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/string-type-lecture
-[String Type Demo]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/string-type-demo
-[Function Lecture]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/function-lecture
-[Average Walkthrough]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/average-walkthrough
-[Conditionals Demo]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/conditionals-demo
-[Loop Demo]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/loops-demo
-[Array Lecture]: https://open.appacademy.io/learn/js-py---feb-2021-cohort-1-online/week-1-feb-2021-cohort-1-online/array-lecture
+[Morning Boost]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/tuesday-morning-boost
+[String Type Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/string-type-lecture
+[String Type Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/string-type-demo
+[Function Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/function-lecture
+[Average Walkthrough]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/average-walkthrough
+[Conditionals Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/conditionals-demo
+[Loop Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/loops-demo
+[Array Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/array-lecture
 
 <!-- Constant Links -->
 [stringInit]: ./snippets/stringInit.js
-[stringInit-solution]: ./snippets/solutions/stringInit.js
+
 [whatLength]: ./snippets/whatLength.js
-[whatLength-solution]: ./snippets/solutions/whatLength.js
 [whatIdx]: ./snippets/whatIdx.js
-[whatIdx-solution]: ./snippets/solutions/whatIdx.js
 [writeAFunction]: ./snippets/writeAFunction.js
-[writeAFunction-solution]: ./snippets/solutions/writeAFunction.js
 [callAFunction]: ./snippets/callAFunction.js
-[callAFunction-solution]: ./snippets//solutions/callAFunction.js
 [whatWillPrint]: ./snippets/whatWillPrint.js
-[whatWillPrint-solution]: ./snippets/solutions/whatWillPrint.js
 
 [Falsy Values]: https://developer.mozilla.org/en-US/docs/Glossary/Falsy
 [ifElsePrint]: ./snippets/ifElsePrint.js
-[ifElsePrint-solution]: ./snippets/solutions/ifElsePrint.js
 [truthyFalsy]: ./snippets/truthyFalsy.js
-[truthyFalsy-solution]: ./snippets/solutions/truthyFalsy.js
 [firstWhile]: ./snippets/firstWhile.js
-[firstWhile-solution]: ./snippets/solutions/firstWhile.js
 [firstFor]: ./snippets/firstFor.js
-[firstFor-solution]: ./snippets/solutions/firstFor.js
 [arrayInit]: ./snippets/arrayInit.js
-[arrayInit-solution]: ./snippets/solutions/arrayInit.js
 [concat]: ./snippets/concat.js
-[concat-solution]: ./snippets/solutions/concat.js
