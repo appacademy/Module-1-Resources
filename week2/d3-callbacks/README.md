@@ -9,11 +9,11 @@ ___
 `Video Lectures`: 30 mins
 
 - [Using Callback Functions 1]
-  - [Code from Lecture](./snippets/using_callback_functions_demo1.js)
+  - [Code from Lecture](./code-it-out/using_callback_functions_demo1.js)
 - [Using Callback Functions 2]
-  - [Code from Lecture](./snippets/using_callback_functions_demo2.js)
+  - [Code from Lecture](./code-it-out/using_callback_functions_demo2.js)
 - [Multiple Callbacks]
-  - [Code from Lecture](./snippets/multiple_callbacks_demo.js)
+  - [Code from Lecture](./code-it-out/multiple_callbacks_demo.js)
 
 `Vocabulary`
 
@@ -163,9 +163,9 @@ ___
 
 <!-- Constant Links -->
 [First-class Function]: https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function
-[useACallback]: ./snippets/useACallback.js
-[myForEach]: ./snippets/myForEach.js
-[myMap]: ./snippets/myMap.js
-[myFilter]: ./snippets/myFilter.js
-[myEvery]: ./snippets/myEvery.js
+[useACallback]: ./code-it-out/useACallback.js
+[myForEach]: ./code-it-out/myForEach.js
+[myMap]: ./code-it-out/myMap.js
+[myFilter]: ./code-it-out/myFilter.js
+[myEvery]: ./code-it-out/myEvery.js
 [Git Flow]: https://github.com/appacademy/Module-1-Resources/blob/main/week-2_additional_resources/gitFlow.md

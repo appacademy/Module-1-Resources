@@ -7,19 +7,19 @@
 `Video Lecture`: 20 mins
 
 - [Function Hoisting Lecture]
-  - [Video Code](./snippets/function_hoisting.js)
+  - [Video Code](./code-it-out/function_hoisting.js)
   - Please take notes, we'll go through the code from the video together\
   with your answers
 
 ## IIFE - Immediately Invoked Function Expression
 
 - Live Lecture
-  - [Lecture Code](./snippets/iife.js)
+  - [Lecture Code](./code-it-out/iife.js)
 
 ## Falsy Values | [MDN](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
 
 - Live Lecture
-  - [Lecture Code](./snippets/falsy_values.js)
+  - [Lecture Code](./code-it-out/falsy_values.js)
 
 ## Recursion Pt. 2
 

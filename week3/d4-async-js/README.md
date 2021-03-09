@@ -23,11 +23,11 @@
 `Video Lectures`: 30 mins
 
 - [Threading Lecture]
-  - _[Code Along](./snippets/threading.js)_
+  - _[Code Along](./code-it-out/threading.js)_
 - [Event Loop Lecture]
-  - _[Code Along](./snippets/event_loop.js)_
+  - _[Code Along](./code-it-out/event_loop.js)_
 - [Synchronous vs Asynchronous]
-  - _[Code Along](./snippets/async_sync.js)_
+  - _[Code Along](./code-it-out/async_sync.js)_
 
 `Threading`
 
@@ -61,9 +61,9 @@
 `Video Lectures`: 22 mins
 
 - [setTimeout Lecture]
-  - [Code Along](./snippets/setTimeout_lecture.js)
+  - [Code Along](./code-it-out/setTimeout_lecture.js)
 - [setInterval Lecture]
-  - [Code Along](./snippets/setInterval_lecture.js)
+  - [Code Along](./code-it-out/setInterval_lecture.js)
 
 ## User Input
 
