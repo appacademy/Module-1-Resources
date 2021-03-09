@@ -54,10 +54,6 @@
     };
     ```
 
-`Code it out`
-
-- [sum]
-
 ## Mutability
 
 `Video Lectures`: 9 mins
@@ -213,10 +209,6 @@
   console.log(firstCat); // 'Paprika'
   console.log(cats); // ['Whiskers', 'Garfield']
   ```
-  
-`Code it out`
-
-- [arrayMethods]
 
 ## Nested Loops
 
@@ -277,8 +269,6 @@ for(let i = 0; i < dogs.length; i++) {
 [Pairs in Array]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/pairs-in-array
 [Unique Pairs in Array]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/unique-pairs-in-array
 <!-- Constant Links -->
-[sum]: ./code-it-out/sum.js
-[arrayMethods]: ./code-it-out/arrayMethods.js
 [Array.prototype.push]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 [Array.prototype.pop]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
 [Array.prototype.shift]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift

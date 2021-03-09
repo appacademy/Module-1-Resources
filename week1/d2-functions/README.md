@@ -238,7 +238,7 @@
   console.log(array.indexOf("elephant")) // -1
   ```
 
-`Methods`
+`Properties / Methods`
 
 - `.length` - returns the number of elements in an array
 
