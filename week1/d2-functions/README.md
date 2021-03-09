@@ -282,18 +282,18 @@ Other common methods you will use often: (Not needed _today_, but why not take a
 [Array Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/array-lecture
 
 <!-- Constant Links -->
-[stringInit]: ./snippets/stringInit.js
+[stringInit]: ./code-it-out/stringInit.js
 
-[whatLength]: ./snippets/whatLength.js
-[whatIdx]: ./snippets/whatIdx.js
-[writeAFunction]: ./snippets/writeAFunction.js
-[callAFunction]: ./snippets/callAFunction.js
-[whatWillPrint]: ./snippets/whatWillPrint.js
+[whatLength]: ./code-it-out/whatLength.js
+[whatIdx]: ./code-it-out/whatIdx.js
+[writeAFunction]: ./code-it-out/writeAFunction.js
+[callAFunction]: ./code-it-out/callAFunction.js
+[whatWillPrint]: ./code-it-out/whatWillPrint.js
 
 [Falsy Values]: https://developer.mozilla.org/en-US/docs/Glossary/Falsy
-[ifElsePrint]: ./snippets/ifElsePrint.js
-[truthyFalsy]: ./snippets/truthyFalsy.js
-[firstWhile]: ./snippets/firstWhile.js
-[firstFor]: ./snippets/firstFor.js
-[arrayInit]: ./snippets/arrayInit.js
-[concat]: ./snippets/concat.js
+[ifElsePrint]: ./code-it-out/ifElsePrint.js
+[truthyFalsy]: ./code-it-out/truthyFalsy.js
+[firstWhile]: ./code-it-out/firstWhile.js
+[firstFor]: ./code-it-out/firstFor.js
+[arrayInit]: ./code-it-out/arrayInit.js
+[concat]: ./code-it-out/concat.js
