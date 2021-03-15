@@ -50,7 +50,7 @@ ___
   /* 
   Write a function called hello that intakes an 
   array of names and prints "Hello," plus the name, for
-  each name. 
+  each name. Must use .forEach()
 
   hello(['Mylo', 'Buster']) prints 'Hello, Mylo', 'Hello, Buster'
   */
@@ -76,7 +76,7 @@ ___
   Write a function called evens that intakes an
   array of numbers and returns a new array of only the
   even numbers from the original array. You must use
-  .filter(0)
+  .filter()
 
   evens([1, 2, 3]) => [2]
   events([42, 44, 45]) => [42, 44]
