@@ -1,5 +1,8 @@
 let parks = ["Zion", "Yellowstone", "Acadia", "Yosemite"];
 
+/* 
+implementation without map
+
 let newParks = [];
 
 for(let i = 0; i < parks.length; i++){
@@ -8,12 +11,23 @@ for(let i = 0; i < parks.length; i++){
 }
 
 console.log(newParks)
+*/
 
+// with map method
+let newParks = parks.map(function (park) {
+  return park.toUpperCase();
+});
 
+console.log(newParks);
 
+//concat
+let concat = parks.map(function (park) {
+  return park + " National Park";
+});
 
-let newParks = parks.map(function(park) {
-  return park + 'national park';
-})
+console.log(concat);
 
-console.log(newParks)
+/* 
+Does .map mutate the original array?
+
+*/
