@@ -52,8 +52,7 @@ ___
   array of names and prints "Hello," plus the name, for
   each name. 
 
-  hello('Mylo') prints 'Hello, Mylo'
-  hello('Buster') prints 'Hello, Buster'
+  hello(['Mylo', 'Buster']) prints 'Hello, Mylo', 'Hello, Buster'
   */
   ```
 
