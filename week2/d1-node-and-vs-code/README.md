@@ -97,7 +97,8 @@ ___
   ```
 ## Mocha
 
-
+ - Mocha is the testing suite we will use to test our code
+  - let's download today's project and see how it works
 ___
 
 <!-- Links per cohort -->
