@@ -69,6 +69,7 @@ ___
   timesTwo([-1, 6, 0]) => [-2, 12, 0]
   */
   ```
+
 `filter`
 
   ```js
@@ -95,11 +96,11 @@ ___
   reduce(['Rick', 'Morty']) => Names: Rick Morty 
   */
   ```
+
 ## Mocha
 
- - Mocha is the testing suite we will use to test our code
+- Mocha is the testing suite we will use to test our code
   - let's download today's project and see how it works
-___
 
 <!-- Links per cohort -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-2-mar-2021-cohort-1-online/monday-morning-boost
@@ -111,6 +112,4 @@ ___
 [filter Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-2-mar-2021-cohort-1-online/filter-demo
 [reduce Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-2-mar-2021-cohort-1-online/reduce-demo
 
-
 <!-- Constant Links -->
-
