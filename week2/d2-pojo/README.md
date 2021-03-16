@@ -34,22 +34,21 @@ console.log(contestants[3]); //Carrie Underwood
 
 let roomOfRichPeople = {
     Importantpersonson: "That's me!",
-    Bezos: "Yes?",
-    Gates: 'That\'s my hat!',
+    Bezos: 'Yes?',
+    Gates: "That's my hat!",
 };
 
-let thePersonWhoLostTheirHat = 'Gates'
+let thePersonWhoLostTheirHat = 'Gates';
 
 // Mr. Importantpersonson, are you here?
-console.log(roomOfRichPeople['Importantpersonson']); // That's me!
-console.log(roomOfRichPeople.Importantpersonson) // That's me!
+console.log(roomOfRichPeople['Importantpersonson']); 
+console.log(roomOfRichPeople.Importantpersonson); 
 
 // Excuse me, someone lost their hat...
-console.log(roomOfRichPeople[thePersonWhoLostTheirHat]) //That's my hat!
+console.log(roomOfRichPeople[thePersonWhoLostTheirHat]); 
 ```
 
-- We can assigned key-value pairs in JS much like we would reassigning array
-indexes
+- We can assigned key-value pairs in JS much like we would reassigning array indices
 
   ```js
   let obj = {}
@@ -67,19 +66,20 @@ indexes
 
   ```js
   let story = {
-    beginning: "Once upon a time...",
-    end: "And they lived happily every after"
-  }
+    beginning: 'Once upon a time...',
+    end: 'And they lived happily every after',
+  };
 
-  let makeAStory = function(){
-    if(story.middle === undefined) {
-      story.middle = "drama";
-    } else {
-      console.log("story complete")
-    }
-  }
-  makeAStory()
-  makeAStory()
+  let makeAStory = function () {
+      if (story.middle === undefined) {
+          story.middle = 'drama';
+          console.log('added middle');
+      } else {
+          console.log('story complete');
+      }
+  };
+  makeAStory();
+  makeAStory();
   ```
 
 - Why objects?
@@ -89,13 +89,6 @@ indexes
     ```js
     let arrUser = ['Mylo', 7000, 'Module Instructor', 'Rural America'];
 
-    let user = {
-        name: 'Mylo',
-        age: 7000,
-        job: 'Module Instructor',
-        address: 'Rural America',
-    };
-
     let arrAge;
 
     for (let i = 0; i < arrUser.length; i++) {
@@ -104,8 +97,15 @@ indexes
             arrAge = ele;
         }
     }
-
     console.log(arrAge);
+
+    let user = {
+        name: 'Mylo',
+        age: 7000,
+        job: 'Module Instructor',
+        address: 'Rural America',
+    };
+
     console.log(user.age);
       ```
 
@@ -163,7 +163,7 @@ indexes
 
 `Discussion`
 
-- Two sides of very different but similar coins.
+- Two sides of very different (but similar?) coins.
   - Rest gathers up the 'rest' of the parameters into an array
 
   ```js

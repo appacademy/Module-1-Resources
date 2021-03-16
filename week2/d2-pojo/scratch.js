@@ -1,9 +1,20 @@
-let obj = {};
+let arrUser = ['Mylo', 7000, 'Module Instructor', 'Rural America'];
 
-obj.name = 'Mylo';
-obj['age'] = 7000;
-obj.name = 'Gandalf';
+let arrAge;
 
-console.log(obj.name);
-console.log(obj.location);
-console.log(obj.age);
+for (let i = 0; i < arrUser.length; i++) {
+    let ele = arrUser[i];
+    if (typeof ele === 'number') {
+        arrAge = ele;
+    }
+}
+console.log(arrAge);
+
+let user = {
+    name: 'Mylo',
+    age: 7000,
+    job: 'Module Instructor',
+    address: 'Rural America',
+};
+
+console.log(user.age);
