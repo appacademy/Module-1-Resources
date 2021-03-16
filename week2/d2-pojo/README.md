@@ -55,7 +55,7 @@ indexes
   let obj = {}
 
   obj.name = 'Mylo';
-  obj['age'] = 7,000;
+  obj['age'] = 7000;
   obj.name = 'Gandalf';
 
   console.log(obj.name);
