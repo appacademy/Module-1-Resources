@@ -163,7 +163,7 @@ console.log(roomOfRichPeople[thePersonWhoLostTheirHat]);
 
 `Discussion`
 
-- Two sides of very different (but similar?) coins.
+- The same side of very different coins.
   - Rest gathers up the 'rest' of the parameters into an array
 
   ```js
