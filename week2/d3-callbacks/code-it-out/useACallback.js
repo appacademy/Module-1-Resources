@@ -21,12 +21,18 @@ Write a higher order function called 'concat' that:
 */
 
 let upper = function (str) {
-    // Your code here
+    return str.toUpperCase();
 };
 
 let concat = function (str1, str2, cb) {
-    // Your code here
+    let concatStrings = str1 + str2;
+    if (cb === undefined) {
+        return concatStrings;
+    } else {
+        return cb(concatStrings);
+    }
 };
 
 console.log(upper('YeS!!! '));
 console.log(concat('YeS!!! ', 'I dId iT!', upper));
+console.log(concat('YeS!!! ', 'I dId iT!'));

@@ -1,14 +1,14 @@
 let peeps = ['kafele', 'cindy', 'jon', 'paloma'];
 
 //This is how we've been using map
-let newPeeps = peeps.map( function(el) {
-    return el.toUpperCase() + '!!!!'
-})
+let newPeeps = peeps.map(function (el) {
+    return el.toUpperCase() + '!!!!';
+});
 
 console.log(newPeeps);
 
 //Now we're going to make our own
-let myMap = function(array, cb) {
+let myMap = function (array, cb) {
     let newArray = [];
 
     for (let i = 0; i < array.length; i++) {
@@ -18,16 +18,18 @@ let myMap = function(array, cb) {
     }
 
     return newArray;
-}
+};
 
-let newPeeps2 = myMap( peeps, function(el) {
-    return el.toUpperCase() + '!!!!'
-});
+let upper = function (el) {
+    return el.toUpperCase() + '!!!!';
+};
+
+let newPeeps2 = myMap(peeps, upper);
 
 console.log(newPeeps2);
 
-let upperCaseFunc = function(el) {
-    return el.toUpperCase() + "!!!!"
-}
+let upperCaseFunc = function (el) {
+    return el.toUpperCase() + '!!!!';
+};
 
-let newPeeps3 = myMap( peeps, upperCaseFunc);
+let newPeeps3 = myMap(peeps, upperCaseFunc);
