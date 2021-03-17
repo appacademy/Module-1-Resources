@@ -19,13 +19,14 @@ Write a higher order function called 'concat' that:
   
 
 */
-let concat = function (str1, str2, cb) {
-  // Your code here
-}
 
 let upper = function (str) {
     // Your code here
-}
+};
+
+let concat = function (str1, str2, cb) {
+    // Your code here
+};
 
 console.log(upper('YeS!!! '));
 console.log(concat('YeS!!! ', 'I dId iT!', upper));

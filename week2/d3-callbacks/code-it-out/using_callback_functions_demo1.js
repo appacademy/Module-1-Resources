@@ -16,7 +16,7 @@ console.log(superAdd(2,3,doubler));
 
 //---------------------------------------------
 
-// let res = superAdd(3,2, function(n) {
-//   return 2 * n
-// })
-// console.log(res)
+let res = superAdd(3,2, function(n) {
+  return 2 * n
+})
+console.log(res)
