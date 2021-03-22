@@ -1,26 +1,11 @@
-# W3D1
-
-## Interpolating String
-
-`Video Lectures`
-
-- [Interpolating Strings Code Demo]
-
-```js
-let firstName = "Doctor";
-let lastName = "Who";
-
-let greeting = `Hello, ${firstName} ${lastName}!`;
-
-console.log(greeting);
-```
-
-## VSCode Debugger Setup
-
-- [Phase 1]
-
-```json
 {
+  "files.autoSave": "afterDelay",
+  "jest.debugMode": true,
+  "liveshare.allowGuestDebugControl": true,
+  "workbench.sideBar.location": "left",
+  "atomKeymap.promptV3Features": true,
+  "workbench.panel.defaultLocation": "right",
+  "editor.multiCursorModifier": "ctrlCmd",
   "launch": {
     "version": "0.2.0",
     "configurations": [
@@ -50,7 +35,3 @@ console.log(greeting);
     ]
   }
 }
-```
-
-[Interpolating Strings Code Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/interpolating-strings-code-demo
-[Phase 1]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/vscode-debugger-practice
