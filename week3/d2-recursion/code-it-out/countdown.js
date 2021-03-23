@@ -1,13 +1,11 @@
 function countdown(num) {
-  debugger 
-  if(num === 0){
-    debugger
-    return num
-  }
-  debugger
-  countdownReturn = countdown(num-1)
-  debugger
-  return num
+    if (num === 0) {
+        return num;
+    }
+
+    countdownReturn = countdown(num - 1);
+
+    return num;
 }
-debugger
-countdown(2)
+
+console.log(countdown(2));
