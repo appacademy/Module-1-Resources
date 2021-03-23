@@ -1,11 +1,9 @@
 function countdown(num) {
     if (num === 0) {
-        return num;
+        return;
     }
-
-    countdownReturn = countdown(num - 1);
-
-    return num;
+    console.log(num);
+    countdown(num - 1);
 }
 
-console.log(countdown(2));
+countdown(2);
