@@ -30,7 +30,7 @@ you walk me through what's happening to the call stack?
 
 `Discussion`
 
-- What is recursion?
+- What is a recursive function?
 - What are the 'parts' of a recursive function?
 - EXAMPLES
   - [countdown](./code-it-out/countdown.js)

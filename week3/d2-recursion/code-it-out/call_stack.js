@@ -1,24 +1,24 @@
 function foo() {
-    // debugger;
-    console.log('a');
+    debugger;
+    // console.log('a');
     bar();
-    // debugger;
-    console.log('e');
+    debugger;
+    // console.log('e');
 }
 
 function bar() {
-    // debugger;
-    console.log('b');
+    debugger;
+    // console.log('b');
     baz();
-    // debugger;
-    console.log('d');
+    debugger;
+    // console.log('d');
 }
 
 function baz() {
-    // debugger;
-    console.log('c');
+    debugger;
+    // console.log('c');
 }
 
 foo();
 
-// debugger;
+debugger;
