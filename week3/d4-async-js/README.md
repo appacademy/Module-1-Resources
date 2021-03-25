@@ -78,5 +78,5 @@
 [setInterval Lecture]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/setinterval-lecture
 [Event Loop Reading]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-3-mar-2021-cohort-1-online/the-message-queue-and-event-loop
 <!-- constant links -->
-[threading]: /threading.png
+[threading]: ./images/threading.png
 [Readline Docs]: https://nodejs.org/api/readline.html
