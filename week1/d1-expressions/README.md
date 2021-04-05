@@ -28,7 +28,12 @@
 - Avoid asking questions in the middle of the lecturer presenting
   - Lecture Questions Slack channel
   - Q&A time
-- Keep microphone muted at all times, unless asked to speak
+- Keep microphone muted at all times, unless called on
+- Participate
+  - Raise your hand to answer questions posed by the lecturer
+  - Use the participation thread if a general question is asked.
+  - Don't be afraid of saying the wrong thing
+    - A SWE is `wrong` 95% of the time
 
 ---
 
@@ -47,15 +52,6 @@
 4. Do I need verification that I'm right?
     - Lecture questions channel
       - Share your explanation
-
----
-
-## Participate
-
-- Raise your hand to answer questions posed by the lecturer
-- Use the participation thread if a general question is asked.
-- Don't be afraid of saying the wrong thing
-  - SWE is being `wrong` 95% of the time
 
 ---
 
