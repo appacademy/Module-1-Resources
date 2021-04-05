@@ -9,5 +9,5 @@
 - [Helper Functions Demo]
   - [Video Code](./code-it-out/helperFunction.js)
 
-[Helper Functions Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/helper-functions-demo
-[Morning Boost]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-1-mar-2021-cohort-1-online/thursday-morning-boost
+[Helper Functions Demo]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-1-apr-2021-cohort-1-online/helper-functions-demo
+[Morning Boost]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-1-apr-2021-cohort-1-online/thursday-morning-boost

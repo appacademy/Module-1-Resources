@@ -102,13 +102,13 @@ ___
   - let's download today's project and see how it works
 
 <!-- Links per cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-2-mar-2021-cohort-1-online/monday-morning-boost
-[Basic Terminal Navigation]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-2-mar-2021-cohort-1-online/basic-terminal-navigation
-[Navigating in VS Code]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-2-mar-2021-cohort-1-online/navigating-in-vs-code
-[Running NodeJS]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-2-mar-2021-cohort-1-online/running-nodejs
-[forEach Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-2-mar-2021-cohort-1-online/for-each-demo
-[map Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-2-mar-2021-cohort-1-online/map-demo
-[filter Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-2-mar-2021-cohort-1-online/filter-demo
-[reduce Demo]: https://open.appacademy.io/learn/js-py---mar-2021-cohort-1-online/week-2-mar-2021-cohort-1-online/reduce-demo
+[Morning Boost]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-2-apr-2021-cohort-1-online/monday-morning-boost
+[Basic Terminal Navigation]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-2-apr-2021-cohort-1-online/basic-terminal-navigation
+[Navigating in VS Code]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-2-apr-2021-cohort-1-online/navigating-in-vs-code
+[Running NodeJS]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-2-apr-2021-cohort-1-online/running-nodejs
+[forEach Demo]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-2-apr-2021-cohort-1-online/for-each-demo
+[map Demo]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-2-apr-2021-cohort-1-online/map-demo
+[filter Demo]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-2-apr-2021-cohort-1-online/filter-demo
+[reduce Demo]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-2-apr-2021-cohort-1-online/reduce-demo
 
 <!-- Constant Links -->
