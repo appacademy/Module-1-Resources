@@ -1,61 +1,78 @@
-// let obj = {};
+/* 
+Ordered VS Unordered 
+Array - ordered
+Objects - unordered
+*/
+let arr = [0, 1, 2, 3]; // arrays have indexes, array have elements
+let obj = { name: 'Mylo', age: 1000, thingToCheck: 'new value' }; // objects have keys, object have values
+// ALL KEYS ARE STINGS (or symbols)
+// console.log(arr[2]);
+// console.log(obj['name']);
 
-// obj.name = 'Mylo';
-// obj['age'] = 7000;
-// obj.name = 'Gandalf';
-
-// let newKey = 'location';
-
-// obj[newKey] = 'MiddleEarth';
-
+// arr[2] = 4;
+// console.log(arr);
+// obj.name = 'Warren';
+// console.log(obj);
+// arr[4] = 12;
+// console.log(arr);
+// obj.taco = 'al pastor';
 // console.log(obj);
 
-// // console.log(obj.name);
-// // console.log(obj.location);
-// // console.log(obj.age);
+// console.log(arr[5]); // undefined
+// console.log(obj['taco']); // undefined
+
+// console.log(obj.name); // Mylo
+// let thingToCheck = 'age';
+// console.log(obj[thingToCheck]); // 1000
+// console.log(obj.thingToCheck); // new value
+// console.log(obj);
+
+// let contestants = [
+//     'Kelly Clarkson',
+//     'Rubben Studdard',
+//     'Fantasia Barrino',
+//     'Carrie Underwood',
+// ];
+// // contestant 3 please step forward
+// console.log(contestants[3]); //Carrie Underwood
+
+// let roomOfRichPeople = {
+//     Importantpersonson: "That's me!",
+//     Bezos: 'Yes?',
+//     Gates: "That's my hat!",
+// };
+
+// let thePersonWhoLostTheirHat = 'Gates';
+
+// // Mr. Importantpersonson, are you here?
+// console.log(roomOfRichPeople['Importantpersonson']); // That's me!
+// console.log(roomOfRichPeople.Importantpersonson); // That's me!
+
+// // Excuse me, someone lost their hat...
+// console.log(roomOfRichPeople[thePersonWhoLostTheirHat]); // That's my hat!
 
 // let story = {
 //     beginning: 'Once upon a time...',
+
 //     end: 'And they lived happily every after',
 // };
 
 // let makeAStory = function () {
-//     if (story.middle === undefined) {
+//     console.log(story);
+//     if (!('middle' in story)) {
 //         story.middle = 'drama';
 //         console.log('added middle');
 //     } else {
 //         console.log('story complete');
 //     }
 // };
+// makeAStory(); // added middle
+// makeAStory(); // story complete
 
-// makeAStory();
-// makeAStory();
-
-// let arrUser = ['Mylo', 7000, 'Module Instructor', 'Rural America'];
-
-// let arrAge;
-
-// for (let i = 0; i < arrUser.length; i++) {
-//     let ele = arrUser[i];
-//     if (typeof ele === 'number') {
-//         arrAge = ele;
-//     }
-// }
-// console.log(arrAge);
-
-// let user = {
-//     name: 'Mylo',
-//     age: 7000,
-//     job: 'Module Instructor',
-//     address: 'Rural America',
-// };
-
-// console.log(user.age);
-
-// let age = 10;
-// let numberOfFingers = age;
-// age = numberOfFingers + 1;
-// console.log(age, numberOfFingers);
+// let age = 10; // point directly to the number 10
+// let numberOfFingers = age; // also points directly to the number 10
+// age = numberOfFingers + 1; // points to 11
+// console.log(age);
 
 // let Biff = {
 //     type: 'dog',
@@ -63,58 +80,59 @@
 // };
 
 // let Buster = Biff;
+
 // Buster.age = 0;
 
 // console.log(Biff, Buster);
 
-// let obj = { person: 'Mylo', animal: 'elephant'};
+/* 
+Write a function called reduceCalc that intakes two numbers and uses the
+.reduce method to sum them up.
 
-// let { person, animal, job } = obj;
-// // let person = (the Object).person
-// // let animal = (the Object).animal
-// console.log(person, animal, job);
+console.log(reduceCalc(1, 2)) //3
+console.log(reduceCalc(1, 5)) //6
+*/
 
-// let [game, player] = ['Dota 2', 'Austin'];
-// // let game = (the Array)[0]
-// // let player = (the Array)[1]
-// console.log(game, player);
-
-// let music = { tempo: 120, genre: 'March' };
-// let { tempo: bpm, genre } = music;
-// console.log(bpm, genre);
-
-// let makeThemBig = function (...strings) {
-//     console.log(Array.isArray(strings));
-//     let result = strings.map(function (string) {
-//         return string.toUpperCase();
+// let reduceCalc = function (op, ...nums) {
+//     // [1, 2, 3, 4, 5, 6,7 ,8]
+//     // console.log(nums);
+//     return nums.reduce(function (accum, num) {
+//         if (op === '-') {
+//             return accum - num;
+//         }
+//         return accum + num;
 //     });
-//     return result.join(' ');
 // };
 
-// console.log(makeThemBig('hello', 'world'));
-// console.log(makeThemBig('hello'));
-// console.log(makeThemBig('Hello', 'world,', "how's", 'it', 'going', 'today?'));
+// console.log(reduceCalc('+', 1, 2, 3, 4, 5, 6, 7, 8)); // 36
+// console.log(reduceCalc('-', 1, 5, 6)); // -10
 
 // let arr1 = [1, 2, 3];
 // let arr2 = [4, 5, 6];
-// let arr3 = [0, arr1, arr2]; //
-// let arr4 = [0, ...arr1, ...arr2]; // 
-// console.log(arr3);
-// console.log(arr4);
 
-// let obj1 = { name: 'Mylo' };
-// let obj2 = { animal: 'elephant', game: 'Dota 2' };
-// let obj3 = { obj1, obj2, movie: 'Fantastic Mr. Fox' };
-// let obj4 = { ...obj1, ...obj2, movie: 'Fantastic Mr. Fox' };
-// console.log(obj3);
-// console.log(obj4);
+// let arr3 = [...arr1, ...arr2]
 
-function sum(...nums) {
-  return nums.reduce(function (accum, num) {
-    return accum + num
-  })
-}
+// console.log(arr3)
 
-// let arr = 1, 2, 3, 4, 5, 6,7, 8, 8
+// let Biff = {
+//     type: 'dog',
+//     age: 10,
+// };
 
-console.log(sum(1))
+// let Buster = { ...Biff };
+
+// Buster.age = 0;
+
+// console.log(Biff, Buster);
+
+let nestedArr1 = [
+    [1, 2, 3],
+    [4, 5, 6],
+];
+
+let nestedArr2 = [...nestedArr1];
+nestedArr2[0] = [...nestedArr2[0]]
+nestedArr2[0][0] = 0;
+console.log(nestedArr1, '|||||', nestedArr2);
+
+console.log(nestedArr1[0] === nestedArr2[0]); //
