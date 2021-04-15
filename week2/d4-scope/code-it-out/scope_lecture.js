@@ -4,7 +4,7 @@
 const bear = { sound: 'rawr' };
 /* 
 What is the scope?
-Answer: global
+Answer: 
 
 */
 /*********** Problem 2 ***********/
