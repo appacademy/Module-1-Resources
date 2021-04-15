@@ -31,7 +31,7 @@
   - `Block`- Global, Local, Variables in the block
 
   ```js
-  car = 'vroom';
+  let car = 'vroom';
   function makeSounds(dogSound){
     let cow = 'moo';
   
