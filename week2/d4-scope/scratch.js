@@ -72,3 +72,16 @@ let arr = [1, 2, 3];
 let arrPlusOne = (arr) => arr.map((el) => el + 1);
 
 console.log(arrPlusOne(arr));
+
+let arr2 = [1, 1, 3, 2, 2, 1];
+
+const result = arr2.reduce((acc, value) => {
+    if (value in acc) {
+        acc[value]++;
+    } else {
+        acc[value] = 1;
+    }
+    return acc;
+}, {});
+
+console.log(result);

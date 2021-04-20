@@ -16,10 +16,7 @@ Can you label them?
 
 */
 function doForAll(arr, action) {
-    if (arr.length === 0) {
-        return [];
-    }
-    return [action(arr[0]), ...doForAll(arr.slice(1), action)];
+    return [action(arr[0]), ...doForAll(arr, action)];
 }
 
 // console.log(doForAll([], (x) => x * 2)); // []
