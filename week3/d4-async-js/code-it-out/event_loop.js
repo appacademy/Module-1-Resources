@@ -25,18 +25,7 @@ function baz() {
 setTimeout(foo, 1500);
 setTimeout(bar, 1000);
 console.log(somethingSlow(44));
-let count = 40000;
-while (count > 0) {
-    console.log('poop');
-    count--;
-}
 
-let count2 = 1;
-
-while (count2 > 0) {
-    console.log('fart');
-    count2--;
-}
 
 /* 
 What prints to the console in order?
