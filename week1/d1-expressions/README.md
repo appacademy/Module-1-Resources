@@ -29,7 +29,7 @@
   - Lecture Questions Slack channel
   - Q&A time
 - Keep microphone muted at all times, unless called on
-- Make sure your name in Zoom matches your PT preferred name.
+- Make sure your name in Zoom matches your PT preferred name / pronouns.
 - Participate
   - Raise your hand to answer questions posed by the lecturer
   - Use the participation thread if a general question is asked.
