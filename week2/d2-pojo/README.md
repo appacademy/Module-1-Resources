@@ -363,7 +363,7 @@ match2memory
      └── .git
 ```
 <!-- Links -->
-[Object Lecture]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-2-apr-2021-cohort-1-online/object-lecture
-[Primitive vs Reference]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-2-apr-2021-cohort-1-online/primitive-vs-reference
-[Object Destructuring]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-2-apr-2021-cohort-1-online/object-destructuring
-[Spread and Rest]: https://open.appacademy.io/learn/js-py---apr-2021-cohort-1-online/week-2-apr-2021-cohort-1-online/spread-and-rest
+[Object Lecture]: https://open.appacademy.io/learn/js-py---may-2021-cohort-1-online/week-2-may-2021-cohort-1-online/object-lecture
+[Primitive vs Reference]: https://open.appacademy.io/learn/js-py---may-2021-cohort-1-online/week-2-may-2021-cohort-1-online/primitive-vs-reference
+[Object Destructuring]: https://open.appacademy.io/learn/js-py---may-2021-cohort-1-online/week-2-may-2021-cohort-1-online/object-destructuring
+[Spread and Rest]: https://open.appacademy.io/learn/js-py---may-2021-cohort-1-online/week-2-may-2021-cohort-1-online/spread-and-rest
