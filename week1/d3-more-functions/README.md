@@ -60,6 +60,21 @@
 
 - [Mutability Demo]
 
+`Mutable Types`
+
+- Can be mutated (changed)
+- Examples
+  - Arrays, e.g. `['a', 'b', 'c']`
+  - Objects (we will see this later)
+
+      ```js
+      let arr = ["a", "b", "c"];
+
+      arr[1] = "x";
+
+      console.log(arr) // ["a", "x", "c"];
+      ```
+
 `Immutable Types`
 
 - Cannot be mutated (changed)
@@ -85,21 +100,6 @@
     str += 'd'; // str = str + 'd';
     console.log(str) // 'abcd'
     ```
-
-`Mutable Types`
-
-- Can be mutated (changed)
-- Examples
-  - Arrays, e.g. `['a', 'b', 'c']`
-  - Objects (we will see this later)
-
-      ```js
-      let arr = ["a", "b", "c"];
-
-      arr[1] = "x";
-
-      console.log(arr) // ["a", "x", "c"];
-      ```
 
 ## Array Methods
 
