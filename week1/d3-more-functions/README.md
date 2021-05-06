@@ -64,8 +64,8 @@
 
 - Can be mutated (changed)
 - Examples
-  - Arrays, e.g. `['a', 'b', 'c']`
   - Objects (we will see this later)
+    - Arrays, e.g. `['a', 'b', 'c']`
 
       ```js
       let arr = ["a", "b", "c"];
