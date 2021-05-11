@@ -1,10 +1,10 @@
 # W3 D4
 
----
+## [Morning Boost]
 
 ## Objects
 
-`Video Lectures`
+`Video Lectures`: 18 minutes
 
 - [Object Lecture]
 - [Primitive vs Reference]
@@ -134,6 +134,8 @@ console.log(roomOfRichPeople[thePersonWhoLostTheirHat]);
 
 ## Destructuring
 
+`Video Lectures`: 18 minutes
+
 - [Object Destructuring]
 
 `Discussion`
@@ -158,8 +160,9 @@ console.log(roomOfRichPeople[thePersonWhoLostTheirHat]);
 
 ## Rest and Spread
 
-`Video Lectures`
-[Spread and Rest]
+`Video Lectures`: 18 minutes
+
+- [Spread and Rest]
 
 `Discussion`
 
@@ -363,6 +366,7 @@ match2memory
      └── .git
 ```
 <!-- Links -->
+[Morning Boost]: https://open.appacademy.io/learn/js-py---may-2021-cohort-1-online/week-2-may-2021-cohort-1-online/tuesday-morning-boost
 [Object Lecture]: https://open.appacademy.io/learn/js-py---may-2021-cohort-1-online/week-2-may-2021-cohort-1-online/object-lecture
 [Primitive vs Reference]: https://open.appacademy.io/learn/js-py---may-2021-cohort-1-online/week-2-may-2021-cohort-1-online/primitive-vs-reference
 [Object Destructuring]: https://open.appacademy.io/learn/js-py---may-2021-cohort-1-online/week-2-may-2021-cohort-1-online/object-destructuring
