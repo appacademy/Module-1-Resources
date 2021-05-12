@@ -100,13 +100,13 @@ ___
 
 ## My Array Methods
 
-`Video Lectures`: 20 mins
+`Video Lectures`: 12 mins
 
 - [My .forEach]
-- [My .map]
 
 (Save these for the project)
 
+- [My .map]
 - [My .filter]
 - [My .every]
 
