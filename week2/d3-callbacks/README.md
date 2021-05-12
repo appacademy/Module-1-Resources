@@ -168,4 +168,4 @@ ___
 [myMap]: ./code-it-out/myMap.js
 [myFilter]: ./code-it-out/myFilter.js
 [myEvery]: ./code-it-out/myEvery.js
-[Git Flow]: https://github.com/appacademy/Module-1-Resources/blob/main/week-2_additional_resources/gitFlow.md
+[Git Flow]: https://github.com/appacademy/Module-1-Resources/tree/main/week2/additional_resources/gitflow

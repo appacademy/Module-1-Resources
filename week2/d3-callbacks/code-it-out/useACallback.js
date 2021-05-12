@@ -25,15 +25,20 @@ Write a higher order function called 'concat' that:
 */
 
 let upper = function (str) {
- 
+  return str.toUpperCase();
 };
 
 let lower = function (str) {
-    
+  return str.toLowerCase();
 };
 
 let concat = function (str1, str2, cb) {
-
+  let strings = str1.concat(str2);
+  if (cb === undefined) {
+    return strings;
+  } else {
+    return cb(strings)
+  }
 };
 
 console.log(upper('YeS!!! ')); // YES!!!
