@@ -5,6 +5,10 @@ Write a callback called 'upper' that:
   1. Intakes a string
   2. Returns the string in uppercase
 
+  Write a callback called 'lower' that:
+  1. Intakes a string
+  2. Returns the string in lowercase
+
 Write a higher order function called 'concat' that: 
   1. Intakes three parameters 
     1. A string
@@ -21,23 +25,19 @@ Write a higher order function called 'concat' that:
 */
 
 let upper = function (str) {
-    return str.toUpperCase();
+ 
 };
 
 let lower = function (str) {
-    return str.toLowerCase();
+    
 };
 
 let concat = function (str1, str2, cb) {
-    let fused = str1 + str2;
-    if (cb === undefined) {
-        return fused;
-    } else {
-        return cb(fused);
-    }
+
 };
 
 console.log(upper('YeS!!! ')); // YES!!!
+console.log(lower('YeS!!! ')) // yes!!! 
 console.log(concat('YeS!!! ', 'I dId iT!', upper)); // YES!!! I DID IT!
 console.log(concat('YeS!!! ', 'I dId iT!', lower)); // yes!!! i did it!
 console.log(concat('YeS!!! ', 'I dId iT!')); // YeS!!! I dId iT!
