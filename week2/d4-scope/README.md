@@ -79,38 +79,6 @@
 
 ---
 
-## Closures
-
-`Video Lectures`: 30 mins
-
-- [Closure Lecture]
-  - [Code Along](./code-it-out/closures_lecture.js)
-- [Closure Code Demo]
-  - [Code Along](./code-it-out/closure_code_demo.js)
-
-`Overview`
-
-- We can manipulate a Higher Order Functions' variables with a closure
-- We can create multiple "instances" of a function's variables with closures
-
-```js
-function HOF (){
-  let count = 0;
-  return function(num) {
-      count+=num
-      console.log(count)
-  }
-}
-
-let JanToJune = HOF();
-let JulyToDec = HOF();
-
-JanToJune(0);
-JulyToDec(0);
-```
-
----
-
 ## Arrow Functions
 
 `Video Lectures` : 10 mins
@@ -155,6 +123,38 @@ JulyToDec(0);
 
   console.log(addOne);
   ```
+
+---
+
+## Closures
+
+`Video Lectures`: 30 mins
+
+- [Closure Lecture]
+  - [Code Along](./code-it-out/closures_lecture.js)
+- [Closure Code Demo]
+  - [Code Along](./code-it-out/closure_code_demo.js)
+
+`Overview`
+
+- We can manipulate a Higher Order Functions' variables with a closure
+- We can create multiple "instances" of a function's variables with closures
+
+```js
+function HOF (){
+  let count = 0;
+  return function(num) {
+      count+=num
+      console.log(count)
+  }
+}
+
+let JanToJune = HOF();
+let JulyToDec = HOF();
+
+JanToJune(0);
+JulyToDec(0);
+```
 
 ---
 
