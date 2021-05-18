@@ -1,6 +1,3 @@
-
-
-/*******************************/
 function range(start, end) {
     if (end <= start) {
         return [];
