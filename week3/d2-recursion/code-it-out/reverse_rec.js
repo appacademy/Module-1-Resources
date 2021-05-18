@@ -1,9 +1,8 @@
-function range(start, end) {
-    if (end <= start) {
-        return [];
-    }
-    return [start].concat(range(start + 1, end))
+function reverse(string) {
+  if (string.length === 0) {
+    return ""; // ""
+  }
+  let sub_str = reverse(string.slice(0, string.length - 1));
+  return string[string.length - 1] + sub_str;
 }
-
-//range(1, 1) === []
-console.log(range(1,20))
+console.log(reverse(""));
