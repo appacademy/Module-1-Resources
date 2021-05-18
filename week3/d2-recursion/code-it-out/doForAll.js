@@ -16,9 +16,13 @@ Can you label them?
 
 */
 function doForAll(arr, cb) {
-    
+    debugger;
+    if (arr.length === 0) {
+        return [];
+    }
+    return [cb(arr[0]), ...doForAll(arr.slice(1), cb)];
 }
 
-console.log(doForAll([], (x) => x * 2)); // []
+// console.log(doForAll([], (x) => x * 2)); // []
 console.log(doForAll([1, 2, 3], (x) => x + 1)); // [2, 3, 4]
 console.log(doForAll(['a', 'b', 'c'], (x) => x.toUpperCase())); // ["A", "B", "C"]

@@ -45,10 +45,6 @@ you walk me through what's happening to the call stack?
 
 ## Debugging
 
-`Challenge`: 20 mins
-
-- [doForAll](./code-it-out/doForAll.js)
-
 `Video Lecture` - for reference
 
 - [Debugging Lecture]
