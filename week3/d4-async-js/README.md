@@ -33,10 +33,6 @@
 
 ![threading]
 
-`Event Loop`
-
-- [Event Loop Reading]
-
 `Async vs. Sync`
 
 - What does Synchronous mean?
@@ -55,6 +51,10 @@
     or clothes line.
     - Can you think of other asynchronous processes you've experience in your\
     life?
+
+`Event Loop`
+
+- [Event Loop Reading]
 
 ## setTimeout & setInterval
 
