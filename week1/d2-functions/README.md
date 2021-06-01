@@ -9,7 +9,7 @@
 ## Lecture Notes
 
 - All of the lecture notes and code from the videos can be found in [Module-1-Resources] repository!
-- Link to today's notes: `https://github.com/appacademy/Module-1-Resources/tree/main/week1/d1-expressions`
+- Link to today's notes: `https://github.com/appacademy/Module-1-Resources/tree/main/week1/d2-functions`
 - Clone with
 
   ```bash
