@@ -10,6 +10,20 @@
 
 - All of the lecture notes and code from the videos can be found in [Module-1-Resources] repository!
 - Link to today's notes: `https://github.com/appacademy/Module-1-Resources/tree/main/week1/d1-expressions`
+- Clone with
+
+  ```bash
+  git clone https://github.com/appacademy/Module-1-Resources.git
+  ```
+
+  - You shouldn't edit anything in this repo, but drag and drop files.
+  - Every morning you can get the most up-to-date with
+
+    ```bash
+    git reset --hard && git pull
+    ```
+
+    - This will 'reset' any changes you made and then pull new changes
 
 ---
 
