@@ -2,39 +2,6 @@
 
 ## [Morning Boost]
 
-___
-
-## Running Code
-
-`Video Lectures` - On your own
-
-- [Basic Terminal Navigation]
-- [Navigating in VS Code]
-- [Running NodeJS]
-
-`Basic Commands`
-
-- ls
-  - See all files and folders in the directory(folder) you're currently in
-- cd `<folder>`
-  - Navigate to a directory(folder)
-- mkdir `<folder_name>`
-  - Make a directory(folder) in whatever directory(folder) you're in
-- touch `<file_name>`
-  - Create a file in whatever directory(folder) you're currently in
-- pwd
-  - Shows you path to the current directory(folder) you're in
-- cd ../
-  - Travel upwards
-- cd ./
-  - Don't travel
-
-`Using Node`
-
-- Open a node REPL with `node`
-  - exit with ctrl+c (twice)
-- Use `node <filename>` to run a file with node
-
 ## Array Methods
 
 `Video Lectures`: 45 mins
@@ -103,9 +70,6 @@ ___
 
 <!-- Links per cohort -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/monday-morning-boost
-[Basic Terminal Navigation]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/basic-terminal-navigation
-[Navigating in VS Code]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/navigating-in-vs-code
-[Running NodeJS]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/running-nodejs
 [forEach Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/for-each-demo
 [map Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/map-demo
 [filter Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/filter-demo
