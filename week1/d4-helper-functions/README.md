@@ -42,7 +42,7 @@
 
 `Using Mocha`
 
-- Make sure you're in the folder that contains the 'test' file/folder
+- Make sure you're in the folder that contains the 'test' file
 - Run `mocha` to run all test files
 - Run `mocha -b` to run the test until one fails
 - Run `mocha <testFileLocation>` to run a single test
