@@ -40,6 +40,14 @@
   - exit with ctrl+c (twice)
 - Use `node <filename>` to run a file with node
 
+`Using Mocha`
+
+- Make sure you're in the folder that contains the 'test' file/folder
+- Run `mocha` to run all test files
+- Run `mocha -b` to run the test until one fails
+- Run `mocha <testFileLocation>` to run a single test
+- Run `mocha -g <functionName>` to run all test about a single function
+
 [Morning Boost]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/thursday-morning-boost
 [Helper Functions Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/helper-functions-demo
 [Basic Terminal Navigation]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/basic-terminal-navigation
