@@ -13,6 +13,12 @@
 
 `forEach`
 
+- Hey there `forEach` Robo who's attached to an array.\
+- Here's a function.\
+- For each element that is in your array\
+- I'd like you to run this function.\
+- You don't have to give me anything back.
+
   ```js
   /* 
   Write a function called hello that intakes an 
@@ -24,6 +30,14 @@
   ```
 
 `map`
+
+- Hey there `map` Robo who's attached to an array.\
+- Here's a function.\
+- First, I'd like you to create a new array.\
+- Then, for each element that is in your array\
+I'd like you to run this function and push the return value\
+of that function into the new array you created.
+- Finally, you can give me the new array back.
 
   ```js
   /* 
@@ -37,6 +51,16 @@
   ```
 
 `filter`
+
+- Hey there `filter` Robo who's attached to an array.\
+- Here's a function.\
+- First, I'd like you to create a new array.\
+- Then, for each element that is in your array\
+I'd like you to run this function.
+  - If the `return` value of that function is true,\
+  you should push it onto the new array you created.
+  - Otherwise, you should not.
+- Finally, you can give me the new array back.
 
   ```js
   /* 
@@ -52,6 +76,27 @@
 
 `reduce`
 
+### No Default Accumulator
+
+- Hey there `reduce` Robo who's attached to an array.\
+- Here's a function.\
+- First, assign the first element of your array as the accumulator\
+- Then, starting at the second element of the array,\
+for each element that is in your array\
+I'd like you to run this function and make the\
+`return` value of this function the new accumulator.
+- Finally, you can give me the accumulator.
+
+### Default Accumulator
+
+- Hey there `reduce` Robo who's attached to an array.\
+- Here's a function. And what I'd like the accumulator to start with\
+- First, assign what I gave you as the accumulator\
+- Then, for each element that is in your array\
+I'd like you to run this function and make the\
+`return` value of this function the new accumulator.
+- Finally, you can give me the accumulator.
+
   ```js
   /* 
   Write a function called sum that intakes an
@@ -63,10 +108,7 @@
   */
   ```
 
-## Mocha
-
-- Mocha is the testing suite we will use to test our code
-  - let's download today's project and see how it works
+## Objects
 
 <!-- Links per cohort -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/monday-morning-boost
