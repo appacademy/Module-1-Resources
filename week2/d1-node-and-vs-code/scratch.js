@@ -1,8 +1,6 @@
-// Methods - push, pop, shift, unshift, splice
-
 /* 
 forEach
-1. arr.forEach(function(el, i, arr){//some action}) // a function can intake ANOTHER FUNCTION
+1. arr.forEach(function(el, i, arr){//code block}) // a function can intake ANOTHER FUNCTION
 2. forEach element that is in an array, it will run the function
   a. the function can INTAKE the ele, i, array
 3. Intakes a FUNCTION

@@ -16,7 +16,7 @@
 - Hey there `forEach` Robo who's attached to an array.
 - Here's a function.
 - For each element that is in your array
-- I'd like you to run this function.
+- I'd like you to run this function giving it the element, index, and array.
 - You don't have to give me anything back.
 
   ```js
@@ -35,8 +35,8 @@
 - Here's a function.
 - First, I'd like you to create a new array.
 - Then, for each element that is in your array\
-I'd like you to run this function and push the return value\
-of that function into the new array you created.
+I'd like you to run this function giving it the element, index, and array,\
+and push the return value of that function into the new array you created.
 - Finally, you can give me the new array back.
 
   ```js
@@ -56,7 +56,7 @@ of that function into the new array you created.
 - Here's a function.
 - First, I'd like you to create a new array.
 - Then, for each element that is in your array\
-I'd like you to run this function.
+I'd like you to run this function giving it the element, index, and array.
   - If the `return` value of that function is true,\
   you should push it onto the new array you created.
 - Finally, you can give me the new array back.
@@ -81,8 +81,8 @@ I'd like you to run this function.
 - Here's a function.
 - First, assign the first element of your array as the accumulator.
 - Then, starting at the second element of the array,\
-I'd like you to run the function and make the\
-`return` value of the function the new accumulator.
+I'd like you to run the function giving it the accumulator, element, index, and array,\
+and make the `return` value of the function the new accumulator.
 - Finally, you can give me the accumulator.
 
 ### Default Accumulator
@@ -91,7 +91,8 @@ I'd like you to run the function and make the\
 - Here's a function. And what I'd like the accumulator to start with\
 - First, assign what I gave you as the accumulator\
 - Then, for each element that is in your array\
-I'd like you to run this function and make the\
+I'd like you to run the function giving it the accumulator, element, index, and array,\
+and make the `return` value of the function the new accumulator.
 `return` value of this function the new accumulator.
 - Finally, you can give me the accumulator.
 
