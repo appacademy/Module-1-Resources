@@ -13,10 +13,10 @@
 
 `forEach`
 
-- Hey there `forEach` Robo who's attached to an array.\
-- Here's a function.\
-- For each element that is in your array\
-- I'd like you to run this function.\
+- Hey there `forEach` Robo who's attached to an array.
+- Here's a function.
+- For each element that is in your array
+- I'd like you to run this function.
 - You don't have to give me anything back.
 
   ```js
@@ -31,12 +31,12 @@
 
 `map`
 
-- Hey there `map` Robo who's attached to an array.\
-- Here's a function.\
-- First, I'd like you to create a new array.\
+- Hey there `map` Robo who's attached to an array.
+- Here's a function.
+- First, I'd like you to create a new array.
 - Then, for each element that is in your array\
 I'd like you to run this function and push the return value\
-of that function into the new array you created.
+of that function into the new array you created.\
 - Finally, you can give me the new array back.
 
   ```js
@@ -52,9 +52,9 @@ of that function into the new array you created.
 
 `filter`
 
-- Hey there `filter` Robo who's attached to an array.\
-- Here's a function.\
-- First, I'd like you to create a new array.\
+- Hey there `filter` Robo who's attached to an array.
+- Here's a function.
+- First, I'd like you to create a new array.
 - Then, for each element that is in your array\
 I'd like you to run this function.
   - If the `return` value of that function is true,\
@@ -78,9 +78,9 @@ I'd like you to run this function.
 
 ### No Default Accumulator
 
-- Hey there `reduce` Robo who's attached to an array.\
-- Here's a function.\
-- First, assign the first element of your array as the accumulator\
+- Hey there `reduce` Robo who's attached to an array.
+- Here's a function.
+- First, assign the first element of your array as the accumulator.
 - Then, starting at the second element of the array,\
 for each element that is in your array\
 I'd like you to run this function and make the\
@@ -89,7 +89,7 @@ I'd like you to run this function and make the\
 
 ### Default Accumulator
 
-- Hey there `reduce` Robo who's attached to an array.\
+- Hey there `reduce` Robo who's attached to an array.
 - Here's a function. And what I'd like the accumulator to start with\
 - First, assign what I gave you as the accumulator\
 - Then, for each element that is in your array\
@@ -109,6 +109,8 @@ I'd like you to run this function and make the\
   ```
 
 ## Objects
+
+- Live Lecture
 
 <!-- Links per cohort -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/monday-morning-boost
