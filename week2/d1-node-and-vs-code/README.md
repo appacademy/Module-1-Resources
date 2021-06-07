@@ -36,7 +36,7 @@
 - First, I'd like you to create a new array.
 - Then, for each element that is in your array\
 I'd like you to run this function and push the return value\
-of that function into the new array you created.\
+of that function into the new array you created.
 - Finally, you can give me the new array back.
 
   ```js
@@ -59,7 +59,6 @@ of that function into the new array you created.\
 I'd like you to run this function.
   - If the `return` value of that function is true,\
   you should push it onto the new array you created.
-  - Otherwise, you should not.
 - Finally, you can give me the new array back.
 
   ```js
@@ -82,9 +81,8 @@ I'd like you to run this function.
 - Here's a function.
 - First, assign the first element of your array as the accumulator.
 - Then, starting at the second element of the array,\
-for each element that is in your array\
-I'd like you to run this function and make the\
-`return` value of this function the new accumulator.
+I'd like you to run the function and make the\
+`return` value of the function the new accumulator.
 - Finally, you can give me the accumulator.
 
 ### Default Accumulator
