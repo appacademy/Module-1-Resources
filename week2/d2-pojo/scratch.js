@@ -142,3 +142,5 @@ let obj7 = { obj5, obj6, cup, movie: "Fantastic Mr. Fox" };
 let obj8 = { ...obj5, ...obj6, movie: "Fantastic Mr. Fox" };
 console.log(obj7);
 // console.log(obj8);
+
+a;lksdjf;laksjdf
