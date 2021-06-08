@@ -1,136 +1,157 @@
-# W3 D4
+# W2 D2
 
 ## [Morning Boost]
 
 ## Objects
 
-`Video Lectures`: 18 minutes
+`Video Lectures`: 8 minutes
 
 - [Object Lecture]
-- [Primitive vs Reference]
 
-`Discussion`
-
-- Arrays are contestants for American Idol
-  - I can go down the line of contestants, I can get a specific
-  contestant out of line by knowing their number.
-- Objects are a room full of people at some social benefit
-  - I can go on the intercom and ask for 'Mr. Importantpersonson' to come
-  to reception.
-  - We can use dot notation if we are LITERALLY referring to the sting
-  - We can use bracket notation for whatever
-    - strings
-    - variables
+`Review`
 
 ```js
-let contestants = [
-    'Kelly Clarkson',
-    'Rubben Studdard',
-    'Fantasia Barrino',
-    'Carrie Underwood',
-];
-// contestant 3 please step forward
-console.log(contestants[3]); //Carrie Underwood
+let obj = {
+  name: "Mylo",
+  age: 1000,
+  game: {
+    name: "Dota 2",
+    position: 5,
+    favHero: "Dazzle"
+  }
+}
 
-let roomOfRichPeople = {
-    Importantpersonson: "That's me!",
-    Bezos: 'Yes?',
-    Gates: "That's my hat!",
-};
-
-let thePersonWhoLostTheirHat = 'Gates';
-
-// Mr. Importantpersonson, are you here?
-console.log(roomOfRichPeople['Importantpersonson']); 
-console.log(roomOfRichPeople.Importantpersonson); 
-
-// Excuse me, someone lost their hat...
-console.log(roomOfRichPeople[thePersonWhoLostTheirHat]); 
+//How would I print Mylo's name from the object?
+//
+//How would I add his location, Chicago?
+//
+//How would I change his age to 1001?
 ```
 
-- We can assigned key-value pairs in JS much like we would reassigning array indices
+`Dot notation`
+
+- Since keys are usually strings, and we'd hate to have to write [''] all the time\
+we have dot notation.
+
+```js
+let obj = {
+  first: 'a',
+  second: 'b',
+  third: 'c'
+}
+
+console.log(obj.first, obj['first']) // a a
+```
+
+`Using a variable`
+
+```js
+let someVariable = 'firstName';
+let some = 'last';
+let variable = 'Name';
+let time = 'FrEQUENcY'
+
+let obj = {
+  firstName: "Oscar"
+  secondName: "Mayer"
+  frequency: "everyday"
+}
+
+console.log(obj[someVariable]); // Oscar
+console.log(obj[some + variable]); // Mayer
+console.log(obj[time.toLowercase()]);
+```
+
+`Checking if a key exists`
+
+- obj[key] !== undefined
+- key in obj
+
+`Iterating over an Object`
+
+[*OBJECTS ARE UNORDERED*]
+
+- for in loop
+- Object.keys
+- Object.values
+- Object.entries
+
+`Why objects`
+
+- Instant look up time.
+- Allows us a term/definition (key-value)
+- Groups `like` information together
+
+## Primitive VS Reference
+
+- [Primitive vs Reference]
+
+`Video Lectures`: 10 Minutes
+
+- [Primitive vs Reference]
+
+`Primitive`
 
   ```js
-  let obj = {}
-
-  obj.name = 'Mylo';
-  obj['age'] = 7000;
-  obj.name = 'Gandalf';
-
-  console.log(obj.name);
-  console.log(obj.location);
-  console.log(obj.age);
+  let age = 10;
+  let numberOfFingers = age;
+  age = numberOfFingers + 1;
+  console.log(age, numberOfFingers);
   ```
 
-- You can check if a key exists by seeing if it's undefined.
+<table>
+<tr><th>Before</th><th>After</th></tr>
+<tr><td>
+
+|RAM|VAR|VAL|
+|--|--|--|
+|#001|age|10|
+|#002|NOF|10|
+
+</td><td>
+
+|RAM|VAR|VAL|
+|--|--|--|
+|#001|age|11|
+|#002|NOF|10|
+
+</td></tr> </table>
+
+`Reference`
 
   ```js
-  let story = {
-    beginning: 'Once upon a time...',
-    end: 'And they lived happily every after',
+  let biff = {
+      type: 'dog',
+      age: 10,
   };
 
-  let makeAStory = function () {
-      if (story.middle === undefined) {
-          story.middle = 'drama';
-          console.log('added middle');
-      } else {
-          console.log('story complete');
-      }
-  };
-  makeAStory();
-  makeAStory();
+  let buster = biff;
+  buster.age = 0;
+
+  console.log(biff, buster);
   ```
 
-- Why objects?
-  - Instant look up time.
-  - Allows us a term/definition (key-value)
+  <table>
+<tr><th>Before</th><th>After</th></tr>
+<tr><td>
 
-    ```js
-    let arrUser = ['Mylo', 7000, 'Module Instructor', 'Rural America'];
+|RAM|VAR|VAL|
+|--|--|--|
+|#003|biff||
+||type|'dog'|
+||age|10
+|#004|buster|#003|
 
-    let arrAge;
+</td><td>
 
-    for (let i = 0; i < arrUser.length; i++) {
-        let ele = arrUser[i];
-        if (typeof ele === 'number') {
-            arrAge = ele;
-        }
-    }
-    console.log(arrAge);
+|RAM|VAR|VAL|
+|--|--|--|
+|#003|biff||
+||type|'dog'|
+||age|0
+|#004|buster|#003|
 
-    let user = {
-        name: 'Mylo',
-        age: 7000,
-        job: 'Module Instructor',
-        address: 'Rural America',
-    };
-
-    console.log(user.age);
-      ```
-
-  - Primitive
-
-    ```js
-    let age = 10;
-    let numberOfFingers = age;
-    age = numberOfFingers + 1;
-    console.log(age, numberOfFingers);
-    ```
-
-  - Reference
-
-      ```js
-      let Biff = {
-          type: 'dog',
-          age: 10,
-      };
-
-      let Buster = Biff;
-      Biff.age = 0;
-
-      console.log(Biff, Buster);
-      ```
+</td></tr> </table>
 
 ## Destructuring
 
@@ -238,7 +259,6 @@ console.log(roomOfRichPeople[thePersonWhoLostTheirHat]);
 ## Local Repositories
 
 - "local" repository = on your machine
-
 - "remote" repository = online code hosting service like Github
 
 ---
@@ -371,3 +391,4 @@ match2memory
 [Primitive vs Reference]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/primitive-vs-reference
 [Object Destructuring]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/object-destructuring
 [Spread and Rest]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/spread-and-rest
+[*OBJECTS ARE UNORDERED*]: https://2ality.com/2015/10/property-traversal-order-es6.html
