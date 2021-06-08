@@ -84,8 +84,6 @@ console.log(obj[time.toLowercase()]);
 
 ## Primitive VS Reference
 
-- [Primitive vs Reference]
-
 `Video Lectures`: 10 Minutes
 
 - [Primitive vs Reference]
