@@ -336,7 +336,8 @@ match2memory
   - un-stage everything
   - doesn't affect working directory
 - `git reset --hard`
-  - reset the staging area and the working directory to match the most recent commit ( or specified commit )
+  - reset the staging area and the working directory to match the most recent\
+  commit (or specified commit)
   - affects working directory
 
 ## Remote Commands / terminology
