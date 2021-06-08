@@ -137,18 +137,18 @@ console.log(obj[time.toLowercase()]);
 
 |RAM|VAR|VAL|
 |--|--|--|
-|#003|biff||
-||type|'dog'|
-||age|10
+|#003|biff|--|
+|\||type|'dog'|
+|\||age|10
 |#004|buster|#003|
 
 </td><td>
 
 |RAM|VAR|VAL|
 |--|--|--|
-|#003|biff||
-||type|'dog'|
-||age|0
+|#003|biff|--|
+|\||type|'dog'|
+|\||age|0
 |#004|buster|#003|
 
 </td></tr> </table>
