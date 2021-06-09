@@ -25,19 +25,23 @@ Write a higher order function called 'concat' that:
 */
 
 let upper = function (str) {
-
+  return str.toUpperCase();
 };
 
 let lower = function (str) {
-  
+  return str.toLowerCase();
 };
 
 let concat = function (str1, str2, cb) {
-
+  let strings = str1 + str2;
+  if (cb === undefined) {
+    return strings
+  }
+  return cb(strings)
 };
 
-console.log(upper('YeS!!! ')); // YES!!!
-console.log(lower('YeS!!! ')) // yes!!! 
-console.log(concat('YeS!!! ', 'I dId iT!', upper)); // YES!!! I DID IT!
-console.log(concat('YeS!!! ', 'I dId iT!', lower)); // yes!!! i did it!
-console.log(concat('YeS!!! ', 'I dId iT!')); // YeS!!! I dId iT!
+console.log(upper("YeS!!! ")); // YES!!!
+console.log(lower("YeS!!! ")); // yes!!!
+console.log(concat("YeS!!! ", "I dId iT!", upper)); // YES!!! I DID IT!
+console.log(concat("YeS!!! ", "I dId iT!", lower)); // yes!!! i did it!
+console.log(concat("YeS!!! ", "I dId iT!")); // YeS!!! I dId iT!
