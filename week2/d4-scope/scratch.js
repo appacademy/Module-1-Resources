@@ -86,18 +86,17 @@ function hoistLetAndConst() {
 
 // console.log(reduceSum(arr));
 
-const roboBuilder = function (initString, initNum) {
-  const num = initNum;
-  console.log("Hey, I'm building a robot with the initSting of " + initString + num);
+const roboBuilder = function (initString) {
+  console.log("Hey, I'm building a robot with the initSting of " + initString); // logged when roboBuilder is called
   return function innerRobo() {
-    console.log(initString + ", I'm a inner robot" + num);
+    console.log(initString + ", I'm a inner robot"); // logged when a 'version' of the inner function is invoked
   };
 };
 
-const robo1 = roboBuilder("Hello", 1);
-const robo2 = roboBuilder("Yoo", 2);
+const robo1 = roboBuilder("Hello"); // This returns the innerFunction w/ initString = 'Hello';
+const robo2 = roboBuilder("Yoo"); // This returns the innerFunction w/ initString = 'Yoo';
 
-console.log(robo1 === robo2);
+console.log(robo1 === robo2); // They are NOT the same function, but two different 'versions' 
 
-robo1();
-robo2();
+robo1(); // This invokes the first inner function we made on line 96
+robo2(); // This invokes the second inner function we made on line 97
