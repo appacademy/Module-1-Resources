@@ -2,7 +2,7 @@
 
 ## Interpolating String
 
-`Video Lectures`
+`Video Lectures`: 10 mins
 
 - [Interpolating Strings Code Demo]
 

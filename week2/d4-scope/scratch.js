@@ -87,23 +87,54 @@ function hoistLetAndConst() {
 // console.log(reduceSum(arr));
 
 const roboBuilder = function (initString) {
+  let response = initString + ", I'm an inner robot";
+  return function innerRobo(punc) {
+    response += punc;
+    return response;
+  };
+};
+
+let robo1 = roboBuilder("Hello");
+let robo2 = roboBuilder("Hello");
+
+
+console.log(robo1("!"));
+console.log(robo1("!"));
+console.log(robo1("!"));
+
+console.log(robo2("?"));
+console.log(robo2("?"));
+console.log(robo2("?"));
+console.log(robo2("?"));
+
+// This runs the second inner function we made on line 97
+
+const roboBuilder = function (initString) {
+  let response = initString + ", I'm an inner robot";
   // logged when roboBuilder is called
   console.log("Hey, I'm building a robot with the initSting of " + initString);
-  return function innerRobo() {
+  return function innerRobo(punc) {
+    response += punc;
     // logged when a 'version' of the inner function is invoked
-    console.log(initString + ", I'm a inner robot");
+    console.log(response);
   };
 };
 
 // Runs roboBuilder and returns the innerFunction w/ initString = 'Hello';
-const robo1 = roboBuilder("Hello");
+let robo1 = roboBuilder("Hello");
 // Runs roboBuilder again and returns the innerFunction w/ initString = 'Yoo';
-const robo2 = roboBuilder("Yoo"); 
+let robo2 = roboBuilder("Hello");
 
-// They are NOT the same function, but two different 'versions' 
-console.log(robo1 === robo2); 
+// They are NOT the same function, but two different 'versions'
+// console.log(robo1 === robo2);
 
 // This runs the first inner function we made on line 96
-robo1();
-// This runs the second inner function we made on line 97 
-robo2(); 
+robo1("!");
+robo1("!");
+robo1("!");
+
+robo2("?");
+robo2("?");
+robo2("?");
+
+// This runs the second inner function we made on line 97
