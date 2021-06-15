@@ -1,22 +1,17 @@
 function foo() {
-    debugger;
-    // console.log('a');
-    bar();
-    debugger;
-    // console.log('e');
+  debugger;
+  bar();
+  debugger;
 }
 
 function bar() {
-    debugger;
-    // console.log('b');
-    baz();
-    debugger;
-    // console.log('d');
+  debugger;
+  baz();
+  debugger;
 }
 
 function baz() {
-    debugger;
-    // console.log('c');
+  debugger;
 }
 
 foo();
