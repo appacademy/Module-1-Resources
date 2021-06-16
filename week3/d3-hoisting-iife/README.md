@@ -23,8 +23,6 @@
 
 ## Recursion Pt. 2
 
-- Live Lecture - Default Params
-
 - Today you'll work on quizzes over the lecture content, then you'll be\
 practicing more recursion. Recursion is a tough concept so make sure if you're\
 working on a problem for more than 20 mins, call in a TA.
