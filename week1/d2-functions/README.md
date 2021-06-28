@@ -412,27 +412,27 @@ Other common methods you will use often: (Not needed _today_, but why not take a
 ---
 
 <!-- Links to change for each cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/tuesday-morning-boost
-[String Type Lecture]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/string-type-lecture
-[String Type Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/string-type-demo
-[Function Lecture]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/function-lecture
-[Average Walkthrough]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/average-walkthrough
-[Conditionals Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/conditionals-demo
-[Loop Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/loops-demo
-[Array Lecture]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/array-lecture
+[Morning Boost]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/tuesday-morning-boost
+[String Type Lecture]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/string-type-lecture
+[String Type Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/string-type-demo
+[Function Lecture]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/function-lecture
+[Average Walkthrough]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/average-walkthrough
+[Conditionals Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/conditionals-demo
+[Loop Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/loops-demo
+[Array Lecture]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/array-lecture
 
 <!-- Constant Links -->
 [Falsy Values]: https://developer.mozilla.org/en-US/docs/Glossary/Falsy
 
 <!-- link per cohort -->
-[How to Learn]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/how-to-learn
-[Intro to Debugging]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/intro-to-debugging
-[Number Type Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/number-type-demo
-[Boolean Type Lecture]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/boolean-type-lecture
-[Boolean Type Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/boolean-type-demo
-[Variables Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/variables-demo
-[Asking Great coding Questions]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/asking-great-coding-questions
-[Comparison Operators Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-1-jun-2021-cohort-1-online/comparison-operators-demo
+[How to Learn]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/how-to-learn
+[Intro to Debugging]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/intro-to-debugging
+[Number Type Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/number-type-demo
+[Boolean Type Lecture]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/boolean-type-lecture
+[Boolean Type Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/boolean-type-demo
+[Variables Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/variables-demo
+[Asking Great coding Questions]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/asking-great-coding-questions
+[Comparison Operators Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/comparison-operators-demo
 
 <!-- constant links -->
 [Module-1-Resources]: https://github.com/appacademy/Module-1-Resources

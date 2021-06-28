@@ -151,15 +151,15 @@ ___
 ___
 
 <!-- Links per cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/wednesday-morning-boost
-[Using Callback Functions 1]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/using-callback-functions-demo-1
-[Using Callback Functions 2]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/using-callback-functions-demo-1
-[Multiple Callbacks]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/using-callback-functions-demo-1
-[My .forEach]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/my-for-each-demo
-[My .map]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/my-map-demo
-[My .filter]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/my-filter-demo
-[My .every]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/my-every-demo
-[Pair Programming]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-1-online/week-2-jun-2021-cohort-1-online/my-every-demo
+[Morning Boost]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-2-jun-2021-cohort-2-online/wednesday-morning-boost
+[Using Callback Functions 1]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-2-jun-2021-cohort-2-online/using-callback-functions-demo-1
+[Using Callback Functions 2]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-2-jun-2021-cohort-2-online/using-callback-functions-demo-1
+[Multiple Callbacks]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-2-jun-2021-cohort-2-online/using-callback-functions-demo-1
+[My .forEach]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-2-jun-2021-cohort-2-online/my-for-each-demo
+[My .map]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-2-jun-2021-cohort-2-online/my-map-demo
+[My .filter]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-2-jun-2021-cohort-2-online/my-filter-demo
+[My .every]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-2-jun-2021-cohort-2-online/my-every-demo
+[Pair Programming]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-2-jun-2021-cohort-2-online/my-every-demo
 
 <!-- Constant Links -->
 [First-class Function]: https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function

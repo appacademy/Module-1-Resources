@@ -25,6 +25,9 @@ function baz() {
 setTimeout(foo, 1500);
 setTimeout(bar, 1000);
 console.log(somethingSlow(44));
+// foo()
+// bar()
+
 
 
 /* 
