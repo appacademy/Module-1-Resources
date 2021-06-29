@@ -142,7 +142,8 @@
 - `if` & `else if` require a condition inside of parenthesis
   - these will evaluate the `truthy-ness` of what is inside of the parentheses
   - [Falsy Values]
-- a `code block` to run if the conditional is `truthy` or, with `else`, if other conditionals are `falsy`
+- a `code block` to run if the conditional is `truthy` or, with `else`,\
+if other conditionals are `falsy`
 
   ```js
   let c = 'turtle';
@@ -229,7 +230,8 @@
   console.log(array[array.length - 1]) // finds last element // "turtle"
   ```
 
-- `.indexOf(element)` - finds the index of the first given element in an array. If not found, returns -1.
+- `.indexOf(element)` - finds the index of the first given element in an\
+ array. If not found, returns -1.
 
   ```js
   let array = ["dog", "cat", "turtle"]
@@ -262,7 +264,8 @@
 
 `More Methods`
 
-Other common methods you will use often: (Not needed _today_, but why not take a look at them on MDN)
+Other common methods you will use often: (Not needed _today_, but why not\
+ take a look at them on MDN)
 
 - Array.prototype.push
 - Array.prototype.pop
