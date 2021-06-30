@@ -119,7 +119,7 @@
   - Adds one or more elements to the _end_ of an array and returns the new\
    length of the array.
   - **mutates the array it is called on**
-- Parameters
+- Arguments
   - The element(s) to add to the end of the array.
 - Return value
   - The new length property of the object upon which the method was called.
@@ -146,7 +146,7 @@
   - Removes the _last_ element from an array and returns that element. \
   This method changes the length of the array.
   - **mutates the array it is called on**
-- Parameters
+- Arguments
   - None
 - Return value
   - The removed element from the array; undefined if the array is empty.
@@ -173,7 +173,7 @@
   - Adds one or more elements to the _beginning_ of an array and returns the\
    new length of the array.
   - **mutates the array it is called on**
-- Parameters
+- Arguments
   - The element(s) to add to the beginning of the array.
 - Return value
   - The new length property of the object upon which the method was called.
@@ -200,7 +200,7 @@
   - Removes the _first_ element from an array and returns that element. \
   This method changes the length of the array.
   - **mutates the array it is called on**
-- Parameters
+- Arguments
   - None
 - Return value
   - The removed element from the array; undefined if the array is empty.
