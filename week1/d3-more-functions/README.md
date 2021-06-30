@@ -10,9 +10,9 @@
 
 - [Function Expression Syntax Demo]
 
-`First Class Objects`
+`First Class Functions`
 
-- First Class Objects can be
+- First Class Functions can be
   1. Stored in a variable, object, or array (objects next week)
   2. passed as an argument to a function (next week)
   3. returned from a function (next week)
@@ -116,7 +116,8 @@
   ```
 
 - Description
-  - Adds one or more elements to the _end_ of an array and returns the new length of the array.
+  - Adds one or more elements to the _end_ of an array and returns the new\
+   length of the array.
   - **mutates the array it is called on**
 - Parameters
   - The element(s) to add to the end of the array.
@@ -142,7 +143,8 @@
   ```
 
 - Description
-  - Removes the _last_ element from an array and returns that element. This method changes the length of the array.
+  - Removes the _last_ element from an array and returns that element. \
+  This method changes the length of the array.
   - **mutates the array it is called on**
 - Parameters
   - None
@@ -168,7 +170,8 @@
   ```
 
 - Description
-  - Adds one or more elements to the _beginning_ of an array and returns the new length of the array.
+  - Adds one or more elements to the _beginning_ of an array and returns the\
+   new length of the array.
   - **mutates the array it is called on**
 - Parameters
   - The element(s) to add to the beginning of the array.
@@ -194,7 +197,8 @@
   ```
 
 - Description
-  - Removes the _first_ element from an array and returns that element. This method changes the length of the array.
+  - Removes the _first_ element from an array and returns that element. \
+  This method changes the length of the array.
   - **mutates the array it is called on**
 - Parameters
   - None
