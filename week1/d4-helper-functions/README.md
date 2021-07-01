@@ -4,7 +4,7 @@
 
 ## Helper Functions
 
-`Video Lectures`
+`Video Lectures`: 20 mins
 
 - [Helper Functions Demo]
   - [Video Code](./code-it-out/helperFunction.js)
