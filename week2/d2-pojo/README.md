@@ -46,20 +46,20 @@ console.log(obj.first, obj['first']) // a a
 `Using a variable`
 
 ```js
-let someVariable = 'firstName';
-let some = 'last';
-let variable = 'Name';
-let time = 'FrEQUENcY'
+let someVariable = "firstName";
+let some = "second";
+let variable = "Name";
+let time = "FrEQUENcY";
 
 let obj = {
-  firstName: "Oscar"
-  secondName: "Mayer"
-  frequency: "everyday"
-}
+  firstName: "Oscar",
+  secondName: "Mayer",
+  frequency: "everyday",
+};
 
 console.log(obj[someVariable]); // Oscar
 console.log(obj[some + variable]); // Mayer
-console.log(obj[time.toLowercase()]);
+console.log(obj[time.toLowerCase()]);
 ```
 
 `Checking if a key exists`
