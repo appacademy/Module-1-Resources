@@ -162,19 +162,19 @@ console.log(obj[time.toLowercase()]);
 - Destructuring is just matching a pattern.
 
   ```js
-  let {person, animal} = {person: "Mylo", animal: "elephant"}
-  // let person = (the Object).person
-  // let animal = (the Object).animal
-  console.log(person, animal)
+    let person = "Emily";
+    let { person: person2, animal } = { person: "Caleb", animal: "elephant" };
+    // let person = (the Object).person
+    // let animal = (the Object).animal
+    console.log(person, person2, animal);
 
-  let [game, player] = ["Dota 2", "Austin"];
-  // let game = (the Array)[0]
-  // let player = (the Array)[1]
-  console.log(game, player)
+    let [game, player] = ["Dota 2", "Mylo"];
+    // let game = (the Array)[0]
+    // let player = (the Array)[1]
+    console.log(game, player);
 
-  let music = {tempo: 120, genre: "March"}
-  let {tempo, genre} = music;
-  console.log(tempo, genre);
+    [player, game] = [game, player];
+    console.log(game, player);
   ```
 
 ## Rest and Spread
