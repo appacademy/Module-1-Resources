@@ -20,10 +20,23 @@ Write a higher order function called 'concat' that:
   4. If the callback is defined
     1. Return the result of the callback
        passing in the concatenated string 
-  
-
 */
 
+function upper(str) {
+  return str.toUpperCase();
+}
+
+let lower = function (str) {
+  return str.toLowerCase();
+};
+
+let concat = function (str1, str2, cb) {
+  let str = str1 + str2;
+  if (!cb) {
+    return str;
+  }
+  return cb(...str);
+};
 
 console.log(upper("YeS!!! ")); // YES!!!
 console.log(lower("YeS!!! ")); // yes!!!

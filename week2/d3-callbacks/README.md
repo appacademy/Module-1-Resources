@@ -133,7 +133,7 @@ ___
   - What if BOTH of us are struggling with the material?!?
     - This WILL happen, and that's fine! The point of projects are to\
       actively LEARN, not to already know. Code until you're stuck for\
-      20 mins, then call a TA in for help.
+      15 mins, then call a TA in for help.
 - Some important notes
   - Set up your switching system and STICK TO IT. Set alarms so you're\
     always switching between driver and navigator. Even when a TA comes in\
