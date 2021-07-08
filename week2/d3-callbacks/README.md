@@ -17,7 +17,7 @@ ___
 
 `Vocabulary`
 
-- First Class Object | MDN: [First-class Function]
+- First Class Function | MDN: [First-class Function]
 
   1. Stored in a variable, object, or array (last week, more today)
   2. Passed as an argument to a function (today)
