@@ -19,7 +19,7 @@ ___
 
 - First Class Function | MDN: [First-class Function]
 
-  1. Stored in a variable, object, or array (last week, more today)
+  1. Stored in a variable (last week)
   2. Passed as an argument to a function (today)
   3. Returned from a function (today/more tomorrow)
 
@@ -38,19 +38,7 @@ ___
     console.log('I\'m stored in a variable');
   };
 
-  let arr = [function(){
-    console.log('I\'m stored in an array');
-  }];
-
-  let obj = {
-    func: function(){
-      console.log('I\'m stored in an object');
-    }
-  };
-
   console.log(func1());
-  console.log(arr[0]());
-  console.log(obj.func());
   ```
 
 - Passed as an argument to a function
