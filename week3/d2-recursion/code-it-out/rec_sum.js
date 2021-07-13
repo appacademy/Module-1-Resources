@@ -1,14 +1,9 @@
+/* 
+Write a function called rec_sum that intakes a number, and adds up all
+numbers from 1 to the number and returns the number. Must be recursive.
+*/
 function rec_sum(n) {
-  debugger;
-  if (n === 1) { 
-    debugger; 
-    return 1;
-  }
-  let sum = rec_sum(n - 1);
-  debugger;
-  return sum + n;
+
 }
 
 console.log(rec_sum(3));
-
-debugger;
