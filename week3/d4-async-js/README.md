@@ -10,7 +10,7 @@
   - Only ONE task can be processed at a time
 - Multi-threaded execution
   - Multiple tasks can be process at a time
-- Event Loop
+- Event Loop | [MDN]
   - The model of execution
   - Two parts in JS
     - Call Stack
@@ -80,3 +80,4 @@
 <!-- constant links -->
 [threading]: ./images/threading.png
 [Readline Docs]: https://nodejs.org/api/readline.html
+[MDN]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
