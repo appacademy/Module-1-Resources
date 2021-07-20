@@ -36,15 +36,13 @@ while true
       fi
 done
 echo
-echo "~/appacademy/w${week}/d${day}/lecture"
-if [ -d "../../appacademy" ] 
+if [ -d "../../../appacademy/w${week}/d${day}/lecture" ] 
 then
-  echo 'hello'
   read -p "Lecture folder exists! Overwrite? y/n `echo $'\n> '`" yn < /dev/tty
-  # if ! [[ "$yn" =~ ^\s*y(?:es)\s*$ ]] 
-  #   then
-  #     exit 0
-  # fi
+  if ! [[ "$yn" =~ ^([yY][eE][sS]|[yY])$ ]]
+    then
+      exit 0
+  fi
 fi
 cd ~/appacademy/Module-1-Resources &&
 git reset --hard &&
