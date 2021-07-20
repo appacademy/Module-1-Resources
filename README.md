@@ -29,13 +29,17 @@ App Academy suggest the following folder structure to say organized during \
 You can very easily achieve this file structure for weeks 1 - 3 by running
 
 ```bash
-curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resrouces/main/additional_resources/run.sh | bash
+curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/run.sh | bash
 ```
 
 ## Updating this repo (DAILY)
 
 - Git is an amazing tool that allows you to have the most up-to-date
-  code your lecturer has written with a few simple steps
+  code your lecturer has written by running this command and following the prompts
+
+```bash
+curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/update.sh | bash
+```
 
   
 ## Lectures

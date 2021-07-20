@@ -2,7 +2,7 @@
 # Prompt user to insert inputs (one at a time)
 while true
 do
-    read -p "What is the current WEEK?: " week
+    read -n 1 -p "What is the current WEEK?: " week
     if [ -z "$week" ]
     then 
         echo 'Week cannot be blank please try again!'
