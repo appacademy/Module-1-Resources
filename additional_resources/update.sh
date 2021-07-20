@@ -1,5 +1,4 @@
 #!/bin/bash
-# Prompt user to insert inputs (one at a time)
 while true
   do
       read -n 1 -p "What is the current WEEK?: `echo $'\n> '`" week < /dev/tty
