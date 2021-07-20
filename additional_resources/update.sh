@@ -25,9 +25,9 @@ do
         echo 'Day cannot be blank please try again!' 
         continue
     fi 
-    if ! [[ "$day" =~ ^\s*[1-5]{1}\s*$ ]] 
+    if ! [[ "$day" =~ ^\s*[1-4]{1}\s*$ ]] 
     then
-        echo "Day must be a number between 1 and 5"
+        echo "Day must be a number between 1 and 4"
         continue
     else
         break
@@ -38,4 +38,4 @@ cd ~/appacademy/Module-1-Resources &&
 git reset --hard &&
 git pull &&
 rm -rf ~/appacademy/w${week}/d${day}/lecture &&
-cp ~/appacademy/Module-1-Resources/w${week}/d${day} ~/appacademy/w${week}/d${day}/lecture
+cp -r ~/appacademy/Module-1-Resources/w${week}/d${day} ~/appacademy/w${week}/d${day}/lecture
