@@ -11,7 +11,7 @@ You can very easily achieve the folder/file structure we're expecting in Mod1 \
 by running the following command
 
 ```bash
-curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/folder_structure.sh | bash
+curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/folder_structure.sh | bash
 ```
 
 ## Updating this repo (DAILY)
@@ -20,7 +20,7 @@ curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/add
   code your lecturer has written by running this command and following the prompts
 
 ```bash
-curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/update.sh | bash
+curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash
 ```
 
 ## Lectures
