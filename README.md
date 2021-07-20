@@ -7,29 +7,11 @@ your time in Module 1!
 
 ## Folder Structure
 
-App Academy suggest the following folder structure to say organized during \
-  the course.
-
-- `app_academy` (**folder**)
-- `Module-1-Resources` (**folder**)
-- `week_1` (**folder**)
-  - `w1d1` (**folder**)
-    - `lecture`(**folder**)
-      - `README.md`
-      - ...
-    - `projects` (**folder**)
-      - `file1.js` (**file**)
-      - `file2.js` (**file**)
-      - ...
-    - `homework` (**folder**)
-      - `file1.js` (**file**)
-      - `file2.js` (**file**)
-      - ...
-
-You can very easily achieve this file structure for weeks 1 - 3 by running
+You can very easily achieve the folder/file structure we're expecting in Mod1 \
+by running the following command
 
 ```bash
-curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/run.sh | bash
+curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/folder_structure.sh | bash
 ```
 
 ## Updating this repo (DAILY)
@@ -41,23 +23,21 @@ curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/add
 curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/update.sh | bash
 ```
 
-  
 ## Lectures
 
-- Each lecture has notes and coding examples that you should follow along with. The lecture notes for the day will be called `README.md` and its associated code will be linked within the `README.md`. Just like this:
+- Each lecture has notes and coding examples that you should follow along with. \
+The lecture notes for the day will be called `README.md` and its associated \
+code will be linked within the `README.md`. Just like this:
 
-  - [Code it out](./example.js)
+  - [Code it out](./w1/d1/code_it_out/boolean-type.js)
 
 ## Weekly Additional Resources
 
-- Each week also has additional resources within that week's folder. Feel free to explore and find some helpful resources that may include things like cheat sheets and additional practice problems.
-
-## Recommended Folder Structure
-
-- Organization is key when going through a fast course such as App Academy. As a result here is a recommended file structure that students can follow:
-
-
+- Each week also has additional resources. \
+Feel free to explore and find some helpful resources that may include things \
+like cheat sheets and additional practice problems.
 
 ## Contributing to this repo (staff)
 
-- In order to contribute to this repo, please make sure that you create a pull request so that It can be reviewed by the modular instructor
+- In order to contribute to this repo, please make sure that you create a \
+pull request so that It can be reviewed by the modular instructor
