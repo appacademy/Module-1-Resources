@@ -1,4 +1,4 @@
-d#!/bin/bash
+#!/bin/bash
 # Prompt user to insert inputs (one at a time)
 while true
   do
