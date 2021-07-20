@@ -36,6 +36,9 @@ while true
       fi
 done
 echo
+cd ~/appacademy/Module-1-Resources
+git reset --hard -q
+git pull --quiet
 cd ~
 if [ -d "./appacademy/w${week}/d${day}/lecture" ] 
 then
@@ -43,10 +46,11 @@ then
   if ! [[ "$yn" =~ ^([yY][eE][sS]|[yY])$ ]]
     then
       exit 0
+    else
+    echo "Overwriting..."
+    rm -rf ~/appacademy/w${week}/d${day}/lecture
   fi
 fi
-cd ~/appacademy/Module-1-Resources &&
-git reset --hard &&
-git pull &&
-rm -rf ~/appacademy/w${week}/d${day}/lecture &&
+echo "Copying Files..."
 cp -r ~/appacademy/Module-1-Resources/w${week}/d${day} ~/appacademy/w${week}/d${day}/lecture
+echo "Done."
