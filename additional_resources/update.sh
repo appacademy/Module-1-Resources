@@ -19,7 +19,7 @@ done
 echo 
 while true
   do
-      read -n 1 -p "What is the currnet DAY?: `echo $'\n> '`" day < /dev/tty
+      read -n 1 -p "What is the current DAY?: `echo $'\n> '`" day < /dev/tty
 
       if [ -z "$day" ]
       then 
