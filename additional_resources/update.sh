@@ -36,7 +36,8 @@ while true
       fi
 done
 echo
-if [ -d "../../../appacademy/w${week}/d${day}/lecture" ] 
+cd ~
+if [ -d "./appacademy/w${week}/d${day}/lecture" ] 
 then
   read -p "Lecture folder exists! Overwrite? y/n `echo $'\n> '`" yn < /dev/tty
   if ! [[ "$yn" =~ ^([yY][eE][sS]|[yY])$ ]]
