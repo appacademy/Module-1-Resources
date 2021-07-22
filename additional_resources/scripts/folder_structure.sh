@@ -45,14 +45,12 @@ if [ $SHELL = '/bin/bash' ]; then
             ALIAS_IN_START=$(cat $HOME/.bashrc | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
             if [ $ALIAS_IN_START != 1 ]; then
                 echo "alias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.bashrc
-                echo "Please restart your terminal"
             fi
         else
             echo "$HOME/.bash_profile"
             ALIAS_IN_START=$(cat $HOME/.bash_profile | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
             if [ $ALIAS_IN_START != 1 ]; then
                 echo "alias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.bash_profile
-                echo "Please restart your terminal"
             fi
         fi
         exit 0
@@ -62,13 +60,11 @@ if [ $SHELL = '/bin/bash' ]; then
             ALIAS_IN_START=$(cat $HOME/.bashrc | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
             if [ $ALIAS_IN_START != 1 ]; then
                 echo "alias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.bashrc
-                echo "Please restart your terminal"
             fi
         else
             ALIAS_IN_START=$(cat $HOME/.profile | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
             if [ $ALIAS_IN_START != 1 ]; then
                 echo "alias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.profile
-                echo "Please restart your terminal"
             fi
         fi
         exit 0;
@@ -77,9 +73,5 @@ elif [ $SHELL = '/bin/zsh' ]; then
     ALIAS_IN_START=$(cat $HOME/.zshrc | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
     if [ $ALIAS_IN_START != 1 ]; then
         echo "alias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.zshrc
-        echo "Please restart your terminal"
     fi
-else
-    echo "If you're on mac please run 'touch ~/.zshrc' otherwise run 'touch ~/.bashrc' and try again"
-    exit 1;
 fi
