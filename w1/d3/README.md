@@ -13,7 +13,7 @@
 `First Class Functions`
 
 - First Class Functions can be
-  1. Stored in a variable, object, or array (objects next week)
+  1. Stored in a variable
   2. passed as an argument to a function (next week)
   3. returned from a function (next week)
 
