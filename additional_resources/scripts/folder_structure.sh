@@ -41,7 +41,6 @@ w3/d5/projects w3/d5/homework \
 if [ $SHELL = '/bin/bash' ]; then
     if [ -e $HOME/.bash_profile ]; then
         BASHRC_IN_BASH_PROFILE=$(cat $HOME/.bash_profile | grep -c 'source $HOME/.bashrc')
-        echo $BASHRC_IN_BASH_PROFILE
         if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE > 0 ]; then
             echo 'bash_profile'
             ALIAS_IN_START=$(cat $HOME/.bash_profile | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
@@ -57,7 +56,6 @@ if [ $SHELL = '/bin/bash' ]; then
         fi
         exit 0
     elif [ -e $HOME/.profile ]; then
-        echo 'dot profile'
         BASHRC_IN_PROFILE=$(cat $HOME/.profile | grep -c 'source $HOME/.bashrc')
         if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_PROFILE > 0 ]; then
             ALIAS_IN_START=$(cat $HOME/.profile | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
