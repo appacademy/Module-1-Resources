@@ -17,7 +17,9 @@ curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/add
 ## Updating this repo (DAILY)
 
 You can get the most up-to-date lecture material every morning by running the \
-following command.
+following command, and input the current week number and day number!\
+This will copy the newest lecture material to your `appacademy` folder so you\
+can code along and take notes.
 
 ```bash
 aa_update
