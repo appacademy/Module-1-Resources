@@ -5,7 +5,7 @@
 Here you will find all resources that are associated to your cohort during \
 your time in Module 1!
 
-## Folder Structure
+## Folder Structure (ONCE)
 
 You can very easily achieve the folder/file structure we're expecting in Mod1 \
 by running the following command
@@ -16,8 +16,8 @@ curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/add
 
 ## Updating this repo (DAILY)
 
-- Git is an amazing tool that allows you to have the most up-to-date
-  code your lecturer has written by running this command and following the prompts
+You can get the most up-to-date lecture material every morning by running the \
+following command.
 
 ```bash
 aa_update
@@ -31,13 +31,12 @@ code will be linked within the `README.md`. Just like this:
 
   - [Code it out](./w1/d1/code_it_out/boolean-type.js)
 
-## Weekly Additional Resources
+## Additional Resources
 
-- Each week also has additional resources. \
-Feel free to explore and find some helpful resources that may include things \
-like cheat sheets and additional practice problems.
+- Feel free to explore and find some helpful resources that may include things \
+like cheat sheets and additional practice problems and general advice.
 
-## Contributing to this repo (staff)
+## Contributing to this repo (Staff)
 
 - In order to contribute to this repo, please make sure that you create a \
 pull request so that It can be reviewed by the modular instructor
