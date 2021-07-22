@@ -2,7 +2,7 @@
 cd $HOME &&
 mkdir appacademy && 
 cd appacademy && 
-git clone https://github.com/appacademy/Module-1-Resources.git && 
+git -q clone https://github.com/appacademy/Module-1-Resources.git && 
 mkdir \
 w1 \
 w1/d1 \
