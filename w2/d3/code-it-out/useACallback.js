@@ -2,44 +2,43 @@
 Instructions:
 
 Write a callback called 'upper' that:
-  1. Intakes a string
-  2. Returns the string in uppercase
+  1. Intakes an array
+  2. Returns an array with all the elements, but uppercase
 
   Write a callback called 'lower' that:
-  1. Intakes a string
-  2. Returns the string in lowercase
+  1. Intakes an array
+  2. Returns an array with all the elements, but lowercase
 
-Write a higher order function called 'concat' that: 
-  1. Intakes three parameters 
-    1. A string
-    2. Another string
+Write a higher order function called printVals that: 
+  1. Intakes two parameters 
+    1. An object
     3. An optional callback
-  2. Concatenates the strings
-  3. If the callback is not defined
-    1. Return the concatenated string
-  4. If the callback is defined
-    1. Return the result of the callback
-       passing in the concatenated string 
+  3. If a callback is passed in
+    1. Return the result of passing in an array of values from the obj to the cb
+  4. Otherwise return an array of values from the obj
 */
 
-function upper(str) {
-  return str.toUpperCase();
-}
+let upper = (arr) => arr.map((str) => str.toUpperCase());
+let lower = (arr) => arr.map((str) => str.toLowerCase());
 
-let lower = function (str) {
-  return str.toLowerCase();
+let printVals = (obj, cb) => {
+    let vals = Object.values(obj);
+    if (cb) {
+        return cb(vals);
+    } else {
+        return vals;
+    }
 };
 
-let concat = function (str1, str2, cb) {
-  let str = str1 + str2;
-  if (!cb) {
-    return str;
-  }
-  return cb(...str);
+let user = {
+    name: 'MylO',
+    location: 'ChIcaGo',
+    favLibrary: 'ReAct',
+    favAnimal: 'ElePhAnt',
 };
 
-console.log(upper("YeS!!! ")); // YES!!!
-console.log(lower("YeS!!! ")); // yes!!!
-console.log(concat("YeS!!! ", "I dId iT!", upper)); // YES!!! I DID IT!
-console.log(concat("YeS!!! ", "I dId iT!", lower)); // yes!!! i did it!
-console.log(concat("YeS!!! ", "I dId iT!")); // YeS!!! I dId iT!
+console.log(upper(['YeS', 'i', 'DiD', 'It', '!!!'])); // ['YES', 'I', 'DID', 'IT', '!!!']
+console.log(lower(['YeS', 'i', 'DiD', 'It', '!!!'])); // ['yes', 'i', 'did', 'it', '!!!']
+console.log(printVals(user)); // ['MylO','ChIcaGo', 'ReAct', 'ElePhAnt']
+console.log(printVals(user, upper)); // ['MYLO', 'CHICAGO', 'REACT', 'ELEPHANT']
+console.log(printVals(user, lower)); // ['mylo', 'chicago', 'react', 'elephant']
