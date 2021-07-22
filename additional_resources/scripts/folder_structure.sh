@@ -44,29 +44,30 @@ if [ $SHELL = '/bin/bash' ]; then
         echo $BASHRC_IN_BASH_PROFILE
         if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE > 0 ]; then
             echo 'bash_profile'
-            ALIAS_IN_START=$(cat $HOME/.bashrc | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
-            if [ $ALIAS_IN_START != 1 ]; then
-                echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.bashrc
-            fi
-        else
             ALIAS_IN_START=$(cat $HOME/.bash_profile | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
             if [ $ALIAS_IN_START != 1 ]; then
                 echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.bash_profile
             fi
+        else
+            ALIAS_IN_START=$(cat $HOME/.bashrc | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
+            if [ $ALIAS_IN_START != 1 ]; then
+                echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.bashrc
+            fi
+            
         fi
         exit 0
     elif [ -e $HOME/.profile ]; then
         echo 'dot profile'
         BASHRC_IN_PROFILE=$(cat $HOME/.profile | grep -c '$HOME/.bashrc')
         if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_PROFILE > 0 ]; then
-            ALIAS_IN_START=$(cat $HOME/.bashrc | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
-            if [ $ALIAS_IN_START != 1 ]; then
-                echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.bashrc
-            fi
-        else
             ALIAS_IN_START=$(cat $HOME/.profile | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
             if [ $ALIAS_IN_START != 1 ]; then
                 echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.profile
+            fi
+        else
+            ALIAS_IN_START=$(cat $HOME/.bashrc | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
+            if [ $ALIAS_IN_START != 1 ]; then
+                echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.bashrc
             fi
         fi
         exit 0;
