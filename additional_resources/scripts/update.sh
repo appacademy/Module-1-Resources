@@ -39,7 +39,7 @@ if [ -d "./appacademy/w${week}/d${day}/lecture" ]; then
     while true; do
         read -p "Are you only wanting the lecturer's scratch file? y/n `echo $'\n> '`" yn1 < /dev/tty
         if [[ "$yn1" =~ ^([yY][eE][sS]|[yY])$ ]]; then
-            echo "Copying the live lecture notes..."
+            echo "Copying to live-lecture.js..."
             cp -r ~/appacademy/Module-1-Resources/w${week}/d${day}/scratch.js ~/appacademy/w${week}/d${day}/lecture/live-scratch.js
             echo "Done."
             exit 0
