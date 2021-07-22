@@ -20,7 +20,7 @@ curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/add
   code your lecturer has written by running this command and following the prompts
 
 ```bash
-curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash
+aa_update
 ```
 
 ## Lectures
