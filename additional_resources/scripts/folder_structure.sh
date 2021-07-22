@@ -42,7 +42,7 @@ if [ $SHELL = '/bin/bash' ]; then
     if [ -e $HOME/.bash_profile ]; then
         BASHRC_IN_BASH_PROFILE=$(cat $HOME/.bash_profile | grep -c '$HOME/.bashrc')
         echo $BASHRC_IN_BASH_PROFILE
-        if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE != 1 ]; then
+        if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE > 0 ]; then
             ALIAS_IN_START=$(cat $HOME/.bashrc | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
             if [ $ALIAS_IN_START != 1 ]; then
                 echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.bashrc
@@ -56,7 +56,7 @@ if [ $SHELL = '/bin/bash' ]; then
         exit 0
     elif [ -e $HOME/.profile ]; then
         BASHRC_IN_PROFILE=$(cat $HOME/.profile | grep -c '$HOME/.bashrc')
-        if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_PROFILE != 1 ]; then
+        if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_PROFILE > 0 ]; then
             ALIAS_IN_START=$(cat $HOME/.bashrc | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
             if [ $ALIAS_IN_START != 1 ]; then
                 echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.bashrc
