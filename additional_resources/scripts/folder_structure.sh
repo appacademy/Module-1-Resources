@@ -41,13 +41,13 @@ w3/d5/projects w3/d5/homework \
 if [ $SHELL = '/bin/bash' ]; then
     if [ -e $HOME/.bash_profile ]; then
         BASHRC_IN_BASH_PROFILE=$(cat $HOME/.bash_profile | grep -c '$HOME/.bashrc')
+        echo BASHRC_IN_BASH_PROFILE
         if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE != 1 ]; then
             ALIAS_IN_START=$(cat $HOME/.bashrc | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
             if [ $ALIAS_IN_START != 1 ]; then
                 echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.bashrc
             fi
         else
-            echo "$HOME/.bash_profile"
             ALIAS_IN_START=$(cat $HOME/.bash_profile | grep -c 'https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh')
             if [ $ALIAS_IN_START != 1 ]; then
                 echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/update.sh | bash'" >> $HOME/.bash_profile
