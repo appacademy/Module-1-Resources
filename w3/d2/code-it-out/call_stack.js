@@ -1,7 +1,6 @@
 function foo() {
   debugger;
   return 2 + bar();
-  
 }
 
 function bar() {

@@ -18,27 +18,20 @@ Write a higher order function called printVals that:
   4. Otherwise return an array of values from the obj
 */
 
-let upper = (arr) => arr.map((str) => str.toUpperCase());
-let lower = (arr) => arr.map((str) => str.toLowerCase());
+let upper = function () {};
+let lower = function () {};
 
-let printVals = (obj, cb) => {
-    let vals = Object.values(obj);
-    if (cb) {
-        return cb(vals);
-    } else {
-        return vals;
-    }
-};
+let printVals = function (obj, cb) {};
 
 let user = {
-    name: 'MylO',
-    location: 'ChIcaGo',
-    favLibrary: 'ReAct',
-    favAnimal: 'ElePhAnt',
+  name: "MylO",
+  location: "ChIcaGo",
+  favLibrary: "ReAct",
+  favAnimal: "ElePhAnt",
 };
 
-console.log(upper(['YeS', 'i', 'DiD', 'It', '!!!'])); // ['YES', 'I', 'DID', 'IT', '!!!']
-console.log(lower(['YeS', 'i', 'DiD', 'It', '!!!'])); // ['yes', 'i', 'did', 'it', '!!!']
+console.log(upper(["YeS", "i", "DiD", "It", "!!!"])); // ['YES', 'I', 'DID', 'IT', '!!!']
+console.log(lower(["YeS", "i", "DiD", "It", "!!!"])); // ['yes', 'i', 'did', 'it', '!!!']
 console.log(printVals(user)); // ['MylO','ChIcaGo', 'ReAct', 'ElePhAnt']
 console.log(printVals(user, upper)); // ['MYLO', 'CHICAGO', 'REACT', 'ELEPHANT']
 console.log(printVals(user, lower)); // ['mylo', 'chicago', 'react', 'elephant']

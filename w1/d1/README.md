@@ -10,21 +10,23 @@
 
 - All of the lecture notes and code from the videos can be found in the\
  [Module-1-Resources] repository!
-- Link to today's notes: `https://github.com/appacademy/Module-1-Resources/tree/main/week1/d1-expressions`
-- Clone with
 
-  ```bash
-  git clone https://github.com/appacademy/Module-1-Resources.git
-  ```
-
-  - You shouldn't edit anything in this repo, but drag and drop files.
-  - Every morning you can get the most up-to-date with
+How to use:
+1. Run the following command (Once)
 
     ```bash
-    git reset --hard && git pull
+    curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/folder_structure.sh | bash
     ```
 
-    - This will 'reset' any changes you made and then pull new changes
+2. Restart your terminal
+3. Every morning run...
+
+    ```bash
+    aa_update
+    ```
+
+4. Follow prompts
+5. Run `aa_update` again after lecture to get live lecture notes
 
 ---
 
@@ -268,14 +270,14 @@
 
 ---
 <!-- link per cohort -->
-[How to Learn]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/how-to-learn
-[Intro to Debugging]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/intro-to-debugging
-[Number Type Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/number-type-demo
-[Boolean Type Lecture]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/boolean-type-lecture
-[Boolean Type Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/boolean-type-demo
-[Variables Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/variables-demo
-[Asking Great coding Questions]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/asking-great-coding-questions
-[Comparison Operators Demo]: https://open.appacademy.io/learn/js-py---jun-2021-cohort-2-online/week-1-jun-2021-cohort-2-online/comparison-operators-demo
+[How to Learn]: https://open.appacademy.io/learn/js-py---jul-2021-cohort-1-online/week-1-jul-2021-cohort-1-online/how-to-learn
+[Intro to Debugging]: https://open.appacademy.io/learn/js-py---jul-2021-cohort-1-online/week-1-jul-2021-cohort-1-online/intro-to-debugging
+[Number Type Demo]: https://open.appacademy.io/learn/js-py---jul-2021-cohort-1-online/week-1-jul-2021-cohort-1-online/number-type-demo
+[Boolean Type Lecture]: https://open.appacademy.io/learn/js-py---jul-2021-cohort-1-online/week-1-jul-2021-cohort-1-online/boolean-type-lecture
+[Boolean Type Demo]: https://open.appacademy.io/learn/js-py---jul-2021-cohort-1-online/week-1-jul-2021-cohort-1-online/boolean-type-demo
+[Variables Demo]: https://open.appacademy.io/learn/js-py---jul-2021-cohort-1-online/week-1-jul-2021-cohort-1-online/variables-demo
+[Asking Great coding Questions]: https://open.appacademy.io/learn/js-py---jul-2021-cohort-1-online/week-1-jul-2021-cohort-1-online/asking-great-coding-questions
+[Comparison Operators Demo]: https://open.appacademy.io/learn/js-py---jul-2021-cohort-1-online/week-1-jul-2021-cohort-1-online/comparison-operators-demo
 
 <!-- constant links -->
 [Module-1-Resources]: https://github.com/appacademy/Module-1-Resources
