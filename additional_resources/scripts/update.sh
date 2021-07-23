@@ -1,6 +1,6 @@
 #!/bin/bash
 while true; do
-    read -p "What is the current WEEK?: `echo $'\n> '`" week < /dev/tty
+    read -p "What is the current WEEK? (Input integer 1 - 3): `echo $'\n> '`" week < /dev/tty
     if [ -z "$week" ]; then 
         echo "Week cannot be blank please try again! `echo $'\n '`"
         continue
@@ -15,7 +15,7 @@ while true; do
 done
 echo 
 while true; do
-    read -p "What is the current DAY?: `echo $'\n> '`" day < /dev/tty
+    read -p "What is the current DAY? (Input integer 1 - 4): `echo $'\n> '`" day < /dev/tty
 
     if [ -z "$day" ]; then 
         echo "Day cannot be blank please try again! `echo $'\n '`" 
