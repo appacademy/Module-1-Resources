@@ -13,6 +13,10 @@
 
 How to use:
 
+- `cd` - change directory
+- `ls` - list files/folders
+- `code .` - opens vsCode
+
 1. Run the following command (Once)
 
     ```bash
