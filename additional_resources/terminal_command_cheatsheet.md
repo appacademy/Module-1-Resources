@@ -27,3 +27,27 @@
 | code         | Opens VS code in the specified directory                           | `code <directory or file to open> `         |
 | npm install  | Install the required packages and libraries for the project        | `npm install`                               |
 
+</br>
+</br>
+
+- ## Here is a small list VS Code commands you will find very useful throughout the course.
+</br>
+</br>
+
+| Command      | What it does      | Usage                                                         |
+| ------------ | ----------------- | ------------------------------------------------------------- |
+| ctrl+s       | Save file         | Saves the current file                                        |
+| ctrl+z       | Undo              | Reverts the most recent change to the file                    |
+| ctrl+y       | Redo              | Readds a reverted change to the file                          |
+| ctrl + `     | Open terminal     | Open the terminal in VS Code                                  |
+| ctrl+shift+` | Open new terminal | Opens a VS Code terminal in the current directory             |
+| ctrl+shift+p | Command palette   | Opens VS Code command palette for quick settings adjustments  |
+| alt+↑        | Move line         | Move the current line up                                      |
+| alt+↓        | Move line         | Move the current line down                                    |
+| alt+shift+↑  | Copy down         | Creates a copy of the line, or selected lines, directly above |
+| alt+shift+↓  | Copy down         | Creates a copy of the line, or selected lines, directly below |
+| alt+click    | Create cursor     | Drops an additional curser where you click.                   |
+| drag mouse3  | Create cursors    | Drops an additional cursor on each line dragged through       |
+| ctrl + p     | File selector     | Select files from a dropdown menu                             |
+| ctrl + /     | Comment           | Comment current line or selected area                         |
+
