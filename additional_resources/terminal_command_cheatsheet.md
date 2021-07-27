@@ -51,3 +51,16 @@
 | ctrl + p     | File selector     | Select files from a dropdown menu                             |
 | ctrl + /     | Comment           | Comment current line or selected area                         |
 
+</br>
+</br>
+
+- ## Here is a small list of Mocha commands you will find very useful throughout the course.
+</br>
+</br>
+
+| Command  | What it does                                  | Usage                 |
+| -------- | --------------------------------------------- | --------------------- |
+| mocha    | run all mocha tests                           | `mocha`               |
+| mocha -b | run until fail                                | `mocha -b`            |
+| mocha -g | Run tests and output specified test's results | `mocha -g <filename>` |
+| mocha -h | Display help menu                             | `mocha -h `           |
