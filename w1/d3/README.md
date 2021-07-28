@@ -218,7 +218,7 @@
 
 `Video Lectures`: 30 mins
 
-- [Nested Loops]
+- [Nested Loops] - THIS ONE FIRST
 - [Pairs in Array]
 - [Unique Pairs in Array]
 
