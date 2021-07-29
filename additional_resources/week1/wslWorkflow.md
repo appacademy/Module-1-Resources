@@ -66,7 +66,7 @@ unzip theFileYouDownloaded.zip
 * If you have never ran this command before it might prompt you to download unzip
 
 ```bash
-sudo apt install upzip
+sudo apt install unzip
 ```
 
 * I also recommend installing this
