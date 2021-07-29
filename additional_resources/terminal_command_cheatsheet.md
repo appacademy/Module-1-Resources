@@ -22,7 +22,7 @@
 | unzip        | Unzip a compressed .zip file                                       | `unzip <filename>`                          |
 | cp           | Copies a specified file into a specified location                  | `cp <file name> <desired copy destination>` |
 | mv           | Moves a specified file into a specified location                   | `mv <file name> <desired move destination>` |
-| explorer.exe / open | Opens the Windows file explorer GUI in the specified directory     | `explorer.exe <directory to open>` on pc OR `open <directory to open>`          |
+| explorer.exe / open | Opens the file explorer GUI in the specified directory     | Windows: `explorer.exe <directory to open>` - Mac: `open <directory to open>` |
 | code         | Opens VS code in the specified directory                           | `code <directory or file to open> `         |
 | npm install  | Install the required packages and libraries for the project        | `npm install`                               |
 
@@ -59,7 +59,8 @@
 
 | Command  | What it does                                  | Usage                 |
 | -------- | --------------------------------------------- | --------------------- |
-| mocha    | run all mocha tests                           | `mocha`               |
+| mocha    | run all mocha test files                           | `mocha`               |
+| mocha < path >   | run specific mocha test file                          | `mocha <path-to-file>`               |
 | mocha -b | run until fail                                | `mocha -b`            |
 | mocha -g | Run tests and output specified test's results | `mocha -g <filename>` |
 | mocha -h | Display help menu                             | `mocha -h `           |
