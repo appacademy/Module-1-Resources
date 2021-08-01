@@ -1,6 +1,6 @@
 #!/bin/bash
 while true; do
-    read -p "What is the current WEEK? (Input integer 1 - 3): `echo $'\n> '`" week < /dev/tty
+    read -p "What is the current WEEK? (1 - 3): `echo $'\n> '`" week < /dev/tty
     if [ -z "$week" ]; then 
         echo "Week cannot be blank please try again! `echo $'\n '`"
         continue
@@ -15,7 +15,7 @@ while true; do
 done
 echo 
 while true; do
-    read -p "What is the current DAY? (Input integer 1 - 4): `echo $'\n> '`" day < /dev/tty
+    read -p "What is the current DAY? (1 - 4): `echo $'\n> '`" day < /dev/tty
 
     if [ -z "$day" ]; then 
         echo "Day cannot be blank please try again! `echo $'\n '`" 
@@ -37,7 +37,7 @@ cd ~
 if [ -d "./appacademy/w${week}/d${day}/lecture" ]; then
     echo 'Lecture folder already exists...'
     while true; do
-        read -p "Are you only wanting the lecturer's scratch file? y/n `echo $'\n> '`" yn1 < /dev/tty
+        read -p "Are you only wanting the lecturer's live lecture file? y/n `echo $'\n> '`" yn1 < /dev/tty
         if [[ "$yn1" =~ ^([yY][eE][sS]|[yY])$ ]]; then
             echo "Copying to live-lecture.js..."
             cp -r ~/appacademy/Module-1-Resources/w${week}/d${day}/scratch.js ~/appacademy/w${week}/d${day}/lecture/live-scratch.js
