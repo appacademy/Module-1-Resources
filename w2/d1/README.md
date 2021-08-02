@@ -4,16 +4,13 @@
 
 ## Array Methods
 
-`Video Lectures`: 45 mins
+`Video Lectures`: 10 mins
 
 - [forEach Demo]
-- [map Demo]
-- [filter Demo]
-- [reduce Demo]
 
 `forEach`
 
-- Hey there `forEach` Robo who's attached to an array.
+- Hey there `forEach` method who's attached to an array.
 - Here's a function.
 - For each element that is in your array
 - I'd like you to run this function giving it the element, index, and array.
@@ -29,9 +26,15 @@
   */
   ```
 
+`Video Lectures`: 35 mins
+
+- [map Demo]
+- [filter Demo]
+- [reduce Demo]
+
 `map`
 
-- Hey there `map` Robo who's attached to an array.
+- Hey there `map` method who's attached to an array.
 - Here's a function.
 - First, I'd like you to create a new array.
 - Then, for each element that is in your array\
@@ -52,7 +55,7 @@ and push the return value of that function into the new array you created.
 
 `filter`
 
-- Hey there `filter` Robo who's attached to an array.
+- Hey there `filter` method who's attached to an array.
 - Here's a function.
 - First, I'd like you to create a new array.
 - Then, for each element that is in your array\
@@ -77,7 +80,7 @@ I'd like you to run this function giving it the element, index, and array.
 
 ### No Default Accumulator
 
-- Hey there `reduce` Robo who's attached to an array.
+- Hey there `reduce` method who's attached to an array.
 - Here's a function.
 - First, assign the first element of your array as the accumulator.
 - Then, starting at the second element of the array,\
@@ -87,7 +90,7 @@ and make the `return` value of the function the new accumulator.
 
 ### Default Accumulator
 
-- Hey there `reduce` Robo who's attached to an array.
+- Hey there `reduce` method who's attached to an array.
 - Here's a function. And what I'd like the accumulator to start with\
 - First, assign what I gave you as the accumulator\
 - Then, for each element that is in your array\
