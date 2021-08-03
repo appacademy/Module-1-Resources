@@ -31,7 +31,7 @@ ___
 
 `First Class Objects`
 
-- Stored in a variable, object, or array
+- Stored in a variable
 
   ```js
   let func1 = function(){
@@ -156,4 +156,4 @@ ___
 [myMap]: ./code-it-out/myMap.js
 [myFilter]: ./code-it-out/myFilter.js
 [myEvery]: ./code-it-out/myEvery.js
-[Git Flow]: https://github.com/appacademy/Module-1-Resources/tree/main/week2/additional_resources/gitflow
+[Git Flow]: https://github.com/appacademy/Module-1-Resources/tree/main/additional_resources/week2/gitflow
