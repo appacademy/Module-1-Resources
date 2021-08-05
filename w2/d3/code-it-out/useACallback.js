@@ -18,10 +18,45 @@ Write a higher order function called printVals that:
   4. Otherwise return an array of values from the obj
 */
 
-let upper = function () {};
-let lower = function () {};
+let upper = function (arr) {
+  let newArray = arr.map(function (word) {
+    return word.toUpperCase()
+  })
+  return newArray;
+};
 
-let printVals = function (obj, cb) {};
+let lower = function (arr) {
+  return arr.map(function(word) {
+    return word.toLowerCase()
+  });
+ 
+  // w/ For each
+  // let lower = [];
+
+  // arr.forEach(function(ele) {
+  //   let lowerCase = ele.toLowerCase();
+  //   lower.push(lowerCase);
+  // });
+
+  // return lower;
+
+  // w/ Regular For Loop
+  // let low = [];
+  // for (let i = 0; i < arr.length; i++) {
+  //   let el = arr[i];
+  //   low.push(el.toLowerCase());
+  // };
+  // return low;
+};
+
+let printVals = function (obj, cb) {
+  let values = Object.values(obj);
+  if (cb === undefined) {
+    return values;
+  } else {
+    return cb(values);
+  }
+};
 
 let user = {
   name: "MylO",
