@@ -86,14 +86,15 @@ const roboFactory = function (voiceChip) {
   };
 };
 
-const robo1 = roboFactory("Boop Hello"); // factory gives me a robot || the HOF returns another function
-const robo2 = roboFactory("Boop Goodbye");
-console.log(robo1);
-robo1("Mylo");
+let robo1 = roboFactory("Boop Hello"); // factory gives me back a robot || the HOF returns another function
+const robo2 = roboFactory("Boop Goodbye");// I can make many different robots || I can create many different functions
+console.log(robo1 === robo2); // false // The robots are different || the functions are not the same
+console.log(robo1); // This a robot || the HOF return a function so this is a function
+robo1("Mylo"); // We can turn the robo on || we can invoke the function with params
 robo1("Jeff");
-robo2("Mylo");
+robo2("Mylo"); // This is a different robo with a different counter || This is a different function that manipulates the variables that were create when it was defined.
 robo1("Thanh");
 robo2("Thanh");
 robo1("Drew");
 robo2("Drew");
-console.log(robo1 === robo2);
+
