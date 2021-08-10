@@ -45,7 +45,7 @@ Must be recursive.
 */
 function reverse(string) {
   // Base Case
-  debugger; // a new callstack frame has been added
+  debugger; // a new call stack frame has been added
   if (string.length <= 1) {
     debugger; // your base case has been met
     return string;
