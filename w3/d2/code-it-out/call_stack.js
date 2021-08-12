@@ -16,3 +16,6 @@ function baz() {
 console.log(foo());
 
 debugger;
+
+// When functions are popped off the call stack,
+// they are EVALUATED as their return value! 

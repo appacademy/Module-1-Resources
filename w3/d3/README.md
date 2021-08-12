@@ -23,9 +23,31 @@
 
 ## Recursion Pt. 2
 
+- Default Parameters
+
+```js
+  const hello = (greeting = "Hello") => console.log(greeting);
+  hello();
+  hello("Howdy, y'all");
+
+```
+
+With RECURSION #powerful
+
+```js
+const mapper = (arr, cb, res = []) => {
+  if (!arr.length) return res;
+  const el = arr[0];
+  res.push(cb(el));
+  return mapper(arr.slice(1), cb, res);
+};
+
+console.log(mapper([1, 2, 3], (x) => x * 200)); // [ 200, 400, 600 ]
+```
+
 - Today you'll work on quizzes over the lecture content, then you'll be\
 practicing more recursion. Recursion is a tough concept so make sure if you're\
-working on a problem for more than 20 mins, call in a TA.
+working on a problem for more than 15 mins, call in a TA.
 
 <!-- Links per cohort -->
 
