@@ -51,7 +51,7 @@ working on a problem for more than 15 mins, call in a TA.
 
 <!-- Links per cohort -->
 
-[Morning boost]: https://open.appacademy.io/learn/js-py---aug-2021-cohort-1-online/week-3-aug-2021-cohort-1-online/wednesday-morning-boost
-[Function Hoisting Lecture]: https://open.appacademy.io/learn/js-py---aug-2021-cohort-1-online/week-3-aug-2021-cohort-1-online/function-hoisting-lecture
+[Morning boost]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/wednesday-morning-boost
+[Function Hoisting Lecture]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/function-hoisting-lecture
 
 <!-- Constant Links -->

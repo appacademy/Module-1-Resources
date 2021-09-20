@@ -52,5 +52,5 @@ console.log(greeting);
 }
 ```
 
-[Interpolating Strings Code Demo]: https://open.appacademy.io/learn/js-py---aug-2021-cohort-1-online/week-3-aug-2021-cohort-1-online/interpolating-strings-code-demo
-[Phase 1]: https://open.appacademy.io/learn/js-py---aug-2021-cohort-1-online/week-3-aug-2021-cohort-1-online/vscode-debugger-practice
+[Interpolating Strings Code Demo]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/interpolating-strings-code-demo
+[Phase 1]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/vscode-debugger-practice
