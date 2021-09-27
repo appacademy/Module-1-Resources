@@ -111,3 +111,55 @@
 
 // console.log(arr);
 // console.log(newArr);
+
+
+// let arr = [10, 21, 13, 4, 7];
+// let arr = [];
+
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
+// }
+
+// console.log(sum);
+
+// let value = arr.reduce(function(accumulator, currentValue, index, arr) {
+//     return accumulator + currentValue;
+// })
+
+// let value2 = arr.reduce(function(accumulator, currentValue) {
+//     return accumulator + currentValue;
+// }, 0)
+
+// console.log(value);
+
+// console.log(value2)
+
+// let fruits = ["apple", "mango", "banana", "pineapple", "guava"];
+// //let fruits = [];
+// let longestWord = fruits.reduce(function(currentLongest, currentWord) {
+//     console.log(currentLongest);
+//     if (currentWord.length > currentLongest.length) {
+//         return currentWord;
+//     } else {
+//         return currentLongest;
+//     }
+// }, "");
+
+// console.log(longestWord);
+
+let arr = [1, 2, 3]
+
+console.log(arr[0]);
+console.log(arr[1]);
+console.log(arr[2]);
+
+let person = { name: "Adam",age: 38, currentVideoGame: "Spider-Man"};
+
+console.log(person["name"])
+console.log(person["currentVideoGame"])
+
+console.log(person["Adam"])
+
+console.log(person);

@@ -8,3 +8,12 @@ Then, print your zoo.
 */
 
 // Code below this line
+function doubler(numbers) {
+    // your code here...
+  for (let i = 0; i < numbers.length; i++) {
+   numbers[i] *= 2;
+  }
+  return numbers;
+}
+
+console.log(doubler([1,2,3]))
