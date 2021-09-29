@@ -96,3 +96,31 @@
 
 // let words = ["Hi", "myoooo", "name", "isooooo", "Mr", "Mattern"];
 // console.log(sentenceMaker(words, woooooo, firstTwo));
+
+
+
+// MY FOR EACH DEMO
+
+// let squad = ['Jeff', 'Schuler', 'Bill', 'Adam', 'Hector', 'Daniel', 'Barry'];
+
+// // Regular forEach Loop
+// // squad.forEach(function (el, i, arr) {
+// //     console.log(el + ' is at idx ' + i);
+// // }); 
+
+// // Custom forEach Loop
+// let myForEach = function(arr, cb) {
+//     for (let i = 0; i < arr.length; i++) {
+//         let el = arr[i];
+//         cb(el, i, arr);
+//     }
+// };
+
+// let func2 = function(el, i, arr) {
+//     console.log('I love learning from ' + el);
+// };
+
+// myForEach(squad, func2);
+
+
+
