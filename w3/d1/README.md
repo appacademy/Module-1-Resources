@@ -15,6 +15,15 @@ let greeting = `Hello, ${firstName} ${lastName}!`;
 console.log(greeting);
 ```
 
+
+## addLib Problem
+
+`REPL Problem`: 5 mins
+
+-[addLib Problem]
+
+
+
 ## VSCode Debugger Setup
 
 - [Phase 1]
@@ -53,4 +62,5 @@ console.log(greeting);
 ```
 
 [Interpolating Strings Code Demo]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/interpolating-strings-code-demo
+[addLib Problem]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/addlib-problem
 [Phase 1]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/vscode-debugger-practice
