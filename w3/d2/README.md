@@ -1,12 +1,12 @@
 # W3D2
 
-## [Morning Boost]
+## Homework 
 
 ---
 
-## Call stack - [FIGMA]
+### Call stack - [FIGMA]
 
-`Video Lectures`: 10 mins
+`Video Lectures`
 
 - [Call Stack Lecture]
   - [Video Code](./code-it-out/call_stack.js)
@@ -21,9 +21,9 @@ you walk me through what's happening to the call stack?
 
 ---
 
-## Recursion
+### Recursion
 
-`Video Lectures`: 20 mins
+`Video Lectures`
 
 - [The Recursive Call Stack]
 - [A Case Study]
@@ -43,11 +43,35 @@ you walk me through what's happening to the call stack?
     - Can you label the recursive 'parts'?
     - Can you walk me through what's happening in the call stack?
 
-## Debugging
+---
 
-`Video Lecture` - for reference
+### Debugging
+
+`Video Lecture`
 
 - [Debugging Lecture]
+
+---
+---
+
+
+## [Morning Boost]
+
+---
+
+## Identifying the Base & Recursive Case
+
+`Quiz`: 8 minutes
+
+- [Identifying the Base & Recursive Case Quiz]
+
+---
+
+## Recursive Problems
+
+`Recursive Problems`: 20 minutes each
+
+- [Solving Problems Recursively Project]
 
 <!-- constant links -->
 [FIGMA]: https://www.figma.com/file/UMWdZXSOPlm3rRSXSNzEAf/Callstack?node-id=0%3A1
@@ -57,3 +81,5 @@ you walk me through what's happening to the call stack?
 [The Recursive Call Stack]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/the-recursive-call-stack
 [A Case Study]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/a-case-study
 [Debugging Lecture]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/debugging-walkthrough
+[Identifying the Base & Recursive Case Quize]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/identifying-the-base---recursive-case-quiz
+[Solving Problems Recursively Project]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/solving-problems-recursively-project
