@@ -81,5 +81,5 @@ you walk me through what's happening to the call stack?
 [The Recursive Call Stack]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/the-recursive-call-stack
 [A Case Study]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/a-case-study
 [Debugging Lecture]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/debugging-walkthrough
-[Identifying the Base & Recursive Case Quize]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/identifying-the-base---recursive-case-quiz
+[Identifying the Base & Recursive Case Quiz]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/identifying-the-base---recursive-case-quiz
 [Solving Problems Recursively Project]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/solving-problems-recursively-project
