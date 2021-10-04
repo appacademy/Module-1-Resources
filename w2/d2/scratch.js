@@ -199,6 +199,3 @@ console.log(obj4);
 
 
 
-
-{key: value, key2: value} 
-[element1, element2]
