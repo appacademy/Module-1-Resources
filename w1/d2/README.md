@@ -275,14 +275,14 @@ Other common methods you will use often: (Not needed _today_, but why not\
 - Array.prototype.splice
 
 <!-- Links to change for each cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-1-spet-2021-cohort-1-online/tuesday-morning-boost
-[String Type Lecture]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-1-spet-2021-cohort-1-online/string-type-lecture
-[String Type Demo]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-1-spet-2021-cohort-1-online/string-type-demo
-[Function Lecture]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-1-spet-2021-cohort-1-online/function-lecture
-[Average Walkthrough]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-1-spet-2021-cohort-1-online/average-walkthrough
-[Conditionals Demo]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-1-spet-2021-cohort-1-online/conditionals-demo
-[Loop Demo]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-1-spet-2021-cohort-1-online/loops-demo
-[Array Lecture]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-1-spet-2021-cohort-1-online/array-lecture
+[Morning Boost]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-1-oct-2021-cohort-1-online/tuesday-morning-boost
+[String Type Lecture]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-1-oct-2021-cohort-1-online/string-type-lecture
+[String Type Demo]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-1-oct-2021-cohort-1-online/string-type-demo
+[Function Lecture]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-1-oct-2021-cohort-1-online/function-lecture
+[Average Walkthrough]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-1-oct-2021-cohort-1-online/average-walkthrough
+[Conditionals Demo]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-1-oct-2021-cohort-1-online/conditionals-demo
+[Loop Demo]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-1-oct-2021-cohort-1-online/loops-demo
+[Array Lecture]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-1-oct-2021-cohort-1-online/array-lecture
 
 <!-- Constant Links -->
 [Falsy Values]: https://developer.mozilla.org/en-US/docs/Glossary/Falsy

@@ -105,18 +105,18 @@ console.log(mapper([1, 2, 3], (x) => x * 200)); // [ 200, 400, 600 ]
 
 <!-- Links per cohort -->
 
-[Morning boost]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/wednesday-morning-boost
-[Function Hoisting Lecture]: https://open.appacademy.io/learn/js-py---spet-2021-cohort-1-online/week-3-spet-2021-cohort-1-online/function-hoisting-lecture
-[IIFE Flash Cards]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/iife-flash-cards
-[IIFE Quiz]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/iife-quiz
-[Hoisting in Javascript Flash Cards]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/hoisting-in-javascript-flash-cards
-[Function Hoisting in Javascript Quiz]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/function-hoisting-in-javascript-quiz
-[Falsey Values in JavaSCript Flash Cards]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/falsey-values-in-javascript-flash-cards
-[Falsey Values in JavaScript Quiz]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/falsey-values-in-javascript-quiz
-[Primitive Data Types]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/primitive-data-types-quiz 
-[First Class Objects in JavaScript Free Response]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/first-class-objects-in-javascript-free-response
-[Variable Quiz Recall]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/variable-quiz-recall 
-[Predicting Variable Evaluations Quiz]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/predicting-variable-evaluations-quiz
-[Scope Quiz Recall]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/scope-quiz-recall
-[WhiteBoarding Problem Closure]: https://open.appacademy.io/learn/js-py---sept-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/whiteboarding-problem-closure
+[Morning boost]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3-oct-2021-cohort-1-online/wednesday-morning-boost
+[Function Hoisting Lecture]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3-oct-2021-cohort-1-online/function-hoisting-lecture
+[IIFE Flash Cards]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/iife-flash-cards
+[IIFE Quiz]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/iife-quiz
+[Hoisting in Javascript Flash Cards]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/hoisting-in-javascript-flash-cards
+[Function Hoisting in Javascript Quiz]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/function-hoisting-in-javascript-quiz
+[Falsey Values in JavaSCript Flash Cards]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/falsey-values-in-javascript-flash-cards
+[Falsey Values in JavaScript Quiz]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/falsey-values-in-javascript-quiz
+[Primitive Data Types]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/primitive-data-types-quiz 
+[First Class Objects in JavaScript Free Response]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/first-class-objects-in-javascript-free-response
+[Variable Quiz Recall]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/variable-quiz-recall 
+[Predicting Variable Evaluations Quiz]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/predicting-variable-evaluations-quiz
+[Scope Quiz Recall]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/scope-quiz-recall
+[WhiteBoarding Problem Closure]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/whiteboarding-problem-closure
 <!-- Constant Links -->
