@@ -1,9 +1,9 @@
-// let arr = [1,2,3];
+let arr = [1,2,3];
 
-// for (let i = 0; i < arr.length; i++) {
-//   let ele = arr[i];
-//   console.log(ele);
-// }
+for (let i = 0; i < arr.length; i++) {
+  let ele = arr[i];
+  console.log(ele);
+}
 
 // Array.forEach()
 
