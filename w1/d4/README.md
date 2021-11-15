@@ -48,8 +48,8 @@
 - Run `mocha <testFileLocation>` to run a single test
 - Run `mocha -g <functionName>` to run all test about a single function
 
-[Morning Boost]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-1-oct-2021-cohort-1-online/thursday-morning-boost
-[Helper Functions Demo]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-1-oct-2021-cohort-1-online/helper-functions-demo
-[Basic Terminal Navigation]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-2-oct-2021-cohort-1-online/basic-terminal-navigation
-[Navigating in VS Code]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-2-oct-2021-cohort-1-online/navigating-in-vs-code
-[Running NodeJS]: https://open.appacademy.io/learn/js-py---oct-2021-cohort-1-online/week-2-oct-2021-cohort-1-online/running-nodejs
+[Morning Boost]: https://open.appacademy.io/learn/js-py---nov-2021-cohort-1-online/week-1-nov-2021-cohort-1-online/thursday-morning-boost
+[Helper Functions Demo]: https://open.appacademy.io/learn/js-py---nov-2021-cohort-1-online/week-1-nov-2021-cohort-1-online/helper-functions-demo
+[Basic Terminal Navigation]: https://open.appacademy.io/learn/js-py---nov-2021-cohort-1-online/week-2-nov-2021-cohort-1-online/basic-terminal-navigation
+[Navigating in VS Code]: https://open.appacademy.io/learn/js-py---nov-2021-cohort-1-online/week-2-nov-2021-cohort-1-online/navigating-in-vs-code
+[Running NodeJS]: https://open.appacademy.io/learn/js-py---nov-2021-cohort-1-online/week-2-nov-2021-cohort-1-online/running-nodejs
