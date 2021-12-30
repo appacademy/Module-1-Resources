@@ -110,6 +110,41 @@ to follow your partner on github!
 
 ---
 
+## Adding gitignore file
+**_Important:_ If you ever `npm install` or if there's a `package.json` file, you will typically want a `.gitignore` file and ignoring the `node_modules` folder before pushing onto Github **
+
+### Creating the .gitignore file
+The `.gitignore` file allows us to add files or directories that we **DO NOT** want to be commited or saved to our git history (therefore 'ignoring' it in 'git'). 
+  - Remember, when you first run `npm install` it will create the `node_modules` directory and fetch the code dependencies that our project will need which will take the list of dependencies (ingredients) from the `package.json` file to download from.
+    - ![gitignore-1](./gitignore-1.png)
+
+  - Here, we do not want to push up the `node_modules` directory to our Github repository as the items inside it can become very big and it is unecessary to do so since anyone can fetch a list of those dependencies if they have the `package.json` file using `npm install`. `.gitignore` will be a great tool to handle this issue for us!
+
+  - Create a `.gitignore` file on the same level as your `package.json`
+    - ![gitignore-2](./gitignore-2.png)
+
+  - Inside our `.gitignore` file, add the following text, `node_modules` which will now ignore the folder `node_modules` from being committed to our git history.
+    - ![gitignore-3](./gitignore-3.png)
+
+  - Now we just need to commit our updated `.gitignore` file:
+    - `git add .` 
+    - `git commit -m "message here"`
+    - `git push`
+
+
+### If you accidentally committed `node_modules`
+  ![gitignore-5](./gitignore-5.png)
+  - If you happen to commit the `node_modules` directory to your history before adding the `.gitignore` file, then we can do this to remove it from our commit history:
+    
+    - run `git rm -r --cached node_modules`
+    - add `.gitignore` file with `node_modules` in it like the example above if you haven't yet
+    - run `git add .` 
+    - run `git commit -m "message here"`
+    - run `git push`
+
+---
+
+
 ## Basic git flow for pairing
 
 Once you and your pair are set up and working on the same repository things get a lot easier. As you switch back and forth from driver to navigator you will need to follow these steps.
