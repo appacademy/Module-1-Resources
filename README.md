@@ -14,27 +14,34 @@ Here you will find all resources that are associated to your cohort during your 
 
 ## Contents
 
-* Setup
-* How to Use
-* Module 1 Content
-* Additional Resources
+* [Setup][Setup]
+* [How to Use][How to Use]
+* [Module 1 Content][Content]
+* [Additional Resources][Additional Resources]
 
 ---
 
 ## Setup
-To clone this repo, ```cd``` into the directory of your choice and run:
+To clone this repo, `cd` into the directory of your choice and run:
 ```bash
 git clone <remote-repo-url>
 ```
 
+We reccemond you create an `appacademy` folder in your roote directory and cloning the repo into that directory like this:
+```bash
+mkdir appacademy
+cd appacademy
+```
+Then run the command to clone the repo.
+
 If you are using a Personal Access Token (PAT) the exact command will be: 
 ```bash
-git clone 
+git clone https://github.com/appacademy/Module-1-Resources.git
 ```
 
 If you are using SSH to clone, the command will be:
 ```bash
-git clone
+git clone git@github.com:appacademy/Module-1-Resources.git
 ```
 
 ---
@@ -105,3 +112,19 @@ git clone -b <your-cohort-branchname> --single-branch <remote-repo-url>
 ---
 
 ## Additional Resources
+- [How to Setup an Image on Progress Tracker][Image Setup]
+- [Terminal Command Cheatsheet][Terminal] 
+- [WSL Workflow][WSL]
+- [Git Flow][Git]
+
+<!-- Internal Links -->
+[Setup]: README.md#setup
+[How to Use]: README.md#how-to-use
+[Content]: README.md#module-1-content
+[Additional Resources]: README.md#additional-resources
+
+<!-- Redirect Links -->
+[Image Setup]: ./additional_resources/week1/setup_image_on_PT.md
+[Terminal]: ./additional_resouces/terminal_command_cheatsheet.md
+[WSL]: ./additional_resources/week1/wslWorkflow.md
+[Git]: ./additional_resouces/week2/gitflow/README.md
