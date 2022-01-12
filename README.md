@@ -27,7 +27,7 @@ To clone this repo, `cd` into the directory of your choice and run:
 git clone <remote-repo-url>
 ```
 
-We reccemond you create an `appacademy` folder in your roote directory and cloning the repo into that directory like this:
+We recommend you create an `appacademy` folder in your root directory and cloning the repo into that directory like this:
 ```bash
 mkdir appacademy
 cd appacademy
