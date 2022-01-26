@@ -1,0 +1,2 @@
+let pokemonCreator = require('./pokemons');
+
