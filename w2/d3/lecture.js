@@ -39,3 +39,38 @@ let pokemons = pokemonCreator();
 // console.log(displayPokemon(pokemons, names));
 // console.log(displayPokemon(pokemons, fires));
 console.log(displayPokemon(pokemons, levels));
+
+
+let names = ['Jeff', 'Caleb', 'Jojo', 'Wes', 'Colton', 'Ryan'] 
+
+// names.forEach(function(element, idx, array) {
+//   console.log('element: ', element)
+//   console.log('idx: ', idx)
+//   console.log('array: ', array)
+// })
+
+// for (let i = 0; i < names.length; i ++) {
+//   let name = names[i];
+//   console.log(name.toUpperCase())
+// }
+
+function myForEach (array, potato) {
+  for (let i = 0; i < array.length; i ++) {
+    let element = array[i];
+    console.log('potato --', potato)
+    potato(element, i, array)
+  }
+}
+
+function capitalize (elem, idx, array) {
+  console.log(elem.toUpperCase())
+  return false
+}
+
+myForEach(names, capitalize)
+
+myForEach(names, function (elem, idx, array) {
+  console.log('element: ', elem)
+  console.log('idx: ', idx)
+  console.log('array: ', array)
+})
