@@ -8,7 +8,7 @@ Before looking at this repo, please read all of the README, especially the `Setu
 
 Welcome to App Academy! Your first stop is here in Module 1. We will be covering the fundamentals of JavaScript.
 
-Here you will find all resources that are associated to your cohort during your time in Module 1! 
+Here you will find all resources that are associated to your cohort during your time in Module 1!
 
 ---
 
@@ -34,7 +34,7 @@ cd appacademy
 ```
 Then run the command to clone the repo.
 
-If you are using a Personal Access Token (PAT) the exact command will be: 
+If you are using a Personal Access Token (PAT) the exact command will be:
 ```bash
 git clone https://github.com/appacademy/Module-1-Resources.git
 ```
@@ -47,9 +47,9 @@ git clone git@github.com:appacademy/Module-1-Resources.git
 ---
 
 ## How to Use
-First, complete the `Setup` section if not already done. 
+First, complete the `Setup` section if not already done.
 
-This repo is set up to contain each days lecture material. The `README.md` file included for each day contains the topics, with some notes, and the schedule for the day. The `notes.js` file is to be used to follow along in lecutre every day and code along with the lecturer while taking notes. The `lecture.js` file is going to be used by the person lecturing and not to be filled out by anybody else. Once the lecture is finished, the following command should be run to get the contents of the `lecture.js` file:
+This repo is set up to contain each days lecture material. The `README.md` file included for each day contains the topics, with some notes, and the schedule for the day. The `notes.js` file is to be used to follow along in lecture every day and code along with the lecturer while taking notes. The `lecture.js` file is going to be used by the person lecturing and not to be filled out by anybody else. Once the lecture is finished, the following command should be run to get the contents of the `lecture.js` file:
 ```bash
 git pull
 ```
@@ -107,13 +107,13 @@ git clone -b <your-cohort-branchname> --single-branch <remote-repo-url>
 * Event Loop and Message Queue
 * Asynchronous Code
 * setTimeout and setInterval
-* User Input and Readline (optional) 
+* User Input and Readline (optional)
 
 ---
 
 ## Additional Resources
 - [How to Setup an Image on Progress Tracker][Image Setup]
-- [Terminal Command Cheatsheet][Terminal] 
+- [Terminal Command Cheatsheet][Terminal]
 - [WSL Workflow][WSL]
 - [Git Flow][Git]
 
