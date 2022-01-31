@@ -125,6 +125,6 @@ git clone -b <your-cohort-branchname> --single-branch <remote-repo-url>
 
 <!-- Redirect Links -->
 [Image Setup]: ./additional_resources/week1/setup_image_on_PT.md
-[Terminal]: ./additional_resouces/terminal_command_cheatsheet.md
+[Terminal]: ./additional_resources/terminal_command_cheatsheet.md
 [WSL]: ./additional_resources/week1/wslWorkflow.md
 [Git]: ./additional_resources/week2/gitflow/README.md
