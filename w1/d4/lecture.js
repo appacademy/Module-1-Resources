@@ -25,7 +25,7 @@ let deposit = function(initialBalance, amount) {
     initialBalance += amount;
   }
   return initialBalance;
-}
+};
 
 console.log(transaction("ASDFASD", 100));
 console.log(transaction('withdraw', 9));

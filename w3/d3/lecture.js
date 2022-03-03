@@ -8,6 +8,6 @@
   3. Never going to use the function again
 */
 
-(name => {
-  console.log(`start the program, ${name}`);
-})("Bill");
+((name, name32) => {
+  console.log(`start the program, ${name} and ${name32}`);
+})("Bill", "John");
