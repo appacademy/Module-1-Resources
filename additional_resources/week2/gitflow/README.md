@@ -109,7 +109,7 @@ instructions for each partner will be different.**
 
 **INVITE TEAMMATE:** 
 
-Refresh your github; if your repo doesn't look like this. CALL AN INSTRUCTOR ASAP!
+Refresh your github; your repo should like something like below. If you run into any issues CALL AN INSTRUCTOR ASAP for help!
   ![createNew](./look-like-repo.png)
 
 - Invite your partner
