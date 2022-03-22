@@ -9,6 +9,7 @@
     - [Save Your Work](#save-your-work)
     - [Share Your Work](#share-your-work)
     - [Other Useful Commands](#other-useful-commands)
+  - [How to download a project](#how-to-download-a-project)
   - [Basic setup for pairing](#basic-setup-for-pairing)
     - [Creating a Repo](#creating-a-repo)
     - [Cloning a Repo](#cloning-a-repo)
@@ -55,6 +56,8 @@ are two separate things. If you're curious
   
 
 ---
+## How to download a project 
+Reference [Week 1 Thursday here](https://open.appacademy.io/learn/js-py---mar-2022-cohort-1-online/week-1---intro-to-javascript/local-javascript-project) for how to download a project from AA Open 
 
 ## Basic setup for pairing
 
