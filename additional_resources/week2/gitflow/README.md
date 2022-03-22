@@ -2,11 +2,17 @@
 
 ## Jump to what you need
 
-- [Basic Git Commands](#basic-git-commands)
-- [Pairing Setup](#basic-setup-for-pairing)
-  - [Creating a GitHub Repo](#creating-a-repo)
-  - [Connecting to a GitHub Repo](#cloning-a-repo)
-- [Git Flow](#basic-git-flow-for-pairing)
+- [Git Flow and Commands](#git-flow-and-commands)
+  - [Jump to what you need](#jump-to-what-you-need)
+  - [Basic git commands](#basic-git-commands)
+    - [Get & Create Project](#get--create-project)
+  - [Basic setup for pairing](#basic-setup-for-pairing)
+    - [Creating a Repo](#creating-a-repo)
+    - [Cloning a Repo](#cloning-a-repo)
+  - [Adding gitignore file](#adding-gitignore-file)
+    - [Creating the .gitignore file](#creating-the-gitignore-file)
+    - [If you accidentally committed `node_modules`](#if-you-accidentally-committed-node_modules)
+  - [Basic git flow for pairing](#basic-git-flow-for-pairing)
 
 ---
 
@@ -16,11 +22,14 @@
 are two separate things. If you're curious
 [git vs. github](https://www.geeksforgeeks.org/difference-between-git-and-github/).**
 
-- Get and Create Projects
-  - [git init](https://git-scm.com/docs/git-init)  
-  Creates an empty git repository inside your present working directory
-  - [git clone *`"github-link"`*](https://git-scm.com/docs/git-init)  
-  Creates a copy of the specified git repository inside your present working directory
+### Get & Create Project
+  
+| Command | Description | Example |
+| ------- | ----------- |---------|
+| [git init](https://git-scm.com/docs/git-init) |  Creates an empty git repository inside your present working directory | `git init`
+| [git clone *`your-github-link`*](https://git-scm.com/docs/git-init)  |   Creates a copy of the specified git repository inside your present working directory | `git clone//git@github.com/[username]/[repository-name].git`
+
+
 - Save Your Work
   - [git status](https://git-scm.com/docs/git-status)  
   Shows the current working state of the git repository
@@ -54,10 +63,9 @@ instructions for each partner will be different.**
 
 ### Creating a Repo
 
-- Create a repository on github by pressing the new button in the top left corner of  
-your github homepage
+- **ONLY ONE PERSON**: Create a repository on github by pressing the + create in the top right corner of your github. Click: `New repository`
 
-  ![newButton](./newButton.JPG)
+  ![newButton](./create-repo.png)
 
 - Name your repository and be sure to set it to private, also don't press any of the check boxes
 
@@ -67,18 +75,35 @@ your github homepage
   - Once you have created a repository it will bring you to a page with directions for setup
   - Recommended: Create a new local repository by entering these commands one line at a  
   time in the directory that you wish to become a git repository
+  - **IMPORTANT**: Remember that `git add .` is the command to add all files to the staging area. `git add README.MD` will **not add** all your files.
 
   ![createNew](./createNew.JPG)
+
+  **EXAMPLE**: 
+  
+  Run `ls` and make sure project you are pushing should structure looks similar below (problems, test, etc.)
+  
+  Also notice `git add .` 
+  ![createNew](./init-repo.png)
+
+  Add your repo origin provided by github
+  ![createNew](./push-repo.png)
+
+  **IMPORTANT: PAT Setup** 
+
+  If Github asks for your credentials (username / password). Your own password won't work. You will have to replace it with a Personal Access Token (PAT acts as your password). 
+  [PAT SETUP LINK](https://github.com/appacademy/unified-setup/blob/main/github-setup.md#configuring-github)
+  . DO NOT show your PAT to anyone. Check all the fields for repo permission.
+
+
+  Refresh your github; if your repo doesn't look like this. CALL AN INSTRUCTOR ASAP!
+  ![createNew](./look-like-repo.png)
 
   - Alternative: If you already have a repository set up that you want to push up follow these  
   commands one line at a time
 
   ![pushExisting](./pushExisting.JPG)
 
-- Once you have followed all the commands refresh your github and you should see something  
-similar to this
-
-  ![pushedUp](./pushedUp.JPG)
 
 - Invite your partner
   - While on the page for the new repo click the settings cog above it should take you to  
