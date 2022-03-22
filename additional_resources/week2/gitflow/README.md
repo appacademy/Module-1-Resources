@@ -2,11 +2,20 @@
 
 ## Jump to what you need
 
-- [Basic Git Commands](#basic-git-commands)
-- [Pairing Setup](#basic-setup-for-pairing)
-  - [Creating a GitHub Repo](#creating-a-repo)
-  - [Connecting to a GitHub Repo](#cloning-a-repo)
-- [Git Flow](#basic-git-flow-for-pairing)
+- [Git Flow and Commands](#git-flow-and-commands)
+  - [Jump to what you need](#jump-to-what-you-need)
+  - [Basic git commands](#basic-git-commands)
+    - [Get & Create Project](#get--create-project)
+    - [Save Your Work](#save-your-work)
+    - [Share Your Work](#share-your-work)
+    - [Other Useful Commands](#other-useful-commands)
+  - [Basic setup for pairing](#basic-setup-for-pairing)
+    - [Creating a Repo](#creating-a-repo)
+    - [Cloning a Repo](#cloning-a-repo)
+  - [Adding gitignore file](#adding-gitignore-file)
+    - [Creating the .gitignore file](#creating-the-gitignore-file)
+    - [If you accidentally committed `node_modules`](#if-you-accidentally-committed-node_modules)
+  - [Basic git flow for pairing](#basic-git-flow-for-pairing)
 
 ---
 
@@ -16,34 +25,34 @@
 are two separate things. If you're curious
 [git vs. github](https://www.geeksforgeeks.org/difference-between-git-and-github/).**
 
-- Get and Create Projects
-  - [git init](https://git-scm.com/docs/git-init)  
-  Creates an empty git repository inside your present working directory
-  - [git clone *`"github-link"`*](https://git-scm.com/docs/git-init)  
-  Creates a copy of the specified git repository inside your present working directory
-- Save Your Work
-  - [git status](https://git-scm.com/docs/git-status)  
-  Shows the current working state of the git repository
-  - [git add *`"file-name"`*](https://git-scm.com/docs/git-add)  
-  Add files to the staging area, you can use the dot operator to add everything  
-  to the staging area by typing *`git add .`*
-  - [git commit -m *`"commit-message"`*](https://git-scm.com/docs/git-commit)  
-  Records all the added changes to the repository, write meaningful messages to  
-  remind yourself of what was done to the project
-- Share Your Work
-  - [git remote add origin *`"github-link"`*](https://git-scm.com/docs/git-remote)  
-  Connects your local git repository to a specified github repository, you should  
-  only have to do this once and you will not have to do this if you used *`git clone`*
-  - [git push](https://git-scm.com/docs/git-push)  
-  Updates github with any changes that have been committed on the local git  
-  repository, think uploading
-  - [git pull](https://git-scm.com/docs/git-pull)  
-  Updates your local git repository with any changes made to github, think downloading
-- Other Useful Commands
-  - *`git branch -M main`*  
-  Tech is ever evolving and in keeping up with the times it's best to be proactive  
-  and change our main branch name to something more appropriate. This is a trend  
-  in tech that you should get used to.
+### Get & Create Project
+  
+| Command | Description | Example |
+| ------- | ----------- |---------|
+| [git init](https://git-scm.com/docs/git-init) |  Creates an empty git repository inside your present working directory | `git init`
+| [git clone *`your-github-link`*](https://git-scm.com/docs/git-init)  |   Creates a copy of the specified git repository inside your present working directory | `git clone//git@github.com/ [username][repository-name].git`
+| | |
+
+### Save Your Work
+| Command | Description | Example |
+| ------- | ----------- |---------|
+|[git status](https://git-scm.com/docs/git-status) | Shows the current working state of the git repository |`git status`
+|[git add *`<file-name>`*](https://git-scm.com/docs/git-add) | Add files to the staging area, you can use the dot operator to add everything to the staging area by typing *`git add .`* | `git add work.js`
+|[git commit -m *`"<commit-message>"`*](https://git-scm.com/docs/git-commit)| Records all the added changes to the repository, write meaningful messages to remind yourself of what was done to the project| `git commit -m "first commit"`
+
+### Share Your Work
+| Command | Description | Example |
+| ------- | ----------- |---------|
+|[git remote add origin *`<github-link>`*](https://git-scm.com/docs/git-remote)| Connects your local git repository to a specified github repository, you should  only have to do this once and you will not have to do this if you used *`git clone`*| `git remote add origin git@github.com/[username][repository-name].git`
+|[git push](https://git-scm.com/docs/git-push) | Updates github with any changes that have been committed on the local git repository, think uploading | `git push`
+|[git pull](https://git-scm.com/docs/git-pull)| Updates your local git repository with any changes made to github, think downloading |`git push`
+| | |
+  
+### Other Useful Commands
+| Command | Description | Example |
+| ------- | ----------- |---------|
+|[git branch -M *`<new-branch-name>`*](https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch) |Tech is ever evolving and in keeping up with the times it's best to be proactive  and change our main branch name to something more appropriate. This is a trend in tech that you should get used to. | `git branch -M main`
+  
 
 ---
 
@@ -54,10 +63,9 @@ instructions for each partner will be different.**
 
 ### Creating a Repo
 
-- Create a repository on github by pressing the new button in the top left corner of  
-your github homepage
+- **ONLY ONE PERSON**: Create a repository on github by pressing the + create in the top right corner of your github. Click: `New repository`
 
-  ![newButton](./newButton.JPG)
+  ![newButton](./create-repo.png)
 
 - Name your repository and be sure to set it to private, also don't press any of the check boxes
 
@@ -67,18 +75,35 @@ your github homepage
   - Once you have created a repository it will bring you to a page with directions for setup
   - Recommended: Create a new local repository by entering these commands one line at a  
   time in the directory that you wish to become a git repository
+  - **IMPORTANT**: Remember that `git add .` is the command to add all files to the staging area. `git add README.MD` will **not add** all your files.
 
   ![createNew](./createNew.JPG)
+
+  **EXAMPLE**: 
+  
+  Run `ls` and make sure that the structure of the project you are pushing should look similar below (problems, test, etc.)
+  
+  Also notice `git add .` 
+  ![createNew](./init-repo.png)
+
+  Add your repo origin provided by github
+  ![createNew](./push-repo.png)
+
+  **IMPORTANT: PAT Setup** 
+
+  If Github asks for your credentials (username / password). Your own password won't work. You will have to replace it with a Personal Access Token (PAT acts as your password). 
+  [PAT SETUP LINK](https://github.com/appacademy/unified-setup/blob/main/github-setup.md#configuring-github)
+  . DO NOT show your PAT to anyone. Check all the fields for repo permission.
+
+
+  Refresh your github; if your repo doesn't look like this. CALL AN INSTRUCTOR ASAP!
+  ![createNew](./look-like-repo.png)
 
   - Alternative: If you already have a repository set up that you want to push up follow these  
   commands one line at a time
 
   ![pushExisting](./pushExisting.JPG)
 
-- Once you have followed all the commands refresh your github and you should see something  
-similar to this
-
-  ![pushedUp](./pushedUp.JPG)
 
 - Invite your partner
   - While on the page for the new repo click the settings cog above it should take you to  
@@ -111,7 +136,7 @@ to follow your partner on github!
 ---
 
 ## Adding gitignore file
-**_Important:_ If you ever `npm install` or if there's a `package.json` file, you will typically want a `.gitignore` file and ignoring the `node_modules` folder before pushing onto Github **
+**_Important:_** If you ever `npm install` or if there's a `package.json` file, you will typically want a `.gitignore` file and ignoring the `node_modules` folder before pushing onto Github
 
 ### Creating the .gitignore file
 The `.gitignore` file allows us to add files or directories that we **DO NOT** want to be commited or saved to our git history (therefore 'ignoring' it in 'git'). 
