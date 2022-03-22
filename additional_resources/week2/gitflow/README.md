@@ -46,7 +46,7 @@ are two separate things. If you're curious
 | ------- | ----------- |---------|
 |[git remote add origin *`<github-link>`*](https://git-scm.com/docs/git-remote)| Connects your local git repository to a specified github repository, you should  only have to do this once and you will not have to do this if you used *`git clone`*| `git remote add origin git@github.com/[username][repository-name].git`
 |[git push](https://git-scm.com/docs/git-push) | Updates github with any changes that have been committed on the local git repository, think uploading | `git push`
-|[git pull](https://git-scm.com/docs/git-pull)| Updates your local git repository with any changes made to github, think downloading |`git push`
+|[git pull](https://git-scm.com/docs/git-pull)| Updates your local git repository with any changes made to github, think downloading |`git pull`
 | | |
   
 ### Other Useful Commands
@@ -57,7 +57,8 @@ are two separate things. If you're curious
 
 ---
 ## How to download a project 
-Reference [Week 1 Thursday here](https://open.appacademy.io/learn/js-py---mar-2022-cohort-1-online/week-1---intro-to-javascript/local-javascript-project) for how to download a project from AA Open 
+
+Reference <a href="https://open.appacademy.io/learn/js-py---mar-2022-cohort-1-online/week-1---intro-to-javascript/local-javascript-project" target="_blank">Week 1 Thursday here</a> for how to download a project from AA Open 
 
 ## Basic setup for pairing
 
@@ -82,15 +83,23 @@ instructions for each partner will be different.**
 
   ![createNew](./createNew.JPG)
 
-  **EXAMPLE**: 
+**EXAMPLE**: 
   
-  Run `ls` and make sure that the structure of the project you are pushing should look similar below (problems, test, etc.)
+- Run `ls` and make sure that the structure of the project you are pushing should look similar below (problems, test, etc.). Also notice `git add .` 
   
-  Also notice `git add .` 
-  ![createNew](./init-repo.png)
+  - `ls`
+  - `git init`
+  - `git add .`
+  - `git commit -m "first commit"`
 
-  Add your repo origin provided by github
-  ![createNew](./push-repo.png)
+![createNew](./init-repo.png)
+
+- Add your repo origin provided by github
+  - `git branch -M main`
+  - `git remote add origin [your-github-repo-link]`
+  - `git push -u origin main`
+  
+![createNew](./push-repo.png)
 
   **IMPORTANT: PAT Setup** 
 
@@ -98,15 +107,10 @@ instructions for each partner will be different.**
   [PAT SETUP LINK](https://github.com/appacademy/unified-setup/blob/main/github-setup.md#configuring-github)
   . DO NOT show your PAT to anyone. Check all the fields for repo permission.
 
+**INVITE TEAMMATE:** 
 
-  Refresh your github; if your repo doesn't look like this. CALL AN INSTRUCTOR ASAP!
+Refresh your github; if your repo doesn't look like this. CALL AN INSTRUCTOR ASAP!
   ![createNew](./look-like-repo.png)
-
-  - Alternative: If you already have a repository set up that you want to push up follow these  
-  commands one line at a time
-
-  ![pushExisting](./pushExisting.JPG)
-
 
 - Invite your partner
   - While on the page for the new repo click the settings cog above it should take you to  
@@ -120,6 +124,7 @@ instructions for each partner will be different.**
 
 - Lastly, your cohort is your most valuable resource during a/A make sure to follow each other  
 on github to make it easier to share projects and work together!
+
 
 ### Cloning a Repo
 
