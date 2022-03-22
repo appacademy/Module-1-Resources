@@ -6,6 +6,9 @@
   - [Jump to what you need](#jump-to-what-you-need)
   - [Basic git commands](#basic-git-commands)
     - [Get & Create Project](#get--create-project)
+    - [Save Your Work](#save-your-work)
+    - [Share Your Work](#share-your-work)
+    - [Other Useful Commands](#other-useful-commands)
   - [Basic setup for pairing](#basic-setup-for-pairing)
     - [Creating a Repo](#creating-a-repo)
     - [Cloning a Repo](#cloning-a-repo)
@@ -27,32 +30,29 @@ are two separate things. If you're curious
 | Command | Description | Example |
 | ------- | ----------- |---------|
 | [git init](https://git-scm.com/docs/git-init) |  Creates an empty git repository inside your present working directory | `git init`
-| [git clone *`your-github-link`*](https://git-scm.com/docs/git-init)  |   Creates a copy of the specified git repository inside your present working directory | `git clone//git@github.com/[username]/[repository-name].git`
+| [git clone *`your-github-link`*](https://git-scm.com/docs/git-init)  |   Creates a copy of the specified git repository inside your present working directory | `git clone//git@github.com/ [username][repository-name].git`
+| | |
 
+### Save Your Work
+| Command | Description | Example |
+| ------- | ----------- |---------|
+|[git status](https://git-scm.com/docs/git-status) | Shows the current working state of the git repository |`git status`
+|[git add *`<file-name>`*](https://git-scm.com/docs/git-add) | Add files to the staging area, you can use the dot operator to add everything to the staging area by typing *`git add .`* | `git add work.js`
+|[git commit -m *`"<commit-message>"`*](https://git-scm.com/docs/git-commit)| Records all the added changes to the repository, write meaningful messages to remind yourself of what was done to the project| `git commit -m "first commit"`
 
-- Save Your Work
-  - [git status](https://git-scm.com/docs/git-status)  
-  Shows the current working state of the git repository
-  - [git add *`"file-name"`*](https://git-scm.com/docs/git-add)  
-  Add files to the staging area, you can use the dot operator to add everything  
-  to the staging area by typing *`git add .`*
-  - [git commit -m *`"commit-message"`*](https://git-scm.com/docs/git-commit)  
-  Records all the added changes to the repository, write meaningful messages to  
-  remind yourself of what was done to the project
-- Share Your Work
-  - [git remote add origin *`"github-link"`*](https://git-scm.com/docs/git-remote)  
-  Connects your local git repository to a specified github repository, you should  
-  only have to do this once and you will not have to do this if you used *`git clone`*
-  - [git push](https://git-scm.com/docs/git-push)  
-  Updates github with any changes that have been committed on the local git  
-  repository, think uploading
-  - [git pull](https://git-scm.com/docs/git-pull)  
-  Updates your local git repository with any changes made to github, think downloading
-- Other Useful Commands
-  - *`git branch -M main`*  
-  Tech is ever evolving and in keeping up with the times it's best to be proactive  
-  and change our main branch name to something more appropriate. This is a trend  
-  in tech that you should get used to.
+### Share Your Work
+| Command | Description | Example |
+| ------- | ----------- |---------|
+|[git remote add origin *`<github-link>`*](https://git-scm.com/docs/git-remote)| Connects your local git repository to a specified github repository, you should  only have to do this once and you will not have to do this if you used *`git clone`*| `git remote add origin git@github.com/[username][repository-name].git`
+|[git push](https://git-scm.com/docs/git-push) | Updates github with any changes that have been committed on the local git repository, think uploading | `git push`
+|[git pull](https://git-scm.com/docs/git-pull)| Updates your local git repository with any changes made to github, think downloading |`git push`
+| | |
+  
+### Other Useful Commands
+| Command | Description | Example |
+| ------- | ----------- |---------|
+|[git branch -M *`<new-branch-name>`*](https://stackoverflow.com/questions/6591213/how-do-i-rename-a-local-git-branch) |Tech is ever evolving and in keeping up with the times it's best to be proactive  and change our main branch name to something more appropriate. This is a trend in tech that you should get used to. | `git branch -M main`
+  
 
 ---
 
@@ -81,7 +81,7 @@ instructions for each partner will be different.**
 
   **EXAMPLE**: 
   
-  Run `ls` and make sure project you are pushing should structure looks similar below (problems, test, etc.)
+  Run `ls` and make sure that the structure of the project you are pushing should look similar below (problems, test, etc.)
   
   Also notice `git add .` 
   ![createNew](./init-repo.png)
@@ -136,7 +136,7 @@ to follow your partner on github!
 ---
 
 ## Adding gitignore file
-**_Important:_ If you ever `npm install` or if there's a `package.json` file, you will typically want a `.gitignore` file and ignoring the `node_modules` folder before pushing onto Github **
+**_Important:_** If you ever `npm install` or if there's a `package.json` file, you will typically want a `.gitignore` file and ignoring the `node_modules` folder before pushing onto Github
 
 ### Creating the .gitignore file
 The `.gitignore` file allows us to add files or directories that we **DO NOT** want to be commited or saved to our git history (therefore 'ignoring' it in 'git'). 
