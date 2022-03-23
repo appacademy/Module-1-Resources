@@ -69,7 +69,8 @@ instructions for each partner will be different.**
 
 ### Creating a Repo
 
-- **ONLY ONE PERSON**: Create a repository on github by pressing the + create in the top right corner of your github. Click: `New repository`
+- ***ONLY ONE PERSON*** 
+  - Create a repository on github by pressing the + create in the top right corner of your github. Click: `New repository`
 
   ![newButton](./create-repo.png)
 
@@ -85,7 +86,7 @@ instructions for each partner will be different.**
 
   ![createNew](./createNew.JPG)
 
-**EXAMPLE**: 
+***EXAMPLE***
   
 - Run `ls` and make sure that the structure of the project you are pushing should look similar below (problems, test, etc.). Also notice `git add .` 
   
@@ -107,7 +108,12 @@ instructions for each partner will be different.**
 
   If Github asks for your credentials (username / password). Your own password won't work. You will have to replace it with a Personal Access Token (PAT acts as your password). 
   [PAT SETUP LINK](https://github.com/appacademy/unified-setup/blob/main/github-setup.md#configuring-github)
-  . DO NOT show your PAT to anyone. Check all the fields for repo permission.
+  .
+  
+***IMPORTANT***
+- When generating token: Make sure to check all the fields for repo permission.
+- DO NOT show your PAT to anyone
+- For WSL users, when pasting (right click) your PAT into the password section, your password will be invisible, it will seem like it's not there, but it is there. So only paste once.
 
 ### Inviting Teammate
 
