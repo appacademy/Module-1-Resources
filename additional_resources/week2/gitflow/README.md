@@ -101,13 +101,13 @@ instructions for each partner will be different.**
   
 ![createNew](./push-repo.png)
 
-  **IMPORTANT: PAT Setup** 
+### PAT Setup For Authentication Issues
 
   If Github asks for your credentials (username / password). Your own password won't work. You will have to replace it with a Personal Access Token (PAT acts as your password). 
   [PAT SETUP LINK](https://github.com/appacademy/unified-setup/blob/main/github-setup.md#configuring-github)
   . DO NOT show your PAT to anyone. Check all the fields for repo permission.
 
-**INVITE TEAMMATE:** 
+### Inviting teammate to repo
 
 Refresh your github; your repo should like something like below. If you run into any issues CALL AN INSTRUCTOR ASAP for help!
   ![createNew](./look-like-repo.png)
