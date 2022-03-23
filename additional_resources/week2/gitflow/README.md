@@ -12,6 +12,8 @@
   - [How to download a project](#how-to-download-a-project)
   - [Basic setup for pairing](#basic-setup-for-pairing)
     - [Creating a Repo](#creating-a-repo)
+    - [PAT Setup](#pat-setup)
+    - [Inviting Teammate](#inviting-teammate)
     - [Cloning a Repo](#cloning-a-repo)
   - [Adding gitignore file](#adding-gitignore-file)
     - [Creating the .gitignore file](#creating-the-gitignore-file)
@@ -101,13 +103,13 @@ instructions for each partner will be different.**
   
 ![createNew](./push-repo.png)
 
-### PAT Setup For Authentication Issues
+### PAT Setup
 
   If Github asks for your credentials (username / password). Your own password won't work. You will have to replace it with a Personal Access Token (PAT acts as your password). 
   [PAT SETUP LINK](https://github.com/appacademy/unified-setup/blob/main/github-setup.md#configuring-github)
   . DO NOT show your PAT to anyone. Check all the fields for repo permission.
 
-### Inviting teammate to repo
+### Inviting Teammate
 
 Refresh your github; your repo should like something like below. If you run into any issues CALL AN INSTRUCTOR ASAP for help!
   ![createNew](./look-like-repo.png)
