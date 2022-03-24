@@ -12,6 +12,8 @@
   - [How to download a project](#how-to-download-a-project)
   - [Basic setup for pairing](#basic-setup-for-pairing)
     - [Creating a Repo](#creating-a-repo)
+    - [PAT Setup](#pat-setup)
+    - [Inviting Teammate](#inviting-teammate)
     - [Cloning a Repo](#cloning-a-repo)
   - [Adding gitignore file](#adding-gitignore-file)
     - [Creating the .gitignore file](#creating-the-gitignore-file)
@@ -67,7 +69,8 @@ instructions for each partner will be different.**
 
 ### Creating a Repo
 
-- **ONLY ONE PERSON**: Create a repository on github by pressing the + create in the top right corner of your github. Click: `New repository`
+- ***ONLY ONE PERSON*** 
+  - Create a repository on github by pressing the + create in the top right corner of your github. Click: `New repository`
 
   ![newButton](./create-repo.png)
 
@@ -83,7 +86,7 @@ instructions for each partner will be different.**
 
   ![createNew](./createNew.JPG)
 
-**EXAMPLE**: 
+***EXAMPLE***
   
 - Run `ls` and make sure that the structure of the project you are pushing should look similar below (problems, test, etc.). Also notice `git add .` 
   
@@ -101,13 +104,18 @@ instructions for each partner will be different.**
   
 ![createNew](./push-repo.png)
 
-  **IMPORTANT: PAT Setup** 
+### PAT Setup
 
   If Github asks for your credentials (username / password). Your own password won't work. You will have to replace it with a Personal Access Token (PAT acts as your password). 
   [PAT SETUP LINK](https://github.com/appacademy/unified-setup/blob/main/github-setup.md#configuring-github)
-  . DO NOT show your PAT to anyone. Check all the fields for repo permission.
+  .
+  
+***IMPORTANT***
+- When generating token: Make sure to check all the fields for repo permission.
+- DO NOT show your PAT to anyone
+- For WSL users, when pasting (right click) your PAT into the password section, your password will be invisible, it will seem like it's not there, but it is there. So only paste once.
 
-**INVITE TEAMMATE:** 
+### Inviting Teammate
 
 Refresh your github; your repo should like something like below. If you run into any issues CALL AN INSTRUCTOR ASAP for help!
   ![createNew](./look-like-repo.png)
