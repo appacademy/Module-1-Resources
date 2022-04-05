@@ -6,34 +6,6 @@
 
 ---
 
-## Lecture Notes
-
-- All of the lecture notes and code from the videos can be found in the\
- [Module-1-Resources] repository!
-
-How to use:
-
-- `cd` - change directory
-- `ls` - list files/folders
-- `code .` - opens vsCode
-
-1. Run the following command (Once)
-
-    ```bash
-    curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/folder_structure.sh | bash
-    ```
-
-2. Restart your terminal
-3. Every morning run...
-
-    ```bash
-    aa_update
-    ```
-
-4. Follow prompts
-5. Run `aa_update` again after lecture to get live lecture notes
-
----
 
 ## Typical Lecture Format
 
