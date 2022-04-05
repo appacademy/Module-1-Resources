@@ -385,9 +385,9 @@ match2memory
      └── .git
 ```
 <!-- Links -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---mar-2022-cohort-1-online/week-2-mar-2022-cohort-1-online/tuesday-morning-boost
-[Object Lecture]: https://open.appacademy.io/learn/js-py---mar-2022-cohort-1-online/week-2-mar-2022-cohort-1-online/object-lecture
-[Primitive vs Reference]: https://open.appacademy.io/learn/js-py---mar-2022-cohort-1-online/week-2-mar-2022-cohort-1-online/primitive-vs-reference
-[Object Destructuring]: https://open.appacademy.io/learn/js-py---mar-2022-cohort-1-online/week-2-mar-2022-cohort-1-online/object-destructuring
-[Spread and Rest]: https://open.appacademy.io/learn/js-py---mar-2022-cohort-1-online/week-2-mar-2022-cohort-1-online/spread-and-rest
+[Morning Boost]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-2-apr-2022-cohort-1-online/tuesday-morning-boost
+[Object Lecture]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-2-apr-2022-cohort-1-online/object-lecture
+[Primitive vs Reference]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-2-apr-2022-cohort-1-online/primitive-vs-reference
+[Object Destructuring]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-2-apr-2022-cohort-1-online/object-destructuring
+[Spread and Rest]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-2-apr-2022-cohort-1-online/spread-and-rest
 [*OBJECTS ARE UNORDERED*]: https://2ality.com/2015/10/property-traversal-order-es6.html
