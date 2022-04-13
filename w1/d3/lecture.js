@@ -92,3 +92,70 @@ let arrayMutator = function(arr){
 
 arrayMutator(names)
 console.log(names)
+
+// let nestedLoopFunction = function(){
+// 	for (let i = 0; i < 4; i++){
+//     	for (let j = 0; j < 3; j++){
+//         	console.log(i, j)
+//         }
+//     }
+// }
+
+// nestedLoopFunction()
+
+// let twoDimensional = [
+//   [1,2,3], // 0
+//   [4,5,6, 10], // 1
+//   [7,8,9, 45, 62], // 2
+//   undefined,
+// ]
+
+// let twoDimensionSum = function(arr) {
+// 	let sum = 0;  // sum variable to track total
+// 	for (let i = 0; i < arr.length; i++){ // outer loop to pull out inner arrays
+//       let subArray = arr[i] // store inner array at variable subArray
+//       console.log('subArray: ', subArray) // log for assurance
+//       if (Array.isArray(subArray) === false) continue;
+//       // for (let j = 0; j < subArray.length; j++){ // defining inner loop to look at subArray elements
+//       // 	let num = subArray[j] // key into subArray and store element as num
+//       //   // let num = arr[i][j]
+//       //   console.log('innerloop num: ', num) // check that we have num
+//       //   sum += num; // add our num to our sum and reassign sum to that value
+//       // }
+//       let j = 0;
+//       while (j < subArray.length){
+//       	let num = subArray[j] // key into subArray and store element as num
+//         // let num = arr[i][j]
+//         console.log('innerloop num: ', num) // check that we have num
+//         sum += num; // add our num to our sum and reassign sum to that value
+//         j++
+//       }
+//       console.log('current sum: ', sum) // after inner loop completes, check current sum
+//     }
+//   return sum // return sum so that our function resolves into desired value
+// }
+
+// console.log(twoDimensionSum(twoDimensional))
+					// [1,2,3]  4
+                    let twoSum = function(arr, target) {
+  
+                        let pairs = []
+                      for(let i = 0; i < arr.length; i++){
+                          let outerElement = arr[i]
+                          for (let j = i + 1; j < arr.length; j++){
+                                 let innerElement = arr[j]
+                              if (outerElement + innerElement === target) {
+                                pairs.push([outerElement, innerElement])
+                                console.log(pairs)
+                              } 
+                          }
+                      }
+                    return pairs
+                  }
+                  
+                  console.log(twoSum([1,2,3], 4))
+                  console.log(twoSum([1, 2, 3], 6))
+                  console.log(twoSum([1, 2, 3, 4], 5))
+                  
+                  
+                  
