@@ -112,3 +112,5 @@ function logger(ele, index){ //begin define logger
 // myForEach(instructors, logger)
 myForEach([1,2,3,4], adder)
 console.log(sum)
+
+//heres change
