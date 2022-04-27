@@ -1,4 +1,12 @@
+var choice = ( _=>{
+    debugger
+    var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
+    var color = colors[Math.floor(Math.random() * 100) % colors.length]
+    console.log("the color is:", color)
+    return color
+})()
 
+console.log(choice)
 
 /**
  *
