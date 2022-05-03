@@ -158,13 +158,13 @@ JulyToDec(0);
 ---
 
 <!-- Links for each cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-2-apr-2022-cohort-1-online/thursday-morning-boost
-[Scope Lecture]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-2-apr-2022-cohort-1-online/scope-lecture
-[Variables & Scope Code Demo Part 1]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-2-apr-2022-cohort-1-online/variables---scope-code-demo-part-1
-[Variables & Scope Code Demo Part 2]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-2-apr-2022-cohort-1-online/variables---scope-code-demo-part-2
-[Closure Lecture]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-2-apr-2022-cohort-1-online/closure-lecture
-[Closure Code Demo]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-2-apr-2022-cohort-1-online/closure-code-demo
-[Arrow Functions Code Demo]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-2-apr-2022-cohort-1-online/arrow-functions-code-demo
+[Morning Boost]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-2-may-2022-cohort-1-online/thursday-morning-boost
+[Scope Lecture]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-2-may-2022-cohort-1-online/scope-lecture
+[Variables & Scope Code Demo Part 1]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-2-may-2022-cohort-1-online/variables---scope-code-demo-part-1
+[Variables & Scope Code Demo Part 2]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-2-may-2022-cohort-1-online/variables---scope-code-demo-part-2
+[Closure Lecture]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-2-may-2022-cohort-1-online/closure-lecture
+[Closure Code Demo]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-2-may-2022-cohort-1-online/closure-code-demo
+[Arrow Functions Code Demo]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-2-may-2022-cohort-1-online/arrow-functions-code-demo
 
 <!-- Constant Links -->
 [Scope]: https://developer.mozilla.org/en-US/docs/Glossary/Scope

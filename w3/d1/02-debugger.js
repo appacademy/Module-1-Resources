@@ -1,5 +1,5 @@
 // To get your debugger set up, please head over to: 
-// https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/vscode-debugger-practice
+// https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/vscode-debugger-practice
 // and follow the instructions. We'll do a brief demo, however if you're unable 
 // to follow along we may want to spend a moment together during the long
 // to get you set up.

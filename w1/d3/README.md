@@ -265,13 +265,13 @@ for(let i = 0; i < dogs.length; i++) {
 ![Unique Pairs In Arrays]
 
 <!-- Change per cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-1-apr-2022-cohort-1-online/wednesday-morning-boost
-[Function Expression Syntax Demo]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-1-apr-2022-cohort-1-online/function-expression-syntax-demo
-[Mutability Demo]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-1-apr-2022-cohort-1-online/mutability-demo
-[Array Push, Pop, Shift, Unshift Demo]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-1-apr-2022-cohort-1-online/array-push--pop--shift--unshift-demo
-[Nested Loops]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-1-apr-2022-cohort-1-online/nested-loops
-[Pairs in Array]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-1-apr-2022-cohort-1-online/pairs-in-array
-[Unique Pairs in Array]: https://open.appacademy.io/learn/js-py---apr-2022-cohort-1-online/week-1-apr-2022-cohort-1-online/unique-pairs-in-array
+[Morning Boost]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-1-may-2022-cohort-1-online/wednesday-morning-boost
+[Function Expression Syntax Demo]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-1-may-2022-cohort-1-online/function-expression-syntax-demo
+[Mutability Demo]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-1-may-2022-cohort-1-online/mutability-demo
+[Array Push, Pop, Shift, Unshift Demo]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-1-may-2022-cohort-1-online/array-push--pop--shift--unshift-demo
+[Nested Loops]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-1-may-2022-cohort-1-online/nested-loops
+[Pairs in Array]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-1-may-2022-cohort-1-online/pairs-in-array
+[Unique Pairs in Array]: https://open.appacademy.io/learn/js-py---may-2022-cohort-1-online/week-1-may-2022-cohort-1-online/unique-pairs-in-array
 <!-- Constant Links -->
 [Array.prototype.push]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 [Array.prototype.pop]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop
