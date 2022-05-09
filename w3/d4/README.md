@@ -33,7 +33,8 @@
 
 - [Event Loop Reading]
 
-
+- Bonus event loop video
+  - [Jake Archibald on the Event Loop]
 ---
 
 ## Callback Functions
@@ -105,3 +106,4 @@ This will be done on your own once you finish the Timeout Project.
 [threading]: ./images/threading.png
 [Readline Docs]: https://nodejs.org/api/readline.html
 [MDN]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop
+[Jake Archibald on the Event Loop]: https://www.youtube.com/watch?v=cCOL7MC4Pl0
