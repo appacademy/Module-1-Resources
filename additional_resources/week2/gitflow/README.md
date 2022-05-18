@@ -107,8 +107,9 @@ instructions for each partner will be different.**
 ### PAT Setup
 
   If Github asks for your credentials (username / password). Your own password won't work. You will have to replace it with a Personal Access Token (PAT acts as your password). 
-  [PAT SETUP LINK](https://github.com/appacademy/unified-setup/blob/main/github-setup.md#configuring-github)
-  .
+  [PAT SETUP LINK](https://github.com/appacademy/unified-setup/blob/main/github-setup.md#getting-started-with-git)
+
+- Reminder: When setting up secrets manager on git, we will **also have to download git on our main system if windows** (sometimes we only have it on our wsl)
   
 ***IMPORTANT***
 - When generating token: Make sure to check all the fields for repo permission.
