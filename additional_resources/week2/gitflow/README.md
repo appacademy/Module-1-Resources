@@ -84,7 +84,7 @@ instructions for each partner will be different.**
   time in the directory that you wish to become a git repository
   - **IMPORTANT**: Remember that `git add .` is the command to add all files to the staging area. `git add README.MD` will **not add** all your files.
 
-  ![createNew](./createNew.JPG)
+  ![](https://i.imgur.com/GhOCAmd.png)
 
 ***EXAMPLE***
   
