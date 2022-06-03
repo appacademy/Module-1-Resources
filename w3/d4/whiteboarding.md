@@ -25,7 +25,7 @@ Edge Case:
 
   ```js
   let smoothie4 = smoothieMachine("");
-  smoothie4("apples") // "I'm having a smoothie with appels."
+  smoothie4("apples") // "I'm having a smoothie with apples."
   ```
 
 
