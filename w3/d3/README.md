@@ -105,8 +105,8 @@ console.log(mapper([1, 2, 3], (x) => x * 200)); // [ 200, 400, 600 ]
 
 <!-- Links per cohort -->
 
-[Morning boost]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3-may-2022-cohort-1-online/wednesday-morning-boost
-[Function Hoisting Lecture]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3-may-2022-cohort-1-online/function-hoisting-lecture
+[Morning boost]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3---intro-to-javascript/wednesday-morning-boost
+[Function Hoisting Lecture]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3---intro-to-javascript/function-hoisting-lecture
 [IIFE Flash Cards]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/iife-flash-cards
 [IIFE Quiz]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/iife-quiz
 [Hoisting in Javascript Flash Cards]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/hoisting-in-javascript-flash-cards

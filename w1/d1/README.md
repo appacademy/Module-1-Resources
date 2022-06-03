@@ -247,14 +247,14 @@
 
 ---
 <!-- link per cohort -->
-[How to Learn]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1-may-2022-cohort-1-online/how-to-learn
-[Intro to Debugging]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1-may-2022-cohort-1-online/intro-to-debugging
-[Number Type Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1-may-2022-cohort-1-online/number-type-demo
-[Boolean Type Lecture]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1-may-2022-cohort-1-online/boolean-type-lecture
-[Boolean Type Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1-may-2022-cohort-1-online/boolean-type-demo
-[Variables Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1-may-2022-cohort-1-online/variables-demo
-[Asking Great coding Questions]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1-may-2022-cohort-1-online/asking-great-coding-questions
-[Comparison Operators Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1-may-2022-cohort-1-online/comparison-operators-demo
+[How to Learn]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1---intro-to-javascript/how-to-learn
+[Intro to Debugging]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1---intro-to-javascript/intro-to-debugging
+[Number Type Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1---intro-to-javascript/number-type-demo
+[Boolean Type Lecture]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1---intro-to-javascript/boolean-type-lecture
+[Boolean Type Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1---intro-to-javascript/boolean-type-demo
+[Variables Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1---intro-to-javascript/variables-demo
+[Asking Great coding Questions]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1---intro-to-javascript/asking-great-coding-questions
+[Comparison Operators Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-1---intro-to-javascript/comparison-operators-demo
 
 <!-- constant links -->
 [Module-1-Resources]: https://github.com/appacademy/Module-1-Resources

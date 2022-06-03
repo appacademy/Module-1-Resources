@@ -115,10 +115,10 @@ and make the `return` value of the function the new accumulator.
 - Live Lecture
 
 <!-- Links per cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-2-may-2022-cohort-1-online/monday-morning-boost
-[forEach Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-2-may-2022-cohort-1-online/for-each-demo
-[map Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-2-may-2022-cohort-1-online/map-demo
-[filter Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-2-may-2022-cohort-1-online/filter-demo
-[reduce Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-2-may-2022-cohort-1-online/reduce-demo
+[Morning Boost]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-2---intro-to-javascript/monday-morning-boost
+[forEach Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-2---intro-to-javascript/for-each-demo
+[map Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-2---intro-to-javascript/map-demo
+[filter Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-2---intro-to-javascript/filter-demo
+[reduce Demo]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-2---intro-to-javascript/reduce-demo
 
 <!-- Constant Links -->
