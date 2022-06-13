@@ -32,12 +32,12 @@ function isVowel(char) {
 }
 
 function pigLatinWord(word) {
-    let vowels = "aeiou"
-    for (let i = 0; i < vowels.length; i++){
-        let currentVowel = vowels[i]
-        if (word.startsWith(currentVowel)) return word + "yay"
-    }
-    // if (isVowel(word[0])) return word + "yay"
+    // let vowels = "aeiou"
+    // for (let i = 0; i < vowels.length; i++){
+    //     let currentVowel = vowels[i]
+    //     if (word.startsWith(currentVowel)) return word + "yay"
+    // }
+    if (isVowel(word[0])) return word + "yay"
     for (let i = 1; i < word.length; i++) {
         let currentChar = word[i]
         if (isVowel(currentChar) === true){
