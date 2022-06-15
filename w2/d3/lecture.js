@@ -47,23 +47,28 @@ let pokemonCreator = () => {
     for (let i = 0; i < 1000; i++) {
       let pokemonNumber = Math.floor(Math.random() * selectionOfPokemon.length);
       let level = Math.ceil(Math.random() * 100);
-  
-      pokemons.push({
-        ...selectionOfPokemon[pokemonNumber],
-        level,
-      });
+      let currentPokemon = selectionOfPokemon[pokemonNumber]
+      console.log(currentPokemon)
+      let isShiny = Math.random() * 1000 > 999
+      pokemons.push(
+          {
+        ...currentPokemon,
+        "level": level,
+      }
+      );
+      isShiny ? currentPokemon.shiny = "Shiny!" : null
     }
   
     return pokemons;
   }
 
 let listOfPokemon = pokemonCreator(); // storing the array of 1000 results
-
-function pokemonSorter(pokemons, callback, opt1){ // defining a higher order function, that wants the list
+console.table(listOfPokemon)
+function pokemonSorter(pokemons, callback, ...options){ // defining a higher order function, that wants the list
                                                   // a callback, and any options
     if (callback === undefined) return pokemons   // check to see if callback is undefined, and return list
     else {  
-        return callback(pokemons, opt1)           // else, invoke callback with list and options
+        return callback(pokemons, ...options)           // else, invoke callback with list and options
     }
 }
 
@@ -77,11 +82,25 @@ let certainKind = function(pokemons, name){ // define callback that will take in
 
 let highLevels = (list, level) => { // define callback that will return only pokemon that are at or above a 
                                     // certain level
-   return list.filter(poke => poke.level >= level).map(poke => ({name: poke.name, level: poke.level}))
+   return list.filter(poke => poke.level >= level)
+   .map(poke => ({name: poke.name, level: poke.level}))
    // use .filter method to find pokemon that meet level condition, then map through return data to
    // remove extraneous type key
 }
 
-console.log(pokemonSorter(pokemonSorter(listOfPokemon, certainKind, "Squirtle"), highLevels, 80))
-// console.log(pokemonSorter(listOfPokemon, onlyBulba, "Squirtle"))
+let genericFilter = (list, key, value) => list.filter(pokemon => pokemon[key] === value)
 
+// console.table(pokemonSorter(listOfPokemon, highLevels, 95))
+// console.table(pokemonSorter(pokemonSorter(listOfPokemon, certainKind, "Squirtle"), highLevels, 80))
+// console.log(pokemonSorter(listOfPokemon, onlyBulba, "Squirtle"))
+console.table(pokemonSorter(listOfPokemon, genericFilter, "shiny", "Shiny!"))
+
+
+// let arr1 = [1,2,3,4]
+// let arr2 = [...arr1]
+
+// let wayne = {name: "wayne", color: "black", hasTail: "no"}
+// let wax = {...wayne}
+// // wax.name="wax"
+// // wax.color="tortie"
+// console.log(wayne, wax)
