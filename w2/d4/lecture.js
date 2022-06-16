@@ -98,14 +98,16 @@ function buttonMaker(color) {
         console.log("The " + color + " button has been pushed " + count + " times")
         return pullTheButton
     }
-    function whatIsCount(){
+    function whatIsCount() {
         console.log("The " + color + " button has currently been pushed " + count + " times")
     }
-    return { 
-        "pushTheButton": pushTheButton, 
-        "pullTheButton": pullTheButton, 
+    const props = {
+        "pushTheButton": pushTheButton,
+        "pullTheButton": pullTheButton,
         "what": whatIsCount,
-     }
+    }
+    
+    return props
 }
 
 const redButton = buttonMaker("red")
