@@ -38,16 +38,17 @@ return an object that has key-value pairs listing each person who scored as a ke
 and the sum of the total points for the game as their value.
 ***********************************************************************/
 
-// function countScores(people) {
-    // let playerScores = {};
+function countScores(people) {
+    let playerScores = {};
 
-    // for (let player of people) {
-    //     console.log(player);
-    //     // [playerName, score] = [player.name, player.score] // destructuring with an array
-    //     let { playerName, score } = player; // destructuring with an object
-    //     if (playerScores[playerName]) playerScores[playerName] += score;
-    //     else playerScores[playerName] = score;
-    // }
+    for (let player of people) {
+        // console.log(player);
+        [name, score] = [player.name, player.score] // destructuring with an array
+        // let { name, score } = player; // destructuring with an object
+        console.log(name, score);
+        if (playerScores[name]) playerScores[name] += score;
+        else playerScores[name] = score;
+    }
 
     // for (let i = 0; i < people.length; i += 1) {
     //     let personObj = people[i];
@@ -60,18 +61,18 @@ and the sum of the total points for the game as their value.
     //     scoresObj[name] = score;
     //     }
     // }
-//     return playerScores;
-// }
+    return playerScores;
+}
 
 // Example 1:
-// let ppl = [
-//     {name: "Anthony", score: 10},
-//     {name: "Fred", score : 10},
-//     {name: "Anthony", score: -8},
-//     {name: "Winnie", score: 12}
-// ];
+let ppl = [
+    {name: "Anthony", score: 10},
+    {name: "Fred", score : 10},
+    {name: "Anthony", score: -8},
+    {name: "Winnie", score: 12}
+];
 
-// console.log(countScores(ppl)); //=> { Anthony: 2, Fred: 10, Winnie: 12 }
+console.log(countScores(ppl)); //=> { Anthony: 2, Fred: 10, Winnie: 12 }
 
 /* Object destructuring example */
 // let person = {
