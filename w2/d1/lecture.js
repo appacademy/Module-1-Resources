@@ -34,19 +34,20 @@
 //     }
 // }
 
-// // console.log(sumArray(nums))
+// console.log(sumArray(nums))
 
 // let logger = ele => console.log(ele)
-// // function logger(ele) {
-// //     console.log(ele)
-// // }
-// // let logger = function(ele) {
-// //     console.log(ele)
-// // };
+// function logger(ele) {
+//     console.log(ele)
+// }
+// let logger = function(ele) {
+//     console.log(ele)
+// };
 
-// // let words = ["hello","world","goodbye","moon"]
-// // words.forEach(logger);
-// ["hello","world","goodbye","moon"].forEach(logger)
+// let words = ["hello","world","goodbye","moon"]
+// words.forEach(logger);
+let logger = ele => console.log(ele);
+["hello","world","goodbye","moon"].forEach(logger)
 
 // map
 
@@ -107,30 +108,30 @@
 
 
 // reduce
-let numbers = [1, 42, 24, 55, 9, 58, 1320, 181]
+// let numbers = [1, 42, 24, 55, 9, 58, 1320, 181]
 
-function sum(nums){
-    return nums.reduce(
-        (accum, number)=> {
-        // accum += number
-        // console.log(accum)
-        // return accum
-        console.log(accum)
-        return accum + number
-    }, 0
-    )
-}
+// function sum(nums){
+//     return nums.reduce(
+//         (accum, number)=> {
+//         // accum += number
+//         // console.log(accum)
+//         // return accum
+//         console.log(accum)
+//         return accum + number
+//     }, 0
+//     )
+// }
 
-let collection = [[],[]]
-let evensAndOdds = nums => nums.reduce((accum, num)=>{
-    if (num % 2 === 0) accum[0].push(num)
-    // if (num % 2 === 1) accum[1].push(num)
-    else accum[1].push(num)
-    // num % 2 === 0 ? accum[0].push(num) : accum[1].push(num)
-    return accum
-}, collection)
+// let collection = [[],[]]
+// let evensAndOdds = nums => nums.reduce((accum, num)=>{
+//     if (num % 2 === 0) accum[0].push(num)
+//     // if (num % 2 === 1) accum[1].push(num)
+//     else accum[1].push(num)
+//     // num % 2 === 0 ? accum[0].push(num) : accum[1].push(num)
+//     return accum
+// }, collection)
 
-// console.log(sum(numbers))
+// // console.log(sum(numbers))
 
-console.log(evensAndOdds(numbers))
-console.log(collection)
+// console.log(evensAndOdds(numbers))
+// console.log(collection)
