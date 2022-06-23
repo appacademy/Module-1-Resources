@@ -47,4 +47,12 @@
 
 const food = (...foods) => console.log(`I love ${foods.join(" ")}!`)
 
-console.log(setTimeout(food, 0,"zucchini", "tomatoes", "peppers", "oregano", "eggplant", "cucumbers"))
+// console.log(setTimeout(food, 0, "zucchini", "tomatoes", "peppers", "oregano", "eggplant", "cucumbers"))
+
+function waiter(cb, delay = Math.random() * 10000) {
+    console.log(`waiting for ${delay}ms!`)
+    setTimeout(cb, delay)
+}
+waiter(() => {
+    food("zucchini", "tomatoes", "peppers", "oregano", "eggplant", "cucumbers")
+},)
