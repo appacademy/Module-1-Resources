@@ -45,14 +45,43 @@
 // clearTimeout(timer)
 // console.log(timer)
 
-const food = (...foods) => console.log(`I love ${foods.join(" ")}!`)
+// const food = (...foods) => console.log(`I love ${foods.join(" ")}!`)
 
-// console.log(setTimeout(food, 0, "zucchini", "tomatoes", "peppers", "oregano", "eggplant", "cucumbers"))
+// // console.log(setTimeout(food, 0, "zucchini", "tomatoes", "peppers", "oregano", "eggplant", "cucumbers"))
 
-function waiter(cb, delay = Math.random() * 10000) {
-    console.log(`waiting for ${delay}ms!`)
-    setTimeout(cb, delay)
+// function waiter(cb, delay = Math.random() * 10000) {
+//     console.log(`waiting for ${delay}ms!`)
+//     setTimeout(cb, delay)
+// }
+// waiter(() => {
+//     food("zucchini", "tomatoes", "peppers", "oregano", "eggplant", "cucumbers")
+// },)
+
+// const food = (...foods) => console.log(`I love ${foods.join(" ")}!`)
+// const int = setInterval(food, 5000, "bbq", "calzone", "pierogi")
+// console.log(int)
+// clearInterval(int)
+// console.log(int)
+
+// function intervalFunc(number){
+//     const myInterval = setInterval(()=>{
+//         console.log("Hello there!")
+//         number--
+//         console.log("Here's my num!", number)
+//         if (number === 0) clearInterval(myInterval)
+//     }, 500)
+// }
+
+// intervalFunc(50)
+
+const delays = [1500, 1250, 1000, 750, 500, 250, 0,]
+
+const timeoutFunc = (delayArr) => {
+    // delayArr.forEach(delay => setTimeout(console.log, delay, `Waited for ${delay}ms`))
+    if (!delayArr.length) return
+    const currentDelay = delayArr[0]
+    console.log(`waiting for ${currentDelay}ms`)
+    setTimeout(timeoutFunc, currentDelay, delayArr.slice(1))
 }
-waiter(() => {
-    food("zucchini", "tomatoes", "peppers", "oregano", "eggplant", "cucumbers")
-},)
+
+console.log(timeoutFunc(delays))
