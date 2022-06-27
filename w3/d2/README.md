@@ -76,10 +76,10 @@ you walk me through what's happening to the call stack?
 <!-- constant links -->
 [FIGMA]: https://www.figma.com/file/UMWdZXSOPlm3rRSXSNzEAf/Callstack?node-id=0%3A1
 <!-- per cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3---intro-to-javascript/tuesday-morning-boost
-[Call Stack Lecture]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3---intro-to-javascript/call-stack-lecture
-[The Recursive Call Stack]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3---intro-to-javascript/the-recursive-call-stack
-[A Case Study]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3---intro-to-javascript/a-case-study
-[Debugging Lecture]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3---intro-to-javascript/debugging-walkthrough
-[Identifying the Base & Recursive Case Quiz]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/identifying-the-base---recursive-case-quiz
-[Solving Problems Recursively Project]: https://open.appacademy.io/learn/js-py---jun-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/solving-problems-recursively-project
+[Morning Boost]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-3---intro-to-javascript/tuesday-morning-boost
+[Call Stack Lecture]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-3---intro-to-javascript/call-stack-lecture
+[The Recursive Call Stack]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-3---intro-to-javascript/the-recursive-call-stack
+[A Case Study]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-3---intro-to-javascript/a-case-study
+[Debugging Lecture]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-3---intro-to-javascript/debugging-walkthrough
+[Identifying the Base & Recursive Case Quiz]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/identifying-the-base---recursive-case-quiz
+[Solving Problems Recursively Project]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/solving-problems-recursively-project
