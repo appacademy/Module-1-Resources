@@ -275,14 +275,14 @@ Other common methods you will use often: (Not needed _today_, but why not\
 - Array.prototype.splice
 
 <!-- Links to change for each cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-1---intro-to-javascript/tuesday-morning-boost
-[String Type Lecture]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-1---intro-to-javascript/string-type-lecture
-[String Type Demo]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-1---intro-to-javascript/string-type-demo
-[Function Lecture]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-1---intro-to-javascript/function-lecture
-[Average Walkthrough]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-1---intro-to-javascript/average-walkthrough
-[Conditionals Demo]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-1---intro-to-javascript/conditionals-demo
-[Loop Demo]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-1---intro-to-javascript/loops-demo
-[Array Lecture]: https://open.appacademy.io/learn/js-py---jul-2022-cohort-1-online/week-1---intro-to-javascript/array-lecture
+[Morning Boost]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-1---intro-to-javascript/tuesday-morning-boost
+[String Type Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-1---intro-to-javascript/string-type-lecture
+[String Type Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-1---intro-to-javascript/string-type-demo
+[Function Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-1---intro-to-javascript/function-lecture
+[Average Walkthrough]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-1---intro-to-javascript/average-walkthrough
+[Conditionals Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-1---intro-to-javascript/conditionals-demo
+[Loop Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-1---intro-to-javascript/loops-demo
+[Array Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-1---intro-to-javascript/array-lecture
 
 <!-- Constant Links -->
 [Falsy Values]: https://developer.mozilla.org/en-US/docs/Glossary/Falsy
