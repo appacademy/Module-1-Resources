@@ -115,24 +115,52 @@
 // pointer.pop()
 // console.log(instructors)
 
-let instructors = ["Bill", "Jojo", "Jesse", "Braxton", "Peter", "Charlie"]
-let culling = function (banana, papaya) {
-    // while(banana.length > papaya){ // [1,2,3] > 4
-    //     console.log(banana.pop(), "has been removed from the array!")
-    // }
-    // for (let i = papaya - banana.length + 1; i < papaya; i++) {
-    //     console.log(banana.pop(), "has been removed from the array!")
-    // }
-    for (let i = banana.length; i > papaya; i--) {
-        console.log(banana.pop(), "has been removed from the array!")
-    }
-    return "This is just a test"
-}
-let result = culling(instructors, 1)
-console.log(instructors)
-
-console.log(result)
-// function popper(arr) {
-//     arr.pop()
-//     return arr
+// let instructors = ["Bill", "Jojo", "Jesse", "Braxton", "Peter", "Charlie"]
+// let culling = function (banana, papaya) {
+//     // while(banana.length > papaya){ // [1,2,3] > 4
+//     //     console.log(banana.pop(), "has been removed from the array!")
+//     // }
+//     // for (let i = papaya - banana.length + 1; i < papaya; i++) {
+//     //     console.log(banana.pop(), "has been removed from the array!")
+//     // }
+//     for (let i = banana.length; i > papaya; i--) {
+//         console.log(banana.pop(), "has been removed from the array!")
+//     }
+//     return "This is just a test"
 // }
+// let result = culling(instructors, 1)
+// console.log(instructors)
+
+// console.log(result)
+// // function popper(arr) {
+// //     arr.pop()
+// //     return arr
+// // }
+
+// nested loops
+
+//outer loop
+// for (let i = 0; i < 4; i++) { //enter outer loop, i = 0
+//     console.log("i:", i)
+//     for(let j = 0; j < 3; j++){ //enter inner loop, j = 0, 1...
+//         // console.log(i, j) // ??
+//         console.log("     j:", j)
+//     }
+// }
+let nestedArray = [
+   //0  1  2  3 
+    [1, 2, 3, 4], //0
+   //0  1  2 
+    [5, 6, 7],
+    [8],
+    [9, 10, 11, 12, 13, 14],
+    [15,16]     //1
+]
+
+for (let i = 0; i < nestedArray.length; i++){
+    let subArray = nestedArray[i];
+    console.log("current subarray:", subArray)
+    for (let j = 0; j < subArray.length; j++){
+        console.log(subArray[j])
+    }
+}
