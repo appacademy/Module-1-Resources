@@ -120,7 +120,10 @@ let culling = function (banana, papaya) {
     // while(banana.length > papaya){ // [1,2,3] > 4
     //     console.log(banana.pop(), "has been removed from the array!")
     // }
-    for (let i = papaya - banana.length + 1; i < papaya; i++) {
+    // for (let i = papaya - banana.length + 1; i < papaya; i++) {
+    //     console.log(banana.pop(), "has been removed from the array!")
+    // }
+    for (let i = banana.length; i > papaya; i--) {
         console.log(banana.pop(), "has been removed from the array!")
     }
     return "This is just a test"
