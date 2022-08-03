@@ -2,121 +2,130 @@
 
 ## [Morning Boost]
 
-## Array Methods
+## Arrow Functions
 
-`Video Lectures`: 10 mins
+`Video Lectures and Quiz`: 10 mins
 
-- [forEach Demo]
+- [Arrow Functions Demo]
 
-`forEach`
+`Overview`
 
-- Hey there `forEach` method who's attached to an array.
-- Here's a function.
-- For each element that is in your array
-- I'd like you to run this function giving it the element, index, and array.
-- You don't have to give me anything back.
+- Arrow Functions are always anonymous
 
-  ```js
-  /* 
-  Write a function called hello that intakes an 
-  array of names and prints "Hello," plus the name, for
-  each name. Must use .forEach()
+`Syntax`
 
-  hello(['Mylo', 'Buster']) prints 'Hello, Mylo', 'Hello, Buster'
-  */
-  ```
-
-`Video Lectures`: 35 mins
-
-- [map Demo]
-- [filter Demo]
-- [reduce Demo]
-
-`map`
-
-- Hey there `map` method who's attached to an array.
-- Here's a function.
-- First, I'd like you to create a new array.
-- Then, for each element that is in your array\
-I'd like you to run this function giving it the element, index, and array,\
-and push the return value of that function into the new array you created.
-- Finally, you can give me the new array back.
+- Parenthesis and/or single parameter
+- An 'arrow' `=>`
+- Multiline?
+  - Code block
+  - Optional `return`
+- Single Line?
+  - `implicit return`
+- Named?
+  - Assign to a variable
 
   ```js
-  /* 
-  Write a function called timesTwo that intakes an
-  array of numbers and returns a new array where all 
-  of the numbers are multiplied by 2. You must use .map()
+  // Multiline
+  let printName = (name) => {
+    let str = 'My name is '
+    console.log(str + name);
+  };
 
-  timesTwo([1, 2, 3]) => [2, 4, 6]
-  timesTwo([-1, 6, 0]) => [-2, 12, 0]
-  */
-  ```
+  printName('Bill');
+  // Single Line
+  let returnName = name => 'My name is ' + name;
 
-`filter`
+  console.log(returnName('Jojo'));
 
-- Hey there `filter` method who's attached to an array.
-- Here's a function.
-- First, I'd like you to create a new array.
-- Then, for each element that is in your array\
-I'd like you to run this function giving it the element, index, and array.
-  - If the `return` value of that function is true,\
-  you should push it onto the new array you created.
-- Finally, you can give me the new array back.
+`Arrow Functions Discussion`
 
-  ```js
-  /* 
-  Write a function called evens that intakes an
-  array of numbers and returns a new array of only the
-  even numbers from the original array. You must use
-  .filter()
+---
+## Objects (Plain Old JavaScript Objects [POJO])
+`Video Lectures`: 8 minutes
 
-  evens([1, 2, 3]) => [2]
-  evens([42, 44, 45]) => [42, 44]
-  */
-  ```
+- [Object Lecture]
 
-`reduce`
+`Review`
 
-### No Default Accumulator
+```js
+let obj = {
+  name: "Mylo",
+  age: 1000,
+  game: {
+    name: "Dota 2",
+    position: 5,
+    favHero: "Dazzle"
+  }
+}
 
-- Hey there `reduce` method who's attached to an array.
-- Here's a function.
-- First, assign the first element of your array as the accumulator.
-- Then, starting at the second element of the array,\
-I'd like you to run the function giving it the accumulator, element, index, and array,\
-and make the `return` value of the function the new accumulator.
-- Finally, you can give me the accumulator.
+//How would I print Mylo's name from the object?
+//
+//How would I add his location, Chicago?
+//
+//How would I change his age to 1001?
+```
 
-### Default Accumulator
+`Dot notation`
 
-- Hey there `reduce` method who's attached to an array.
-- Here's a function. And what I'd like the accumulator to start with\
-- First, assign what I gave you as the accumulator\
-- Then, for each element that is in your array\
-I'd like you to run the function giving it the accumulator, element, index, and array,\
-and make the `return` value of the function the new accumulator.
-`return` value of this function the new accumulator.
-- Finally, you can give me the accumulator.
+- Since keys are usually strings, and we'd hate to have to write [''] all the time\
+we have dot notation.
 
-  ```js
-  /* 
-  Write a function called sum that intakes an
-  array of names and returns a string of "Names: " with
-  all of the names attached after. Must use the .reduce()
+```js
+let obj = {
+  first: 'a',
+  second: 'b',
+  third: 'c'
+}
 
-  reduce(['Mylo']) => Names: Mylo 
-  reduce(['Rick', 'Morty']) => Names: Rick Morty 
-  */
-  ```
+console.log(obj.first, obj['first']) // a a
+```
 
-## Objects
+`Using a variable`
+
+```js
+let someVariable = "firstName";
+let some = "second";
+let variable = "Name";
+let time = "FrEQUENcY";
+
+let obj = {
+  firstName: "Oscar",
+  secondName: "Mayer",
+  frequency: "everyday",
+};
+
+console.log(obj[someVariable]); // Oscar
+console.log(obj[some + variable]); // Mayer
+console.log(obj[time.toLowerCase()]);
+```
+
+`Checking if a key exists`
+
+- obj[key] !== undefined
+- key in obj
+
+`Iterating over an Object`
+
+- for in loop
+- Object.keys
+- Object.values
+- Object.entries
+
+`Why objects`
+
+- Instant look up time.
+- Allows us a term/definition (key-value)
+- Groups `like` information together
+
+
 
 - Live Lecture
 
 <!-- Links per cohort -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/monday-morning-boost
-[forEach Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/for-each-demo
+[Arrow Functions Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---objects--callbacks--scope--and-closure/arrow-functions-code-demo
+[Arrow Functions Quiz]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---objects--callbacks--scope--and-closure/arrow-functions-quiz
+[Object Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---objects--callbacks--scope--and-closure/object-lecture
 [map Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/map-demo
 [filter Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/filter-demo
 [reduce Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/reduce-demo

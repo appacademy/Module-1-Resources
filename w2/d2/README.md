@@ -2,89 +2,9 @@
 
 ## [Morning Boost]
 
-## Objects
-
-`Video Lectures`: 8 minutes
-
-- [Object Lecture]
-
-`Review`
-
-```js
-let obj = {
-  name: "Mylo",
-  age: 1000,
-  game: {
-    name: "Dota 2",
-    position: 5,
-    favHero: "Dazzle"
-  }
-}
-
-//How would I print Mylo's name from the object?
-//
-//How would I add his location, Chicago?
-//
-//How would I change his age to 1001?
-```
-
-`Dot notation`
-
-- Since keys are usually strings, and we'd hate to have to write [''] all the time\
-we have dot notation.
-
-```js
-let obj = {
-  first: 'a',
-  second: 'b',
-  third: 'c'
-}
-
-console.log(obj.first, obj['first']) // a a
-```
-
-`Using a variable`
-
-```js
-let someVariable = "firstName";
-let some = "second";
-let variable = "Name";
-let time = "FrEQUENcY";
-
-let obj = {
-  firstName: "Oscar",
-  secondName: "Mayer",
-  frequency: "everyday",
-};
-
-console.log(obj[someVariable]); // Oscar
-console.log(obj[some + variable]); // Mayer
-console.log(obj[time.toLowerCase()]);
-```
-
-`Checking if a key exists`
-
-- obj[key] !== undefined
-- key in obj
-
-`Iterating over an Object`
-
-[*OBJECTS ARE UNORDERED*]
-
-- for in loop
-- Object.keys
-- Object.values
-- Object.entries
-
-`Why objects`
-
-- Instant look up time.
-- Allows us a term/definition (key-value)
-- Groups `like` information together
-
 ## Primitive VS Reference
 
-`Video Lectures`: 10 Minutes
+`Primitive vs Reference Quiz`: 7 Minutes
 
 - [Primitive vs Reference]
 
@@ -151,11 +71,14 @@ console.log(obj[time.toLowerCase()]);
 
 </td></tr> </table>
 
-## Destructuring
+## POJO Practice
+`REPL Practices`: 45 minutes
+- We'll go into breakout rooms to work on these practices, remember to hit the
+Ask a Question button on Progress Tracker if you're stuck on anything for more
+than 15 minutes. Feel free to consult the others in your breakout room and work
+together
 
-`Video Lectures`: 18 minutes
-
-- [Object Destructuring]
+## Rest, Spread and Destructuring
 
 `Discussion`
 
@@ -177,15 +100,7 @@ console.log(obj[time.toLowerCase()]);
     console.log(game, player);
   ```
 
-## Rest and Spread
-
-`Video Lectures`: 18 minutes
-
-- [Spread and Rest]
-
-`Discussion`
-
-- The same side of very different coins.
+- Rest and Spread are the same side of very different coins.
   - Rest gathers up the 'rest' of the parameters into an array
 
   ```js
@@ -218,6 +133,131 @@ console.log(obj[time.toLowerCase()]);
   let obj4 = { ...obj1, ...obj2, movie: 'Fantastic Mr. Fox' };
   console.log(obj3);
   console.log(obj4);
+  ```
+`Quiz`: 5 minutes
+- [Destructuring Quiz]
+`REPL Practices`: 50 minutes
+- We'll go back to breakout rooms to work on these practices, remember to hit the
+Ask a Question button on Progress Tracker if you're stuck on anything for more
+than 15 minutes. Feel free to consult the others in your breakout room and work
+together
+
+## Advanced Array Methods
+
+- Breakdown:
+  - All of the advanced array methods are expecting a function as their argument
+  - That function will be invoked with each element of the array.
+    - The function will be passed the current element, its index and the calling
+      array as arguments.
+  - forEach does not expect a return from the function it is provided
+  - map will "map" the returned data into the current position in the result 
+  array
+    - map will always return a new array of the same length with new elements
+  - filter is expecting true or false as an indicator of whether or not the 
+  current element should be including in the new array
+    - filter will always return a new array filled with items that passed our
+    argument function
+  - find is expecting true or false and will return the first element that 
+  returns true from the provided function
+    - find will only ever return a single item, the first element where the
+    argument function returns true
+  - reduce is expecting the value of the accumulator for the next iteration.
+    - reduce will return anything we want it to. if we manage our accumulator
+    correctly, we get to determine its data type.
+    
+`forEach`
+
+- Hey there `forEach` method who's attached to an array.
+- Here's a function.
+- For each element that is in your array
+- I'd like you to run this function giving it the element, index, and array.
+- You don't have to give me anything back.
+
+  ```js
+  /* 
+  Write a function called hello that intakes an 
+  array of names and prints "Hello," plus the name, for
+  each name. Must use .forEach()
+
+  hello(['Mylo', 'Buster']) prints 'Hello, Mylo', 'Hello, Buster'
+  */
+  ```
+  `map`
+
+- Hey there `map` method who's attached to an array.
+- Here's a function.
+- First, I'd like you to create a new array.
+- Then, for each element that is in your array\
+I'd like you to run this function giving it the element, index, and array,\
+and push the return value of that function into the new array you created.
+- Finally, you can give me the new array back.
+
+  ```js
+  /* 
+  Write a function called timesTwo that intakes an
+  array of numbers and returns a new array where all 
+  of the numbers are multiplied by 2. You must use .map()
+
+  timesTwo([1, 2, 3]) => [2, 4, 6]
+  timesTwo([-1, 6, 0]) => [-2, 12, 0]
+  */
+  ```
+
+`filter`
+
+- Hey there `filter` method who's attached to an array.
+- Here's a function.
+- First, I'd like you to create a new array.
+- Then, for each element that is in your array\
+I'd like you to run this function giving it the element, index, and array.
+  - If the `return` value of that function is true,\
+  you should push it onto the new array you created.
+- Finally, you can give me the new array back.
+
+  ```js
+  /* 
+  Write a function called evens that intakes an
+  array of numbers and returns a new array of only the
+  even numbers from the original array. You must use
+  .filter()
+
+  evens([1, 2, 3]) => [2]
+  evens([42, 44, 45]) => [42, 44]
+  */
+  ```
+
+`reduce`
+
+### No Default Accumulator
+
+- Hey there `reduce` method who's attached to an array.
+- Here's a function.
+- First, assign the first element of your array as the accumulator.
+- Then, starting at the second element of the array,\
+I'd like you to run the function giving it the accumulator, element, index, and array,\
+and make the `return` value of the function the new accumulator.
+- Finally, you can give me the accumulator.
+
+### Default Accumulator
+
+- Hey there `reduce` method who's attached to an array.
+- Here's a function. And what I'd like the accumulator to start with\
+- First, assign what I gave you as the accumulator\
+- Then, for each element that is in your array\
+I'd like you to run the function giving it the accumulator, element, index, and array,\
+and make the `return` value of the function the new accumulator.
+`return` value of this function the new accumulator.
+- Finally, you can give me the accumulator.
+
+  ```js
+  /* 
+  Write a function called sum that intakes an
+  array of names and returns a string of "Names: " with
+  all of the names attached after. Must use the .reduce()
+
+  reduce(['Mylo']) => Names: Mylo 
+  reduce(['Rick', 'Morty']) => Names: Rick Morty 
+  */
   ```
 
 ## Git
@@ -387,7 +427,7 @@ match2memory
 <!-- Links -->
 [Morning Boost]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/tuesday-morning-boost
 [Object Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/object-lecture
-[Primitive vs Reference]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/primitive-vs-reference
+[Primitive vs Reference]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---objects--callbacks--scope--and-closure/primitive-vs-reference-quiz
 [Object Destructuring]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/object-destructuring
 [Spread and Rest]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/spread-and-rest
-[*OBJECTS ARE UNORDERED*]: https://2ality.com/2015/10/property-traversal-order-es6.html
+[Destructuring Quiz]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---objects--callbacks--scope--and-closure/destructuring-quiz
