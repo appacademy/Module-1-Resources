@@ -147,20 +147,53 @@
 //         console.log("     j:", j)
 //     }
 // }
-let nestedArray = [
-   //0  1  2  3 
-    [1, 2, 3, 4], //0
-   //0  1  2 
-    [5, 6, 7],
-    [8],
-    [9, 10, 11, 12, 13, 14],
-    [15,16]     //1
-]
+// let nestedArray = [
+//    //0  1  2  3 
+//     [1, 2, 3, 4], //0
+//    //0  1  2 
+//     [5, 6, 7],
+//     [8],
+//     [9, 10, 11, 12, 13, 14],
+//     [15,16]     //1
+// ]
 
-for (let i = 0; i < nestedArray.length; i++){
-    let subArray = nestedArray[i];
-    console.log("current subarray:", subArray)
-    for (let j = 0; j < subArray.length; j++){
-        console.log(subArray[j])
+// for (let i = 0; i < nestedArray.length; i++){
+//     console.log("begin outer loop")
+//     let subArray = nestedArray[i];
+//     console.log("current subarray:", subArray)
+//     for (let j = 0; j < subArray.length; j++){
+//         console.log("begin inner loop")
+//         console.log(subArray[j])
+//     }
+//     console.log("back to outer loop")
+// }
+
+// TwoSum
+// Write a function that will accept an array and a target number as paramaters.
+// The function will return true if any two different numbers in that array can add up
+// to the target number.
+
+// examine each combination of two values in the array and calculate if the match
+// our target.
+// -- write a function that can look every possible combination in our array
+// -- if that target is found, return true. If we check every combination and 
+//    there is no match, return false
+
+// [1,3,4,5,6,2] => 10? :: true
+// [1, 2] => 4? :: false
+let twoSum = (nums, target)=>{ //define function with params nums, target
+    for(let i = 0; i < nums.length; i++){ //define outerloop bound to nums length
+        let num1 = nums[i] // provide reference to first number of pair to check
+        for(let j = i + 1; j < nums.length; j++){ // define inner loop also bound to nums length. inner loop is also going to make sure to start one place higher than outer loop. 
+            let num2 = nums[j] // provide reference to second number in pair to check
+            let result = num1 + num2 === target // determine if numbers added together match our target
+            console.log(num1, " + ", num2, " === ", target,"?", result ) //give visual feedback if we've found target
+            if (result){ // if match is made,
+                return true // return true
+            }
+        }
     }
+    return false // if we end our loop without finding a match, return false
 }
+console.log(twoSum([1,3,4,5,6,2], 10)) //true, 4 + 6 === 10
+console.log(twoSum([1, 2, 5, 4, 10, 11], 4)) //false 
