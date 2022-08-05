@@ -3,17 +3,15 @@
 ## [Morning Boost]
 
 ___
+## [Data Manipulation Project]
+`Medium Practice`: 60 minutes
 
 ## Callbacks
 
-`Video Lectures`: 30 mins
+`Code Demos`: 20 mins
 
-- [Using Callback Functions 1]
-  - [Code from Lecture](./code-it-out/using_callback_functions_demo1.js)
-- [Using Callback Functions 2]
-  - [Code from Lecture](./code-it-out/using_callback_functions_demo2.js)
-- [Multiple Callbacks]
-  - [Code from Lecture](./code-it-out/multiple_callbacks_demo.js)
+`
+
 
 `Vocabulary`
 
@@ -84,22 +82,6 @@ ___
 
 - [useACallback]
 
-___
-
-## My Array Methods
-
-`Video Lectures`: 12 mins
-
-- [My .forEach]
-
-(Save these for the project)
-
-- [My .map]
-- [My .filter]
-- [My .every]
-
-___
-
 ## Pair Programming Demo
 
 `Video Lectures`: 7 mins
@@ -148,6 +130,7 @@ ___
 [My .filter]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/my-filter-demo
 [My .every]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/my-every-demo
 [Pair Programming]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/my-every-demo
+[Data Manipulation Practice]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---objects--callbacks--scope--and-closure/pojo-data-manipulation-project
 
 <!-- Constant Links -->
 [First-class Function]: https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function
