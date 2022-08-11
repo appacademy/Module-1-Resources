@@ -79,52 +79,6 @@
 
 ---
 
-## Arrow Functions
-
-`Video Lectures` : 10 mins
-
-- [Arrow Functions Code Demo]
-  - [Code Along](./code-it-out/arrow_functions.js)
-
-`Overview`
-
-- Arrow Functions are always anonymous
-
-`Syntax`
-
-- Parenthesis and/or single parameter
-- An 'arrow' `=>`
-- Multiline?
-  - Code block
-  - Optional `return`
-- Single Line?
-  - `implicit return`
-- Named?
-  - Assign to a variable
-
-  ```js
-  // Multiline
-  let printName = (name) => {
-    let str = 'My name is '
-    console.log(str + name);
-  };
-
-  printName('Mylo');
-  // Single Line
-  let returnName = name => 'My name is ' + name;
-
-  console.log(returnName('Carlos'));
-
-  // Anonymous callback
-  let arr = [1, 2, 3];
-
-  let addOne = arr.map((num) => num + 1);
-
-  console.log(addOne);
-  ```
-
----
-
 ## Closures
 
 `Video Lectures`: 30 mins
