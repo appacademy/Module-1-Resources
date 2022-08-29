@@ -60,7 +60,7 @@ are two separate things. If you're curious
 ---
 ## How to download a project 
 
-Reference <a href="https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-1---intro-to-javascript/local-javascript-project" target="_blank">Week 1 Thursday here</a> for how to download a project from AA Open 
+Reference <a href="https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-1---intro-to-javascript/local-javascript-project" target="_blank">Week 1 Thursday here</a> for how to download a project from AA Open 
 
 ## Basic setup for pairing
 

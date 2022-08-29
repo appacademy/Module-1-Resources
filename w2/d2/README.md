@@ -425,9 +425,9 @@ match2memory
      └── .git
 ```
 <!-- Links -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/tuesday-morning-boost
-[Object Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/object-lecture
-[Primitive vs Reference]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---objects--callbacks--scope--and-closure/primitive-vs-reference-quiz
-[Object Destructuring]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/object-destructuring
-[Spread and Rest]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---intro-to-javascript/spread-and-rest
-[Destructuring Quiz]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-2---objects--callbacks--scope--and-closure/destructuring-quiz
+[Morning Boost]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/tuesday-morning-boost
+[Object Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/object-lecture
+[Primitive vs Reference]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---objects--callbacks--scope--and-closure/primitive-vs-reference-quiz
+[Object Destructuring]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/object-destructuring
+[Spread and Rest]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/spread-and-rest
+[Destructuring Quiz]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---objects--callbacks--scope--and-closure/destructuring-quiz

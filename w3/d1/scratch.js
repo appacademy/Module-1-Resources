@@ -1,2 +1,0 @@
-debugger
-console.log("test!")

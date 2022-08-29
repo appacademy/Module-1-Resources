@@ -61,6 +61,6 @@ console.log(greeting);
 }
 ```
 
-[Interpolating Strings Code Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-3---intro-to-javascript/interpolating-strings-code-demo
-[addLib Problem]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/addlib-problem
-[Phase 1]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-1-online/week-3---intro-to-javascript/vscode-debugger-practice
+[Interpolating Strings Code Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---intro-to-javascript/interpolating-strings-code-demo
+[addLib Problem]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---recursion--iifes--and-asynchronous-js/addlib-problem
+[Phase 1]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---intro-to-javascript/vscode-debugger-practice
