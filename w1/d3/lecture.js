@@ -191,4 +191,36 @@ function twoSum(arr, target){
     return false
 }
 
-twoSum(myNums, 11)
+twoSum(myNums, 3)
+
+let twoSumExclusive = function (nums, target) {
+    // define function to satisfy prompt
+    let i = 0;
+    // establish i for outer loop tracking
+    let pairs = []
+    // establish pairs array to hold results
+    while (i < nums.length - 1) {
+        // establish outer loop to get first number
+        let firstNum = nums[i]
+        // establish variable to refer to first number
+        let j = i + 1
+        // establish j for inner loop control
+        while (j < nums.length) {
+            // establish inner loop
+            let newNum = nums[j]
+            // establish variable to point to second number
+            if (firstNum + newNum === target) {
+                // check to see if boths nums addded together are our target
+                pairs.push([firstNum, newNum])
+                // if so, push an array of those nums into our pairs/result array
+            }// else, do nothing
+            j++
+            // after checking, increment j
+        }   
+        i++
+        // after inner loops ends, increment i
+    }
+    return pairs
+    // return result after find all pairs
+}
+console.log(twoSumExclusive(myNums, 10))
