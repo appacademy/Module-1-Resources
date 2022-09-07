@@ -61,32 +61,57 @@ console.log(valInObject(obj, "fork"));            // false
 // frequency counter 
 const sentence = "What is the most common character in this sentence";
 
-const mostCommonChar = sentence => {
-    // Write your solution here.
-	let count = {}
-    for (let  i = 0; i  < sentence.length; i++){
-        // console.log(count)
-    	let char = sentence[i]
-        if (char === " ") continue;
-        if (count[char] !== undefined) {
-        	count[char]++
-        } else {
-        	count[char] = 1
+// const mostCommonChar = sentence => {
+//     // Write your solution here.
+// 	let count = {}
+//     for (let  i = 0; i  < sentence.length; i++){
+//         // console.log(count)
+//     	let char = sentence[i]
+//         if (char === " ") continue;
+//         if (count[char] !== undefined) {
+//         	count[char]++
+//         } else {
+//         	count[char] = 1
+//         }
+//     }
+//    let mostFrequent = ""
+//    for (let char in count){
+//    	  if (mostFrequent === ""){
+//       	 mostFrequent = char;
+//       } else if (count[char] >= count[mostFrequent]){
+//       	if (count[char] === count[mostFrequent] && char < mostFrequent){
+//         	mostFrequent = char
+//         } else if(count[char] > count[mostFrequent]) {
+//         	mostFrequent = char
+//         }
+//       }
+//    }
+//    return mostFrequent
+// }
+
+function mostCommonChar(sentence){
+    let count = {}; // establish counter object
+    let words = sentence.split(" "); // split sentence into array of words
+    for (let word of words){  // use for...of loop to iterate through every word
+        for (let char of word){ // use for...of loop to iterate through every character in word
+            if (count[char] === undefined){ // check to see if our character is a key in our object,
+                count[char] = 1; // if not, establish it with a value
+            } else { // otherwise,
+                count[char]++ // incremenet the count for that character
+            }
         }
     }
-   let mostFrequent = ""
-   for (let char in count){
-   	  if (mostFrequent === ""){
-      	 mostFrequent = char;
-      } else if (count[char] >= count[mostFrequent]){
-      	if (count[char] === count[mostFrequent] && char < mostFrequent){
-        	mostFrequent = char
-        } else if(count[char] > count[mostFrequent]) {
-        	mostFrequent = char
+    let chars = Object.keys(count); // after count is completed, create array of keys representing chars
+    let highest = chars[0]; // use first character in array as starting point
+    for (let i = 1; i < chars.length; i++){ // establish loop to iterate through
+        let current = chars[i]; // establish variable to point to current character
+        if (count[current] > count[highest] || count[current] === count[highest] && current < highest){
+            // check to see if count for current character is higher than recorded highest, or, if they have the same count,
+            // update if the current is sorted before the highest.
+            highest = current;
         }
-      }
-   }
-   return mostFrequent
+    }
+    return highest;
 }
 
 console.log(mostCommonChar(sentence));           //  "t"
