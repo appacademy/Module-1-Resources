@@ -122,12 +122,12 @@ console.log(obj[time.toLowerCase()]);
 - Live Lecture
 
 <!-- Links per cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/monday-morning-boost
-[Arrow Functions Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---objects--callbacks--scope--and-closure/arrow-functions-code-demo
-[Arrow Functions Quiz]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---objects--callbacks--scope--and-closure/arrow-functions-quiz
-[Object Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---objects--callbacks--scope--and-closure/object-lecture
-[map Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/map-demo
-[filter Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/filter-demo
-[reduce Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/reduce-demo
+[Morning Boost]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/monday-morning-boost
+[Arrow Functions Demo]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---objects--callbacks--scope--and-closure/arrow-functions-code-demo
+[Arrow Functions Quiz]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---objects--callbacks--scope--and-closure/arrow-functions-quiz
+[Object Lecture]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---objects--callbacks--scope--and-closure/object-lecture
+[map Demo]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/map-demo
+[filter Demo]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/filter-demo
+[reduce Demo]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/reduce-demo
 
 <!-- Constant Links -->

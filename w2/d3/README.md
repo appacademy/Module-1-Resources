@@ -121,16 +121,16 @@ ___
 ___
 
 <!-- Links per cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/wednesday-morning-boost
-[Using Callback Functions 1]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/using-callback-functions-demo-1
-[Using Callback Functions 2]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/using-callback-functions-demo-1
-[Multiple Callbacks]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/using-callback-functions-demo-1
-[My .forEach]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/my-for-each-demo
-[My .map]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/my-map-demo
-[My .filter]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/my-filter-demo
-[My .every]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/my-every-demo
-[Pair Programming]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/my-every-demo
-[Data Manipulation Practice]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---objects--callbacks--scope--and-closure/pojo-data-manipulation-project
+[Morning Boost]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/wednesday-morning-boost
+[Using Callback Functions 1]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/using-callback-functions-demo-1
+[Using Callback Functions 2]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/using-callback-functions-demo-1
+[Multiple Callbacks]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/using-callback-functions-demo-1
+[My .forEach]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/my-for-each-demo
+[My .map]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/my-map-demo
+[My .filter]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/my-filter-demo
+[My .every]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/my-every-demo
+[Pair Programming]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/my-every-demo
+[Data Manipulation Practice]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---objects--callbacks--scope--and-closure/pojo-data-manipulation-project
 
 <!-- Constant Links -->
 [First-class Function]: https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function

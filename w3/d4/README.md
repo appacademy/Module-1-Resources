@@ -92,16 +92,16 @@ This will be done on your own once you finish the Timeout Project.
 - [Readline Docs]
 
 <!-- Links per cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---intro-to-javascript/thursday-morning-boost
-[Threading Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---intro-to-javascript/threading-lecture
-[Event Loop Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---intro-to-javascript/event-loop-lecture
-[Synchronous vs Asynchronous]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---intro-to-javascript/synchronous-vs-asynchronous-lecture
-[setTimeout Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---intro-to-javascript/settimeout-lecture
-[setInterval Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---intro-to-javascript/setinterval-lecture
-[Event Loop Reading]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---intro-to-javascript/the-message-queue-and-event-loop
-[Callbacks Quiz Recall]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---recursion--iifes--and-asynchronous-js/callbacks-quiz-recall
-[Async Quiz]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---recursion--iifes--and-asynchronous-js/callbacks-quiz-recall
-[Asynchronous Flash Cards]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-3---recursion--iifes--and-asynchronous-js/asynchronous-flash-cards
+[Morning Boost]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-3---intro-to-javascript/thursday-morning-boost
+[Threading Lecture]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-3---intro-to-javascript/threading-lecture
+[Event Loop Lecture]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-3---intro-to-javascript/event-loop-lecture
+[Synchronous vs Asynchronous]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-3---intro-to-javascript/synchronous-vs-asynchronous-lecture
+[setTimeout Lecture]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-3---intro-to-javascript/settimeout-lecture
+[setInterval Lecture]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-3---intro-to-javascript/setinterval-lecture
+[Event Loop Reading]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-3---intro-to-javascript/the-message-queue-and-event-loop
+[Callbacks Quiz Recall]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/callbacks-quiz-recall
+[Async Quiz]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/callbacks-quiz-recall
+[Asynchronous Flash Cards]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-3---recursion--iifes--and-asynchronous-js/asynchronous-flash-cards
 <!-- constant links -->
 [threading]: ./images/threading.png
 [Readline Docs]: https://nodejs.org/api/readline.html

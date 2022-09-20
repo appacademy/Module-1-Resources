@@ -112,13 +112,13 @@ JulyToDec(0);
 ---
 
 <!-- Links for each cohort -->
-[Morning Boost]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/thursday-morning-boost
-[Scope Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/scope-lecture
-[Variables & Scope Code Demo Part 1]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/variables---scope-code-demo-part-1
-[Variables & Scope Code Demo Part 2]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/variables---scope-code-demo-part-2
-[Closure Lecture]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/closure-lecture
-[Closure Code Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/closure-code-demo
-[Arrow Functions Code Demo]: https://open.appacademy.io/learn/js-py---aug-2022-cohort-2-online/week-2---intro-to-javascript/arrow-functions-code-demo
+[Morning Boost]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/thursday-morning-boost
+[Scope Lecture]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/scope-lecture
+[Variables & Scope Code Demo Part 1]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/variables---scope-code-demo-part-1
+[Variables & Scope Code Demo Part 2]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/variables---scope-code-demo-part-2
+[Closure Lecture]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/closure-lecture
+[Closure Code Demo]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/closure-code-demo
+[Arrow Functions Code Demo]: https://open.appacademy.io/learn/js-py---sep-2022-cohort-1-online/week-2---intro-to-javascript/arrow-functions-code-demo
 
 <!-- Constant Links -->
 [Scope]: https://developer.mozilla.org/en-US/docs/Glossary/Scope
