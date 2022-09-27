@@ -180,6 +180,7 @@ function sumArray(nums) {
     while (i < nums.length){
         let num = nums[i]
         if (typeof num !== "number"){
+            i++;
             continue;
         }
         sum += num;
