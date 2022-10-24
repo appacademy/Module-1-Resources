@@ -3,6 +3,7 @@
 - Welcome Lecture
 - Morning Lecture
 - Solo Work!
+- Setting up your machine!
 
 ---
 
@@ -49,5 +50,6 @@
       - Share your explanation
 
 ---
+
 
 
