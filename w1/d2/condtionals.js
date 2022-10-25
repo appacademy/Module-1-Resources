@@ -10,7 +10,29 @@ if (condition or comparison){
 } else {
   <do this code if none of the conditions are met>
 }
+
+
 Let's write a few in practice
-
-
 */
+
+// let number = 2;
+
+// if (number > 10) {
+//   console.log("num is greater than 10");
+// } else if (number > 4) {
+//   console.log("num is greater than 4");
+// } else {
+//   console.log("num is not greater than 10 or 4");
+// }
+
+function isNumberGreaterThan10(number) {
+  if (number > 10) {
+    console.log(`num is greater than 10`);
+  } else if (number > 4) {
+    console.log("num is greater than 4");
+  } else {
+    console.log("num is not greater than 10 or 4");
+  }
+}
+
+isNumberGreaterThan10(210)
