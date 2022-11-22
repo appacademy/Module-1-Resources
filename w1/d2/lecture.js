@@ -14,7 +14,7 @@
 */
 
 
-//function delcaration
+//function declaration
 //function keyword
 //followed by the function name
 //A function will not be read until its called/invoked
@@ -68,10 +68,10 @@ let result = addTwo(2);
 
 
 //function examples!
-//lets createa function
+//lets create a function
 /*
   - return the last letter of a word
-  - mulitples two num together
+  - multiplies two numbers together
 */
 
 function lastLetter(word) {
