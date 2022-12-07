@@ -26,7 +26,7 @@ function sumArray(arr, sum = 0) {
 //sumArray([1,2,3], 0) => sumArr([1,2], 3)
   //sumArr([1,2], 3) => sumArr([1], 5)
     //sumArr([1], 5) => sumArr([], 6)
-      //sumArr([], 6) => return 6
+      //sumArr([], 6) => return sum = 6
     //sumArr([1], 5) => return 6
   //sumArr([1,2], 3) => return 6
 //sumArr([1,2,3], 0) => return 6
