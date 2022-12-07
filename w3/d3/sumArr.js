@@ -23,9 +23,13 @@ function sumArray(arr, sum = 0) {
 
   return sumArray(arr, sum)
 }
-//sumArray([1,2,3], 0) => sumArr([2,3], 3)
-  //sumArray([2,3], 3) => sumArr([3], 5)
-    //sumArr([3], 5) => sumArr([], )
+//sumArray([1,2,3], 0) => sumArr([1,2], 3)
+  //sumArr([1,2], 3) => sumArr([1], 5)
+    //sumArr([1], 5) => sumArr([], 6)
+      //sumArr([], 6) => return 6
+    //sumArr([1], 5) => return 6
+  //sumArr([1,2], 3) => return 6
+//sumArr([1,2,3], 0) => return 6
 
 
 // console.log([1,2,3].slice(2));
