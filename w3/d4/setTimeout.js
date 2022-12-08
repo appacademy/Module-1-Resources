@@ -28,11 +28,11 @@
 
 // let name = 'brandon';
 
-// let timer = setTimeout(() => {
-//   console.log(`hello ${name}`)
-// }, 1000)
+let timer = setTimeout(() => {
+  console.log(`hello ${name}`)
+}, 1000)
 
-// // clearTimeout(timer)
+// clearTimeout(timer)
 
 function somethingSlow(n) {
   if (n === 1 || n === 2) return 1;
