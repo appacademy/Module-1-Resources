@@ -62,7 +62,7 @@ When the cohort you are in moves on from Module 1, we will archive your cohort's
 git clone -b <your-cohort-branchname> --single-branch <remote-repo-url>
 ```
 
-  * The cohort branch name will follow the format: `Year-Month-Cohort` (e.g., 2022-January-Cohort).
+  * The cohort branch name will follow the format: `Year-Month-Cohort` (e.g., 2022-12-19).
   * The remote repo url will depend on which method you use to access GitHub, SSH or PAT. Use the examples above in the `Setup` section to help determine.
 
 ---
