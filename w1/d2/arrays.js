@@ -45,3 +45,42 @@ let nums3 = [11, 12, 13, 14, 15];
 //.concat
 //order matters in which in you concatenate
 console.log(nums1.concat(nums1, nums2))
+
+// you can index a nested array
+let nestedArr = [[0], [1], [2]];
+console.log(nestedArr[0]); //[0];
+console.log(nestedArr[0][0]); //0
+
+//know your data types if you ever unsure you can use the typeof operator
+//go to mdn
+
+console.log(typeof 12); //number
+console.log(typeof "helo"); //string
+console.log(typeof true); //boolean
+console.log(typeof []); //object???? will learn more about it next week, secretly everything is an object
+
+//if we want to check an array
+//returns a boolean
+console.log(Array.isArray([1, 2, 3])); //true
+
+//prompt: SumArray
+
+function sumArray(array) {
+  // your code here...
+  console.log("The input array is:", array);
+  let sum = 0;
+  for (let i = 0; i < array.length; i++) {
+    console.log("Sum at start of loop:", sum);
+    let currentNum = array[i];
+    console.log("The current index is", i);
+    console.log("The current number is", currentNum);
+    sum = sum + currentNum;
+    console.log("Sum at end of loop:", sum);
+
+    // sum+=array[i]
+  }
+  return sum;
+}
+
+console.log(sumArray([5, 6, 4])); // => 15
+console.log(sumArray([7, 3, 9, 11])); // => 30
