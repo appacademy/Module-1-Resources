@@ -69,7 +69,7 @@ if(num === 100) console.log('num is equal to 100');
 
 if(num > 99) console.log('num is greater than 100');
 else if(num === 100) console.log('num is equal to 100');
-//the code above will only print one or the other becuase it is a else if statement
+//the code above will only print one or the other because it is a else if statement, its this or that, not this and that
 
 //ternary's https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator
 //condition ? exprIfTrue : exprIfFalse
