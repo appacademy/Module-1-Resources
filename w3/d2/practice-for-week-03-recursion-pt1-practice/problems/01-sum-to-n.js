@@ -12,9 +12,18 @@ sumToN(-8)  // returns null
 ***********************************************************************/
 
 
-function sumToN(n) {
-  // Your code here
+function sumToN(num) {
+  if (num < 0) return null //edge case
+  if (num === 0) return 0 // base case
+  return num + sumToN(num-1) //recursive step
 }
+
+// let x = 1
+// console.log('first',x)
+// console.log('second',x--)
+// console.log('third',x)
+// console.log('fourth',x-=1)
+// console.log('fifth',--x)
 
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/

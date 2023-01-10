@@ -12,9 +12,27 @@ iceCreamShop(['moose tracks'], 'moose tracks'); // true
 iceCreamShop([], 'honey lavender'); // false
 ***********************************************************************/
 
+/*
+Plan:
+-look at each flavor
+-see if it matches our fave
+--if match, return true
+--if no match, continue check
+
+Base Case:
+-if array of flavors is empty, return false
+
+Recursive Step:
+-pull out an element (e.g. pop) to compare
+-recurse if don't find a match
+*/
+
 
 function iceCreamShop(flavors, favorite) {
-  // Your code here
+  if (flavors.length === 0) return false; //base case
+  let flavor = flavors.pop(); //take a single flavor to compare, recursive step
+  if (flavor === favorite) return true; //if match, return true
+  return iceCreamShop(flavors, favorite)
 }
 
 
