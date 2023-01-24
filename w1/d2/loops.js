@@ -94,12 +94,15 @@ function logBetween(num1, num2) {
 };
 
 // console.log(logBetween(5, 20))
-
+console.log('brandon'.length - 1)
 function reverse(name) {
   let reversedName = '';
 
+
   for(let i = name.length - 1; i >= 0; i--) {
+
     console.log('letter:', name[i],'index:', i, 'reversedName:', reversedName)
+
     reversedName += name[i]
   }
   return reversedName;
