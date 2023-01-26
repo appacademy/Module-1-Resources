@@ -137,9 +137,9 @@ function divideOld(birria, tacos) {
 }
 
 function divide(birria, tacos) {
-  let integerQuotient = Math.floor(birria/tacos); //rounded integer quotient
+  let wholeNumber = Math.floor(birria/tacos); //rounded integer quotient
   let remainder = birria % tacos;
-  let string = integerQuotient + ' with remainder ' + remainder;
+  let string = wholeNumber + ' with remainder ' + remainder;
   return string
 }
 
@@ -149,4 +149,4 @@ function divide(birria, tacos) {
 // console.log(calc('divide', 10, 5)) //2
 // console.log(calc('kittycats', 10, 5)) //2
 console.log(calc('divide', 30, 18)) //1 with remainder 12 (a string)
-console.log(calc('divide', 13, 31)) //1 with remainder 12 (a string)
+console.log(calc('divide', 13, 31)) //0 with remainder 13 (a string)
