@@ -41,7 +41,7 @@ let brandonObj = {
   },
 };
 
-// console.log(brandonObj.sayHello())//hello
+console.log(brandonObj.sayHello())//hello
 
 //if we want to access an objects value, we must key into it using the key
 //key unlocks the value
