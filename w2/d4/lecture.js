@@ -139,7 +139,7 @@ name3 = 'krandon';
 // console.log(name3)
 // let name3 = 'krandon'// cannot redeclare block scoped variable
 
-
+/** 
 //const
 //does not have a default value when hoisted, will throw an error
 //block scoped
@@ -164,3 +164,94 @@ console.log(result)
 
 //*Where the values before they are hoisted when using let and const
 //Temporal dead zone - When variables exists
+*/
+
+//==============
+//CLOSURE
+//==============
+
+//inner having access to outer
+//takes food argument
+//returns order with food
+function pizzaMaker(food) {
+  let order = "I'd like a pizza with "
+
+  //inner function "oven"
+  function oven() {
+    return order + food;
+  }
+
+  return oven()
+}
+
+//console.log(pizzaMaker('mushrooms'))
+//closing over outer, and able to access AND MODIFY the variables
+//of the outer function within the inner function
+function groceryList(list){
+  let groceries = list;
+
+  function addItem(){
+    groceries.push('and ramen')
+  }
+
+  addItem()
+  return groceries
+}
+
+//console.log(groceryList(['milk', 'apples'])) // milk, apples, and ramen
+
+//return a function because functions are FCO!
+//call the inner function after the outer function call
+//and still show closure working/access to outer variables
+function ferretCollector() {
+  let ferrets = ['pabu'];
+
+  return function (name) {
+    ferrets.push(name)
+    return ferrets
+  }
+}
+
+// console.log(ferretCollector) //Function ferretCollector
+// console.log(ferretCollector()) //anon function
+// // let inner = ferretCollector() //ferrets array with pabu and
+// // console.log(inner('gwin'))
+// console.log(ferretCollector()('gwin')) //ferrets array with pabu and gwin
+
+
+//emulate private funcs and vars
+function createCounter() {
+  let count = 0;
+
+  return function (){
+    count++;
+    return count;
+  }
+}
+
+// // console.log(createCounter()()) // 1
+// // console.log(createCounter()()) // 1
+// // console.log(createCounter()()) // 1
+// let counter1 = createCounter()
+// console.log(counter1) //function anon
+// counter1() //inc to 1, but do not print
+// console.log('second call', counter1()) //2
+// console.log('third call', counter1()) //3
+
+function sundaeOrder() {
+  let toppings = ['hot fudge']
+  return function (topping) {
+    toppings.push(topping)
+    let bowl = "A bowl of ice cream with "
+    return bowl + toppings.join(' and ')
+  };
+}
+
+console.log(sundaeOrder()("strawberries")) // => "A bowl of ice cream with hot fudge and strawberries"
+
+let sundae = sundaeOrder(); // => returns a function
+console.log(sundae("nuts")) // => "A bowl of ice cream with hot fudge and nuts"
+console.log(sundae("caramel")) // => "A bowl of ice cream with hot fudge and nuts and caramel"
+
+let sundae2 = sundaeOrder(); // => returns a function
+console.log(sundae2("banana")) // => "A bowl of ice cream with hot fudge and banana"
