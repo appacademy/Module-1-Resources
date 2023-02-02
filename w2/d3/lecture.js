@@ -59,26 +59,26 @@ let addTwoToArr = (nums, callbackFunction) => {
 
 // console.log(addTwo) //[Function: addTwo]
 //passing function stored in a variable
-// console.log(addTwoToArr([1, 2, 3], addTwo));
+console.log(addTwoToArr([1, 2, 3], addTwo));
 
 //we can pass an anon callback directly to our function call
 //with implicit return
-// console.log(addTwoToArr([1, 2, 3], (num) => num + 2));
+console.log(addTwoToArr([1, 2, 3], (num) => num + 2));
 
 //anon callback with fat arrow,
 //without implicit return
-// console.log(
-//   addTwoToArr([1, 2, 3], (num) => {
-//     return num + 2;
-//   })
-// );
+console.log(
+  addTwoToArr([1, 2, 3], (num) => {
+    return num + 2;
+  })
+);
 
 //using function keyword
-// console.log(
-//   addTwoToArr([1, 2, 3], function (num) {
-//     return num + 2;
-//   })
-// );
+console.log(
+  addTwoToArr([1, 2, 3], function (num) {
+    return num + 2;
+  })
+);
 
 //all callbacks are helper functions, but not all helper functions are callbacks
 //what makes a function a callback, is the fact its passed as an argument to another function
