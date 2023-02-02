@@ -1,0 +1,105 @@
+
+Quick Git Guide
+
+Mac Users - should be able to download directly
+
+Window Users - Downloading a zipped folder via Ubuntu
+
+- Open up your Ubuntu and run these 2 commands.
+	- sudo apt install zip
+	- sudo apt-get install wget
+- Head over to the GitHub project repo that you want to download.
+- Click the green dropdown box labeled "<> Code"
+- Look for "Download ZIP" and RIGHT click it. Then select "Copy link address"
+- Head back over to your Ubuntu terminal and type the following command "wget" then paste
+  the link address after it. It should look something like this "wget linkAddress".
+Now that you have the zip folder downloaded, unzip it!
+- Use the "ls" command to see your directories contents. You should see a new zipped folder.
+- Type "unzip folderName.zip" to unzip its contents.
+- Use the "ls" command again to see your new project folder.
+- You can now delete the .zip folder by using the command "rm -rf folderName.zip" now that everything
+  is unpacked.
+
+Person Creating the Repo
+
+Quick way to create a repo!
+- git clone <a/A repo url>
+- cd <folder name>
+- git remote set-url origin <your repo url>
+- git push
+
+Can do this two ways - download vs clone the project
+	- easier to download!!
+
+If you git clone
+if you git clone - there will be a slightly different process
+
+If you clone you can use rm -rf to delete the .git then follow the normal steps to initialize a repo
+
+or set the url origin to a new link
+1. git remote set-url origin [github link]
+2. git add .
+3. git commit -m 'first'
+4. git push
+
+Download the project!
+1. download the zip, in a location you would like
+2. unzip the file
+3. cd into the file
+
+After downloading/cloning start here!
+
+Creating the repo
+1. click create new repo on github
+2. select owner, give repo name
+3. make repo private
+4. click create repo
+
+Adding the files to the repo
+1. ls
+2. git init
+3. git add .
+4. git commit -m 'first commit'
+5. git branch -M main
+6. git remote add origin [github link]
+7. git push -u origin main
+
+Add .gitignore
+	1. after npm i
+	2. create .gitignore
+	3. add node_modules to .gitgnore
+	4. git add .
+	5. git commit -m 'added gitignore'
+	6. git push
+
+Invite Collaborator
+	1. go to settings
+	2. collaborators
+	3. add people - enter partners name
+
+Partner
+	1. then goes to email
+	2. accept invitation
+	3. git clone the repo
+
+Git flow
+	Anytime you add something to the repo
+		- you must git add .
+		- git commit -m 'message'
+	        - git push
+
+	If you want your partners changes you use
+		- git pull
+
+	Do no work on the files at the same time without pulling or you will end up with a git conflict
+
+To git rid of staged changes
+git reset --hard && git pull
+git stash
+
+* If you happen to commit the node_modules directory to your history before adding the .gitignore file, then we can do this to remove it from our commit history:
+    * run git rm -r --cached node_modules
+    * add .gitignore file with node_modules in it like the example above if you haven't yet
+    * run git add .
+    * run git commit -m "message here"
+    * run git push
