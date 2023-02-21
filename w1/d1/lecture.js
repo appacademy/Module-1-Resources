@@ -81,6 +81,7 @@ let name = 'brandon';
       Order of operations
       - parentheses, exponents, multiplication, modulo, division, addition, subtraction
 
+
 */
 
 
@@ -113,6 +114,11 @@ let name = 'brandon';
     && - and
     || - or
 
+    Order of operators
+    not, and, or
+
+    console.log(true || false && false) -> true
+    console.log(false && false || true) => true
 */
 
 
