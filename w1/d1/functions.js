@@ -11,9 +11,10 @@
     * functionName()
 
     Some things to remember about return statements
-      1. Every function call evaluates to its return value
-      2. Every function is js, returns undefined unless its return specified
-      3. Once a return statement is encountered, any code after that return will not be read
+      1. Every function call evaluates to its return value.
+      2. Every function in JavaScript returns undefined unless a return is specified.
+      3. Once a return statement is encountered, the function will immediately stop and return the value, ignoring any code below the return statement.
+
 
 */
 
@@ -82,5 +83,3 @@ function lastIndex(word) {
 
 // console.log(lastIndex('cats'))//s
 // console.log(lastIndex('mouse'))//e
-
-
