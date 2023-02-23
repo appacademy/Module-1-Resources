@@ -109,6 +109,7 @@ function calculator(operation, num1, num2) {
   } else if (operation == 'divide') {
     return divide(num1, num2)
   }
+  return "You have an error :((("
 }
 
 function add(num1, num2) {
@@ -125,14 +126,21 @@ function multiply(dog, cat) {
 
 function divide(x, y) {
   if (y != 0) {
-    return x/y
+    let remainder = modulo(x, y)
+    x = x - remainder
+    return x / y + " Remainder " + remainder
   } else {
     return "Can't divide by zero :("
   }
 }
 
+function modulo(num1, num2) {
+  return num1 % num2
+}
+
 console.log(calculator('add', 23, 42)) //thanks Makayla!
 console.log(calculator('subtract', 66, 77)) //thanks Alexander!
 console.log(calculator('multiply', 79, 9)) //thank you Mark~!
-console.log(calculator('divide', 115, 0 )) //thanks Christopher :)
-console.log(calculator('divide', 115, 0 )) //
+console.log(calculator('divide', 115, 0)) //thanks Christopher :)
+console.log(calculator('divide', 7, 3)) //tyvm Lucifer + Vjola + Edward
+console.log(calculator('HELP', 2, 3))
