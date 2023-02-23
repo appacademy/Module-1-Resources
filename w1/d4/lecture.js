@@ -79,6 +79,7 @@ let checkBalance = function () {
  * -- division
  * 
  * Bonus：add more than two numbers???
+ * -- sum variable
  */
 
 /**
@@ -99,5 +100,39 @@ let checkBalance = function () {
  */
 
 function calculator(operation, num1, num2) {
-  
+  if (operation == 'add') {
+    return add(num1, num2);
+  } else if (operation == 'subtract') {
+    return subtract(num1, num2);
+  } else if (operation == 'multiply') {
+    return multiply(num1, num2);
+  } else if (operation == 'divide') {
+    return divide(num1, num2)
+  }
 }
+
+function add(num1, num2) {
+  return num1 + num2;
+}
+
+function subtract(pizzas, tacos) {
+  return pizzas - tacos;
+}
+
+function multiply(dog, cat) {
+  return dog * cat;
+}
+
+function divide(x, y) {
+  if (y != 0) {
+    return x/y
+  } else {
+    return "Can't divide by zero :("
+  }
+}
+
+console.log(calculator('add', 23, 42)) //thanks Makayla!
+console.log(calculator('subtract', 66, 77)) //thanks Alexander!
+console.log(calculator('multiply', 79, 9)) //thank you Mark~!
+console.log(calculator('divide', 115, 0 )) //thanks Christopher :)
+console.log(calculator('divide', 115, 0 )) //
