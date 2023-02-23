@@ -97,3 +97,7 @@ let checkBalance = function () {
  * - divide the two numbers
  * Error message: if operation fails / doesn't return a number
  */
+
+function calculator(operation, num1, num2) {
+  
+}
