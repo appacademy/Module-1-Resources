@@ -157,7 +157,7 @@ let arr2 = obj.favBands;
 //works on array
 //when used on an array, it grabs all the values
 for(let band of arr2) {
-  console.log(band)
+  // console.log(band)
 }
 
 // for(let i = 0; i < arr2.length; i++) {
@@ -191,3 +191,28 @@ for(let key in show) {
   // console.log('value - ',show[key]);//we are dynamically changing the key, so as we iterate we can key into all the values in the obj
   // console.log('dot notation', show.key) show.key trying to access the string 'key' in our obj
 }
+
+//another way to access value
+//either this or the above approach is fine
+//getting all keys
+//object.keys
+//is return an array of all the keys
+let keyArray = Object.keys(show);
+// console.log(keyArray)
+
+for(let i = 0; i < keyArray.length; i++) {
+  let key = keyArray[i];
+  // console.log('key - ', key);
+  // console.log('value - ', show[key])
+}
+
+
+//get all values
+//returns an array of values
+let valuesArray = Object.values(show);
+// console.log(valuesArray);
+
+
+//get all the entries
+let entryArray = Object.entries(show);
+console.log(entryArray)
