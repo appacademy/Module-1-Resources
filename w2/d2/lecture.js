@@ -40,13 +40,15 @@ let cat = {
   age: 1
 }
 //a different reference memory
-//looks the same bit is different in memory let cat => <referenceObj> ==> { name:'mochi', age: 1  }
+//looks the same but is different in memory let cat => <referenceObj> ==> { name:'mochi', age: 1  }
+//let cat3 = <differenceReferenceObject> ==> { name:'mochi', age: 1  }
 let cat3 = {
   name:'mochi',
   age: 1
 }
 
-console.log('look', cat === cat3)//they are different references in memory
+console.log('look', cat === cat3)//they are different references in memory  <referenceObj> !== <differenceReferenceObject>
+
 //were saying i want to point the cat2 variable at whatever cat is pointing at, its pointing at a reference to the cat object
 let cat2 = cat;
 
@@ -58,3 +60,7 @@ console.log(cat, cat2);//changing one changed both!!!WHY? because its a referenc
 
 //we have two variable pointing at the same reference, the cat obj
 // so when we change one, we change both
+// let cat => <referenceObj> ==> { name:'mochi', age: 1  }
+// cat2 = cat
+// cat2 => <referenceObj> ==> { name:'mochi', age: 1  }
+// <referenceObj> === <referenceObj>
