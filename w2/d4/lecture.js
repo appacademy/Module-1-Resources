@@ -107,7 +107,7 @@ myFunc2();
 
 
 let variable;//variable declaration
-console.log(variable)
+// console.log(variable)
 variable = 'string'//variable assignment
 let var2 = 'string'//variable initialization
 
@@ -168,3 +168,80 @@ arr.push(3);
 
 // * Temporal dead zone
 // where variables exists before they accessed
+
+
+/**
+ * Closure! :)
+ * What is closure?
+ * 
+ * When a parent function can't access data in the child, but the child can access the parent
+ * Inner/child function can use or change variables in outer/parent function
+ * 
+ * Inner func closes over the outer func
+ * 
+ * the lexical environment consists of any variables available within the scope in which the closure was declared 
+ * (which are the local inner scope, outer function's scope, and global scope).
+ * 
+ */
+
+//example 
+function pizzaMaker(toppings) {
+  let order = "I'd like a pizza with ";
+
+  function oven() {
+    order += toppings
+    return order
+  }
+
+  return oven()
+}
+
+// console.log(pizzaMaker('pepperoni'))
+
+/**
+ * can return a function
+ * functions are FCO
+ * even after returning our outer func, we still have access to outer func variables
+ */
+function dogCollector() {
+  let dogs = ['Spot']
+
+  return function(name) {
+    dogs.push(name)
+    return dogs
+  }
+}
+
+// console.log(dogCollector()) //function (inner)
+// console.log(dogCollector()('Krypto')) //immediately calling return function from dogCollector with argument 'Krypto'
+// console.log(dogCollector()('Scooby Doo')) //different array from previous line, separate 'private states'
+
+// let puppyParade = dogCollector();
+// let puppyParade2 = dogCollector();
+// console.log(puppyParade('Krypto')) //array with both spot and krypto
+// console.log(puppyParade('Scooby Doo')) //array with both spot, krypto, and scooby dog
+// console.log(puppyParade2('Momo')) //array with both spot and Momo
+// console.log(puppyParade2('Zuko')) //array with both spot, momo, and zuko
+
+function createCounter() {
+  let count = 0;
+
+  return function () {
+    count++;
+    return count;
+  }
+}
+
+console.log(createCounter()) //createCounter() => func
+console.log(createCounter()()) //createCounter()() => func() => 1
+console.log(createCounter()()) //1
+
+let counter1 = createCounter()
+console.log(counter1)  //(inner) func, returned from createCounter
+console.log(counter1())
+console.log(counter1()) //2
+counter1()
+counter1()
+counter1()
+console.log(counter1())
+
