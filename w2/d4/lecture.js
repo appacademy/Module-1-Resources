@@ -232,16 +232,48 @@ function createCounter() {
   }
 }
 
-console.log(createCounter()) //createCounter() => func
-console.log(createCounter()()) //createCounter()() => func() => 1
-console.log(createCounter()()) //1
+// console.log(createCounter()) //createCounter() => func
+// console.log(createCounter()()) //createCounter()() => func() => 1
+// console.log(createCounter()()) //1
 
-let counter1 = createCounter()
-console.log(counter1)  //(inner) func, returned from createCounter
-console.log(counter1())
-console.log(counter1()) //2
-counter1()
-counter1()
-counter1()
-console.log(counter1())
+// let counter1 = createCounter()
+// console.log(counter1)  //(inner) func, returned from createCounter
+// console.log(counter1())
+// console.log(counter1()) //2
+// counter1()
+// counter1()
+// counter1()
+// console.log(counter1())
 
+
+/**
+ * Closure REPL
+ */
+// function sundaeOrder() {
+//   let sundae = 'A bowl of ice cream with hot fudge'
+
+//   return function (topping) {
+//     return sundae = sundae + " and " + topping
+//   };
+// }
+
+function sundaeOrder() {
+  let toppings = ['hot fudge']
+
+  return function (topping) {
+    let sundae = 'A bowl of ice cream with '
+    if (topping) {
+      toppings.push(topping)
+    }
+
+    return sundae + toppings.join(' and ')
+  };
+}
+
+let sundae = sundaeOrder(); // => returns a function
+// console.log(sundae()) // => "A bowl of ice cream with hot fudge"
+console.log(sundae("nuts")) // => "A bowl of ice cream with hot fudge and nuts"
+console.log(sundae("caramel")) // => "A bowl of ice cream with hot fudge and nuts and caramel"
+
+let sundae2 = sundaeOrder(); // => returns a function
+console.log(sundae2("banana")) // => "A bowl of ice cream with hot fudge and banana"
