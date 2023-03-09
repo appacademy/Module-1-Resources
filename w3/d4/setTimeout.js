@@ -1,15 +1,10 @@
 /*
 
-
-
-
-
   setTimeout!
   - the global setTimeout() method sets a timer which executed a function or specified piece of code once the timer expires
 
   - setTimeout(callbackFunction, delayInMilliseconds, param1, param2)
     * any params after the delay arguments, are aguments to the callback function
-
 
 */
 
@@ -43,7 +38,7 @@ let name = "brandon";
 // console.log(timer)
 // clearTimeout(timer);
 
-//this fib func is blocking the call stack
+//this fib func is blocking the call stack, async code cant be added to the callstack till fib is done
 function somethingSlow(n) {
   if (n === 1 || n === 2) return 1;
 
@@ -85,8 +80,10 @@ function delayedPrinter(delaysArr) {
 }
 
 const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
-//for loop doesnt care about timing, all the callback.event pairs from the setimeout are added at the same time
+//for loop doesnt care about timing, all the callback/event pairs from the seTimeout are added at the same time
 //so they exit the node api into the message queue, in an order we dont expect
+
+//we can combat this by adding a total delay variable to accumulate all the delays, add them together, and provide a sufficient buffer, to run them in the correct order
 function delayedPrinter(delaysArr) {
   let totalDelay = 0;//added
   delaysArr.forEach((delay) => {
