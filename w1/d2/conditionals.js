@@ -81,6 +81,7 @@ function checkPowerLevel(name, powerLevel) {
 }
 
 //short hand
+//if your logicv can be done in one line, you can omit the curly's
 function checkPowerLevel(name, powerLevel) {
   console.log("VEGETA WHATS DOES THE SCOUTER SAY ABOUT HIS POWER LEVEL??!!!");
   if (powerLevel > 9000) return name + " power level is greater than 9000";
