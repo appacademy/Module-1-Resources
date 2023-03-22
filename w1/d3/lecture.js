@@ -37,8 +37,15 @@ let sayHello2 = function() {
 
 //they have the same outcome
 //so if we log the function without invoking we, well see the function itself
-console.log(sayHello2);//[Function: sayHello2]
-console.log(sayHello);//[Function: sayHello]
-//the example belows, calls the function runs the console.log inside the function 'hello from sayHello2'
-//log for the return value of calling sayHello2 - undefined because there is no return
-console.log(sayHello2());//undefined
+// console.log(sayHello2);//[Function: sayHello2]
+// console.log(sayHello);//[Function: sayHello]
+// //the example belows, calls the function runs the console.log inside the function 'hello from sayHello2'
+// //log for the return value of calling sayHello2 - undefined because there is no return
+// console.log(sayHello2());//undefined
+
+
+// But what does this all mean? This brings us around to the concept of first
+// class objects. A first class object is defined as:
+// 1. It can be stored in a variable 
+// 2. it can be passed as an argument to a function (coming up next week!)
+// 3. It can be returned from a function (also coming up next week!)
