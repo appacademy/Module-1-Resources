@@ -8,7 +8,9 @@ Array Methods w/ Braxton
 */
 
 /* Setting up a standard for loop and the differences coming up. */
+// for(let i = 0; i < array.length; i++){
 
+// }
 
 /* What is a callback function?
   A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
@@ -18,7 +20,28 @@ Array Methods w/ Braxton
 // Definition - Method executes a provided function once for each array element.
 
 const myForEach = (arr) => {
-  
+  const myObj = {
+    isEven: {},
+    isPrime: {},
+  }
+  arr.forEach( ele => {
+    //checking if num is even
+    if (ele % 2 === 0) myObj.isEven[ele] = true;
+    else myObj.isEven[ele] = false;
+
+    // checking if num is prime
+    let prime = true;
+    for(let i = 2; i < ele; i++){
+      if (ele % i === 0) {
+        prime = false;
+        break;
+      }
+    }
+    if (ele > 1) myObj.isPrime[ele] = prime;
+  });
+
+  // console.log(myObj);
+  return myObj;
 };
 
 
@@ -26,7 +49,12 @@ const myForEach = (arr) => {
 // Definition - Method creates a new array populated with the results of calling a provided function on every element in the calling array. */
 
 const multiplyNums = (arr, multiplier) => {
-
+  // let newArr = [];
+  return arr.map((ele) => {
+    return ele * multiplier;
+  });
+  // console.log(newArr);
+  // return newArr;
 }
 
 /* Array.filter */
@@ -36,7 +64,10 @@ const multiplyNums = (arr, multiplier) => {
 
 
 const filterByType = (arr, type) => {
-
+  let res = arr.filter(ele => {
+    return ele.type !== type;
+  })
+  return res;
 };
 
 
@@ -47,15 +78,28 @@ const filterByType = (arr, type) => {
 
 
 const reduceSum = (arr) => {
-
+  // console.log(arr);
+  return arr.reduce((prev, curr) => {
+    // console.log(prev, curr);
+    return prev + curr;
+  }, 0)
 };
 
-const reduceSumArray = (arr) => {
-
-};
+const reduceSumArray = (arr) => arr.reduce((newArr, curr) => {
+    if (curr > 5) newArr.push(curr);
+    return newArr;
+  }, []);
 
 const reduceSumInObj = (arr) => {
-
+  // console.log(arr);
+  let res = arr.reduce((obj, curr) => {
+    // obj[curr] ? obj[curr]++ : obj[curr] = 1;
+    if (obj[curr]) obj[curr]++;
+    else obj[curr] = 1;
+    return obj;
+  }, {});
+  // console.log(res);
+  return res;
 };
 
 
@@ -65,7 +109,10 @@ const reduceSumInObj = (arr) => {
 
 
 const findUsersName = (users, usersName, age) => {
-
+  let user = users.find(user => {
+    return user.name.toLowerCase() === usersName.toLowerCase() && user.age === age;
+  })
+  return user;
 };
 
 
@@ -81,7 +128,7 @@ const findUsersName = (users, usersName, age) => {
 
 
 let colors = ['red', 'blue', 'blue', 'green', 'pink', 'yellow']
-let nums = [4, 2, 1, 7, 5, 10, 3, 2, 34, 19];
+let nums = [2, 4, 1, 7, 5, 10, 3, 2, 34, 19];
 let animals = [
   {animal: 'monkey', type: 'mammal'},
   {animal: 'parrot', type: 'bird'},
