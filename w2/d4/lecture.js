@@ -190,12 +190,12 @@ function elephantCollector() {
 function createCounter(){
   let count = 0;
 
-  return function() {
+  return function inner() {
     count++;
     return count;
   }
 }
-
+//createCounter()() is calling the return function from the outer
 console.log(createCounter()()) //1
 console.log()
 
@@ -204,6 +204,7 @@ console.log()
 
 //creating a separate lexical environment
 let counter1 = createCounter()
+console.log(counter1)
 console.log(counter1()) //1
 console.log(counter1()) //2 because it refers to the same lexical environment tied to counter
 
