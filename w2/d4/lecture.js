@@ -186,7 +186,7 @@ function elephantCollector() {
 // console.log(parade('whiskers')) //array of dumbo and whiskers
 // console.log(parade('elenore')) //array of dumbo, whiskers, and elenore
 
-
+/*
 function createCounter(){
   let count = 0;
 
@@ -216,3 +216,21 @@ console.log(counter2()) //3 because it refers to the same lexical environment ti
 
 console.log()
 console.log(counter1()) //3 bc it refers to lex.enviro. tied to counter1
+*/
+
+function sundaeOrder() {
+  // your code here
+  let str = "A bowl of ice cream with hot fudge";
+
+  return function (topping) {
+    str += ' and ' + topping;
+    return str;
+  };
+}
+
+let sundae = sundaeOrder(); // => returns a function
+console.log(sundae("nuts")) // => "A bowl of ice cream with hot fudge and nuts"
+console.log(sundae("caramel")) // => "A bowl of ice cream with hot fudge and nuts and caramel"
+
+let sundae2 = sundaeOrder(); // => returns a function
+console.log(sundae2("banana")) // => "A bowl of ice cream with hot fudge and banana"
