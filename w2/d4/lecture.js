@@ -29,7 +29,7 @@
 let name = 'global' //global scope
 
 function myFunc() {
-  name = 'function/local' //function scope
+  let name = 'function/local' //function scope
   console.log(name)
 
   if (true) {
@@ -40,12 +40,12 @@ function myFunc() {
       let name = 'block2' //block scope
       console.log(name)
     }
-
+    
   }
 }
 
-myFunc();
-console.log(name) 
+// myFunc();
+// console.log(name)
 
 
 /**
@@ -69,8 +69,41 @@ console.log(name)
  *    - global
  *    - any variable that is declared in global scope will be globally available
  *    - any variable that is declared WITHOUT let, const, or var will be globally available
+ * 
+ * * Hoisting!
+ *  - Hoisting if when you have a variable assigned in a scope
+ *    but only the variable declaration is raised
  */
 
-let variable; //declaration
-variable = "some value" //assignment
-let variable2 = "more value" //initialization
+// let variable; //declaration
+// variable = "some value" //assignment
+// let variable2 = "more value" //initialization
+
+/**
+ * When var is hoisted, only declaration hoisted
+ * default value is undefined
+ * No error when hoisting a variable declared with var because it has a default value :)
+ */
+// console.log(varName)
+// var varName = 'brandon'
+
+/**
+ * let does not have a default value
+ * therefore, when hoisted, an error is thrown
+ * ReferenceError: Cannot access 'letName' before initialization
+*/
+// console.log(letName)
+// let letName = 'brandon'
+
+/**
+ * const does not have a default value
+ * therefore, when hoisted, an error is thrown
+ * ReferenceError: Cannot access 'constName' before initialization
+*/
+// console.log(constName)
+// const constName = 'brandon'
+
+/**
+ * Where are the values before they are hoisted when using let and const?
+ * Temporal dead zone! where variables exist before they are accessed
+ */
