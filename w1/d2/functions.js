@@ -84,6 +84,76 @@ function printName(name) {
 }
 
 //wrap in the function call in console.log so i can see the return value
-console.log('2nd', printName('brandon'));//pass the string brandon as a argument to the function printName
+// console.log('2nd', printName('brandon'));//pass the string brandon as a argument to the function printName
 
-printName(true, 1, 2)
+// printName('brandon')
+
+//============ TEST =============
+// what will be printed?
+// function sayName(name) {
+//   return name;
+// }
+
+// console.log(sayName('brandon'));
+//1. brandon -  logging the return value of calling sayname
+//===============================
+// function sayName(name) {
+//   return name;
+// }
+
+// sayName('brandon');
+//2. nothing, were not logging!
+//==============================
+// function sayName(name) {
+//   console.log(name);
+// }
+
+// console.log(sayName('brandon'));
+//3. brandon undefined
+//=============================
+// function sayName(name) {
+//   console.log(name);
+//   return name
+// }
+
+// console.log(sayName('brandon'));
+//4. brandon brandon
+//=============================
+// function sayName(name) {
+//   return name;
+// }
+//5. nothing - because we didnt log!
+
+
+// function test() {
+//   return 'hello';
+// }
+
+// console.log(test().toUpperCase());
+
+function addTwo(num) {
+  console.log(num);
+  return num + 2;
+}
+
+// console.log(addTwo(4));//6
+// console.log(addTwo(4) === 6);//true
+
+//last char of a string
+
+function findLastChar(animal) {
+  console.log(animal);//cats
+  // console.log(animal[0]);//c
+  // console.log(animal[1]);//a
+  // console.log(animal[animal.length - 1]);//s
+  return animal[animal.length - 1]
+};
+
+let word = 'cats'
+// console.log(findLastChar(word));
+// console.log(findLastChar('rhino'))
+
+//things to note
+//if there is no param to represent the argument passed, you will have no access the arguments
+//you can store arguments in a variable or pass them directly
+//parameters can be names anything, when ever you create a parameter it is essentially saying, hey use this variable to represent the argument passed
