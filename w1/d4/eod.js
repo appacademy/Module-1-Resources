@@ -4,6 +4,13 @@
  * the maximum in its column.
  */
 
+/**
+ * New:
+ * Math.min and Math.max
+ * new Array syntax
+ * Array.fill()
+ */
+
 function luckyNumbers(matrix) {
   let ans = []
   let mins = new Array(matrix.length)
