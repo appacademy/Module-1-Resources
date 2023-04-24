@@ -259,3 +259,13 @@ let valuesArr = Object.values(show);
 // return 2d array [ [key, value],[key, value],[key, value] ]
 let entryArr = Object.entries(show)
 console.log(entryArr);
+
+
+//show delete!
+//deletes key value pair from an object
+//lets delete my age
+//if you wanted to delete key/rename it
+console.log(obj);
+obj.age1 = obj.age;
+delete obj.age;
+console.log(obj);
