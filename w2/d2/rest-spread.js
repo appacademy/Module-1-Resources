@@ -57,22 +57,32 @@ let arr4 = [0, ...arr1, -1 , ...arr2, 7];
 let obj1 = { name: 'brandon'};
 let obj2 = { pet: 'cat', favColor: 'red'};
 let obj3 = { obj1, obj2, city: 'brooksville' };
-console.log(obj3)
+// console.log(obj3)
 // {
 //   obj1: { name: 'brandon' },
 //   obj2: { pet: 'cat', favColor: 'red' },
 //   city: 'brooksville'
 // }
 let obj4 = { ...obj1, ...obj2, city: 'brooksville'} //can add k:v pairs when spreading
-console.log(obj4);//{ name: 'brandon', pet: 'cat', favColor: 'red', city: 'brooksville' }
+// console.log(obj4);//{ name: 'brandon', pet: 'cat', favColor: 'red', city: 'brooksville' }
 
 //spread can be used to create a shallow copy
 let shallow = { name: 'yoseph'};
 let copy = {...shallow};
 
 let sameReference = shallow;
-console.log(shallow === sameReference);//true -  same reference in memory
-console.log(shallow === copy)//false - new reference - used spread to create a shallow copy
+// console.log(shallow === sameReference);//true -  same reference in memory
+// console.log(shallow === copy)//false - new reference - used spread to create a shallow copy
 //shallow copy will only make new reference one deep, if there are nested objects they will hold there reference
 
+//shallow copy is just one reference deep
+let brandonObj = { name: 'brandon', nestedObj: { last: 'laursen'} };
+// console.log(brandonObj);
 
+let shallowBrandonCopy = { ...brandonObj}
+// console.log(brandonObj);
+console.log(brandonObj === shallowBrandonCopy);//false
+console.log(brandonObj.nestedObj === shallowBrandonCopy.nestedObj);//true
+
+let deepCopy = JSON.parse(JSON.stringify(shallowBrandonCopy));
+console.log(deepCopy.nestedObj === brandonObj.nestedObj);//false
