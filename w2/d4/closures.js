@@ -82,12 +82,41 @@ function elephantCollector() {
 let elephantParade = elephantCollector();
 // console.log(elephantParade);//[Function: myFunc]
 //invoking the inner function as passing argument
-console.log(elephantParade('babar'));//[ 'dumbo', 'babar' ]
+// console.log(elephantParade('babar'));//[ 'dumbo', 'babar' ]
 
 //two different states
 
 //elephant state 1
 let elephantParade2 = elephantCollector();
 // console.log(elephantParade2);
-console.log(elephantParade2('henry'));//[ 'dumbo', 'henry' ]
+// console.log(elephantParade2('henry'));//[ 'dumbo', 'henry' ]
 // console.log(elephantCollector()('babar2'));
+
+
+
+//emulate private function and variables
+function createCounter(){
+  let count = 0;
+
+  return function() {
+    count++;
+    return count;
+  }
+}
+
+//create a private state 1
+const counter1 = createCounter();
+// console.log(counter1)
+console.log(counter1());
+console.log(counter1());
+console.log(counter1());
+
+
+//create a private start 2
+console.log('counter 2')
+const counter2 = createCounter();
+console.log(counter2());
+console.log(counter2());
+console.log(counter2());
+// console.log(counter1 == counter2);//false
+//
