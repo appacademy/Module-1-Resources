@@ -18,7 +18,6 @@
 
   Step Over - go line by line and if there is a function call, step OVER it
     *unless there a debugger statement
-    *debugger will enter the function regardless if there is a debugger statement inside of
 
   Step Into - go line by line and if there is a function call, step into it
     *will enter regardless if debugger statement is present in function call
