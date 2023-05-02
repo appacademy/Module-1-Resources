@@ -56,6 +56,7 @@ function baz() {
   2. Recursive case - situation in which function recurses
     * opposite of the base case
     * portion of code where, function recurses
+    * does not have to be explicitly written out
   ex: if(n > 0);
 
   - Recursive step!
