@@ -47,7 +47,7 @@ function baz() {
   - rm -rf recursively delete sub directories
   - search/sort algorithms
 
-  Two cases: usually you only need base case or recursive case
+  Two cases: base case and recursive case
 
   1. Base case - tells our function when to stop recursing, can also be known as the terminating case
     * you can have more than one base case
@@ -55,6 +55,7 @@ function baz() {
 
   2. Recursive case - situation in which function recurses
     * opposite of the base case
+    * portion of code where, function recurses
   ex: if(n > 0);
 
   - Recursive step!
