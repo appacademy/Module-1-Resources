@@ -232,3 +232,11 @@ let number = 1;
 // console.log('look here', typeof number)//number
 // console.log(typeof 'example')//string
 
+
+// add birthday of string
+// 10-15-1995
+
+
+
+
+
