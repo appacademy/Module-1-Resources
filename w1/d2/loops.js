@@ -31,6 +31,63 @@ while (i <= 5) {
 //Initial Expression
 //Condition for which we keep looping
 //Step towards completing that loop
-for(let i = 0; i <= 5; i++ ) {
-  console.log(i);
+for(let i = 0; i <= 5; i++) {
+  // console.log(i);
 }
+
+// lets iterate through a word
+// function that takes in a parameter 'umbrella' represented by the variable world
+function iterateThroughWord(word){
+  // console.log(word);
+  // console.log(word[0]);//u
+  // console.log(word[word.length - 1]);//a
+  //start at 0, 1 < 8; 1++;
+  // for(let i = 0; i < word.length; i++) {
+  //   console.log('index', i);
+  //   console.log('word   ', word[i]);
+  //   let letter = word[i];
+  //   // console.log(letter);//same as word[i]
+  // }
+  let i = 0;
+  while(i < word.length) {
+    console.log('index', i);
+    console.log('word   ', word[i]);
+    i++;
+  }
+
+};
+
+// console.log('The return value of iterateThroughWord is =>',iterateThroughWord('umbrella'))
+
+function characterLogger(string) {
+  // console.log(string);
+
+  let end = string.length;//10
+  for(let start = 0; start < end; start++) {
+    let letter = string[start];//motorcycle[2]
+    console.log(letter)
+  }
+};
+
+// console.log('return value of character logger', characterLogger('motorcycle'))
+
+
+//iterate backwards
+function reverseName(name){
+  console.log(name);//brandon
+  //'brandon'.length - 1 = 6
+  // 6 >= 0
+  // i--
+  let reversed = '';
+  for(let i = name.length - 1; i >= 0; i--) {
+    console.log('index', i);
+    console.log('letter ', name[i]);
+    reversed += name[i];
+    console.log('reversed', reversed);
+  }
+
+  return reversed;
+};
+
+// console.log('return value of reverseName', reverseName('brandon'));
+
