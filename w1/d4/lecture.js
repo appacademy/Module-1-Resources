@@ -39,7 +39,7 @@ let balance = 10;
 
 //== check just value
 // === check value and data type
-console.log(balance)
+// console.log(balance);
 // sub problem of handing withdraws
 function withdraw(balance, amount) {
   // console.log(balance, amount);
@@ -101,24 +101,23 @@ function transaction(type, amount) {
   // ? how can we decide what transaction to use?
   // we can check the type/action, and decide what helper function to call
 
-  if(type === 'deposit') {
+  if (type === "deposit") {
     // console.log('the return value of deposit called from transaction',deposit(balance, amount));
     // is reassign the balance to the return of deposit
     // a function evaluates to its return
     balance = deposit(balance, amount);
     // console.log('!!!!!!',balance)
-  } else if(type === 'withdraw'){
+  } else if (type === "withdraw") {
     balance = withdraw(balance, amount);
     // console.log('return value of calling balance from withdraw',balance);
-  } else if(type === 'check balance') {
-    checkBalance();//were not using the return, so only call
+  } else if (type === "check balance") {
+    checkBalance(); //were not using the return, so only call
   } else {
-    console.log('Not a valid transaction type')
-  };
+    console.log("Not a valid transaction type");
+  }
 
-  return 'Balance: ' + balance;
+  return "Balance: " + balance;
 }
-
 
 // console.log(transaction('deposit', 10 ));
 // console.log(transaction('withdraw', 5));
@@ -142,9 +141,59 @@ function transaction(type, amount) {
   *   - subtraction
   *   - multiplication
   *   - division
-  
 
-
-
-
+  ! console.log everything!!!!
+  ! start with helpers?
+  ! add to main function -  calculator
 */
+
+//Execute the plan
+
+// add
+// can only can be used on function expression
+let addition = (num1, num2) => num1 + num2;
+
+//subtraction
+//parameters are bananable, can be named anything
+function subtraction(banana, apple) {
+  // let banana = 90, let apple = 100
+  return banana - apple;//-10
+}
+//division
+function division(num1, num2) {
+  // console.log(num1, num2, num1 / num2);
+  return num1 / num2;
+}
+
+// calculator
+// main function
+function calculator(operator, num1, num2) {
+  // let num1 = 90, let num2 = 100
+  if (operator === "+") return addition(num1, num2);
+  else if (operator === "-") return subtraction(num1, num2);
+  else if (operator === "*") return multiplication(num1, num2);
+  else if (operator === "/") return division(num1, num2);
+  else return "That is not a valid calculations";
+}
+
+console.log(calculator("*", 12, 15)); //27
+// console.log('look here!',calculator('-', 90, 100));
+
+function multiplication(num1, num2) {
+  return num1 * num2;
+};
+
+// call stack
+// a data structure that handles function calls
+// when a function is called it is push up to top of stack
+// when a function is returned it is pop from the stack
+// js will focus on whatever is at the top of the stack
+// first in last out order
+
+// multiplication
+// function declaration, can be referenced before they are defined
+
+// console.log(calculator("-", 20, 16)); //4
+// console.log(calculator("*", 10, 9)); //90
+// console.log(calculator("/", 100, 10)); //10
+// console.log(calculator("asdjklfasdfasdf", 100, 10)); // what will happen? => That is not a valid calculations
