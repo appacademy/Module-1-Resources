@@ -207,3 +207,5 @@ console.log(obj);
 // delete keyword followed by object.key
 delete obj.age;
 console.log(obj);
+
+
