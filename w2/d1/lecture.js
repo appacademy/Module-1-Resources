@@ -1,16 +1,11 @@
 
 /*
-
-
-
-
   What are Fat arrows?
   - Arrow functions, aka Fat arrows =>
     are a more concise way of declaring our functions
 
   - Differences?
     - this value -
-
 */
 
 
