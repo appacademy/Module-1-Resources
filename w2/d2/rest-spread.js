@@ -164,22 +164,22 @@ console.table(wax);
 // console.log(majesticCoat);
 // console.log(moreToLove);
 
-let obj = { name: "brandon", age2: 27, nestedObj: { pet: "cat" } };
+let personObj = { name: "brandon", age: 27, pets: { cat: 'mochi' } };
+// destruct object
+// provide the key of what you want the value of
+// let { name, age, pets: { cat } } = personObj;
+// console.log(name, age, pets);//{ cat: 'mochi' }
+// let { cat } = pets;
+// console.log(cat);//mochi
+// let { cat } = personObj.pets
+// console.log(cat);
 
-// can destruct nested obj
-// let {
-//   name,
-//   age2,
-//   nestedObj: { pet },
-// } = obj;
-// console.log(name, age2, pet); // brandon 27
+let { name, ...restOfObj} = { ...personObj, favFood: 'chicken'};
+// to the right, spread all values of the personObj into the object literal, add a key value pair
+// to the left, destructure out the name value, and store the rest of the object in the restofObj variable
 
-// let { pet } = obj.nestedObj //another way to access nested objects
-// console.log(pet)//cat
+console.log(name, restOfObj);
+// console.log(personObj);
 
-// put the rest of the arguments not including name into the cloneObj
-// destruct name out of the obj to the right and out the rest of the data in the cloneObj variable
-
-let { name, ...cloneObj} = {...obj}; //this will remove the name from the cloneObj when used with the rest param
-console.log(cloneObj); // {  age: 27, nestedObj: { pet: 'cat'}}
-console.log(name); // 'brandon'
+let newObj = { ...personObj, name: 'krandon', car:'challenger'}
+// console.log(newObj);
