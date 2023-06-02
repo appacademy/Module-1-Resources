@@ -124,7 +124,7 @@ function delayedPrinter2(delaysArr) {
     totalDelay += delay;//added
     // console.log('totalDelay:', totalDelay);
     setTimeout(console.log, totalDelay, delay);//added totalDelay
-    setTimeout(() => console.log(delay), totalDelay, delay );
+    // setTimeout(() => console.log(delay), totalDelay, delay );
     //setTimeout(cbFunc, delayInMilliseconds, arg1)
     //console.log is a function
   });
