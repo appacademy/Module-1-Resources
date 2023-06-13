@@ -114,3 +114,8 @@ function findLastIndex(word) {
 
 console.log('1. return value of findLastIndex', findLastIndex('cats'));
 console.log('2. return value of findLastIndex', findLastIndex('squirrel'));
+
+//INVOKE THIS FUNCTION
+//call/invoke
+//functionName()
+findLastIndex()// <== calling a function
