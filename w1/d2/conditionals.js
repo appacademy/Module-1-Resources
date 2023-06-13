@@ -96,3 +96,7 @@ if(darkMode === true) {
 
 darkMode ? console.log('turn on dark mode') : console.log('turn off dark mode')
 //      if                                 else
+
+// console.log('second' || 'first');
+
+// if(sentence.includes(first) || sentence.includes(first))
