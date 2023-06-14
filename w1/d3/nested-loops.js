@@ -15,11 +15,45 @@
 
 //for loop
 for(let i = 0; i < 3; i++) {//outer loop controlled by i
-  console.log('i:', i);
+  // console.log('i:', i);
   for(let j = 0; j < 2; j++){//inner loop controlled by j
-    console.log(' j:', j);
-    // for(let k = 0; k < 3; k++){//inner loop controlled by k
+    // console.log(' j:', j);
+    // for(let k = 0; k < 2; k++){//inner loop controlled by k
     //   console.log('   k:', k)
     // }
   }
 }
+
+
+let matrix = [
+  [1,2,3],
+  [4,5,6],
+  [7,8,9]
+]
+// let TwoDArr= [[]];
+
+console.log(matrix.length);//3 subarray in the matrix
+console.log(matrix);//[ [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ] ]
+console.log(matrix[0]);//[ 1, 2, 3 ]
+  console.log(matrix[0].length);//3 there are three elements in the sub array
+  console.log(matrix[0][0]);//1
+  console.log(matrix[0][1]);//2
+  console.log(matrix[0][2]);//3
+  // console.log(matrix[i][j])
+console.log(matrix[0]);//[ 1, 2, 3 ]
+console.log(matrix[1]);//[ 4, 5, 6 ]
+console.log(matrix[2]);//[ 7, 8, 9 ]
+
+for(let i = 0; i < matrix.length; i++) {//outer loop gains us access to the subarrays
+  let subArr = matrix[i];
+  console.log('subArray:', subArr);
+
+  for(let j = 0; j < subArr.length; j++) {//inner loop iterate through the subarrays itself to get the values
+    let number = subArr[j];//matrix[i][j]
+    console.log('i', i, 'j',j)
+    console.log('   number:',number);
+
+  }
+}
+
+// console.log(matrix[1][2]);
