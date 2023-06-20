@@ -7,6 +7,48 @@ characters.
 
 
 */
+
+
+//Check if key is in object
+
+
+//includedInObject
+const includedInObject = (obj, key) => {
+  // Write your solution here.
+// console.log(obj, key)
+// if(obj[key] !== undefined) return true;
+// return false;
+//   for(let keys in obj) {
+
+//    if(keys.includes(key)) return true
+//   }
+//   return false;
+// return key in obj
+// let keysArr = Object.keys(obj);
+
+return Object.keys(obj).includes(key);
+}
+//--------------------------------------------------
+///Check if value is in object
+//valInObject
+const valInObject = (obj, value) => {
+  for(let key in obj) {
+      if(obj[key] === value) {
+          return true;
+      }
+  }
+  return false;
+  //return Object.values(obj).includes(value);
+}
+
+// if (counter[letter] === undefined) {
+//   counter[letter] = 1;
+// } else {
+//   counter[letter]++;
+// }
+
+//----------------------------------------------------
+//Frequency counter
 const sentence = "What is the most common character in this sentence";
 
 const mostCommonChar = (sentence) => {
@@ -50,4 +92,32 @@ const mostCommonChar = (sentence) => {
   return currentKey;
 }
 
-// console.log(mostCommonChar(sentence));//t
+//-----------------------------------------------
+//nested array of objects
+//getSecondObjValues
+const getSecondObjValues = arr => {
+  for(let nestedArr of arr) {//iterate through arr
+      if(nestedArr[1]) {//check obj exists in second index
+          for(let key in nestedArr[1]) {//iterate through obj
+              console.log(nestedArr[1][key]);//use key to get value
+          }
+      } else {
+          console.log(null);
+      }
+  }
+}
+
+
+
+//-------------------------------------------------
+//nested objects
+//printDepthOfTwo
+const printDepthOfTwo = obj => {
+  for(let val of Object.values(obj)) {//get all the values
+      if(typeof val === 'object') {//check the value are objects
+          for(let nestedVal of Object.values(val)) {//get vals of nested obj
+              console.log(nestedVal)//log values
+          }
+      }
+  }
+}
