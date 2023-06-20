@@ -29,7 +29,7 @@ const mostCommonChar = (sentence) => {
   console.log(counterObj);
   //{ W: 1, h: 3, a: 2, t: 3, i: 1, s: 2, e: 1, m: 3, o: 3, c: 2, n: 1 }
 
-  let highest = -Infinity;// 1,2,3,4,5     = 1 < 2
+  let highest = -Infinity;// placeholder value to compare, gets overwritten after first iteration
   let currentKey;
   // we need to find the letter that occurred the most
   // we need to gain access to all the keys and values
@@ -50,4 +50,4 @@ const mostCommonChar = (sentence) => {
   return currentKey;
 }
 
-console.log(mostCommonChar(sentence));//t
+// console.log(mostCommonChar(sentence));//t
