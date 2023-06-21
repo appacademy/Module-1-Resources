@@ -22,6 +22,8 @@
   - all callbacks are helper functions but not all helper functions are callbacks
   - a callback has to be passed as an argument
 
+  () => {} - anon function
+  let name = () => {} - non anon function
 
 */
 
