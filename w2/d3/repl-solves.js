@@ -45,3 +45,50 @@ const myMap = (arr, cb) => {
 }
 
 console.log(myMap(names, (name) => name.toUpperCase() ))
+
+
+let filteredNames = names.filter( (name) => name.includes('o') )
+// console.log(filteredNames)
+
+const myFilter = (arr, apple) => {
+// console.log(arr, cb)
+
+  let newArr = [];
+
+  for(let i = 0; i < arr.length; i++) {
+   let name = arr[i];
+    console.log(apple(name))
+  	if(apple(name) === true) {
+     newArr.push(name)
+    }
+  }
+  return newArr;
+};
+
+
+console.log(myFilter(names, (name) => name.includes('o')))
+
+
+
+
+let res = names.every( name => name.includes('o') )
+// console.log(res);
+
+
+const myEvery = (arr, cb) => {
+	// console.log(arr, cb);
+
+  for(let i = 0; i < arr.length; i++) {
+    let name = arr[i];
+
+    if(cb(name) === false){
+     return false;
+    }
+
+  }
+
+  return true;
+}
+
+
+console.log(myEvery(names, (name) => name.includes('o')));
