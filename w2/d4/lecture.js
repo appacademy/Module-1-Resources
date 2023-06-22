@@ -44,7 +44,7 @@
 
 // * we can reuse the name variable because we are in different scopes
 
-// let name = 'global scope';// variable declared in global scope
+let name = 'global scope';// variable declared in global scope
 
 function myFunc() {
   let name = "function/local scope"; // this is function/local scope
@@ -86,5 +86,4 @@ function myFunc2(){
 };
 
 // myFunc2();
-// console.log(age);//ReferenceError: age is not defined
-
+console.log(age);//ReferenceError: age is not defined
