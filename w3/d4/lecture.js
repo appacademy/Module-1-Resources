@@ -38,7 +38,6 @@ let foo2 = function () {
 // console.log('three');
 //one -> two -> three
 
-
 /*
 
  Asynchronous code
@@ -96,3 +95,67 @@ let foo2 = function () {
 
   * That only one task can be performed at a time
 */
+
+/*
+
+  setTimeout
+  - The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.
+
+  - setTimeout(callbackFunc, delayInMilliseconds, param1, param2, paramN)
+    * pass the callback straight into the setTimeout as a argument
+
+  - setTimeout(() -> cb(), delayInMilliseconds, param1, param2, paramN)
+   * you can pass anon callback to a setTimeout
+
+  * got from millie to second - divide by 1000
+  * 1000 milliseconds = 1 second
+
+*/
+
+let sayHello = function () {
+  console.log("hello");
+};
+
+// we want to run the sayHello function after 2 seconds
+// global.setTimeout(sayHello, 2000)
+
+// console.log(global)
+
+// is we do not have use global.
+
+// i want to run a console.log after 5 seconds passing the argument
+// 'sup'
+// console.log is a function
+// setTimeout(console.log, 5000, 'sup')
+
+//function w/o args
+
+function time() {
+  console.log("time is up");
+}
+
+// setTimeout(time, 3000);
+
+//function w args
+function sayHi(name) {
+  console.log(`Hey ${name}`);
+}
+
+// setTimeout(sayHi, 2000, 'brandon');
+
+// pass an anon callback syntax
+// setTimeout((name) => console.log(`hey ${name}`), 2000, 'anthony' );
+
+// clearTimeout
+// clearTimeout takes in a a timer object
+// the return value of setTimeout is a timer object
+// were store the return value in a variable so we can use it to clear the timeout
+
+let timeoutObj = setTimeout((name) => {
+  console.log(`hey ${name}`);
+}, 1000, 'charles');
+
+// console.log(timeoutObj);
+
+// prevent/stop the setTimeout from running
+clearTimeout(timeoutObj);//the setTimeout get ran
