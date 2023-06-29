@@ -151,11 +151,81 @@ function sayHi(name) {
 // the return value of setTimeout is a timer object
 // were store the return value in a variable so we can use it to clear the timeout
 
-let timeoutObj = setTimeout((name) => {
-  console.log(`hey ${name}`);
-}, 1000, 'charles');
+// let timeoutObj = setTimeout((name) => {
+//   console.log(`hey ${name}`);
+// }, 1000, 'charles');
 
 // console.log(timeoutObj);
 
 // prevent/stop the setTimeout from running
-clearTimeout(timeoutObj);//the setTimeout get ran
+// clearTimeout(timeoutObj);//the setTimeout get ran
+
+
+
+
+function somethingSlow(n) {
+  if (n === 1 || n === 2) return 1;
+
+  return somethingSlow(n - 1) + somethingSlow(n - 2);
+}
+
+function foo() {
+  console.log("food");
+}
+
+function bar() {
+  console.log("bark");
+  baz();
+}
+
+function baz() {
+  console.log("bazaar");
+}
+
+// setTimeout(foo, 1500);
+// setTimeout(bar, 1000);
+// console.log(somethingSlow(65));//sync code is blocking the call stack from allowing the async code to enter from the message queue
+
+//? try to predict the output??
+// big number -> bark -> bazaar -> food
+
+
+
+// using setTimeout with recursion
+// take in a delays arr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100]
+// goal: print the number, but use the number as the delay
+// ? Is this actually recursing?
+// this is not recursing
+// pseudo recursion
+function delayedPrinter(delaysArr) {
+
+  if(!delaysArr.length) return;
+
+  const current = delaysArr.shift();
+  console.log(current);
+
+  // return delayedPrinter(delaysArr);
+  // setTimeout(callbackFunc, delayInMilliseconds, param1, param2, paramN)
+  setTimeout(delayedPrinter, current, delaysArr);
+
+};
+
+let delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100]
+// delayedPrinter(delaysArr)
+
+// the loop does not care about the order in which we send these values to the node api
+// all it cares about is when the timer goes off, so if 1000 and 100 are sent at the same time, 100 would exit first, therefore would be printed before 1000
+function delayedPrinter2(delaysArr) {
+  let totalDelay = 0;
+  delaysArr.forEach(delay => {
+    totalDelay += delay;
+
+    setTimeout(console.log, totalDelay, delay);
+
+  })
+}
+
+
+// delayedPrinter2(delaysArr);
+
+
