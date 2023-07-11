@@ -53,7 +53,7 @@ console.log(nums2 + nums2 + nums3);
 
 // we can use .concat
 let res = nums1.concat(nums2, nums3)
-console.log(res);
+// console.log(res);
 /*
 [
    1,  2,  3,  4,  5,  6,
@@ -62,3 +62,25 @@ console.log(res);
 ]
 */
 
+
+// find the sum of all numbers in an array
+
+
+
+function sumArray(numbers) {
+  let sum = 0; // use this variable to track the sum and maintain the value between iterations
+
+  for(let i = 0; i < numbers.length; i++){
+    // console.log('i',i);
+    let number = numbers[i];
+    // console.log(numbers,  'i', i, 'number', number);
+    sum += number;
+    // console.log('sum',sum);
+  }
+
+  console.log(sum);
+  return sum;
+};
+
+
+console.log('return value', sumArray([1,2,3]));// 6
