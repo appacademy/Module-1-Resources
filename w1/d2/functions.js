@@ -44,7 +44,7 @@
 function myFunc() {
 
   // code to be ran when function is called/invoked
-  return 'Im returning a string';
+  return 'Im returning a string';// this is what your function will evaluate too
   // return 12;
   // return true
   // can only return once
@@ -60,17 +60,20 @@ function myFunc() {
 
 //i want to log to the console the return value of calling myFunc
 console.log(myFunc());// Im returning a string
+
+// what happens if we don't invoke our function?
 console.log(myFunc);// [Function: myFunc]
-// if you see this [Function: myFunc] it means its a function, and you can invoke it
+// if you see this [Function: myFunc] it means its a function, and you can invoke it - ()
 
-// we can call a function multiple times
+// we can call a function more than once
 console.log('Return value of myFunc:', myFunc());
 console.log('Return value of myFunc:', myFunc());
 console.log('Return value of myFunc:', myFunc());
 
+// store return value in a variable
 let result = myFunc();
-console.log('Return value of myFunc stored in a variable', result);// Return value of myFunc stored in a variable Im returning a string
-// we are setting the result variable to hold the return value of calling myFunc
+console.log('Return value of myFunc stored in a variable', result);// Return value of myFunc stored in a variable - Im returning a string
+// we are storing the return value of myFunc in a variable called result
 
 // ! parameters and arguments
 
