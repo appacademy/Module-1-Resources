@@ -48,8 +48,9 @@ age = 300;
 // here we are omitting the let keyword, that tells javascript to reassign that value if its already been declared, if it hasnt been declared it will declare the variable globally
 
 // example = 'dont do this as this will be global';//<- dont want to do
-
-// console.log('after',age);
+console.log('before',age);// 27
+age = 300;
+console.log('after',age);
 
 let num = 0;
 console.log(num);// 0
