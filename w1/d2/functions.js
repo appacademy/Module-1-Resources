@@ -38,3 +38,52 @@
       let param2 = argument2
 
 */
+
+// basic function
+// This a function that does not take in arguments
+function myFunc() {
+
+  // code to be ran when function is called/invoked
+  return 'Im returning a string';
+  // return 12;
+  // return true
+  // can only return once
+  console.log('do we make it?');// no - anything below a return in scope will not be read
+}
+
+// lets call/invoke the function
+// provide function name
+// a function evaluates to its return
+// if we want to confirm this function returns what we expect
+// we wrap it in a console.log
+// myFunc();
+
+//i want to log to the console the return value of calling myFunc
+console.log(myFunc());// Im returning a string
+console.log(myFunc);// [Function: myFunc]
+// if you see this [Function: myFunc] it means its a function, and you can invoke it
+
+// we can call a function multiple times
+console.log('Return value of myFunc:', myFunc());
+console.log('Return value of myFunc:', myFunc());
+console.log('Return value of myFunc:', myFunc());
+
+let result = myFunc();
+console.log('Return value of myFunc stored in a variable', result);// Return value of myFunc stored in a variable Im returning a string
+// we are setting the result variable to hold the return value of calling myFunc
+
+// ! parameters and arguments
+
+// a function that takes in no arguments but has parameters to represent them
+// this function will thrown an error if we try to access param1 or param2 as no arguments are passed
+function example1(param1, param2){
+  // console.log(param1, param2);
+};
+example1()
+
+// a function that takes in arguments but has no parameters to represent them
+// you would have no way to get the arguments
+function example2() {
+
+}
+example1('test', 'case');
