@@ -98,7 +98,7 @@ let name = 'brandon';
 /*
 
 
-  Numbers and Booleans
+  Numbers
 
   Numbers!
   - decimals
