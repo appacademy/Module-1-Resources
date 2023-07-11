@@ -63,3 +63,17 @@ num = num + 1;
 console.log(num);// 3
 num + 1; // <-- this will not save, because there is no assignment operator - =
 console.log(num);// 3
+
+console.log(num + 'hey');// 3hey
+// plus operator - + doubles as concatenation
+// we need to be mindful of our data types
+
+// we can check for data types
+// we can use typeof operator to check the data type of a string
+// the output is the data type itself
+let number = true;
+
+// console.log(number + 2);//12
+// console.log(typeof number);//string
+
+console.log(first)
