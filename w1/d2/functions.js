@@ -23,7 +23,8 @@
 
   - Parameters are used to represent the arguments passed
 
-  ! creating the function functionName(param1, param2) {
+  ! declaring the function
+  function functionName(param1, param2) {
     return undefined;
   }
 
@@ -36,6 +37,7 @@
   ! happening under the hood
   ex: let param1 = argument1
       let param2 = argument2
+
 
 */
 
@@ -56,7 +58,7 @@ function myFunc() {
 // a function evaluates to its return
 // if we want to confirm this function returns what we expect
 // we wrap it in a console.log
-// myFunc();
+myFunc();
 
 //i want to log to the console the return value of calling myFunc
 console.log(myFunc());// Im returning a string
@@ -78,15 +80,81 @@ console.log('Return value of myFunc stored in a variable', result);// Return val
 // ! parameters and arguments
 
 // a function that takes in no arguments but has parameters to represent them
-// this function will thrown an error if we try to access param1 or param2 as no arguments are passed
+// this function will be undefined if we try to access param1 or param2 as no arguments are passed
 function example1(param1, param2){
-  // console.log(param1, param2);
+  console.log(param1, param2);//undefined undefined
 };
-example1()
+
+// example1();
 
 // a function that takes in arguments but has no parameters to represent them
 // you would have no way to get the arguments
 function example2() {
 
 }
-example1('test', 'case');
+// example2('test', 'case');
+
+
+// name1 and name2 are parameters
+// they represent the argument passed
+// let name1 = 'charles'
+// let banana = 'anabel'
+// parameters can be names anything
+function printNames(name1, banana) {
+  // console.log(name1, banana);//charles anabel
+
+  return 'Hello ' + name1 + ' and ' + banana;
+}
+
+// make sure to call the function ()
+// pass arguments to the printNames function
+// arguments are brandon and anthony
+// console.log('before we call print names');
+// printNames('charles','anabel');
+// console.log('after we call print names')
+
+printNames('brandon', 'anthony');
+// if we want to see the return of a function we must wrap the invocation in a console.log
+
+console.log('res ===>',printNames('brandon', 'anthony'));
+
+// but we can call a function more than once
+// and pass different args to each function call
+// get different results
+
+// a function will use the arguments passed to it
+console.log('res ===>',printNames('brandon', 'anthony'));//Hello brandon and anthony
+
+// the same function take in different arguments
+console.log('res ===>',printNames('anabel', 'charles'))//res ===> Hello anabel and charles
+
+// we can pass variables as arguments
+let name = 'trevor';
+
+console.log('res ===>',printNames(name, 'caleb'))
+// we are passing the name variable
+// let name1 = 'trevor';
+// let banana 'caleb'
+
+console.log('===========')
+
+// a function that adds two to a number
+
+// declare the function
+// num used to represent the arg passed
+function addTwo(num) {
+  // console.log('was my function called');//just making sure we entered the func
+  // console.log(num);// checking what does this variable hold?
+  // console.log(num + 2);// to confirm the output is what expect
+  let res = num + 2;//stored expression in a variable
+  return res;//return variable
+  // return num + 2; can return expression directly
+};
+
+// calling the function passing 5 as an argument
+// console.log(addTwo(5));//7
+
+let result2 = addTwo(5);
+console.log(result2);//7
+
+console.log(addTwo(5) === 7)//true
