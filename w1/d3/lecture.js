@@ -58,3 +58,33 @@ console.log("return value of myFunc2", myFunc2()); //undefined
   };
 
 */
+
+
+// HOISTING WITH FUNCTIONS
+
+// trying to call a function declaration from above where its been delcared
+// this throws no errors
+// function declaration are hoisted - learn wk3
+// myFunc();
+
+// function declaration
+function myFunc() {
+  console.log('my func was called');
+
+}
+
+// call myFunc
+
+// trying to call a function expression before its been defined
+// cannot call a variable that does not yet exist
+// myFunc(); //ReferenceError: Cannot access 'myFunc2' before initialization
+// myFunc3();
+
+let myFunc3 = function() {
+
+  console.log('my func2 was called');
+}
+
+// console.log(age);//ReferenceError: Cannot access 'age' before initialization
+// let age = 27;
+// myFunc3();
