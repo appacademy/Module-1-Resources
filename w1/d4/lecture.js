@@ -28,13 +28,21 @@ let balance = 10;
 // main function
 function ATM(transaction, amount){
     if (transaction === "Check Balance"){
-        return checkBalance(balance);
+
+        return checkBalance(balance); // undefined
+
     } else if (transaction === "Withdraw") {
+
         return balance = withdraw(balance, amount);
+
     } else if (transaction === "Deposit") {
+        // console.log('balance', balance, 'amount', amount)
         return balance = deposit(balance, amount);
+
     } else {
+
         console.log("That ain't it chief")
+
     }
 };
 
@@ -57,10 +65,13 @@ function withdraw(initialBalance, requestedAmount){
 };
 
 function deposit(initialBalance, depositAmount){
+    // console.log('inside deposit function')
+    // console.log('initialBalance', initialBalance, 'depositAmount', depositAmount)
     console.log('Depositing: ', depositAmount);
-    initialBalance += depositAmount;
+    initialBalance += depositAmount; // initialBalance = initialBalance + requestedAmount
     return initialBalance;
 };
 
-ATM("banana", 2); //?????
-ATM("Check Balance")
+ATM("Deposit", 2); //?????
+// ATM("Check Balance")
+// console.log('this is the balance variable =>', balance)
