@@ -151,4 +151,4 @@ function division(num1, num2) {
     return num1 / num2;
 };
 
-console.log(calculator('divisoin', 1, 4)); // .25
+console.log(calculator('division', 'banana', 4)); // .25
