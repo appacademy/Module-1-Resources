@@ -72,6 +72,83 @@ function deposit(initialBalance, depositAmount){
     return initialBalance;
 };
 
-ATM("Deposit", 2); //?????
+// ATM("Deposit", 2); //?????
 // ATM("Check Balance")
 // console.log('this is the balance variable =>', balance)
+
+
+
+
+
+//===================================================================================================
+
+/*
+
+Goal: Build a function that utilizes helper functions to solve some math problems.
+
+    -- Given some input (a string and 2 nums), perform the correct operation and return the result
+    -- Will likely be using if statements
+    -- Upon meeting some condition, I want to invoke the proper function and return its result
+
+Valid Operations
+    --addition
+    --subtraction
+    --multiplication
+    --division
+
+Polyas:
+
+Understand the problem
+Make a Plan
+Execute the Plan
+Refactor
+
+Understand the Problem
+    -- Input: a string and 2 nums - string = some kind of operation => 'addition' and 10 and 5
+    -- Output: a number => result of calling our operation on the 2 nums => 15
+    -- Use Helper Functions!
+
+Make a plan!
+    * Create a main function that will call the appropriate helper functions
+    * Create a function for each operation - Helper functions
+        ** Take in the 2 nums
+        ** Return the result of the operation on those nums
+    * Use if...else if...else statements (conditional) to check what the operation is
+        ** So that we know which helper function to use
+
+*/
+
+// main function
+let calculator = function(operation, num1, num2){
+    if (operation === "addition") { // addition || "addition"
+       return addition(num1, num2);
+    } else if (operation === "subtraction") {
+        return subtraction(num1, num2);
+    } else if (operation === 'multiplication') {
+        return multiplication(num1, num2);
+    } else if (operation === `division`) {
+        return division(num1, num2);
+    } else {
+        return 'That\'s not a valid operation'
+    }
+};
+
+// helper functions
+function addition(num1, num2) {
+    let sum = num1 + num2;
+    return sum; // return num1 + num2
+};
+
+function subtraction(num1, num2) {
+    return num1 - num2;
+};
+
+function multiplication(num1, num2) {
+    return num1 * num2;
+};
+
+function division(num1, num2) {
+    return num1 / num2;
+};
+
+console.log(calculator('divisoin', 1, 4)); // .25
