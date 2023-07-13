@@ -151,4 +151,41 @@ function division(num1, num2) {
     return num1 / num2;
 };
 
-console.log(calculator('division', 'banana', 4)); // .25
+// console.log(calculator('division', 'banana', 4)); // .25
+
+
+/*
+Write a function twoDimensionalSum(arr) that takes in a 2D array of numbers
+and returns the total sum of all numbers.
+*/
+
+function twoDimensionalSum(outerArr) {
+    let bigSum = 0;
+    for (let i = 0; i < outerArr.length; i++) {
+        bigSum += addArr(outerArr[i]);
+    };
+
+    return bigSum;
+};
+
+function addArr(innerArr) {
+    let littleSum = 0;
+    for (let i = 0; i < innerArr.length; i++) {
+        littleSum += innerArr[i];
+    };
+
+    return littleSum;
+};
+
+let arr1 = [
+    [1, 3], // 4
+    [-4, 7, 10], // 13
+    [2] // 2
+];
+console.log(twoDimensionalSum(arr1)); // 19
+
+let arr2 = [
+    [],
+    [3, 1, 2],
+];
+console.log(twoDimensionalSum(arr2)); // 6
