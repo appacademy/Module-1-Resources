@@ -68,14 +68,15 @@ let brandon = {
     state: "Florida",
   },
   sayHello: function (param) {
-    return "Hello" + param;
+    return "Hello " + param;
   },
 };
 
 // the sayHello key holds a value that is a function
 // that is what a method is, a function that belongs to an object
 
-console.log(brandon);
+// console.log('===>',brandon['sayHello']());
+// console.log(brandon);
 // {
 //   name: 'brandon',
 //   age: 27,
@@ -99,27 +100,47 @@ console.log(brandon);
 
 // Bracket notation
 // we are evaluating the code inside the square brackets and using that as the key to get the value
-console.log(brandon['name']); //brandon
-// so we use the name key to access the brandon value in the object
-console.log(brandon['age']); //27
-console.log(brandon['softwareEngineer']); //true
-console.log(brandon['location']);// { city: 'tampa', state: 'Florida' }
-console.log(brandon['location']['city']); //tampa
+// console.log(brandon['name']); //brandon
+// // so we use the name key to access the brandon value in the object
+// console.log(brandon['age']); //27
+// console.log(brandon['softwareEngineer']); //true
+// console.log(brandon['location']);// { city: 'tampa', state: 'Florida' }
+// console.log(brandon['location']['city']); //tampa
 
 // When using bracket notation, were are able to use variables as our keys. This allows us to be dynamic
 
-console.log(brandon['name']); //brandon
+// console.log(brandon['name']); //brandon
 // console.log(brandon[name]); //ReferenceError: name is not defined
+// // name variable does not exists
 
-let example = 'name';
-console.log(brandon[example]); //brandon
-// We are keying into the brandon object using square brackets
+// let example = 'name';
+
+// console.log(brandon[example]); //brandon
+// // We are keying into the brandon object using square brackets
 // the expression inside the brackets must evaluate before we try to use to key into the object
 // the example variable holds the string 'name'
 // so when we try access brandon[example]
 // were really accessing brandon['name'];
 
-console.log(brandon['na' + 'me']); //brandon
+// console.log(brandon['na' + 'me']); //brandon
+// console.log(brandon['name']); //brandon
+
+// we can access location using variable holding the key
+
+console.log(brandon);
+
+// grabbing name using []
 console.log(brandon['name']); //brandon
+
+// console.log(brandon[name]);// ReferenceError: name is not defined
+
+// js tries to look for name variable but doesnt find it, throws error
+
+// what you can do is store the value in a variable
+let test = 'name';
+// console.log(brandon[test]); //brandon
+
+
+// console.log(brandon['sayHello']('rod')); //Hello rod
 
 
