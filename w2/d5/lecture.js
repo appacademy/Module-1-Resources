@@ -44,8 +44,8 @@
 
 // higher order
 function higherOrder(cb) {
-  console.log('Entering higher order function');
-  console.log(cb);//[Function: callback]
+  console.log("Entering higher order function");
+  console.log(cb); //[Function: callback]
   cb(); //hello from our callback
 }
 
@@ -55,9 +55,7 @@ let callback = () => console.log("hello from our callback");
 // let age = 27;
 // console.log(age);
 
-console.log(higherOrder(callback));
-
-
+// console.log(higherOrder(callback));
 
 /*
 
@@ -75,13 +73,72 @@ console.log(higherOrder(callback));
         return name.includes('o');
       }
   3. Anonymous Callback Function Keyword
-  
+
     * Uses function keyword
     function(name) {
       return name.includes('o');
     }
 
 */
+
+
+// callback function
+let double = (num) => num * 2;
+
+// higher order function
+function doubleNumbers(numbers, callback) {
+  console.log(callback); // [function];
+  console.log(numbers); // [1,2,3];
+  console.log(callback(21)); // 23;
+
+  let doubled = [];
+
+  // double number and pass to new array
+  for (let i = 0; i < numbers.length; i++) {
+    let number = numbers[i];
+    console.log("number before being passed to callback: ", number);
+
+    // pass number to callback function
+    let doubledNumber = callback(number);
+
+    console.log("number after being passed to callback: ", doubledNumber);
+    // * we are storing the return value of passing the current number to the callback function in a variable called doubledNumber
+    // * we will then push the doubled number into the doubledArray
+
+    doubled.push(doubledNumber);
+    console.log(doubled);
+  }
+
+  return doubled;
+}
+
+// passing function stored in variable to higher order function
+// * callback is the double function
+console.log(doubleNumbers([1, 2, 3], double)); // [2,4,6];
+
+// * no different than passing the array in a variable instead
+let array = [1, 2, 3];
+console.log(doubleNumbers(array, double)); // [2,4,6];
+
+// we can pass an anonymous callback to our function
+// * Implicit return - no curly's or return keyword
+// * this is the cleanest way to pass callbacks
+console.log(doubleNumbers([10, 20, 30], (num) => num * 2)); // [20,40,60];
+
+// anonymous callback with explicit return
+// * uses return keyword and curly's
+console.log(
+  doubleNumbers([100, 200, 300], (num) => {
+    return num * 2;
+  })
+); // [200,400,600];
+
+// anonymous callback using function keyword
+console.log(
+  doubleNumbers([1000, 2000, 3000], function (num) {
+    return num * 2;
+  })
+); // [2000,4000,6000];
 
 /*
  Closures
