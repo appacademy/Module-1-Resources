@@ -6,7 +6,6 @@
 
   * Closures
 
-  * Destructuring
 
 */
 
@@ -110,7 +109,7 @@ function doubleNumbers(numbers, callback) {
   }
 
   return doubled;
-}
+};
 
 // passing function stored in variable to higher order function
 // * callback is the double function
@@ -140,6 +139,12 @@ console.log(
   })
 ); // [2000,4000,6000];
 
+
+
 /*
- Closures
+? Call Stack
+  * When a function is called, it is pushed on to the stack
+  * When a function is returned, it is popped off the stack
+  * Whatever function is currently at the top of the stack, is js focus of attention
+  * stack - first in last out
 */
