@@ -193,13 +193,6 @@ let timesTwo = (num) => num * 2;
 
 console.log(numbers.map(timesTwo)); // [2,4,6,8,10,12,14];
 
-/*
-
-  Read/Watch/Code: 12min
-    - Callbacks Quiz
-  * Let JIA walkthrough quiz
-
-*/
 
 // One thing to get out the way
 // * The implementation of array methods are abstracted under the hood
