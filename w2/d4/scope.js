@@ -37,22 +37,21 @@
 
 */
 
-
 // global scope
-// let name = "global scope";
+let name = "global scope";
 
 function myFunc() {
   // function/local scope
-  // let name = "function/local scope";
+  let name = "function/local scope";
 
   if (true) {
     // block scope
-    // let name = "block scope 1";
+    let name = "block scope 1";
 
     for (let i = 0; i < 1; i++) {
       // another block scope
-      // let name = "block scope 2";
-      // console.log('========>',name); // block scope 2
+      let name = "block scope 2";
+      console.log(name); // block scope 2
       // * if were not able to find the variable we need in the immediate scope, js will scope chain to the outer scopes to find one, in this case, if js did not find name in block scope 2, js will scope chain up and find the name in block scope 1
       // *  we can go inward -> outward
       // ! not outward -> inward
@@ -126,6 +125,7 @@ myFunc3();
   Temporal dead zone!
     * Where variables exist before they are accessed
     * let and const
+
 
 */
 
@@ -261,7 +261,7 @@ function testingConst(){
   }
 
   // * const is block scopes
-  console.log(access);// ReferenceError: access is not defined
+  // console.log(access);// ReferenceError: access is not defined
 }
 
 testingConst();
@@ -302,3 +302,4 @@ myFunc4();
 // * we can access the global4 variable even tho we are going from a outward scope inwards
 // ! this is error prone
 console.log(global4);// 4
+
