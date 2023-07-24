@@ -36,12 +36,17 @@
   Restart
     * restarts the debugger
 
+  In the watch tab
+    * We can put variable names we would like to see change
+
 */
 
 function foo(word) { // define function foo that accepts param word
-  debugger; // trigger debugger, jumps to next function call
+   // trigger debugger, jumps to next function call
+  debugger;
   console.log(word); // console.log the value stored in word param
   bar("barber"); // invoke bar function with string "barber"
+
 }
 
 function bar(word) { // define function bar that accepts param word
@@ -56,3 +61,13 @@ function baz(word) { // define function baz that accepts param word
 }
 
 foo("food");
+
+
+let names = ['brandon', 'charles', 'Anabel', 'trevor'];
+// * running loop in global scope
+// * global scope has its own stack frame
+// * first frame added when running node
+for(let i = 0; i < names.length; i++){
+  console.log(names[i]);
+  debugger;
+}
