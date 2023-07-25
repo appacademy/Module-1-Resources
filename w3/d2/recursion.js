@@ -188,7 +188,7 @@ function reverseWLog(string) {
 
 // console.log(reverseWLog("cat"));
 
-function reverseWdebugger(string) {
+function reverseWDebugger(string) {
   debugger;
   // base case
   if (string.length === 0) return "";
@@ -196,7 +196,7 @@ function reverseWdebugger(string) {
   let firstLetter = string[0];
   debugger;
 
-  let result = reverseWdebugger(string.slice(1)) + firstLetter;
+  let result = reverseWDebugger(string.slice(1)) + firstLetter;
   // ! at this point a function is called; we wont move pass this line until the function is ready to popped off the stack
   // ! we dont have the return value yet we have to wait for the function call
   debugger;
@@ -204,4 +204,4 @@ function reverseWdebugger(string) {
 }
 
 
-console.log(reverseWdebugger("cat"));
+console.log(reverseWDebugger("cat"));
