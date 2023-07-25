@@ -104,20 +104,16 @@ function recurse(number) {
 // * same as example above
 // recurse(3); //
 
-
-
-
-
 // Common recursing pattern
 // Accessing all elements of an array
 // * good base line to approach to access all elements
 // * we start with a full array
 
-function recurseArr(arr){
-  console.log('arr: ', arr);
+function recurseArr(arr) {
+  console.log("arr: ", arr);
   // base case
   // * stop when array length is 0
-  if(arr.length === 0) return 'Done recursing';
+  if (arr.length === 0) return "Done recursing";
   // * same outcome
   // if(!arr.length) return 'Done recursing';
 
@@ -137,21 +133,16 @@ function recurseArr(arr){
   // .slice
   return recurseArr(arr.slice(1));
   // ! Any of these approaches work all the matters is we are working towards our base case
-};
-
+}
 
 // console.log(recurseArr([1,2,3,4]));//
-
-
-
 
 // Reversing a string
 // * access every letter
 // ! start with a full string
 function reverse(string) {
-
   // base case
-  if(string.length === 0) return '';
+  if (string.length === 0) return "";
 
   let firstLetter = string[0];
   console.log(firstLetter);
@@ -160,13 +151,16 @@ function reverse(string) {
   // use slice
   return reverse(string.slice(1)) + firstLetter;
 
-};
+  // this syntax is fine as well
+  let result = reverse(string.slice(1)) + firstLetter;
+  return result;
+}
 
 // console.log('mochi'.slice(1));// ochi
 // console.log(reverse('mochi'));// ihcom
-console.log(reverse('cat'));// tac
-// ! we can add a function call to a variable
-// ! we need that function evaluate to its return first
+// console.log(reverse('cat'));// tac
+// ! we cant add a function call to a variable
+// ! we need that function to first evaluate to its return
 // reverse('cat') => reverse('at') + c
 // reverse('at') =>  reverse('t') + a
 // reverse('t') =>  reverse('') + t;
@@ -174,3 +168,40 @@ console.log(reverse('cat'));// tac
 // reverse('t') =>  '' + t = 't'
 // reverse('at') =>  't' + a = 'ta'
 // reverse('cat') => 'ta' + c = 'tac'
+
+console.log("========");
+
+function reverseWLog(string) {
+  console.log(string);
+  // base case
+  if (string.length === 0) return "";
+
+  let firstLetter = string[0];
+  console.log(string, firstLetter);
+
+  let result = reverse(string.slice(1)) + firstLetter;
+  // ! at this point a function is called; we wont move pass this line until the function is ready to popped off the stack
+  // ! we dont have the return value yet we have to wait for the function call
+  console.log("result", result);
+  return result;
+}
+
+// console.log(reverseWLog("cat"));
+
+function reverseWdebugger(string) {
+  debugger;
+  // base case
+  if (string.length === 0) return "";
+
+  let firstLetter = string[0];
+  debugger;
+
+  let result = reverseWdebugger(string.slice(1)) + firstLetter;
+  // ! at this point a function is called; we wont move pass this line until the function is ready to popped off the stack
+  // ! we dont have the return value yet we have to wait for the function call
+  debugger;
+  return result;
+}
+
+
+console.log(reverseWdebugger("cat"));
