@@ -40,16 +40,14 @@
 
 */
 
-
 // Iterating an arbitrary
 // * we control the boundaries
 // * start - we starting at the 0
 // * stop - we stop when a condition is met
 // * step - we word towards the condition using i++
-for(let i = 0; i < 3; i+=2){
+for (let i = 0; i < 3; i += 2) {
   // console.log(i);
 }
-
 
 // Recurse an arbitrary amount of times
 // * in a way we can control our boundaries like a loop
@@ -63,7 +61,7 @@ function recurse(number) {
   debugger;
   // Base case
   // * stop recursing
-  if(number === 0) return 'DONE RECURSING'
+  if (number === 0) return "DONE RECURSING";
   console.log(number);
 
   debugger;
@@ -74,10 +72,9 @@ function recurse(number) {
   // * we are calling a function and passing it modified arguemnts
   // * we keep passing arguments recursively till the base case is met
   // * in this case: when the number is 0
-};
+}
 
-
-console.log(recurse(3));// 'DONE RECURSING'
+// console.log(recurse(3));// 'DONE RECURSING'
 // * we need to evaluate the function call before trying to return its value
 // * we never hit a return till we hit the base case
 // recurse call stack
@@ -88,3 +85,59 @@ console.log(recurse(3));// 'DONE RECURSING'
 // recurse(1) => return 'DONE RECURSING
 // recurse(2) => return 'DONE RECURSING
 // recurse(3) => return 'DONE RECURSING
+
+// Recursive case
+// * condition opposite of base case
+function recurse(number) {
+  if (number > 0) {
+    // *  area of code in which we are recursing
+    console.log(number);
+
+    // Recursive step
+    // * subtract 1 from the number and pass it to the next call to recurse
+    return recurse(number - 1);
+  } else {
+    return "DONE RECURSING";
+  }
+}
+
+// * same as example above
+// recurse(3); //
+
+
+
+
+
+// Common recursing pattern
+// Accessing all elements of an array
+// * good base line to apporach to access all elements
+// * we start with a full array
+
+function recurseArr(arr){
+  console.log('arr: ', arr);
+  // base case
+  // * stop when array length is 0
+  if(arr.length === 0) return 'Done recursing';
+  // * same outcome
+  // if(!arr.length) return 'Done recursing';
+
+  // Recursive step
+  // * how can we shorten the array to meet the base case?
+  // * many ways we can work towards the base case
+  // .pop - remove last element of array
+  // * pop mutated the array shortening it by removing the last element
+  // let popped = arr.pop();
+  // console.log(popped);
+
+  // .shift
+  // * remove the first element
+  // let shift = arr.shift();
+  // console.log(shift);
+
+  // .slice
+  return recurseArr(arr.slice(1));
+  // ! Any of these approaches work all the matters is we are working towards our base case
+};
+
+
+console.log(recurseArr([1,2,3,4]));//
