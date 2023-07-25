@@ -39,3 +39,52 @@
   * Recursive problems risk place extra load on the call stack
 
 */
+
+
+// Iterating an arbitrary
+// * we control the boundaries
+// * start - we starting at the 0
+// * stop - we stop when a condition is met
+// * step - we word towards the condition using i++
+for(let i = 0; i < 3; i+=2){
+  // console.log(i);
+}
+
+
+// Recurse an arbitrary amount of times
+// * in a way we can control our boundaries like a loop
+// * start - starting value
+// * stop - base case
+// * step - recursive step
+
+// Print numbers from 0 to 3
+// * start at the number passed in
+function recurse(number) {
+  debugger;
+  // Base case
+  // * stop recursing
+  if(number === 0) return 'DONE RECURSING'
+  console.log(number);
+
+  debugger;
+  // Recursive step
+  // * subtract 1 from the number and pass it to the next call to recurse
+  return recurse(number - 1);
+  // * each time we return recurse: a function call
+  // * we are calling a function and passing it modified arguemnts
+  // * we keep passing arguments recursively till the base case is met
+  // * in this case: when the number is 0
+};
+
+
+console.log(recurse(3));// 'DONE RECURSING'
+// * we need to evaluate the function call before trying to return its value
+// * we never hit a return till we hit the base case
+// recurse call stack
+// recurse(3) => return recurse(2)
+// recurse(2) => return recurse(1)
+// recurse(1) => return recurse(0)
+// recurse(0) =>  'DONE RECURSING' <- we hit a return value; now we can start popping functions off the stack
+// recurse(1) => return 'DONE RECURSING
+// recurse(2) => return 'DONE RECURSING
+// recurse(3) => return 'DONE RECURSING
