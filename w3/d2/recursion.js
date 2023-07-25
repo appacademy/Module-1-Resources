@@ -110,7 +110,7 @@ function recurse(number) {
 
 // Common recursing pattern
 // Accessing all elements of an array
-// * good base line to apporach to access all elements
+// * good base line to approach to access all elements
 // * we start with a full array
 
 function recurseArr(arr){
@@ -140,4 +140,37 @@ function recurseArr(arr){
 };
 
 
-console.log(recurseArr([1,2,3,4]));//
+// console.log(recurseArr([1,2,3,4]));//
+
+
+
+
+// Reversing a string
+// * access every letter
+// ! start with a full string
+function reverse(string) {
+
+  // base case
+  if(string.length === 0) return '';
+
+  let firstLetter = string[0];
+  console.log(firstLetter);
+
+  // recursive step
+  // use slice
+  return reverse(string.slice(1)) + firstLetter;
+
+};
+
+// console.log('mochi'.slice(1));// ochi
+// console.log(reverse('mochi'));// ihcom
+console.log(reverse('cat'));// tac
+// ! we can add a function call to a variable
+// ! we need that function evaluate to its return first
+// reverse('cat') => reverse('at') + c
+// reverse('at') =>  reverse('t') + a
+// reverse('t') =>  reverse('') + t;
+// reverse('') => '' <- we can start popping off the call stack
+// reverse('t') =>  '' + t = 't'
+// reverse('at') =>  't' + a = 'ta'
+// reverse('cat') => 'ta' + c = 'tac'
