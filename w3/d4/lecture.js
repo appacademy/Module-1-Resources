@@ -175,4 +175,4 @@ let timer = setTimeout((name) => {
 },1000, 'mochi')
 
 // ! we can use this timer variable which holds a timer object to prevent to code from running
-console.log(timer);
+console.log(timer);// the setTimeout is not called
