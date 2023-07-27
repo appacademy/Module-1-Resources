@@ -1,3 +1,85 @@
+
+/*
+
+
+  setTimeout
+
+  What is a setTimeout?
+    * The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.
+    * Syntax
+      * setTimeout( callbackFunction, delayInMilliseconds, param1, param2, paramN )
+
+    ! If you want to convert from millisecond to seconds
+      * just divide by a thousand
+        * ex: 5000ms -> 5s
+
+  What does a setTimeout return?
+    * The returned timeoutID is a positive integer value which identifies the timer created by the call to setTimeout().
+      * This value can be passed to clearTimeout() to cancel the timeout.
+
+*/
+
+// Show global object and all its methods
+// console.log(global);
+
+// setTimeout is a method on the global object
+// we can access it like so
+// but the developers have made it easy for use and we dont need to key into the global object
+
+// * after 5 seconds call the hello function
+function hello() {
+  console.log("hello");
+}
+
+// global.setTimeout(hello, 5000);
+
+// after 1 second i want to pass to the console.log the argument sup
+// setTimeout(console.log, 1000, 'sup');
+
+// example w/o args
+function time() {
+  console.log("time is up");
+}
+
+// setTimeout( callbackFunction, delayInMilliseconds, param1, param2, paramN )
+// setTimeout(time, 4000);
+
+
+// example w args
+function sayHi(name1, name2) {
+  console.log('hello ' + name1 + ' and ' + name2);
+}
+
+// * passing variable holding a function
+// setTimeout( callbackFunction, delayInMilliseconds, param1, param2, paramN )
+setTimeout(sayHi, 3000, 'brandon', 'anthony');// hello brandon and anthony
+
+// * anon callback
+setTimeout((name1, name2) => {
+  console.log('hello ' + name1 + ' and ' + name2);
+}, 4000, 'charles', 'trevor');
+
+
+// * make sure when passing arguments to a setTimeout you are either passing a function name or anonymous function itself
+// * examples above
+
+// ! dont pass a invoked function to a setTimeout
+// *  that would be passing the return value of a function to a callback
+// setTimeout(sayHi(), 3000, 'brandon', 'anthony');
+// [ERR_INVALID_CALLBACK]: Callback must be a function. Received undefined
+
+// clearTimeout
+// * this will prvent the function from running at all
+
+let timer = setTimeout((name) => {
+  console.log('hello ' + name);
+},1000, 'mochi')
+
+// ! we can use this timer variable which holds a timer object to prevent to code from running
+console.log(timer);// the setTimeout is not called
+
+
+
 // fib
 function somethingSlow(n) {
   if (n === 1 || n === 2) return 1;
