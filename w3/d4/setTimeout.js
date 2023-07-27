@@ -75,15 +75,11 @@ function delayedPrinter2(delaysArr) {
   let totalDelay = 0; // added
   // added
   delaysArr.forEach((delay) => {
-
     totalDelay += delay;
-
 
     setTimeout(() => {
       console.log(delay);
     }, totalDelay); // added
-
-
   });
 }
 
