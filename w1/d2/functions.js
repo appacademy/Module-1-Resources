@@ -2,11 +2,10 @@
 
 
   Functions
-    * A function is a procedure of code that will when its called
+    * A function is a procedure of code that will run when its called
     * Writing a function is know as a function declaration or function definition
     * create reusable logic - do not have repeat writing the same lines of code
-    * Logic to be ran to output a value
-
+    * Contains logic to be ran to output a value
     * JavaScript reads top to bottom
     * Function is not read till its called/invoked
 
@@ -22,12 +21,14 @@
     * If the return value is a boolean; you could name is checkBoolean
 
   Declaring/Defining a function
+    * Where function is declared/created.
     * where parameters are used to represent the argument passed
     function functionName(param1, param2) {
       return undefined;
     }
 
   Calling/invoking a function
+    * How we tell js to call/use this function.
     * Where we pass the arguments the function
     * A function will not run unless its called/invoked
     * A function call evaluates to return value
@@ -35,5 +36,8 @@
 
   If you want to see what a function evaluates too; its return value.
     * You would wrap the function call/invocation in a console.log
-    console.log(functionName())
+    * console.log(functionName());// undefined
+    * we are logging what the function evaluates too
+    * which is its return value
+
 */
