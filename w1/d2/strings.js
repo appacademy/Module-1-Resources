@@ -92,3 +92,31 @@ console.log(animal2[index]);
 console.log(animal2.indexOf("z"));// -1
 // we can use the output to compare and check if the value exists
 console.log(animal2.indexOf("z") === -1);// true
+
+
+// Concatenation
+// * + addition operator
+// When uses on a string, strings will be concatenated
+// concat - to combine into one
+
+let word1 = 'Whiteboards';
+let word2 = 'remarkable';
+
+// storing an expression in a variable
+let res = word1 + ' are ' + word2;
+console.log(res);// Whiteboards are remarkable
+console.log(word1 + ' are ' + word2);// Whiteboards are remarkable
+
+// alternative - .concat
+// The concat() method concatenates the string arguments to the calling string and returns a new string.
+
+console.log(word1.concat(' are ', word2));
+let concatenatedWord = word1.concat(' are ', word2)
+console.log(concatenatedWord);
+
+// String interpolation
+// template literal using - backtick ``
+// We can embedded expression into our template literal - ${expression}
+
+let interpolatedWord = `${word1.toUpperCase()} are ${word2}`;
+console.log(interpolatedWord);// WHITEBOARDS are remarkable
