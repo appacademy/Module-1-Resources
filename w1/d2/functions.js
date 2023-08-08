@@ -60,7 +60,7 @@ myFunc();
 
 // A function evaluate to its return
 // * I want to see what a function evaluates too, wrap it a console.log
-console.log('Return value from of myFunc =>', myFunc());//
+// console.log('Return value from of myFunc =>', myFunc());//
 
 // * We can store the return value of a function in a variable
 let returnValue = myFunc();
@@ -73,4 +73,63 @@ let returnValue = myFunc();
 
 // If we console.log a variable and we see something like this [Function: myFunc]
 // That means you can invoke it
-console.log('Function itself =>', myFunc);// [Function: myFunc]
+// console.log('Function itself =>', myFunc);// [Function: myFunc]
+
+
+// Lets talks parameters and arguments
+// *  function myFunc(param1, param2){}
+// * () - holds the parameters
+// * parameters are used to represent to arguments passed
+// * name1 = 'brandon'
+// * banana = 'anthony'
+function printNames(name1, banana) {
+  console.log('1: arguments => ', name1, banana);
+
+  return `Hello ${name1} and ${banana}`;
+};
+
+
+// * This is where we are calling the func and passing args
+// * we will pass two arguments
+// * The two args -> brandon, anthony
+// printNames('brandon', 'anthony');
+
+// If we want to see the output; we need to console.log the function invocation
+console.log('2: return value of printNames =>', printNames('brandon', 'anthony'));// Hello brandon and anthony
+
+// We can pass different arguments to the function to get a different output
+console.log('3: return value of printNames =>', printNames('anabel', 'charles'));//Hello anabel and charles
+
+// printNames('charles', 'trevor');// charles trevor
+// console.log('between functions')
+// printNames('brandon', 'anthony');// brandon anthony
+
+
+// lets do another example
+// * this a function that will take in some numbers and add them together
+// num1 = 10
+// apple = 11
+
+
+function add(num1, apple) {
+  console.log('entering function')
+  console.log(num1, apple);
+  console.log('==>', num1 + 2);
+  console.log(num1 + apple);// 21
+  return num1 + apple;
+  console.log('will not be reached')
+
+}
+
+console.log('before function call')
+let n = 11;
+console.log('Add evaluates to ==>',add(10, n));// 21
+console.log('Add evaluates to ==>',add(20, n));// 31
+console.log('after function call')
+// console.log(add());
+
+
+let returnValueOfAdd = add(2, 7);
+console.log(returnValueOfAdd);// 9
+console.log(returnValueOfAdd === 9); //true
+// * End goal is to use the return value of the function in some way
