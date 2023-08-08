@@ -9,9 +9,9 @@
    * ! - not
     - do the opposite '
    * && - and
-    - + multiplication
+    - * multiplication
    * || - or
-    - * addition
+    - + addition
 
   The return value of a logical operators?
     * true or false - a boolean!
