@@ -41,3 +41,36 @@
     * which is its return value
 
 */
+
+// Introduce a basic function
+// * declaring function
+function myFunc() {
+
+  // if we dont have a return, the function will evaluate to undefined
+  // the return is what the function will evaluate too
+  // return 'im returning a string';
+  // * can return any data type
+  // return true;
+  return 12;
+  // return false;// <-- we cannot return more than once, everything will be ignored as the function will have its value
+}
+
+// * calling the function
+myFunc();
+
+// A function evaluate to its return
+// * I want to see what a function evaluates too, wrap it a console.log
+console.log('Return value from of myFunc =>', myFunc());//
+
+// * We can store the return value of a function in a variable
+let returnValue = myFunc();
+// console.log(returnValue)
+
+// we can call a function multiple times
+// console.log('Return value from of myFunc1 =>', myFunc());//
+// console.log('Return value from of myFunc2 =>', myFunc());//
+// console.log('Return value from of myFunc3 =>', myFunc());//
+
+// If we console.log a variable and we see something like this [Function: myFunc]
+// That means you can invoke it
+console.log('Function itself =>', myFunc);// [Function: myFunc]
