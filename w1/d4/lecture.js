@@ -61,8 +61,31 @@ function ATM(type, amount) {
         balance = deposit(balance, amount);
     } else {
         console.log('Invalid transaction type.')
-    }
+    };
 }
 
-ATM('banana', 100)
-console.log('balance', balance)
+// ATM('deposit', 100)
+// console.log('balance', balance)
+
+
+/*
+Goal: build a function that utilizes helper functions to solve some math
+problems.
+
+ -- Given some input (a string and two nums), perform the correct operation
+    and return the result
+ -- Will likely use if statements
+ -- Upon meeting some condition, I want to invoke the proper function and
+    return its result
+
+Valid Operations
+  -- addition
+  -- subtraction
+  -- multiplication
+  -- division
+
+  Understand the problem
+  Make a Plan
+  Execute the plan
+  Refactor
+*/
