@@ -85,7 +85,60 @@ Valid Operations
   -- division
 
   Understand the problem
+    - Input: 2 numbers + operation(string) ==> 10 and 5  addition
+    - Output: a number ==> result of calling our operation on the 2 nums => 15
   Make a Plan
+    1. Define a math function, that takes in two nums and an operation => main function
+    2. Conditionally check what the operation is, depending on that operation
+        - each condition will call a function based on that operation
+        - If it's addition
+            - call the function that will add the 2 nums together and return the result
+        - If it's subtraction
+            - call the function that will subtract the 2 nums and return the result
+        - If it's multiplication
+            - call the function that will multiply the 2 nums and return the result
+        - If it's division
+            - call the function that will divide the 2 nums and return the result
+        - If it's none of these
+            - return 'invalid operation'
   Execute the plan
   Refactor
 */
+
+let math = function(num1, num2, operation) {
+    if (operation === 'addition') {
+        return addition(num1, num2);
+    } else if (operation === 'subtraction') {
+        return subtraction(num1, num2);
+    } else if (operation === 'multiplication') {
+        return multiplication(num1, num2);
+    } else if (operation === 'division') {
+        return division(num1, num2);
+    } else {
+        return "I'm not sure what you mean by that..."
+    }
+};
+
+// Helper functions
+let addition = function(num1, num2) {
+    let sum = num1 + num2;
+    return sum; // same thing as => return num1 + num2
+};
+
+function subtraction(num1, num2) {
+    return num1 - num2;
+};
+
+function multiplication(num1, num2) {
+    return num1 * num2;
+};
+
+function division(num1, num2) {
+    if (num2 === 0) {
+        return "What do you think you're doing?!"
+    }
+    return num1 / num2;
+};
+
+// console.log(division(2, 5))
+console.log(math(2, 5, 'addition'))
