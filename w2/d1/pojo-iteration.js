@@ -81,3 +81,86 @@ for(let key in people) {
 // console.log(people.person2.name);//
 // console.log(people.person3.name);//
 // console.log(people.person4.name);//
+
+console.log('-==========-')
+
+let brandonObj = {
+  name: "brandon",
+  eyeColor: "hazel",
+  age: 27,
+  height: '5"11',
+  isFunny: true,
+  location: { state: "florida", city: "tampa" },
+  favBands: ["joyce manor", "neck deep", "idles"],
+  sayHello: function (name) {
+    return "Hello " + name;
+  },
+};
+
+
+// * Example - for in
+for(let key in brandonObj) {
+  console.log('key: ',key);
+  let value = brandonObj[key];
+  console.log('value: ', value);
+}
+
+
+// Object.keys
+// Returns an array of keys
+let keysArray = Object.keys(brandonObj);
+console.log('keyArray', keysArray);
+/*
+keyArray [
+  'name',     'eyeColor',
+  'age',      'height',
+  'isFunny',  'location',
+  'favBands', 'sayHello'
+]
+*/
+
+// Now that we have all they keys; we can use this to get the values
+// ? how could we use this array of keys to get the value
+// console.log(keysArray[2])
+
+for(let i = 0; i < keysArray.length; i++){
+  let key = keysArray[i];
+  // console.log('i:', i, 'key: ', key);
+  // let value = brandonObj[key];
+  // console.log('value: ', value);
+}
+
+// for of
+// ! only use on arrays
+// ! do not use on objects
+// Know your data types!
+for(let element of keysArray) {
+  console.log('key: ',element);
+  console.log('value: ',brandonObj[element]);
+}
+
+
+// * Object.values
+// return an array of values
+let valueArray = Object.values(brandonObj);
+console.log(valueArray);
+
+
+// * Object.entries
+// * Return a 2d matrix of sub arrays with keys as the first index and values as the second index
+let entriesObj = Object.entries(brandonObj);
+console.log(entriesObj);
+/*
+[
+  [ 'name', 'brandon' ],
+  [ 'eyeColor', 'hazel' ],
+  [ 'age', 27 ],
+  [ 'height', '5"11' ],
+  [ 'isFunny', true ],
+  [ 'location', { state: 'florida', city: 'tampa' } ],
+  [ 'favBands', [ 'joyce manor', 'neck deep', 'idles' ] ],
+  [ 'sayHello', [Function: sayHello] ]
+]
+
+
+*/
