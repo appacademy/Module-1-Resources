@@ -108,4 +108,4 @@ console.log('before delete: ', car);
 // delete operator followed by object.key
 delete car.make
 
-console.log('after: ', car);// year:2022 is gone; it has been deleted
+console.log('after: ', car);//  make:'ford is gone; it has been deleted
