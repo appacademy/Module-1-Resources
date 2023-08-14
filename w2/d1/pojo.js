@@ -151,3 +151,55 @@ console.log("=============");
         - object['1key']
 
 */
+
+
+let cat1 = {
+  name: 'pumpkin',
+  age: 3,
+  color: 'orange',
+  '1key': null,
+  'is cute': true,
+};
+
+
+console.log(cat1);
+
+// dot notation
+// * cannot use variable as a key
+let variable = 'age';
+console.log(cat1.variable);// undefined
+// *  JS trying to find a key of variable in the cat1 object, it does not exists
+
+// Bracket
+console.log(cat1[variable]);// pumpkin
+console.log(variable);// name
+console.log(cat1['name'])// pumpkin
+// * evaluates expression first then uses the result to key into the object
+
+// Dot notation cannot access certain keys
+// ! wont work! Will throw error
+// console.log(cat1.1key);
+// console.log(cat1.is cute);
+
+// will work!
+console.log(cat1['1key']);
+console.log(cat1['is cute']);
+// *  JS gets confused with the spaces and numbers
+
+/*
+
+  Takeaways
+
+  When to use which
+
+  Dot notation
+    * When you know what youre going to key into
+    * quicker to write
+
+  Bracket notation
+    * Dealing with variables
+    * Dealing with weird key names
+
+  * Both can be used to access and assign key value pairs
+
+*/
