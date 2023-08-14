@@ -53,6 +53,7 @@
 
 // create your own person object
 // * object literal - {}
+// key:value,
 let brandonObj = {
   name: "brandon",
   eyeColor: "hazel",
@@ -71,14 +72,82 @@ let brandonObj = {
 // * use either bracket or dot notation
 
 // * access name key
-console.log(brandonObj.name);// brandon
-console.log(brandonObj['name']);// brandon
+console.log(brandonObj.name); // brandon
+console.log(brandonObj["name"]); // brandon
 
 // * access age key
-console.log(brandonObj.age);// 27
-console.log(brandonObj['age']);// 27
+console.log(brandonObj.age); // 27
+console.log(brandonObj["age"]); // 27
 
 // * access favBands
-console.log(brandonObj.favBands);// [ 'joyce manor', 'neck deep', 'idles' ]
-console.log(brandonObj['favBands']);// [ 'joyce manor', 'neck deep', 'idles' ]
+console.log(brandonObj.favBands); // [ 'joyce manor', 'neck deep', 'idles' ]
+console.log(brandonObj["favBands"]); // [ 'joyce manor', 'neck deep', 'idles' ]
 
+// * access location
+console.log(brandonObj.location); // { state: 'florida', city: 'tampa' }
+console.log(brandonObj["location"]); // { state: 'florida', city: 'tampa' }
+
+// * access state - access nested objects
+// * you just need to know the key
+console.log(brandonObj.location.state); // florida
+console.log(brandonObj["location"]["state"]); // florida
+
+// * can you mix and match
+// * this works no problem
+console.log(brandonObj.location["state"]); // florida
+console.log(brandonObj["location"].state); // florida
+
+/*
+
+  Accessing a method
+    * A method is just a function that belongs to an object
+    * the sayHello function belongs to the brandon object
+    * the key is sayHello
+    * the value is the function itself
+
+  We can access the function just like any other key:value pair
+
+*/
+
+// * Can see the function object
+console.log(brandonObj.sayHello); // [Function: sayHello]
+
+// * invoke the function
+console.log(brandonObj.sayHello("anthony")); // Hello anthony
+
+// * also works
+console.log(brandonObj["sayHello"]("anthony")); // Hello anthony
+
+// * we can use bracket notation on methods weve been using
+let numbers = [1, 2, 3];
+numbers.push(4);
+console.log(numbers); // [ 1, 2, 3, 4 ]
+numbers["push"](5);
+console.log(numbers); // [ 1, 2, 3, 4, 5 ]
+
+console.log("=============");
+/*
+
+  Dot notation
+    * Easier to read and write
+    ! Cannot use variable as keys
+      * Dot notation will use the string after the dot as the key
+    ! Limited on what we can key into
+      * example we cannot key into these using dot notation
+        - object.first key - note the space
+        - object.1key - note the number
+
+  Bracket notation
+    * You can use variables
+    * variables inside brackets are first evaluated then used to key into the object
+      - let variable = 'name'
+        let object = { name:'brandon' };
+
+        console.log(object[variable]);// brandon
+        console.log(variable);// 'name'
+        console.log(object['name']);// brandon
+    * can be used to key into objects that dot notation cannot
+        - object['first key']
+        - object['1key']
+
+*/
