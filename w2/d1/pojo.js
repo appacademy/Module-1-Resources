@@ -47,15 +47,38 @@
 
 */
 
+// array literal - []
+// template literal - ``
+// object literal - {}
 
 // create your own person object
 // * object literal - {}
 let brandonObj = {
-  name: 'brandon',
-  eyeColor: 'hazel',
+  name: "brandon",
+  eyeColor: "hazel",
   age: 27,
   height: '5"11',
   isFunny: true,
-  location: {state:'florida', city:'tampa'},
-  favBands: ['joyce manor', 'neck deep', 'idles']
-}
+  location: { state: "florida", city: "tampa" },
+  favBands: ["joyce manor", "neck deep", "idles"],
+  sayHello: function (name) {
+    return "Hello " + name;
+  },
+};
+
+// lets access some properties of the brandon object
+// * in order to access the value, we will need the key
+// * use either bracket or dot notation
+
+// * access name key
+console.log(brandonObj.name);// brandon
+console.log(brandonObj['name']);// brandon
+
+// * access age key
+console.log(brandonObj.age);// 27
+console.log(brandonObj['age']);// 27
+
+// * access favBands
+console.log(brandonObj.favBands);// [ 'joyce manor', 'neck deep', 'idles' ]
+console.log(brandonObj['favBands']);// [ 'joyce manor', 'neck deep', 'idles' ]
+
