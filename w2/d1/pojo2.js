@@ -44,3 +44,68 @@ car[variable2] = 'dodge';
 console.log(car);// { model: 'challenger', year: 2016, make: 'dodge' }
 
 
+// Reassigning existing values
+
+// * can use either dot or bracket notation
+console.log('before: ',car);
+
+// * reassign model
+car.model = 'mustang';
+console.log(car);// { model: 'mustang', year: 2016, make: 'dodge' }
+
+// * reassign year
+car['year'] = '2020';
+console.log(car);// { model: 'mustang', year: '2020', make: 'dodge' }
+
+// * reassign make
+car.make = 'ford';
+console.log(car);// { model: 'mustang', year: '2020', make: 'ford' }
+
+// assign nested object
+car.stats = {};
+console.log(car);// { model: 'mustang', year: '2020', make: 'ford', stats: {} }
+
+// populate the nested object
+// use either dot or bracket
+// populate nested obj with mpg of 16, horsepower: 777
+
+// * dot notation
+car.stats.mpg = 16
+// * bracket notation
+car['stats']['horsepower'] = 777;
+
+console.log(car);
+/*
+{
+  model: 'mustang',
+  year: '2020',
+  make: 'ford',
+  stats: { mpg: 16, horsepower: 777 }
+}
+*/
+
+let stats1 = car.stats;
+console.log(stats1);// { mpg: 16, horsepower: 777 }
+console.log(stats1.mpg)// 16
+
+car.nestedArr = [1,2,3];
+// console.log(car);
+car.nestedArr.push(4);
+// console.log(car);
+
+/*
+
+
+  Deleting a values
+    * use the delete operator
+    * Just provide they key
+      * key:value pair will be deleted
+*/
+
+
+console.log('before delete: ', car);
+
+// delete operator followed by object.key
+delete car.make
+
+console.log('after: ', car);// year:2022 is gone; it has been deleted
