@@ -109,3 +109,15 @@ console.log('before delete: ', car);
 delete car.make
 
 console.log('after: ', car);//  make:'ford is gone; it has been deleted
+
+
+let obj2 = {
+  name: 'brandon',
+  age:'27',
+
+}
+
+
+obj2.favSong = 'name'
+
+console.log(obj2);
