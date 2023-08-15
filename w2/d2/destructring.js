@@ -86,5 +86,76 @@ console.log(sentenceMaker('lets', 'make', 'a', 'sentence'));
   Rest Parameter
     * The rest parameter is used in the context of a function; and we use it to represent arguments passed that do not have a parameter to be assigned too
 
-  * In the end they gather the rest of the elements 
+  * In the end they gather the rest of the elements
 */
+
+
+
+// using both rest and spread w destructuring
+
+[firstNum, ...rest] = [...numbers, 4];
+// were saying to the right of the equal sign
+// * spread all the elements of the numbers array into this array literal and also add the number 4
+// to the left of the equal sign
+// * destructuring out the first element into the variable firstNum and store the rest of the element in the variable called rest
+// console.log(firstNum, rest);//1 [ 2, 3, 4 ]
+
+
+// Destructuring with object
+
+let user = {
+  name: "John",
+  address: {
+    street: "123 Street Rd",
+    city: "Orlando",
+  },
+  age: 30,
+};
+
+// * lets destructure some values from the user object
+// * we just need to provide the key name
+// * the variable will hold the value
+// let { name, ...restOfObj} = user;
+
+// console.log(name, restOfObj);
+// John
+//{ address: { street: '123 Street Rd', city: 'Orlando' }, age: 30 }
+
+// user object is unchanged
+// * destructuring does not mutate original object
+console.log(user);
+
+// we can destruct nested objects as well
+
+// let { address } = user;
+
+// console.log(address);// { street: '123 Street Rd', city: 'Orlando' }
+
+let { address: { city } } = user;
+
+// * Wont have access to key name you used to destructuring out a nested object
+// console.log(address);// { street: '123 Street Rd', city: 'Orlando' }
+// console.log(city);// Orlando
+
+
+// good to know!
+// destructuring in a loop
+/*
+[
+  [ 'name', 'John' ],
+  [ 'address', { street: '123 Street Rd', city: 'Orlando' } ],
+  [ 'age', 30 ]
+]
+*/
+console.log(Object.entries(user))
+for (let [key, value] of Object.entries(user)) {
+  // console.log(subArr);
+  console.log('===>',key, value); //
+}
+
+// destructuring taking in function argument
+function destructure({ name }) {
+  console.log(name); // brandon
+}
+
+destructure({ name: "brandon" });
