@@ -56,7 +56,7 @@ console.log(arr);// [ 1, 3, 2 ]
 
 */
 
-
+// Rest operator
 let numbers = [1,2,3];
 [num1, ...restOfNums] = numbers;
 // we are destructuring out of the numbers array
@@ -65,6 +65,8 @@ let numbers = [1,2,3];
 
 console.log(num1, restOfNums);// 1 [ 2, 3 ]
 
+
+// Rest parameter
 // function that takes in varying arguments
 
 // Notice the similarities!
@@ -74,7 +76,9 @@ function sentenceMaker(word1, ...words){
 
   return word1 + ' ' + words.join(' ') + '!'
 }
-console.log(sentenceMaker('lets', 'make', 'a', 'sentence'))
+console.log(sentenceMaker('lets', 'make', 'a', 'sentence'));
+
+
 /*
   Key differences between Rest operator and rest parameter
   Rest operator
@@ -82,4 +86,5 @@ console.log(sentenceMaker('lets', 'make', 'a', 'sentence'))
   Rest Parameter
     * The rest parameter is used in the context of a function; and we use it to represent arguments passed that do not have a parameter to be assigned too
 
+  * In the end they gather the rest of the elements 
 */
