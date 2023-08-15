@@ -104,4 +104,4 @@ console.log(obj3);
 // use spread!
 let obj4 = {...obj1, ...obj2, city: 'Brooksville'};
 // * Spread into object literal all the key:value pairs of obj1 and obj2 while also adding the key:val pair of city: 'Brooksville'
-console.log(obj4);//{ name: 'brandon', pet: 'cat', favColor: 'red', city: 'Brooksville' }
+// console.log(obj4);//{ name: 'brandon', pet: 'cat', favColor: 'red', city: 'Brooksville' }
