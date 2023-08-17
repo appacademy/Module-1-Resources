@@ -32,6 +32,13 @@
     * let and const
 */
 
+/*
+3. var
+    * function scoped
+    * can be reassigned
+    * can be redeclare
+    ! error prone
+*/
 
 // * review
 let variable;// variable declaration
@@ -67,8 +74,55 @@ function testingVar(){
     };
 
 
-    console.log(access);// undefined
+    // console.log(access);// undefined
 
 }
 
-testingVar();
+// testingVar();
+
+
+/*
+  1. let
+    * block scoped
+    * can reassigned
+    * cannot redeclare
+*/
+
+
+function testingLet(){
+
+  // hoisting let
+  // ! error
+  // variables declared with let when hoisted do no have a default value of undefined therefore it throws an error
+  // console.log(test);// ReferenceError: Cannot access 'test' before initialization
+
+  let test = 1;
+
+  // * let can be reassigned
+  test = 2;
+  console.log(test);// 2
+
+  // * let cannot be redeclare within in the same scope
+  // let test = 3;// SyntaxError: Identifier 'test' has already been declared
+
+  // can redeclare a different variable with same name in a different scope
+  // ex:
+  if(true){
+    // different block scope
+    let test = 4;
+  }
+
+  // let is block scoped
+  // ! we cannot access inner block from outer
+  if(true){
+    let access = false;
+  }
+
+  // we cannot go outwards inwards
+  // let is block scoped
+  console.log(access);// ReferenceError: access is not defined
+
+};
+
+
+testingLet();
