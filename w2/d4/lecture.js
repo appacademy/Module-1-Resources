@@ -50,7 +50,7 @@ function myFunc() {
     for (let i = 0; i < 1; i++) {
       // let name = "block scope 2";
 
-      console.log(name);
+      // console.log(name);
       // * If were not able to find the variable that we need in the immediate scope; js will scope chain inward outward to find the variable we need
       // * inward -> outward
       // ! not outward -> inward
@@ -62,4 +62,44 @@ function myFunc() {
   x = 'bad';
 }
 
-myFunc();
+// myFunc();
+
+
+
+// outer scope does not have access to inner scope
+// * we can go inward -> outward
+// ! we cannot go outward -> inward
+function myFunc2() {
+
+  let name = 'brandon';
+
+  // We are able to access x which is in a completely different scope
+  console.log(x);// bad
+};
+
+// We will get an error because there is no name variable in the global scope and we cannot scope chain inwards
+// console.log(name);// ReferenceError: name is not defined
+
+// myFunc2();
+
+
+
+// * we can reassign the values of outer scope variables
+function myFunc3(){
+
+  let name = 'initial value';
+  // * we reassign the value in a inner scope
+
+  // block scope
+  for(let i = 0; i < 2; i++){
+    name = 'new value';
+  };
+
+  console.log(name);// new value
+  // * When we try to reference name
+  // * We will get the value that the variable was reassigned too
+
+};
+
+
+// myFunc3();
