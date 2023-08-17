@@ -125,4 +125,93 @@ function testingLet(){
 };
 
 
-testingLet();
+// testingLet();
+
+
+/*
+2. const
+    * block scoped
+    * cannot be reassign
+    * cannot redeclare
+    * constant
+*/
+
+
+function testingConst(){
+
+  // * hoisting with const
+  // ! will get an error when trying to hoist const
+  // * const does not have a default value
+
+  // console.log(test);// ReferenceError: Cannot access 'test' before initialization
+
+  const test = 1;
+
+  // * cannot reassign
+  // test = 2;
+  // console.log(test);// TypeError: Assignment to constant variable.
+
+  // * cannot redeclare
+  // const test = 3;// SyntaxError: Identifier 'test' has already been declared
+
+  // const is block scope
+  // ! we cannot access inner block from outer
+  if(true){
+    const access = false;
+  }
+
+  console.log(access);//ReferenceError: access is not defined
+
+};
+
+
+// Can mutate!
+const array = [1,2,3];
+array.push(4);
+console.log('===>',array);//  [ 1, 2, 3, 4 ]
+
+
+// testingConst();
+
+
+
+/*
+4. global
+    * any variable that is declared in the global scope will be available globally
+    * any variable declared without let, const, or var will be globally available
+*/
+
+// All global - declared in global scope
+let global1 = 1;
+const global2 = 2;
+var global3 = 3;
+
+
+function myFunc4(){
+  // we can access these global variables from the functions scope
+  // console.log(global1, global2, global3);// 1 2 3
+
+  // * variable declared globally if no keyword is used
+  global4 = 4;
+  console.log('===>',global4);
+}
+
+myFunc4();
+
+global4 = 3;
+
+console.log('===>',global4);
+
+// * no error is throne, we have access to global declared variables
+// * even tho were accessing a variable in the inner scope from the outer scope
+// console.log(global4);// 4
+
+// If the variables is already defined
+let sum = 0;
+
+// this syntax will reassign the value
+sum += 1;
+
+// If the variable isnt defined
+// * then its declared globally
+product = 0;
