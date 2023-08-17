@@ -108,32 +108,44 @@ let elephantParade2 = elephantCollector();
 
 // Emulate private functions and variables
 
-function createCounter() {
-    let count = 0;
 
-    return function() {
-      count++;
-      return count;
-    }
+// An advantage of closures is that we can emulate private functions and variables
+// * By creating private environments; we are able to protect variable names as well as create different states to run separate logic in
+function createCounter() {
+  // both inner functions will have a starting count of 0
+  let count = 0;
+
+  return function () {
+    count++;
+    return count;
+  };
 }
 
 
-console.log(createCounter);// [Function: createCounter]
+// Create two separate private states
 
-console.log(createCounter());// [Function (anonymous)]
+// show you can do this,
+console.log(createCounter()());
 
-let privateState1 = createCounter();
+// * private state 1
+let counter1 = createCounter();
+console.log(counter1);// anon function
 
-console.log(privateState1);// [Function (anonymous)]
+// * invoke our inner function stored in counter1
+counter1();// 1
+console.log(counter1());// 2
 
-console.log(privateState1()); // 1
-console.log(privateState1()); // 2
-console.log(privateState1()); // 3
+// Each counter variable has its won lexical environment
+// * We will have two separate environments
+// * lexical environment is created when the function is defined
 
-//! make another private state
-let privateState2 = createCounter();
-console.log(privateState2);// [Function (anonymous)]
+// * private state 2
+let counter2 = createCounter();
+console.log(counter2);// anon function
+console.log(counter2());// 1
+console.log(counter2());// 2
 
-console.log(privateState2());// 1
-console.log(privateState2());// 2
-console.log(privateState2());// 3
+
+
+// return function - would return the function itself
+// return function() - would return the return value of the function
