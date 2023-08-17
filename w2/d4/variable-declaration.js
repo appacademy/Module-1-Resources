@@ -31,3 +31,44 @@
     * Where variables exists before they are accessed
     * let and const
 */
+
+
+// * review
+let variable;// variable declaration
+variable = 'string';// variable assignment
+let variable2 = 'string';// variable initialization
+
+
+
+function testingVar(){
+
+    // * hoisting var
+    // * when trying to hoist var; it has a default value of undefined
+    // * therefore it will not throw an error when trying to hoist
+    console.log(test);// undefined
+
+    var test = 1;
+
+    // * var can be reassigned
+    test = 2;
+    console.log(test);// 2
+
+    // * var can be redeclare
+    var test = 3;
+    console.log(test);// 3
+
+    // var is function scope
+    // ! we can access var declared variables from an outer scope as long as its in the function
+
+
+    if(true){
+      // entire function has access to this variable
+      var access = true;
+    };
+
+
+    console.log(access);// undefined
+
+}
+
+testingVar();
