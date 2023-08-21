@@ -39,8 +39,13 @@ let names = ['celebi', 'pumpkin', 'mochi', 'jazz'];
 
 console.log(`Hello ${names.join(' and ')}`)// Test celebi,pumpkin,mochi,jazz
 
+let startingString = ``;
+
 for(let i = 0 ; i < names.length; i++){
   let name = names[i];
   console.log(`${names[i]} or ${name}`);
-}
 
+  startingString += ` ${name} `
+};
+
+console.log(startingString)
