@@ -31,4 +31,4 @@ function baz() {
   console.log("c");
 }
 
-foo(); //a,b,c,d,e
+// foo(); //a,b,c,d,e
