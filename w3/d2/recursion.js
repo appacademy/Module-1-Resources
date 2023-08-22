@@ -37,3 +37,52 @@
       * Default parameters allow our variables to have default values if a argument is not passed, if an argument is passed the default is not used
 
 */
+
+
+// Iterating an arbitrate number amount of times
+// * In a way we control the boundaries
+// start - 0
+// stop  - i < 3
+// step  - in increments of 1 i++
+
+for(let i = 0; i < 3; i++){
+  // console.log('i: ', i)
+}
+
+
+// Recurse an arbitrary amount of times
+// In a way we can control the boundaries
+// start - starting value - ex: 3; [1,2,3,4]
+// stop  - base case - 0; array.length === 0
+// step  - n--; array.slice(1), array.pop()
+
+// print numbers between 0 to 3
+// start - number passed in
+// stop - when the number hits 0
+// step - decrement by 1 n--
+// * thats how well get from 3 to 0
+
+function recurse(number) {
+  console.log('number: ,', number);
+
+  // base case - stop when num is 0
+  if(number === 0) return 'done recursing';
+
+  // recursive step - decrement by 1
+  return recurse(number - 1);
+};
+
+
+console.log(recurse(3))
+// * recurse call stack
+// A function cannot be removed from the call stack unless its returned
+// whenever a function is called functionName(args)
+// we need the return value of that function to evaluate to its return before we can get the return value
+// recurse(3) => return a function call -> recurse(2)
+// recurse(2) => return a function call -> recurse(1)
+// recurse(1) => return a function call -> recurse(0)
+// recurse(0) => 'return done recursing'
+// ! we finally hit a base case
+// recurse(1) => 'return done recursing'
+// recurse(2) => 'return done recursing'
+// recurse(3) => 'return done recursing'
