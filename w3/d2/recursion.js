@@ -145,7 +145,7 @@ function recurseArr(arr) {
 function reverse(string){
   // console.log('string:', string);
   // base case
-  if(string.length === 0) return '';//<- return value of the top stack frame
+  if(string.length === 0) return 'TEST';//<- return value of the top stack frame
 
   let first = string[0];
   // console.log(first);
@@ -156,7 +156,7 @@ function reverse(string){
 };
 
 // console.log('cat'.slice(1));// at
-console.log('return value of reverse: ',reverse('cat'));// tac
+// console.log('return value of reverse: ',reverse('cat'));// tac
 // reverse('cat') => reverse('at') + c;
 // ! we cannot add a function call to c; we need to first evaluate the function
 // reverse('at') => reverse('t') + a
@@ -167,3 +167,46 @@ console.log('return value of reverse: ',reverse('cat'));// tac
 // reverse('at') => 't' + a = 'ta'
 // reverse('cat') => 'ta' + c; = 'tac'
 
+
+
+function reverseLogged(string){
+
+  // console.log('string', string)
+  if(string.length === 0) return '';
+
+  let first = string[0];
+  // console.log('first: ',first);
+  // console.log('on the way up stack')
+  let res = reverseLogged(string.slice(1)) + first;
+
+  // * we wont hit this console.log until we start popping off the stack, which is when have a return value
+  // console.log('on the down the stack')
+  // console.log('res', res);
+  return res;
+
+};
+
+
+// console.log(reverseLogged('cat'));
+
+
+
+
+// use the debugger
+
+function reverseDebugger(string){
+
+  debugger;
+  if(string.length === 0) return '';
+
+  let first = string[0];
+
+  debugger;
+  let res =  reverseDebugger(string.slice(1)) + first;
+
+  debugger;
+  return res;
+
+};
+
+console.log(reverseDebugger('cat'));
