@@ -99,3 +99,71 @@ function recurse2(number) {
 }
 
 // recurse(3);
+
+
+// common pattern
+// * Access all elements of an array
+// * Good start is at least getting all the elements to at least print
+// *  start - a full array
+// *  stop  - an empty array
+// *  step  - .pop()
+
+
+function recurseArr(arr) {
+  // debugger;
+  // base case
+  if(arr.length === 0) return 'done recursing';
+  // same thing
+  // if(!arr.length) return;
+  // debugger;
+  // console.log(arr);
+
+  // use pop
+  // let popped  = arr.pop();
+
+  // use shift
+  // let shifted = arr.shift();
+  // console.log(shifted);
+
+  // console.log(popped);
+
+  // use slice
+  // * doesnt matter what method is used; the array passed just needs to eventually hit the base case condition
+  console.log(arr[0])
+  // debugger;
+  return recurseArr(arr.slice(1));
+
+};
+
+// console.log(recurseArr([1,2,3]));
+
+
+// Reverse a string
+// * access every letter
+// ! starting with a full string
+
+function reverse(string){
+  // console.log('string:', string);
+  // base case
+  if(string.length === 0) return '';//<- return value of the top stack frame
+
+  let first = string[0];
+  // console.log(first);
+
+  // recursive step
+  return reverse(string.slice(1)) + first;
+
+};
+
+// console.log('cat'.slice(1));// at
+console.log('return value of reverse: ',reverse('cat'));// tac
+// reverse('cat') => reverse('at') + c;
+// ! we cannot add a function call to c; we need to first evaluate the function
+// reverse('at') => reverse('t') + a
+// reverse('t')  => reverse('') + t
+// reverse('')   => return '' <- we hit the top of the call stack
+// now that we hit a return value, we can start popping off frames from the call stack
+// reverse('t')  => '' + t = 't'
+// reverse('at') => 't' + a = 'ta'
+// reverse('cat') => 'ta' + c; = 'tac'
+
