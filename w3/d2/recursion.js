@@ -38,17 +38,15 @@
 
 */
 
-
 // Iterating an arbitrate number amount of times
 // * In a way we control the boundaries
 // start - 0
 // stop  - i < 3
 // step  - in increments of 1 i++
 
-for(let i = 0; i < 3; i++){
+for (let i = 0; i < 3; i++) {
   // console.log('i: ', i)
 }
-
 
 // Recurse an arbitrary amount of times
 // In a way we can control the boundaries
@@ -63,17 +61,16 @@ for(let i = 0; i < 3; i++){
 // * thats how well get from 3 to 0
 
 function recurse(number) {
-  console.log('number: ,', number);
+  console.log("number: ,", number);
 
   // base case - stop when num is 0
-  if(number === 0) return 'done recursing';
+  if (number === 0) return "done recursing";
 
   // recursive step - decrement by 1
   return recurse(number - 1);
-};
+}
 
-
-console.log(recurse(3))
+// console.log(recurse(3))
 // * recurse call stack
 // A function cannot be removed from the call stack unless its returned
 // whenever a function is called functionName(args)
@@ -86,3 +83,19 @@ console.log(recurse(3))
 // recurse(1) => 'return done recursing'
 // recurse(2) => 'return done recursing'
 // recurse(3) => 'return done recursing'
+
+// recursive case
+function recurse2(number) {
+  console.log("number: ,", number);
+
+  // recursive case
+  // if we stop when number is 0
+  // then we will recurse when the number is greater than 0
+  if (number > 0) {
+    return recurse2(number - 1);
+  } else {
+    return "done recursing";
+  }
+}
+
+// recurse(3);
