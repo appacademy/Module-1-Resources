@@ -52,7 +52,7 @@ console.log('------')
 
 // prove an IIFE runs once
 // * all weve done is store the return value of an iffe an in a variable
-// *  only gets called the first time its ran
+// * only gets called the first time its ran
 let sayHi3 = (function(){
   console.log('will only run once!!')
   return true
