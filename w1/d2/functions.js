@@ -59,8 +59,63 @@ function myFunc(){
 // if we want to see what this function evaluates too
 // we have to wrap it in a console.log
 // console.log('before calling function')
-console.log('Return value of myFunc:',myFunc());
+// console.log('Return value of myFunc:',myFunc());
 // console.log('after the function call')
 // can call them multiple times
-console.log('Return value of myFunc:',myFunc());
+// console.log('Return value of myFunc:',myFunc());
 // console.log('Return value of myFunc:',myFunc(),'asdf', true, 12);
+
+// console.log(myFunc());// true
+// console.log(myFunc);// [Function: myFunc]
+//if you see your variable is a function; you can call it
+
+
+// lets talk about parameters and arguments
+// * function definition - where the function is defined
+// * and parameters are used to represent the arguments passed
+// * let name1 = 'brandon'
+// * let banana1 = 'trevor'
+// * parameters can be named anything they are bananable
+function printNames(name1, banana1){
+  console.log(name1, banana1);//brandon trevor
+  return 'Hello ' + name1 + ' and ' + banana1;
+}
+
+// function call
+// * this is where we pass arguments
+// * the arguments passed are the string of brandon and trevor
+// * they are positional
+// // printNames();
+// console.log('return value of printName1:', printNames('brandon', 'trevor'));// return value of printName1: Hello brandon and trevor
+// console.log('return value of printName2:', printNames('charles', 'maica'));// return value of printName2: Hello charles and maica
+
+
+// 🍌
+
+// defined a function
+function addNumbers(num1, num2){
+  console.log(num1, num2);// 1 2
+  console.log('look here ===>', num1 + num2);
+  // do we want to return the expression or store the expression in a variable and return that
+  let result = num1 + num2;
+  // console.log(result);
+  // return result;
+  return result
+  // return num1 + num2;
+}
+
+
+// console.log('return value:', addNumbers(10, 12));// 22
+// console.log('return value:',addNumbers(1, 2));// 3
+addNumbers(1, 2)
+// console.log(console.log())//undefined
+let result1 = addNumbers(1,2);
+// this logic still happen; all that matters is that the function is called
+console.log(addNumbers(1, 2));// 3
+
+// This variable holds the return value of the function
+// because a function evaluates to its return
+console.log(result1);// 3
+
+
+
