@@ -61,7 +61,7 @@ delineated by: - // forward slash + asterisk *
 // * win - control + /
 
 
-// we use console.og whenever you want to see something on the screen
+// we use console.log whenever you want to see something on the screen
 console.log('hello world');
 
 
