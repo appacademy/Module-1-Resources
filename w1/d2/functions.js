@@ -36,7 +36,31 @@
     functionName(arg1, arg2)
   * When we call our function it will evaluate to its return
     functionName(arg1, arg2) => evaluates to return value of the function
-    
+
     param1 = arg1
     param2 = arg2
 */
+
+// Introducing a basic function
+// function declaration
+function myFunc(){
+  // if there is not return, the return defaults to undefined
+  // return 12;
+  // return an data type
+  // all logic below return is ignored
+  console.log('entering my func');// ! this console.log gets called every time we call the function
+  return true;
+  // return 'string'
+  // return myfunc
+};
+// Calling/invoking the function
+// * function is not ran unless its called!
+// myFunc()
+// if we want to see what this function evaluates too
+// we have to wrap it in a console.log
+// console.log('before calling function')
+console.log('Return value of myFunc:',myFunc());
+// console.log('after the function call')
+// can call them multiple times
+console.log('Return value of myFunc:',myFunc());
+// console.log('Return value of myFunc:',myFunc(),'asdf', true, 12);
