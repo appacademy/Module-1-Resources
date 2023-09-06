@@ -73,7 +73,7 @@ console.log(animal[animal.length - 1]);// s
 // The indexOf() method of String values searches this string and returns the index of the first occurrence of the specified substring.
 // ! Always to go to mdn
 
-let animal2 = 'Rhino';
+let animal2 = 'rhino';
 
 console.log(animal2.indexOf('r'));// 0
 console.log('rhino'.indexOf('r'));// 0
@@ -83,5 +83,25 @@ console.log(animal2.indexOf('h'));//  1
 console.log(animal2.indexOf('i'));//  2
 console.log(animal2.indexOf('z'));//  -1
 
-console.log(animal2.indexOf('r'.toUpperCase()));//  0
+console.log(animal2.indexOf('R'.toLowerCase()));//  0
 // console.log('Rhino'.indexOf('R'));//  0
+
+console.log(animal2.indexOf('R') === -1);// true
+
+// Concatenation
+let word1 = 'whiteboards';
+let word2 = 'remarkable';
+
+let res = word1 + ' are ' + word2;
+console.log(res);// whiteboards are remarkable
+
+// alt 1
+console.log(word1.concat(' are ', word2));// whiteboards are remarkable
+console.log(word2.concat(' are ', word1));
+
+// alt 2
+// string interpolation
+// template literal - ``;
+// embedded expressions - ${<expression>}
+
+console.log(`${word1} are ${word2}`);// whiteboards are remarkable
