@@ -41,9 +41,59 @@ while (i <= 5) {
 // * let i = 0; initial expression, where to start
 // * i <= 5; condition to be met
 // * i++; increment i by 1, step to completing the loop
-let res = true;
-for (let i = 0; res; i++) {
+// let res = true;
+for (let i = 0; i <= 5; i++) {
   // console.log("i:", i); // 0 1 2 3 4 5
 }
 
+/*
+  length of 4
+  VALUE - c a t s undefined undefined
+  INDEX - 0 1 2 3     4         5
+*/
+// let word1 = 'cats'
+function iterateThroughWord(word1) {
+  // console.log(word1);// cats
+  // console.log(word1[0]);// c
+  // console.log(word1[1]);// a
+  // console.log(word1[2]);// t
+  // console.log(word1[3]);// s
+  // console.log(word1.length);//4
+  // start at 0,
+  // keep looping if (i < 4);
+  // go up in increments of 1 i++
+  for (let i = 0; i < word1.length; i++) {
+    console.log("i:", i); // 0 | 1 | 2 | 3
+    console.log("value at that index: ", word1[i]);
+    let letter = word1[i];
+    // console.log('value: ',letter);
+  }
+  // console.log(word1[i]);
+}
 
+// console.log("return value of iterateThroughWord: ", iterateThroughWord("cats"));
+
+// console.log(iterateThroughWord("umbrella"))
+
+// let result2 = iterateThroughWord("umbrella")
+// console.log(result2);//undefined
+// start - 6 - name.length - 1
+// stop/condition - 0 - i >= 0
+// step - i--
+function reverseName(name) {
+  console.log(name); // brandon
+  console.log(name[name.length - 1]);// n
+  console.log(name.length - 1);// 6
+  let reversedName = '';
+
+  for (let i = name.length - 1; i >= 0; i--) {
+    let letter = name[i];
+    console.log("letter", letter, "index", i);
+    reversedName += letter;
+    console.log(reversedName)
+  };
+
+  return reversedName;
+}
+
+// console.log(reverseName("brandon"));
