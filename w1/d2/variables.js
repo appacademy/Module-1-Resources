@@ -100,7 +100,9 @@ console.log(num);// 3
 // adding numbers
 // if you use string + number, it will typecast the number intro a string
 let testType = num + 'hey'
-console.log(num + 'hey');// 3hey
-console.log(testType);// 3hey
-console.log(typeof (num + 'hey'));// string
-console.log(typeof testType);// string
+// console.log(num + 'hey');// 3hey
+// console.log(testType);// 3hey
+// console.log(typeof (num + 'hey'));// string
+// console.log(typeof testType);// string
+
+
