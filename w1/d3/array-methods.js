@@ -35,3 +35,19 @@ console.log("orignal array:", popArr, "popArr length", popArr.length);
 
 let lastEle = popArr.pop();
 console.log("mutated array: ", popArr, "lastElement: ", lastEle);
+
+// .unshift
+// * The unshift() method adds one or more elements to the beginning of an array
+// * returns the new length of the array.
+let unshiftArr = ['wow', false, 3];
+console.log('original array', unshiftArr, 'old length', unshiftArr.length);
+let newLength2 = unshiftArr.unshift("key");
+console.log('mutated array', unshiftArr, 'new length',newLength2);
+
+// .shift
+// * The shift() method removes the first element from an array and returns that removed element. This method changes the length of the array.
+// * remove the first element from an array , it returns the element removed
+let shiftArr = ["gears", 1, false];
+let firstEle = shiftArr.shift();
+console.log('mutated array', shiftArr, 'shifting', firstEle);
+
