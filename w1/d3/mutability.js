@@ -29,5 +29,7 @@ console.log(name);// brandon
 name[0] = 'k';
 console.log(name);// brandon
 
+// cant change the content of the variable
+// but you can change what the variable is pointing at
 name = 'krandon';
 console.log(name);// krandon
