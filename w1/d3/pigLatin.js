@@ -77,7 +77,7 @@ function pigLatinWord(word) {
     if (vowels.includes(letter)) {
       let first = word.slice(i); // anana
       let second = word.slice(0, i); // b
-
+    
       return first + second + "ay";
     }
   }
