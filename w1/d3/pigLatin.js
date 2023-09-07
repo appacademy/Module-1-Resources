@@ -66,7 +66,7 @@ const str = "banana";
 
 function pigLatinWord(word) {
   let vowels = "aeiou";
-
+  age = 27;// globally declared variable
   if (vowels.includes(word[0])) {
     return word + "yay";
   }
@@ -77,7 +77,7 @@ function pigLatinWord(word) {
     if (vowels.includes(letter)) {
       let first = word.slice(i); // anana
       let second = word.slice(0, i); // b
-    
+
       return first + second + "ay";
     }
   }
@@ -85,9 +85,18 @@ function pigLatinWord(word) {
   return word;
 }
 
+console.log(pigLatinWord("apple")); //=> "appleyay"
+
+function test() {
+  console.log(age);//27
+}
+
+test();
+
+// console.log(pigLatinWord("banana")); //=> "ananabay"
 // These are console.log the return value of the function
 // // a function evaluates to its return
-console.log(pigLatinWord("apple")); //=> "appleyay"
-console.log(pigLatinWord("eat")); //=> "eatyay"
-console.log(pigLatinWord("banana")); //=> "ananabay"
-console.log(pigLatinWord("trash")); //=> "ashtray"
+
+// console.log(pigLatinWord("eat")); //=> "eatyay"
+// console.log(pigLatinWord("banana")); //=> "ananabay"
+// console.log(pigLatinWord("trash")); //=> "ashtray"
