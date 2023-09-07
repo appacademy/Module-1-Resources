@@ -33,7 +33,7 @@ let sayHello2 = function () {
   console.log('hello from sayHello 2');// hello from sayHello 2
 };
 
-// sayHello2();
+sayHello2();
 
 // no different than
 let age = 27;
