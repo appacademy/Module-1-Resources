@@ -69,30 +69,27 @@ let brandon = {
 
 // accessing name key
 console.log(brandon);
-console.log(brandon.name);// brandon
-console.log(brandon['name'])// brandon
-
+console.log(brandon.name); // brandon
+console.log(brandon["name"]); // brandon
 
 // access age key
-console.log(brandon.age);// 27
-console.log(brandon['age']);// 27
-
+console.log(brandon.age); // 27
+console.log(brandon["age"]); // 27
 
 // access favorite bands key
-console.log(brandon.favBands);// [ 'neck deep', 'idles', 'joyce manor' ]
-console.log(brandon['favBands']);// [ 'neck deep', 'idles', 'joyce manor' ]
+console.log(brandon.favBands); // [ 'neck deep', 'idles', 'joyce manor' ]
+console.log(brandon["favBands"]); // [ 'neck deep', 'idles', 'joyce manor' ]
 // * can index into array gain access to it
-console.log(brandon['favBands'][0]);// neck deep
-
+console.log(brandon["favBands"][0]); // neck deep
 
 // access location key
-console.log(brandon.location);//{ city: 'Tampa', state: 'Florida' }
-console.log(brandon.location.city);//Tampa
-console.log(brandon['location']['city']);//Tampa
+console.log(brandon.location); //{ city: 'Tampa', state: 'Florida' }
+console.log(brandon.location.city); //Tampa
+console.log(brandon["location"]["city"]); //Tampa
 
 // mix and match the way index
-console.log(brandon.location['city']);// Tampa
-console.log(brandon['location'].city);// Tampa
+console.log(brandon.location["city"]); // Tampa
+console.log(brandon["location"].city); // Tampa
 
 /*
 
@@ -106,22 +103,20 @@ console.log(brandon['location'].city);// Tampa
 
 */
 
-console.log(brandon.sayHello);// [Function: sayHello]
+console.log(brandon.sayHello); // [Function: sayHello]
 
-console.log(brandon.sayHello());// Hello undefined
+console.log(brandon.sayHello()); // Hello undefined
 
-console.log(brandon.sayHello('maica'));// Hello maica
+console.log(brandon.sayHello("maica")); // Hello maica
 
-console.log(brandon['sayHello']('charles'))// Hello charles
-
+console.log(brandon["sayHello"]("charles")); // Hello charles
 
 // * we can use bracket notation on methods weve been using
-let numbers = [1,2,3];
+let numbers = [1, 2, 3];
 numbers.push(4);
-numbers['push'](5);
+numbers["push"](5);
 // console.log(numbers);// [ 1, 2, 3, 4, 5 ]
 // console['log'](numbers);//[ 1, 2, 3, 4, 5 ]
-
 
 /*
 
@@ -152,7 +147,7 @@ numbers['push'](5);
       - object['first name']
 
 */
-
+console.log("=============================");
 let cat1 = {
   name: "pumpkin",
   age: 3,
@@ -161,3 +156,47 @@ let cat1 = {
   "is cute": true,
 };
 
+// Dot notation
+// *  cannot use variables as keys
+let variable = "name";
+console.log(cat1.variable);
+// * JS trying to find a key with the name variable
+
+// ! If you try and access a key that does not exists, you will get undefined
+
+// Bracket notation
+console.log(cat1[variable]);// pumpkin
+console.log(variable);//name
+// * what were really saying here is
+console.log(cat1["name"]);// pumpkin
+console.log(cat1["na" + "me"])// pumpkin
+
+// Dot notation
+// * cannot access certain keys
+// * JS gets confused
+
+// console.log(cat1.1key)// gives us error
+console.log(cat1['1key']);
+
+// console.log(cat1.is cute);// give us error
+console.log(cat1['is cute']);// true
+
+
+/*
+
+  Takeaways?
+
+  When to use which?
+
+  Dot Notation
+    * When you know what you're going to key into
+     ** quicker to write
+
+  Bracket Notation
+    * dealing with variables
+    * dealing with weird key names
+
+  * Both can be used to access and assign key value pairs
+  * We've shown accessing, lets show assigning
+
+*/
