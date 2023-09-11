@@ -73,7 +73,7 @@ car['stats']['hp'] = 500
 // console.log(car);
 
 
-console.log(car);
+// console.log(car);
 //e: 'ford' }
 // {
 //   model: 'mustang',
@@ -82,7 +82,24 @@ console.log(car);
 //   stats: { mpg: 16, hp: 500 }
 // }
 
-console.log(car.stats);
-// { mpg: 16, hp: 500 }
+// console.log(car.stats);
+// // { mpg: 16, hp: 500 }
 
-console.log(car.stats.mpg);//16
+// console.log(car.stats.mpg + 20);//16
+
+/*
+
+  Delete a value
+  * use the delete operator
+  * provide object and the key
+    ** key: value pair will be deleted
+
+*/
+
+
+console.log('before:', car)
+
+delete car.make
+
+console.log('after:', car)
+// { model: 'mustang', year: 2023, stats: { mpg: 16, hp: 500 } }
