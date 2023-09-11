@@ -71,3 +71,18 @@ car.stats = {};
 car.stats.mpg = 16;
 car['stats']['hp'] = 500
 // console.log(car);
+
+
+console.log(car);
+//e: 'ford' }
+// {
+//   model: 'mustang',
+//   year: 2023,
+//   make: 'ford',
+//   stats: { mpg: 16, hp: 500 }
+// }
+
+console.log(car.stats);
+// { mpg: 16, hp: 500 }
+
+console.log(car.stats.mpg);//16
