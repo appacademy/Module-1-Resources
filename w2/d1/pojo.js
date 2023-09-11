@@ -24,7 +24,7 @@
 
   Objects are great for grouping related data together
 
-  * Lets create some people objects
+  * Lets create some person objects
 
   What are some properties/keys would a person have?
     * name
@@ -45,3 +45,22 @@
     location: { city: 'Tampa', state: 'florida'}
     favBands: ['neck deep', 'idles', 'joyce manor']
 */
+
+// create your own person object
+// * object literal - {};
+// * { key:value }
+// * array literal  - [];
+
+let brandon = {
+  name: "brandon",
+  age: 27,
+  occupation: "SWE Instructor",
+  senseOfHumour: true,
+  location: { city: "Tampa", state: "Florida" },
+  favBands: ["neck deep", "idles", "joyce manor"],
+  sayHello: (name) => {
+    return "Hello " + name;
+  },
+};
+
+
