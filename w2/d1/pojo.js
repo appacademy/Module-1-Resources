@@ -121,3 +121,43 @@ numbers.push(4);
 numbers['push'](5);
 // console.log(numbers);// [ 1, 2, 3, 4, 5 ]
 // console['log'](numbers);//[ 1, 2, 3, 4, 5 ]
+
+
+/*
+
+
+  What the difference between bracket and dot notation?
+
+    Dot notation
+    * Easier to read and write - QOL
+      * if you know the string; and youre not using a variable use dot notation
+    ! cannot use variables as keys
+    ! limited on what we can key into
+      * examples of what we cannot key into using dot notation
+        - object.first name
+        - object.1key
+
+    Bracket notation
+    * You can use variables
+    * variables inside brackets are first evaluated then used to key into the object
+      * let variable = 'name'
+        let object = { name: 'brandon' };
+        console.log(object[variable])// brandon
+
+        console.log(variable)// name
+        console.log(object['name'])// brandon
+
+    * can be used to key into object that dot notation is not able to
+      - object['1key']
+      - object['first name']
+
+*/
+
+let cat1 = {
+  name: "pumpkin",
+  age: 3,
+  color: "orange",
+  "1key": null,
+  "is cute": true,
+};
+
