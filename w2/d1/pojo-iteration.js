@@ -74,3 +74,12 @@ for(let key in people) {
   let name = person.name
   console.log(name);
 }
+
+// * we could loop or do this
+// ? which is more dynamic?
+// console.log(people.person1.name);
+// console.log(people.person2.name);
+// console.log(people.person3.name);
+// console.log(people.person4.name);
+
+
