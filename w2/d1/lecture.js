@@ -78,10 +78,10 @@ let implicitAdd = (num1, num2) => num1 + num2;
 
 // console.log(implicitAdd(3,4));// 7
 
-
-let obj = {};
+// Object literal - {}
+// let obj = {};
 // in order for us to implicit return an object
 // * you need to wrap the object in the grouping operator
 let returnObj = (name, age) => ({name, age});
 // let res = returnObj('brandon', 27);
-console.log(returnObj('brandon', 27))
+// console.log(returnObj('brandon', 27))
