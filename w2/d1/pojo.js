@@ -182,6 +182,7 @@ console.log(cat1['1key']);
 console.log(cat1['is cute']);// true
 
 
+
 /*
 
   Takeaways?
@@ -200,3 +201,17 @@ console.log(cat1['is cute']);// true
   * We've shown accessing, lets show assigning
 
 */
+
+
+
+let cat2 = {
+  name:'mochi',
+  age: 3
+};
+
+
+let test = 'name';
+// console.log(cat2[test]);//mochi
+
+// console.log(createObj('name'))
+// console.log(createObj('age'))
