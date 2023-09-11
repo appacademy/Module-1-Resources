@@ -1,8 +1,4 @@
 /*
-
-
-
-
   Assigning values in a object
     * You can assign the values using either notation
     ** object['key'] = value
@@ -103,3 +99,18 @@ delete car.make
 
 console.log('after:', car)
 // { model: 'mustang', year: 2023, stats: { mpg: 16, hp: 500 } }
+
+// change a value
+// point new key at old value
+// delete old key/value pair
+car.statistics = car.stats
+delete car.stats
+console.log(car);
+
+
+/*
+{ model: 'mustang', year: 2023, statistics: { mpg: 16, hp: 500 } }
+
+
+
+*/
