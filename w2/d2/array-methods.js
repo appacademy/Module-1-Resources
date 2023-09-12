@@ -136,14 +136,14 @@ function onlyOdds(numbers) {
 // .reduce
 // The reduce() method of Array instances executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.
 
-function sum(numbers) {
-  // use reduce
-  let res = numbers.reduce((res, num) => {
-    console.log(res, num);
-    return res += num;
-  }, 220);
-  // if no default value is given; it defaults to the first element of the array
-  return res;
-}
+let sum = (numbers) => numbers.reduce((res, num) => (res += num), 220);
 
-console.log(sum([1, 2, 3])); // 6
+// console.log(sum([1, 2, 3])); // 6
+
+
+function example(num) {
+
+  console.log(num)
+}
+// [1,2,3].forEach((num) => console.log(num))
+[1,2,3].forEach(example)
