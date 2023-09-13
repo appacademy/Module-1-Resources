@@ -32,5 +32,36 @@
     * All callbacks are helper functions
     * But not all helper functions are callbacks
       * Callback has to be explicitly passed as an argument to a function
-      
+
 */
+
+
+// higher order function
+// * when the callback function is passed, its new variable to reference it will be cb
+// callback = cb = () => console.log('hello from callback')
+function higherOrder(cb){
+  console.log('entering higher function')
+  // console.log(cb);// [Function: callback]
+  // console.log(cb());// hello from callback
+  cb();
+  console.log('after calling the callback');
+  console.log('exiting the higher order function')
+};
+
+// storing an string in a variable
+let name = 'brandon';
+// we are passing the string as an argument to the function
+// higherOrder(name);
+
+// callback function
+// * an anonymous function stored in a variable
+let callback = () => console.log('hello from callback')
+
+console.log(higherOrder(callback))
+
+// console.log(callback);// [Function: callback]
+// console.log(name);// brandon
+
+// console.log(callback());//hello from callback | undefined
+// * log for me the return value of callback invoke - we get undefined there is no return
+// hello from callback
