@@ -117,7 +117,7 @@ function doubleNumbers(numbers, callback) {
 
 // console.log(double);// [Function: double]
 // * passing directly a function's name as a callback
-console.log(doubleNumbers([1, 2, 3], double)); // [ 2, 4, 6 ]
+// console.log(doubleNumbers([1, 2, 3], double)); // [ 2, 4, 6 ]
 
 // think of it like this
 let array = [1, 2, 3];
@@ -126,20 +126,86 @@ let array = [1, 2, 3];
 // we can pass an anonymous callback to our function
 // * Implicit return - no curly's or return keyword
 // * this is the cleanest way to callback
-console.log(doubleNumbers(array, (num) => num * 2)); // [ 2, 4, 6 ]
-
+// console.log(doubleNumbers(array, (num) => num * 2)); // [ 2, 4, 6 ]
 
 // anon callback with explicit return
 // * uses return keyword and the curly's
-console.log(
-  doubleNumbers(array, (num) => {
-    return num * 2;
-  })
-); // [ 2, 4, 6 ]
+// console.log(
+//   doubleNumbers(array, (num) => {
+//     return num * 2;
+//   })
+// ); // [ 2, 4, 6 ]
 
 // pass an anon callback using the function keyword
-console.log(
-  doubleNumbers(array, function (num) {
-    return num * 2;
-  })
-); // [ 2, 4, 6 ]
+// console.log(
+//   doubleNumbers(array, function (num) {
+//     return num * 2;
+//   })
+// ); // [ 2, 4, 6 ]
+
+// any function that doesnt have a name
+// as soon you store a function in variable it is not anonymous
+
+// can check if callback is undefined
+// * know your data types youre working it
+function add(num1, num2, cb) {
+  // console.log(num1, num2, cb);
+  if (cb === undefined) {
+    return num1 + num2;
+  }
+  return cb(num1 + num2);
+
+  // ternary
+  // return cb === undefined ? num1 + num2 : cb(num1 + num2)
+}
+
+// console.log(add(9, 40)); // 49
+// Math.sqrt is the callback
+// console.log(add(9, 40, Math.sqrt)); // 7
+
+function isPrime(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
+
+  return true;
+}
+
+// console.log(isPrime(5));
+
+// array methods take in callbacks!
+
+let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+// what if i wanted to return a new array of only prime numbers
+
+let primes = numbers.filter(isPrime);
+
+let primes2 = numbers.filter(function (num) {
+  if (num <= 1) return false;
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
+
+  return true;
+});
+
+let primes3 = numbers.filter((num) => {
+  if (num <= 1) return false;
+  for (let i = 2; i < num; i++) {
+    if (num % i === 0) return false;
+  }
+
+  return true;
+});
+
+// console.log(primes);// [ 2, 3, 5, 7 ]
+
+let timesTwo = (num) => num * 2;
+
+console.log(numbers.map(timesTwo));
+// [
+//   2,  4,  6,  8, 10,
+//  12, 14, 16, 18
+// ]
