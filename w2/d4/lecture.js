@@ -224,4 +224,59 @@ function testingLet(){
   // console.log(access);// ReferenceError: access is not defined
 };
 
-testingLet();
+// testingLet();
+
+/*
+
+  const
+    * constant
+    * block scoped
+    * cannot be reassigned
+    * cannot be re declared
+
+  * when const is hoisted
+    ** const does not have a default value
+    ** therefore will throw an error when hoisted
+    ** as the variable does yet exists
+
+*/
+
+
+function testingConst(){
+
+  // * hoisting const
+  // ! error
+  // console.log(test);// ReferenceError: Cannot access 'test' before initialization
+  const test = 1;
+
+  // * const cannot be reassigned
+  // test = 2;
+  // console.log(test);
+  //TypeError: Assignment to constant variable.
+
+  // * const cannot be declared
+  // const test = 3;
+  // SyntaxError: Identifier 'test' has already been declared
+
+  // ! const is block scoped
+  // ! cannot access inner block from outer
+  if(true){
+    const access = false;
+  }
+  // console.log(access);// ReferenceError: access is not defined
+
+
+  // So you can mutate the mutable data types stored in a const declared variable
+  const array = [1,2,3];
+  array.push(4);
+  // CAN MUTATE
+  console.log(array);//[ 1, 2, 3, 4 ]
+  array = 'something else'
+  console.log(array);//TypeError: Assignment to constant variable.
+  // this string is forever the string string
+  const string = 'string';
+
+};
+
+
+// testingConst();
