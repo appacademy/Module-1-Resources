@@ -43,3 +43,100 @@ function pizzaMaker(food) {
 }
 
 console.log(pizzaMaker("cheese")); // Id like a pizza with cheese
+
+// function sundaeOrder() {
+// // your code here
+//     let startingString = "A bowl of ice cream with hot fudge"
+
+//     return function (topping) {
+//         // your code here
+//                                         // + 'and' + topping
+//         startingString = startingString + ` and ${topping}`
+//         return startingString
+//     };
+// }
+
+// // Base string: "A bowl of ice cream with hot fudge"
+
+// let sundae = sundaeOrder(); // => returns a function
+// console.log(sundae("nuts")) // => "A bowl of ice cream with hot fudge and nuts"
+// console.log(sundae("caramel")) // => "A bowl of ice cream with hot fudge and nuts and caramel"
+
+// let sundae2 = sundaeOrder(); // => returns a function
+// console.log(sundae2("banana")) // => "A bowl of ice cream with hot fudge and banana"
+
+
+
+// // We can have multiple closures, each with their own internal state
+// ------------------------------
+
+// function counterCreator(){
+//     let count = 0;
+
+//     return () => {
+//         count++
+//         return count
+//     }
+// }
+
+// let counter1 = counterCreator()
+// let counter2 = counterCreator()
+// let counter3 = counterCreator()
+
+// counter2()
+// counter2()
+// counter2()
+// counter2()
+
+// counter3()
+// counter3()
+
+// console.log(counter1())
+// console.log(counter2())
+// console.log(counter3())
+
+
+
+
+// Exposing an interface
+function counterCreator(){
+  let count = 0;
+
+  let interface = {}
+  interface.getValue = getValue
+  interface.increment = increment
+  interface.decrement = decrement
+
+  return interface
+  // or
+  // return {
+  //     "getValue": getValue,
+  //     "increment": increment,
+  //     "decrement": decrement
+  // }
+
+  // Read value
+  function getValue() {
+      return count
+  }
+
+  // Increment Value
+  function increment(){
+      count++
+  }
+
+  // Decrement Value
+  function decrement(){
+      count--
+  }
+}
+
+let counter1 = counterCreator()
+
+console.log(counter1.getValue())
+counter1.increment()
+counter1.increment()
+counter1.increment()
+console.log(counter1.getValue())
+counter1.decrement()
+console.log(counter1.getValue())
