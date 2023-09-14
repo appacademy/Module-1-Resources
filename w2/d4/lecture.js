@@ -60,7 +60,7 @@ function myFunc(){
 
   // globally declared variable
   // ! dont do this
-  x = 'bad';
+   x = 'bad';
 };
 
 
@@ -71,7 +71,7 @@ function myFunc(){
 
 function myFunc2(){
   let name = 'brandon';
-  console.log(x);// bad
+  // console.log(x);// bad
   // able to access the x variable in a different scope
 }
 
@@ -79,3 +79,59 @@ function myFunc2(){
 // console.log(name);//  ReferenceError: name is not define
 // we dont have access to the name variable
 // * we cant go outer scope to inner
+
+// we can reassign the values of outer scope variables
+function myFunc3(){
+
+  let name = 'initial value';
+
+  for(let i = 0; i < 2; i++){
+    name = 'new value';
+  };
+
+  // console.log(name);// new value
+}
+
+
+// myFunc3()
+
+
+
+/*
+
+  Variable Declaration
+
+  Three ways to declare a variable, technically 4
+
+  1. let
+    * block scoped
+    * can be reassigned
+    * cannot re declared
+
+  2. const
+    * constant
+    * block scoped
+    * cannot be reassigned
+    * cannot be re declared
+
+  3. var
+    * function scoped
+    * can be reassigned
+    * can be re declared
+    ! error prone
+
+  4. globally
+    * any variable that is declared in the global scope will be globally available
+    * any variable declared without let, const, or var will be globally available
+
+  Hoisting!
+    * JavaScript Hoisting refers to the process whereby the interpreter appears to move the declaration of functions, variables or classes to the top of their scope, prior to execution of the code.
+    * JavaScript's process of moving all declarations to the top of the current scope
+
+
+  Temporal dead zone!
+    * Where variables exist before they are accessed
+    * let and const
+
+
+*/
