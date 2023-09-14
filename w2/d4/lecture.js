@@ -40,5 +40,42 @@
 
 
 
+// let name = 'global scope'
+
+function myFunc(){
+  // let name = 'function/local scope';
+
+  if(true) {
+    // let name = 'block scope 1';
+
+    for(let i = 0; i < 1; i++) {
+      // let name = 'block scope 2';
+
+      // console.log(name);
+      // JS will scope chain to find the variable name that we need
+      // * it will go from inner scope to outer
+      //! not outward -> inward
+    }
+  };
+
+  // globally declared variable
+  // ! dont do this
+  x = 'bad';
+};
 
 
+
+// myFunc();
+
+// outer scope does not have access to inner scope
+
+function myFunc2(){
+  let name = 'brandon';
+  console.log(x);// bad
+  // able to access the x variable in a different scope
+}
+
+// myFunc2();
+// console.log(name);//  ReferenceError: name is not define
+// we dont have access to the name variable
+// * we cant go outer scope to inner
