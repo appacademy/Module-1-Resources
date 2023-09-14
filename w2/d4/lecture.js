@@ -280,3 +280,30 @@ function testingConst(){
 
 
 // testingConst();
+
+
+
+/*
+
+   globally
+    * any variable that is declared in the global scope will be globally available
+    * any variable declared without let, const, or var will be globally available
+
+*/
+
+// variables declared in the global score are variable globally
+// * regardless of the keyword
+let global1 = 1;
+const global2 = 2;
+var global3 = 3;
+
+function myFunc4(){
+  // we can access them from the function scope
+  console.log(global1, global2, global3);// 1 2 3
+
+  // no keyword its a global variable
+  global4 = 4;
+}
+
+myFunc4();
+console.log(global4);// 4
