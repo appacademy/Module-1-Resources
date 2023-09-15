@@ -140,3 +140,5 @@ counter1.increment()
 console.log(counter1.getValue())
 counter1.decrement()
 console.log(counter1.getValue())
+
+
