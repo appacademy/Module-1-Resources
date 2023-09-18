@@ -30,5 +30,7 @@ let names = ['celebi', 'pumpkin', 'mochi', 'jazz'];
 
 for(let name of names){
 
-  console.log(`${hello()} ${name.toUpperCase()}`)
+  console.log(`${hello()} ${name.toUpperCase()}`);
+
 }
+
