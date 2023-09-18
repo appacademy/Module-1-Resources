@@ -2,11 +2,9 @@
 
 /*
 
-
   ! Things to look out for
     * wsl user - check they have to wsl extension in vscode
     * but I didn't see 'Launch' or any other debugger info after making a blank file until I selected 'Run' > 'Start Debugging'
-
 
   What is the debugger?
     * A tool used to help debug our application
@@ -61,7 +59,6 @@ function bar(word) { // define function bar that accepts param word
   baz("bazaar");  // invoke baz function with string "bazaar"
 }
 
-
 // ! leave out debugger to show that step into will
 // step into the function and go line by line
 // step over will step over the function
@@ -79,5 +76,3 @@ for(let i = 0; i < names.length; i++){
   console.log(names[i]);
   debugger;
 }
-
-
