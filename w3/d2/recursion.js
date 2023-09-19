@@ -132,4 +132,34 @@ function recurse2(number) {
   }
 }
 
-console.log(recurse(3));
+// console.log(recurse(3));
+
+
+// * Common recursing patten
+// * accessing elements of array
+// * good base line to approach
+// * we start with a full array
+function recurseArr(arr){
+  // console.log(arr);
+  debugger;
+  // base case - stop when the length is 0
+  if(!arr.length) return 'Done recursing';
+  debugger;
+  // How can we shorten our array to a length of zero?
+  // use slice, shift, pop to shorten the array
+  // console.log(arr[0]);
+  // recursive step
+  // slice is shortening
+  // return recurseArr(arr.slice(1));
+
+  // let popped = arr.pop();
+  // console.log(popped);
+
+  let shift = arr.shift();
+  console.log(shift);
+  return recurseArr(arr);
+}
+
+// console.log(recurseArr([1,2,3,4]));// 1 2 3 4
+
+// console.log([1,2,3,4].slice(1));// [ 2, 3, 4 ]
