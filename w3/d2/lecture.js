@@ -13,3 +13,28 @@
       * If there is no return keyword; if there is no code let to run then the function defaults undefined
 
 */
+
+
+// Observe stack
+// * Can watch stack using debugger
+
+function foo() {
+  console.log("a");
+  debugger;
+  bar();
+  console.log("e");
+}
+
+function bar() {
+  console.log("b");
+  debugger;
+  baz();
+  console.log("d");
+}
+
+function baz() {
+  debugger;
+  console.log("c");
+}
+
+foo(); //a,b,c,d,e
