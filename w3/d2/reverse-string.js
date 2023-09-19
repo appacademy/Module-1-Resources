@@ -72,3 +72,9 @@ function debuggedReverse(string) {
 }
 
 console.log(debuggedReverse('cat'));//
+
+
+
+fibonacci(4);
+
+// fibonacci(n-1) + fibonacci(n-2)
