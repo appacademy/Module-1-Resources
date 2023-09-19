@@ -62,7 +62,6 @@
 
 */
 
-
 // Iterating an arbitrary amount of time
 // * we control the boundaries of a loop
 // * Start - we are starting at the 0
@@ -82,21 +81,20 @@ for (let i = 0; i < 3; i++) {
 // Print number from 3 to 0
 // * start is the number passed in
 function recurse(number) {
-
-  console.log('number:', number);
+  console.log("number:", number);
 
   // base case
   // * stop recursing - when the number hits 0
-  if(number === 0) return 'done recursing';
+  if (number === 0) return "done recursing";
 
   // recursive step
   // *  subtract 1 from the number and pass the number to the next call to recurse
-  return recurse(number - 1)
+  return recurse(number - 1);
   // * each time we return recurse: a function call
   // * we are calling a function and passing modified arguments
   // * we keep doing this until we hit the base case - the number being 0
 }
-console.log(recurse(3));//
+// console.log(recurse(3));//
 // * recurse call stack
 // * A function cannot be removed from the call stack unless its returned
 // * whenever we return a function call; functionName(args)
@@ -119,3 +117,19 @@ console.log(recurse(3));//
   Global Stack Frame
    Bottom of Stack
 */
+
+// same as above but using the recursive case
+// * what keeps us recursing is the condition that number is greater than 0
+function recurse2(number) {
+  console.log("number:", number);
+
+  // recursive case
+  // * recurse as long as this condition is true
+  if (number > 0) {
+    return recurse(number - 1);
+  } else {
+    return "done recursing";
+  }
+}
+
+console.log(recurse(3));
