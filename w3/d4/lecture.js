@@ -148,9 +148,6 @@ function sayHi(name1, name2) {
 // this prevents the setTimeout for running
 // clearTimeout(timer);
 
-
-
-
 // fib
 function somethingSlow(n) {
   if (n === 1 || n === 2) return 1;
@@ -171,9 +168,34 @@ function baz() {
   console.log("bazaar");
 }
 
-
-setTimeout(foo, 1500);
-setTimeout(bar, 1000);
+// setTimeout(foo, 1500);
+// setTimeout(bar, 1000);
 // * tree recursion
-console.log(somethingSlow(44));
+// console.log(somethingSlow(44));
 // Predict the output of the code????
+
+//
+function delayedPrinter(delaysArr) {
+  if (!delaysArr.length) return;
+
+  const currentDelay = delaysArr.shift();
+  console.log(currentDelay);
+
+  setTimeout(delayedPrinter, currentDelay, delaysArr);
+}
+
+// const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
+// delayedPrinter(delaysArr);
+
+function delayedPrinterIteration(delaysArr) {
+  let totalDelay = 0;
+  delaysArr.forEach((delay) => {
+    totalDelay += delay
+    setTimeout(() => {
+      console.log(`waiting for delay: ${delay}`);
+    }, totalDelay);
+  });
+}
+
+const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
+delayedPrinterIteration(delaysArr)
