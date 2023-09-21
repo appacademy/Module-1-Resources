@@ -135,13 +135,13 @@ function sayHi(name1, name2) {
 // clear timeout
 // *  this will prevent the function from running at all
 
-// let timer = setTimeout(
-//   (name) => {
-//     console.log("hello " + name);
-//   },
-//   1000,
-//   "charles"
-// );
+let timer = setTimeout(
+  (name) => {
+    console.log("hello " + name);
+  },
+  1000,
+  "charles"
+);
 
 // the timer variable holds the time object
 // console.log(timer);
