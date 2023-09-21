@@ -18,13 +18,11 @@ function imHungry(food1, food2) {
 
 // setInterval(imHungry, 2000, 'cheeseburger', 'pho');
 
-
 function timeMaker(delayArr) {
-
+  
   let timeId = setInterval(() => {
-
     let removed = delayArr.shift();
-    console.log(removed)
+    console.log(removed);
     if (delayArr.length === 0) {
       return clearInterval(timeId);
     }
