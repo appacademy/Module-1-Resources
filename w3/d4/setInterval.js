@@ -1,4 +1,3 @@
-
 /*
 
   What is setInterval!
@@ -13,22 +12,25 @@
 
 */
 
-function imHungry(food1, food2){
+function imHungry(food1, food2) {
   console.log(`I want some ${food1} and ${food2}`);
 }
 
-
 // setInterval(imHungry, 2000, 'cheeseburger', 'pho');
 
-function timeMaker(count) {
+
+function timeMaker(delayArr) {
 
   let timeId = setInterval(() => {
-    count--;
-    console.log(count);
-    if(count === 0) {
+
+    let removed = delayArr.shift();
+    console.log(removed)
+    if (delayArr.length === 0) {
       return clearInterval(timeId);
     }
-  }, 1000)
+  }, delayArr[0]);
 }
 
-// timeMaker(5);
+const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
+
+timeMaker(delaysArr);
