@@ -31,4 +31,4 @@ function timeMaker(count) {
   }, 1000)
 }
 
-timeMaker(5);
+// timeMaker(5);
