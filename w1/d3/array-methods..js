@@ -47,21 +47,33 @@ for(let i = 0; i < 4; i++) {
 // The pop() method of Array instances removes the last element from an array and returns that element. This method changes the length of the array.
 // return value of pop is the element removed
 
+// let popArr = [true, 1, 'off'];
+// console.log('before', popArr);
+
+// let lastEle = popArr.pop();
+
+// console.log('after', popArr, lastEle);
+
+// popArr.pop();
+
+// console.log(popArr);
+
+// popArr.pop();// [ true, 1 ]
+
+// console.log(popArr);// []
+
+// console.log(popArr.pop());// undefined
+
+// console.log(popArr);
+
 let popArr = [true, 1, 'off'];
-console.log('before', popArr);
+// console.log('before', popArr); // before [ true, 1, 'off' ]
 
 let lastEle = popArr.pop();
 
-console.log('after', popArr, lastEle);
+// console.log('after', popArr, lastEle); // after [ true, 1 ] off
+
+popArr.pop()
 
 popArr.pop();
-
-console.log(popArr);
-
-popArr.pop();// [ true, 1 ]
-
-console.log(popArr);// []
-
-console.log(popArr.pop());// undefined
-
-console.log(popArr);
+// console.log(popArr); // [ true ]
