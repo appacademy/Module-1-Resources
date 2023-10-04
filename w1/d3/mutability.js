@@ -34,3 +34,4 @@ console.log(name);// brandon
 // all we can do is reassign the string to an entirely new string
 name = 'krandon';
 console.log(name);// krandon
+
