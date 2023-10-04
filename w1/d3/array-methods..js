@@ -13,14 +13,14 @@
 // return the new length
 
 let pushArr = ['hip','hip'];
-console.log('before',pushArr)
+// console.log('before',pushArr)
 
 // newLength holds the return value of .push which is the new length
 // but we also mutated the push array by pushing a value into it
 // we dont need to store the return in a variable
 let newLength = pushArr.push('array');
 
-console.log('new length:', newLength, pushArr)
+// console.log('new length:', newLength, pushArr)
 
 // console.log('return value of push', pushArr.push('😎'))
 let res = pushArr.push('😎');
@@ -37,7 +37,31 @@ let anythingIwant = pushArr.push('😈')
 let array = [];
 for(let i = 0; i < 4; i++) {
   array.push(i)
-  console.log(array)
+  // console.log(array)
 }
 
 // console.log(array)
+
+
+//.pop
+// The pop() method of Array instances removes the last element from an array and returns that element. This method changes the length of the array.
+// return value of pop is the element removed
+
+let popArr = [true, 1, 'off'];
+console.log('before', popArr);
+
+let lastEle = popArr.pop();
+
+console.log('after', popArr, lastEle);
+
+popArr.pop();
+
+console.log(popArr);
+
+popArr.pop();// [ true, 1 ]
+
+console.log(popArr);// []
+
+console.log(popArr.pop());// undefined
+
+console.log(popArr);
