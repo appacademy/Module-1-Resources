@@ -9,7 +9,6 @@
 
 */
 
-
 // function declaration
 // this where have parameters to represent the arguments passed
 function sayHello(){
