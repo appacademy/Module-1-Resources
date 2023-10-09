@@ -166,8 +166,6 @@ console.log(numbers); // [1,2,3,4];
 
 */
 
-
-
 /*
 
   Assigning values in a object
@@ -183,3 +181,72 @@ console.log(numbers); // [1,2,3,4];
      * the key:value pair will be created
 
 */
+
+// * Assigning key:value pairs
+
+// * create object literal
+let car = {};
+
+// ! Note the use of the assignment operator: =
+// we are assigning the value at a specific key in a object to be a value
+
+// * assigning using dot notation
+car.model = "challenger";
+
+// * assigning using bracket notation
+car["year"] = "2016";
+
+// * assigning using bracket notation with a variable
+let variable2 = "make";
+car[variable2] = "dodge";
+
+console.log(car); // { model:'challenger',year: 2016, make: 'dodge'};
+
+// * Reassigning existing value
+// * can use either bracket or dot
+
+// * reassign model
+car.model = "mustang";
+
+//* reassign year
+car["year"] = "2023";
+
+//* reassign make
+car.make = "ford";
+
+console.log(car); //{ model:'mustang',year: 2023, make: 'ford'};
+
+// * assign nested object
+car.stats = {};
+
+// * dot notation
+car.stats.mpg = 16;
+// * bracket notation
+car["stats"]["hp"] = 500;
+
+console.log(car.stats); // { mpg: 16, hp: 500 };
+
+// * reassign nested object
+
+// * dot notation
+car.stats.mpg = 21;
+// * bracket notation
+car["stats"]["hp"] = 777;
+
+console.log(car.stats); // { mpg: 21, hp: 777 };
+
+/*
+
+  Deleting a value
+  * Use the delete operator
+  * Just provide object and key
+    ** key:value pair will be deleted
+
+*/
+
+console.log("Before delete: ", car); //
+
+// delete operator followed be object.key
+delete car.make;
+
+console.log("After delete: ", car); //
