@@ -80,20 +80,60 @@ for (let key in people) {
 // console.log(people.person3.name);
 // console.log(people.person4.name);
 
-
 let brandon = {
-  name: 'brandon',
+  name: "brandon",
   age: 27,
   favoriteBands: ["Joyce Manor", "Neck Deep", "Idles"],
   location: { city: "Tampa", state: "Florida" },
-  sayHello: function(name) {
-    return 'Hello ' + name;
-  }
-}
+  sayHello: function (name) {
+    return "Hello " + name;
+  },
+};
 
-
-for(let key in brandon){
+for (let key in brandon) {
   // console.log(key)
   let value = brandon[key];
+  // console.log(value);
+}
+
+// for(let key in object){}
+// ! TypeError: brandon is not iterable
+// ! cant use for of on object
+// for(let key of brandon){}
+
+// Object.keys
+// return an array of keys
+
+let keysArray = Object.keys(brandon);
+
+console.log(keysArray);
+// [ 'name', 'age', 'favoriteBands', 'location', 'sayHello' ]
+
+// console.log(brandon[keysArray[0]]);//brandon
+// console.log(brandon[keysArray[1]]);//brandon
+// console.log(brandon[keysArray[2]]);//brandon
+
+for (let i = 0; i < keysArray.length; i++) {
+  let key = keysArray[i];
+  // console.log(key);
+  let value = brandon[key];
+  // console.log(key, value)
+}
+
+// Object.values
+// return an array of values
+
+// let valuesArr = Object.values(brandon);
+// console.log(valuesArr);
+
+// Object.entries
+// return a 2d matrix of sub arrays with the first element in the sub array as the key and the second as the value
+
+let entryArr = Object.entries(brandon);
+
+// console.log(entryArr);
+
+for (let [key, value] of Object.entries(brandon)) {
+  console.log(key);
   console.log(value);
 }
