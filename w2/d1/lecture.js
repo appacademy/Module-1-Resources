@@ -8,6 +8,9 @@
          [1,2,3].map(function(num){
               return num * 2
            });
+    * Differences
+      ! This - context - we learn in week 4
+      * functionally work the same
 
 */
 
@@ -62,3 +65,24 @@ let returnObj = (name) => ({ firstName: name });
 function returnObj2(name) {
   return { firstName: name };
 }
+
+
+
+
+function example(){
+
+}
+
+
+let example2 = function(){
+
+};
+
+let example3 = () => {};
+
+
+
+
+// example();
+
+// let example4 = () =>
