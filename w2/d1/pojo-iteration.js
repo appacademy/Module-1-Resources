@@ -133,6 +133,8 @@ let entryArr = Object.entries(brandon);
 
 // console.log(entryArr);
 
+let [key1, value1] = ['name','brandon'];
+
 for (let [key, value] of Object.entries(brandon)) {
   console.log(key);
   console.log(value);
