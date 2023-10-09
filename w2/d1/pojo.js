@@ -86,3 +86,59 @@ console.log(brandon.location.city); // Tampa
 console.log(brandon["location"]["city"]); // Tampa
 console.log(brandon.location["state"]); // Florida
 console.log(brandon["location"].state); // Florida
+
+
+
+/*
+
+  Accessing a method
+    * a method is just a function that belongs to an object
+    * the sayHello function belongs the brandon object
+    * the key is sayHello
+    * the value is the function
+
+    We can access the function just like any other key:value pair
+
+*/
+
+// * Can see the function object
+console.log(brandon.sayHello); // [Function];
+
+// * invoking the function
+console.log(brandon.sayHello("Anthony")); // Hello Anthony
+// * can do the same with bracket
+console.log(brandon["sayHello"]("Anthony")); // Hello Anthony
+
+// * we can use bracket notation on methods we've been using
+let numbers = [1, 2, 3];
+numbers.push(4);
+numbers["push"](5);
+console.log(numbers); // [1,2,3,4];
+
+/*
+
+  Whats the difference between bracket and dot notation?
+
+  Dot Notation
+    * Easier to read and write
+    ! Cannot use variables as keys
+    ! Limited on what we can key into
+      * examples of what we cannot key into using dot notation:
+        - object.first name
+        - object.1key
+
+  Bracket Notation
+    * You can use variables
+    * variables inside brackets are first evaluated then used to key into the object
+      - let variable = 'name';
+        let object = { name: 'brandon' };
+
+        console.log(object[variable]);// brandon
+        console.log(variable);// name
+        console.log(object['name']);// brandon
+
+    * can be used to key into objects that dot notation is not able to
+      - object["first name"]
+      - object["1key"]
+
+*/
