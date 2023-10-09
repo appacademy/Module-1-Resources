@@ -59,7 +59,7 @@ let brandon = {
 
 
 // lets access some properties of the brandon object
-// * in order to access the key, we will need the value
+// * in order to access the value, we will need the key
 // * can use either bracket or dot notation
 
 // * accessing name key
