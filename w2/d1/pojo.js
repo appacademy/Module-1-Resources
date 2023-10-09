@@ -145,30 +145,41 @@ console.log(numbers); // [1,2,3,4];
 
 
 
+
 /*
 
-  Whats the difference between bracket and dot notation?
+  Takeaways?
+
+  When to use which?
 
   Dot Notation
-    * Easier to read and write
-    ! Cannot use variables as keys
-    ! Limited on what we can key into
-      * examples of what we cannot key into using dot notation:
-        - object.first name
-        - object.1key
+    * When you know what you're going to key into
+     ** quicker to write
 
   Bracket Notation
-    * You can use variables
-    * variables inside brackets are first evaluated then used to key into the object
-      - let variable = 'name';
-        let object = { name: 'brandon' };
+    * dealing with variables
+    * dealing with weird key names
 
-        console.log(object[variable]);// brandon
-        console.log(variable);// name
-        console.log(object['name']);// brandon
+  * Both can be used to access and assign key value pairs
+  * We've shown accessing, lets show assigning
 
-    * can be used to key into objects that dot notation is not able to
-      - object["first name"]
-      - object["1key"]
+
+*/
+
+
+
+/*
+
+  Assigning values in a object
+  * You can assign the values using either notation
+    ** object['key'] = value;
+    ** object.key = value;
+
+  Reassigning
+  * When assigning/reassigning;
+    If the key:value pair exists in the object
+     * the key:value pair will be over written
+    If the key:value pair does not exists in the object
+     * the key:value pair will be created
 
 */

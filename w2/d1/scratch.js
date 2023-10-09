@@ -1,54 +1,70 @@
 
 
+// assigning key:value pairs to an object
 
+// create object literal
+let car = {};
 
+// use the assignment operator to assign key:value to the car object
 
+// dot notation
+car.model = 'challenger';
 
-// let brandon = {
-//   name: 'brandon',
-//   age: 27,
-//   favoriteBands: ["Joyce Manor", "Neck Deep", "Idles"],
-//   location: { city: "Tampa", state: "Florida" },
-//   sayHello: function(name) {
-//     return 'Hello ' + name;
-//   }
-// }
-
-
-let cat1 = {
-  name: "pumpkin",
-  age: 3,
-  color: "orange",
-  "1key": null,
-  "is cute": true,
-};
-
-// Dot notation
-// cannot use variables as keys
-let variable = 'name';
-// console.log(cat1.variable);//undefined
-// console.log(cat1['variable'])
-// js is trying to find a key of variable
+// console.log(car);
 
 // bracket notation
-// console.log(cat1[variable]);//pumpkin
+car['year'] = 2016;
+
+// console.log(car);
+//{ model: 'challenger', year: 2016 }
 
 
-// console.log(cat1.is cute);
-// console.log(cat1['is cute']);// true
+// we can do the same with variables
+let variable = 'make';
+car[variable] = 'dodge';
 
-// console.log(cat1.1key)
-// console.log(cat1['1key']);
+// console.log(car);
+// { model: 'challenger', year: 2016, make: 'dodge' }
+
+// we can reassign the value
+// that if the key:value pair exists it will be overwritten
+
+car.model = 'mustang';
+
+car['year'] = '2023';
+
+car.make = 'ford';
+
+// console.log(car);
+// { model: 'mustang', year: '2023', make: 'ford' }
+// console.log(car.year);// 2023
+
+// assign nested key:vals
+
+car.stats = {};
+
+// console.log(car);
+
+car.stats.mpg = 15;
+// console.log(car);
+// { model: 'mustang', year: '2023', make: 'ford', stats: { mpg: 15 } }
+// car.stats = {mpg, milage, etc}
 
 
-// keys are coerced into strings
-let fakeArr = {
-  1:'ele1',
-  2:'ele2',
-  3:'ele3'
-}
 
+/*
 
-console.log(fakeArr);
-//{ '1': 'ele1', '2': 'ele2', '3': 'ele3' }
+  Deleting a value
+  * Use the delete operator
+  * Just provide object and key
+    ** key:value pair will be deleted
 
+*/
+
+console.log(car);
+//{ model: 'mustang', year: '2023', make: 'ford', stats: { mpg: 15 } }
+
+delete car.stats;
+
+console.log(car);
+// { model: 'mustang', year: '2023', make: 'ford' }
