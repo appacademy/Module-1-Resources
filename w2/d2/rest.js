@@ -130,3 +130,5 @@ function destructure({ name }){
 
 
 console.log(destructure({name: 'brandon'}))
+console.log(destructure({name: 'caleb'}))
+// console.log(destructure(12))
