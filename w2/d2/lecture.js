@@ -60,6 +60,7 @@ let cat3 = {
   age: 3
 };
 
+// not the same reference in memory
 console.log(cat1 === cat3);// false
 // cat1 => <reference1>
 // cat3 => <reference3>
@@ -69,10 +70,22 @@ let cat2 = cat1;
 // cat1 => <reference1>
 // cat2 => <reference1>
 
-cat1.name = 'celebi';
+// cat1.name = 'celebi';
 // changing one changes both
 // both variables point the same references
 // <reference1> holds the properties
 
 console.log('cat1:', cat1, 'cat2:', cat2);
 // cat1: { name: 'celebi', age: 3 } cat2: { name: 'celebi', age: 3 }
+
+
+// console.log(cat1.name === cat3.name);
+// would be true because were comparing strings
+
+let arr1 = [1,2,3];
+let arr2 = [1,2,3];
+
+console.log(arr1 === arr2);//false
+let arr3 = arr1;
+
+console.log(arr3 === arr1);// true
