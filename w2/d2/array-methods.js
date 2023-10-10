@@ -157,7 +157,7 @@ let product = (numbers) => {
   let result = numbers.reduce((total, num, i, arr) => {
     console.log(i)
     total *= num;
-    arr.splice(0,1)
+    // arr.splice(0,1) prematurely stop loop
     return total;
   }, 1);
 
