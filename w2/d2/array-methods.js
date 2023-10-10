@@ -49,8 +49,6 @@
 
 */
 
-
-
 let animals = ["tiger", "lion", "hippo", "monkey"];
 
 // forEach
@@ -59,20 +57,86 @@ function logsUpperCased(animals) {
 }
 
 // without using for each
-for(let i = 0; i < animals.length; i++){
+for (let i = 0; i < animals.length; i++) {
   let animal = animals[i];
   // console.log(animal);
   // logsUpperCased(animal);
-};
+}
 
 // its passing every element in the array to the callback
 // animals.forEach(logsUpperCased);
 
 // animals.forEach((animal) => console.log(animal.toUpperCase()));
 
-animals.forEach(function(animal){
+animals.forEach(function (animal) {
   // console.log(animal.toUpperCase())
 });
 
+let nums = [1, 49, 24, 55, 2, 9, 58, 132, 181];
 
 // ! cant return in forEach
+function includesTwo(arr) {
+  // for(let i = 0; i < arr.length; i++){
+  //   let number = arr[i];
+  //   if(number === 2) return true;
+  // };
+  let bool = false;
+
+  arr.forEach(function callback(_, i) {
+    // console.log(num, i, arr);
+    // if(num === 2) return true;// cant return in a foreach
+    // if(num === 2) bool = true;
+    console.log(i);
+  });
+
+  return bool;
+}
+
+// console.log(includesTwo(nums));
+
+// .map
+// The map() method of Array instances creates a new array populated with the results of calling a provided function on every element in the calling array
+
+// return a new array of numbers that are divided by 2
+
+function divideNumbers(arr) {
+  // let newArr = [];
+  // for (let i = 0; i < arr.length; i++) {
+  //   let number = arr[i];
+
+  //   newArr.push(number / 2);
+  // }
+
+  // return newArr;
+
+  // console.log(arr.map((number) =>  number / 2));
+
+  let returnValueOfMap = arr.map((number) =>  number / 2);
+
+  // console.log(returnValueOfMap);
+  return returnValueOfMap;
+}
+
+// console.log(divideNumbers([2, 4, 6, 8, "word"])); //[1,2,3,4];
+
+
+
+
+// .filter
+// The filter() method of Array instances creates a shallow copy of a portion of a given array, filtered down to just the elements from the given array that pass the test implemented by the provided function.
+
+function onlyOdds(nums){
+
+  let odds = [];
+  for(let i = 0; i < nums.length; i++){
+    let num = nums[i];
+    if(num % 2 !== 0) odds.push(num);
+  };
+
+  return odds;
+
+  
+};
+
+
+console.log(onlyOdds([1,2,3,4,5]));// [1,3,5];
