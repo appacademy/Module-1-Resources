@@ -52,15 +52,15 @@
 let animals = ["tiger", "lion", "hippo", "monkey"];
 
 // forEach
-function logsUpperCased(animals) {
-  console.log(animals.toUpperCase());
+function logsUpperCased(animal) {
+  // console.log(animal.toUpperCase());
 }
 
 // without using for each
 for (let i = 0; i < animals.length; i++) {
   let animal = animals[i];
   // console.log(animal);
-  // logsUpperCased(animal);
+  logsUpperCased(animal);
 }
 
 // its passing every element in the array to the callback
@@ -133,10 +133,35 @@ function onlyOdds(nums){
     if(num % 2 !== 0) odds.push(num);
   };
 
-  return odds;
+  // return odds;
 
-  
+  // let returnOfFilter = nums.filter((num, i, arr) => {
+  //  return num % 2 !== 0
+  // });
+
+  // console.log(returnOfFilter);
+  return nums.filter((num, i , arr) => num % 2 !== 0);
 };
 
+// console.log(onlyOdds([1,2,3,4,5]));// [1,3,5];
 
-console.log(onlyOdds([1,2,3,4,5]));// [1,3,5];
+
+
+// .reduce
+// The reduce() method of Array instances executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value.
+
+
+
+let product = (numbers) => {
+
+  let result = numbers.reduce((total, num, i) => {
+    console.log(total, num, i)
+    total *= num;
+    return total;
+  }, 1);
+
+  return result;
+}
+
+
+console.log(product([2,3,4]));//24
