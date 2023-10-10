@@ -154,9 +154,10 @@ function onlyOdds(nums){
 
 let product = (numbers) => {
 
-  let result = numbers.reduce((total, num, i) => {
-    console.log(total, num, i)
+  let result = numbers.reduce((total, num, i, arr) => {
+    console.log(i)
     total *= num;
+    arr.splice(0,1)
     return total;
   }, 1);
 
