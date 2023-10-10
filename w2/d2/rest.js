@@ -27,6 +27,59 @@ function sentenceMaker(word1, ...words) {
   return sentence;
 }
 
-console.log(sentenceMaker("hello", "world")); // hello world
-console.log(sentenceMaker("one")); // one undefined
-console.log(sentenceMaker("too", "many", "args")); //too many
+// console.log(sentenceMaker("hello", "world")); // hello world
+// console.log(sentenceMaker("one")); // one undefined
+// console.log(sentenceMaker("too", "many", "args")); //too many
+
+function product(...numbers) {
+  // console.log(numbers);
+  let total = 1;
+  for(let number of numbers) {
+    // let number = numbers[i] - ! no need for of does for us
+    // looping are done under the hood
+    total *= number;
+  };
+
+  return total;
+};
+
+
+// console.log(product(12,12));
+// console.log(product(1,2,3));
+// console.log(product(34));
+
+
+// Destructuring with rest
+// * we can use rest outside of function parameters
+// * the premise is the same, gather the REST of the elements and store them in a data type.
+// * we can use destructuring to in combination with rest to create some interesting behaviors
+
+let numbers = [1,2,3,4,5,6];
+
+// let [num1, ...restOfNums] = numbers;
+// console.log(num1, restOfNums);// 1 [ 2, 3, 4, 5, 6 ]
+// * destruct the number 1 into the num1 variable, and put the REST of the numbers in an array and stored that in a variable called restOfNums
+
+// use both rest and spread with destructing
+
+let [firstNum, ...rest] = [...numbers, 4];
+console.log(firstNum, rest);// 1 [ 2, 3, 4, 5, 6, 4 ]
+// * to the right of the equal sign - spread into an new array literal all the numbers from the numbres array, but also add the number 4
+// -> [1,2,3,4,5,6,4];
+// * to the left of the equal sign, destruct positionally into the firstNum variable the first element in the array to the right of the equal sign and store the rest of the numbers in a variable called rest
+// -> 1 [2,3,4,5,6,4]
+
+
+
+let names = ['brandon', 'maica','trevor', 'charles']
+
+let [person1, ...people] = [...names, 'caleb'];
+
+// let [person1, ...people] = ['brandon', 'maica','trevor', 'charles', 'caleb'];
+
+// person1 = 'brandon';
+// people = ['maica','trevor', 'charles', 'caleb']
+
+console.log(person1, people);
+//brandon maica trevor charles
+// brandon [ 'maica', 'trevor', 'charles', 'caleb' ]
