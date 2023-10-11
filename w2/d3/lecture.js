@@ -39,27 +39,23 @@
   * stack - first in last out
 
 */
-let callback = () => console.log('hello from callback function');
+let callback = () => console.log("hello from callback function");
 
 // higher order function
 function higherOrder(param) {
-  console.log('hello from higher order function');
+  console.log("hello from higher order function");
   // console.log(param);// [Function: callback]
   // console.log(param())
-  param();// hello from callback function
-};
-
+  param(); // hello from callback function
+}
 
 // let name = 'brandon';
 // let age = 27
 // console.log(higherOrder(age));
 
-
 // console.log(callback);// [Function: callback]
 
 // higherOrder(callback);
-
-
 
 /*
 
@@ -83,30 +79,42 @@ function higherOrder(param) {
 
 */
 
-
-
 // higher order function
 function doubleNumbers(numbers, callback) {
   // console.log(numbers, callback);//[ 1, 2, 3, 4, 5 ] [Function: double]
   // console.log(callback());NaN
   // console.log(callback(23));// 46
   let doubled = [];
-  for(let i = 0 ;i < numbers.length; i++){
+  for (let i = 0; i < numbers.length; i++) {
     let number = numbers[i];
     // console.log(number);
     // console.log(callback(number));
-    console.log('before passing num to callback', number)
+    // console.log('before passing num to callback', number)
     let doubledNum = callback(number);
-    console.log('after passing num to callback', doubledNum)
+    // console.log('after passing num to callback', doubledNum)
     doubled.push(doubledNum);
-  };
+  }
 
   return doubled;
-};
+}
 
-
-let array = [1,2,3,4,5];
+let array = [1, 2, 3, 4, 5];
 let double = (number) => number * 2;
 
+// console.log(doubleNumbers(array, double));
 
-console.log(doubleNumbers(array, double));
+// console.log(doubleNumbers([1,2,3,4,5], double));
+
+// console.log(doubleNumbers([1,2,3,4,5], (number) => number * 2));
+
+// console.log(
+//   doubleNumbers([1, 2, 3, 4, 5], (number) => {
+//     return number * 2;
+//   })
+// );
+
+// console.log(
+//   doubleNumbers([1, 2, 3, 4, 5], function (number) {
+//     return number * 2;
+//   })
+// );
