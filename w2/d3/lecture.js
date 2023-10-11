@@ -152,7 +152,10 @@ let primes = numbers.filter(isPrime);
 
 let timesTwo = num => num * 2;
 
-console.log(numbers.map(timesTwo));
+
+let returnVal = numbers.map(timesTwo);
+
+console.log(returnVal);
 // [
 //   2,  4,  6, 8,
 //  10, 12, 14
