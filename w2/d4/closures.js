@@ -25,3 +25,66 @@
 
 */
 
+
+// example 1: we can access outer function variables
+function pizzaMaker(food){
+
+  let order = 'id like a pizza with ';
+
+  //inner function
+  // * closing over the outer function - pizzaMaker
+  function oven(){
+    return order + food;
+  }
+
+  // return the return value of calling oven
+  return oven();
+};
+
+// console.log(pizzaMaker('cheese'));
+
+
+
+// Example 2 -  we can access and change the outer function variables
+function groceryList(list){
+
+  function addItem() {
+    list.push('and ice cream');
+
+  };
+
+  addItem();
+  return list;
+};
+
+
+// console.log(groceryList(['milk','eggs']));
+
+
+
+// Example 3 - we can return a function and access the variables even after its returned
+
+function elephantCollector(){
+  let elephants = ['dumbo'];
+
+  return function inner(name) {
+    elephants.push(name);
+    return elephants;
+  }
+
+};
+
+// console.log(elephantCollector);// [Function: elephantCollector]
+
+// console.log(elephantCollector());// [Function: inner]
+
+let elephantParade1 = elephantCollector()
+// console.log(elephantParade1);//[Function: inner]
+// console.log(elephantParade1());//<--- [ 'dumbo', undefined ]
+console.log(elephantParade1('babar'));// [ 'dumbo', 'babar' ]
+// console.log(elephantCollector()('babar'));//[ 'dumbo', 'babar' ]
+
+
+let elephantParade2 = elephantCollector();
+console.log(elephantParade2);// [Function: inner]
+console.log(elephantParade2('frank'));//<--- [ 'dumbo', 'frank' ]
