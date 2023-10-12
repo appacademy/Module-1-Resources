@@ -67,24 +67,79 @@ function groceryList(list){
 function elephantCollector(){
   let elephants = ['dumbo'];
 
+  // returning a name function
   return function inner(name) {
+    elephants.push(name);
+    return elephants;
+  };
+
+
+  // * returning a anonymous function
+  return function (name) {
+    elephants.push(name);
+    return elephants;
+  };
+
+  // * returning a function with a name
+  function inner(name) {
     elephants.push(name);
     return elephants;
   }
 
+  // * return the return value of calling inner
+  return inner;
+
+  // * return an arrow function
+  return (name) => {
+    elephants.push(name);
+    return elephants;
+  };
+
 };
 
 // console.log(elephantCollector);// [Function: elephantCollector]
-
+// log the return value of calling the outer function
+// however the return value is a function
 // console.log(elephantCollector());// [Function: inner]
 
 let elephantParade1 = elephantCollector()
 // console.log(elephantParade1);//[Function: inner]
 // console.log(elephantParade1());//<--- [ 'dumbo', undefined ]
-console.log(elephantParade1('babar'));// [ 'dumbo', 'babar' ]
+// console.log(elephantParade1('babar'));// [ 'dumbo', 'babar' ]
 // console.log(elephantCollector()('babar'));//[ 'dumbo', 'babar' ]
 
 
 let elephantParade2 = elephantCollector();
-console.log(elephantParade2);// [Function: inner]
-console.log(elephantParade2('frank'));//<--- [ 'dumbo', 'frank' ]
+// console.log(elephantParade2);// [Function: inner]
+// console.log(elephantParade2('frank'));//<--- [ 'dumbo', 'frank' ]
+
+
+
+
+function createCounter() {
+  // all inner functions will have a starting count of 0
+  let count = 10;
+
+  return function() {
+    count--;
+    return count;
+  }
+}
+
+
+// console.log(createCounter());// [Function (anonymous)]
+// lexical environment 1
+let counter1 = createCounter();
+
+// invoke the inner function
+console.log(counter1());// 1
+console.log(counter1());// 2
+console.log(counter1());// 3
+
+// lexical environment 2
+let counter2 = createCounter();
+console.log('counter2:')
+console.log(counter2());
+console.log(counter2());
+console.log(counter2());
+
