@@ -59,7 +59,6 @@ function bar(word) { // define function bar that accepts param word
   baz("bazaar");  // invoke baz function with string "bazaar"
 }
 
-
 // ! leave out debugger to show that step into will
 // step into the function and go line by line
 // step over will step over the function
@@ -70,11 +69,10 @@ function baz(word) { // define function baz that accepts param word
   // debugger; // trigger debugger
 }
 
-foo("food");
+// foo("food");
 
-let names = ['brandon', 'charles', 'Anabel', 'trevor'];
+let names = ['brandon', 'charles', 'Maica', 'trevor'];
 for(let i = 0; i < names.length; i++){
   console.log(names[i]);
   debugger;
 }
-
