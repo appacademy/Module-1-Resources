@@ -163,7 +163,7 @@ function recurseArr(arr) {
   return recurseArr(rest);
 }
 
-console.log(recurseArr([1, 2, 3, 4]));// undefined
+// console.log(recurseArr([1, 2, 3, 4]));// undefined
 /*
 Bottom of the stack
 recurseArr([1, 2, 3, 4]) => recurseArr([1, 2, 3])
@@ -177,3 +177,63 @@ recurseArr([1, 2])       => undefined;
 recurseArr([1, 2, 3])    => undefined
 recurseArr([1, 2, 3, 4]) => undefined
 */
+
+// reverse a string
+// start - string
+// stop - length is 0
+// step - slice
+function reverse(string) {
+  // base case
+  if (string.length === 0) return "";
+
+  let first = string[0];
+  // console.log(first);
+
+  return reverse(string.slice(1)) + first;
+}
+// console.log(reverse(''))// ''
+// console.log(reverse('cat'));// 'tac';
+
+/*
+Bottom of the stack
+reverse('cat') => reverse('at') + c;
+reverse('at')  => reverse('t') + a;
+reverse('t')   => reverse('') + t;
+reverse('')    =>  '' - Top of the stack
+reverse('t')   => '' + t  => 't';
+reverse('at')  => 't' + a = 'ta'
+reverse('cat') => 'ta' + c = 'tac'
+*/
+
+function reverseLog(string) {
+  console.log("entering function");
+  console.log(string);
+  if (string.length === 0) return "";
+
+  let first = string[0];
+  console.log(first, string);
+
+  let result = reverseLog(string.slice(1)) + first;
+  console.log("on the way down the stack");
+  console.log(result);
+  return result;
+}
+
+// console.log(reverseLog("cat"));
+
+function reverseDebugger(string) {
+
+  debugger;
+  if (string.length === 0) return "";
+
+  let first = string[0];
+  debugger;
+
+  let result = reverseDebugger(string.slice(1)) + first;
+
+  debugger;
+  return result;
+}
+
+// console.log('cat'.slice(1));//at
+reverseDebugger('cat');
