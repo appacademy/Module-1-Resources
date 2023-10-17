@@ -117,7 +117,7 @@ for (let i = 0; i < 3; i++) {
 // stop - 0;
 // step - -= 1
 function recurse(number) {
-  console.log(number);
+  // console.log(number);
   if (number === 0) return;
   return recurse(number - 1);
 }
@@ -131,7 +131,7 @@ function recursiveCase(number) {
     return;
   }
 }
-recursiveCase(3)
+// recursiveCase(3)
 /*
 
 recurse(0) => return undefined <-- top of the stack where we hit a return value instead of a function call
@@ -141,3 +141,39 @@ recurse(3) => recurse(2);
 return the return value of calling recurse passing the value 2
 */
 // console.log(recurse(3));
+
+// common recursing pattern with arrays
+// start - full array
+// stop - length of the array is 0
+// step - shortening the array - pop, shift, slice, rest
+
+function recurseArr(arr) {
+  console.log(arr);
+  if (arr.length === 0) return;
+
+  // let popped = arr.pop();
+  // console.log(popped);
+  // console.log(arr[0]);
+
+  // let shifted = arr.shift()
+  // console.log(shifted);
+  let [first, ...rest] = arr;
+  console.log(first);
+
+  return recurseArr(rest);
+}
+
+console.log(recurseArr([1, 2, 3, 4]));// undefined
+/*
+Bottom of the stack
+recurseArr([1, 2, 3, 4]) => recurseArr([1, 2, 3])
+recurseArr([1, 2, 3])    => recurseArr([1, 2])
+recurseArr([1, 2])       => recurseArr([1]);
+recurseArr([1])          => recurseArr([]);
+recurseArr([])           => return undefined
+Top of the stack
+recurseArr([1])          => undefined;
+recurseArr([1, 2])       => undefined;
+recurseArr([1, 2, 3])    => undefined
+recurseArr([1, 2, 3, 4]) => undefined
+*/
