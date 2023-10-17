@@ -34,8 +34,6 @@ function baz() {
 
 // foo(); //a,b,c,d,e
 
-
-
 /*
 
 
@@ -91,5 +89,55 @@ function baz() {
   * Helpful videos
     https://www.youtube.com/watch?v=FVZ-A_Akros&list=PL7mu5NfYICcGphu5CaYj52Ex2nrcCUFZV&index=1&t=110s
 
-
 */
+
+// default parameter
+function example(param1, param2 = "world") {
+  return param1 + " " + param2;
+}
+
+// use default param value if no arg is passed
+// console.log(example('hello'));
+// is arg is passed use the argument
+// console.log(example('hello', 'mars'));
+
+// Loops
+// * we control the boundaries of the loops
+// start - 0
+// stop - 3
+// step - += 1
+for (let i = 0; i < 3; i++) {
+  // console.log(i);
+}
+
+// Recursing an arbitrary amount of times
+// in a way we can control our boundaries
+// print every number from 3 to 0
+// start - 3;
+// stop - 0;
+// step - -= 1
+function recurse(number) {
+  console.log(number);
+  if (number === 0) return;
+  return recurse(number - 1);
+}
+
+// recursive case
+function recursiveCase(number) {
+  // recursive case - condition in which to keep recursing
+  if (number > 0) {
+    return recurse(number - 1);
+  } else {
+    return;
+  }
+}
+recursiveCase(3)
+/*
+
+recurse(0) => return undefined <-- top of the stack where we hit a return value instead of a function call
+recurse(1) => undefined
+recurse(2) => recurse(1)
+recurse(3) => recurse(2);
+return the return value of calling recurse passing the value 2
+*/
+// console.log(recurse(3));
