@@ -28,7 +28,7 @@ let sayHi = function() {
 // function expression with fat arrow
 let sayHi2 = () => console.log('hello');
 // console.log(sayHi2);// [Function: sayHi2]
-// sayHi2();
+sayHi2();
 
 
 // An iffe is just the anon portion wrapped in parenthesis - grouping operator
