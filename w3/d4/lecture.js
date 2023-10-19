@@ -23,14 +23,13 @@
 
 // Synchronous code
 function synchronous() {
-  console.log('two')
-};
+  console.log("two");
+}
 
 // console.log('one');
 // synchronous();
 // console.log('three');
 // one -> two -> three
-
 
 /*
   Asynchronous code?
@@ -70,20 +69,73 @@ function synchronous() {
     * Task can only be performed one at a time because?
     * JS is a single threaded language!
 */
-
-
 // async code
+// console.log('first');
 
-console.log('first');
+// setTimeout(() => {
+//   console.log('second');
+// }, 5000);
 
-setTimeout(() => {
-  console.log('second');
-}, 5000);
+// setTimeout(() => {
+//   console.log('third')
+// }, 0);
 
-setTimeout(() => {
-  console.log('third')
-},0 );
-
-console.log('fourth');
-
+// console.log('fourth');
 // first -> fourth -> third -> second
+
+/*
+
+  setTimeout
+
+  What is a setTimeout?
+    * The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.
+    * setTimeout(callbackFunction, delayInMilliseconds, param1, param2);
+    * you can pass anon callback to a setTimeout
+
+  What does a setTimeout return?
+    * The returned timeoutID is a positive integer value which identifies the timer created by the call to setTimeout(). This value can be passed to clearTimeout() to cancel the timeout
+
+*/
+
+// console.log(global);
+
+// global.setTimeout(console.log, 2000, 'hello world');
+
+// setTimeout(console.log, 2000, 'hello world');
+
+function time() {
+  console.log("time is up");
+}
+
+// Convert from milliseconds to seconds you divide by 1000
+// setTimeout(time, 5000);
+
+// setTimeout(() => {
+//   console.log("time is up");
+// }, 4000);
+
+// setTimeout(function () {
+//   console.log("time is up");
+// }, 3000);
+
+function sayHi(name1, name2) {
+  console.log(`hello ${name1} and ${name2}`);
+}
+
+// setTimeout(sayHi, 3000, 'maica', 'charles');
+
+// setTimeout((name1, name2) => console.log(`hello ${name1} and ${name2}`), 3000, 'brandon', 'trevor');
+
+// clearTimeout
+// * this will prevent the function from running at all
+
+let timer = setTimeout(
+  (name) => {
+    console.log(`hello ${name}`);
+  },
+  2000,
+  "maica"
+);
+
+// console.log(timer);
+clearTimeout(timer);
