@@ -129,14 +129,73 @@ function sayHi(name1, name2) {
 // clearTimeout
 // * this will prevent the function from running at all
 
-let timer = setTimeout(
-  (name) => {
-    console.log(`hello ${name}`);
-  },
-  2000,
-  "maica"
-);
+// let timer = setTimeout(
+//   (name) => {
+//     console.log(`hello ${name}`);
+//   },
+//   2000,
+//   "maica"
+// );
 
 // clearTimeout(timer);
 
 // console.log(timer);
+
+// fib
+function somethingSlow(n) {
+  // console.log(n);
+  if (n === 1 || n === 2) return 1;
+
+  return somethingSlow(n - 1) + somethingSlow(n - 2);
+}
+
+function foo() {
+  console.log("food");
+}
+
+function bar() {
+  console.log("bark");
+  // baz();
+
+  setTimeout(baz, 2000);
+}
+
+function baz() {
+  console.log("bazaar");
+}
+
+// setTimeout(foo, 1500);
+// setTimeout(bar, 1000);
+// // * tree recursion
+// console.log(somethingSlow(44));
+// // Try to predict the output? dont worry about something slow will return
+// console.log(somethingSlow(44));
+count = 0;
+function delayedPrinter(delaysArr) {
+  debugger;
+  // if (!delaysArr.length) return;
+  count++;
+  debugger;
+  console.log(count);
+  const currentDelay = delaysArr.shift();
+  console.log(currentDelay);
+
+  //  delayedPrinter(delaysArr)
+  setTimeout(delayedPrinter, currentDelay, delaysArr);
+}
+
+const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
+
+// delayedPrinter(delaysArr);
+
+function delayedPrinter2(delaysArr) {
+  let totalDelay = 0;
+
+  delaysArr.forEach((delay) => {
+    totalDelay += delay;
+    setTimeout(console.log, totalDelay, `Waiting for ${delay}ms`);
+  });
+
+}
+
+// console.log(delayedPrinter2(delaysArr));
