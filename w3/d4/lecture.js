@@ -137,5 +137,6 @@ let timer = setTimeout(
   "maica"
 );
 
+// clearTimeout(timer);
+
 // console.log(timer);
-clearTimeout(timer);
