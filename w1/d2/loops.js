@@ -34,7 +34,7 @@ let i = 0; // A condition where to start
 
 while (i <= 5) {
   // while this is condition is true, execute the code in this block
-  console.log(i); // print the value to the console
+  // console.log(i); // print the value to the console
   i++; // step towards meeting the condition
   // increment our i variable by 1 after each iteration
   // same thing as, i += 1, i = i + 1
@@ -47,7 +47,7 @@ while (i <= 5) {
 // ! remember index's start at 0
 // print every number between 0 up to 5 an increments of 1
 for (let i = 0; i <= 5; i++) {
-  console.log(i); // 0 1 2 3 4 5
+  // console.log(i); // 0 1 2 3 4 5
 }
 
 
@@ -60,16 +60,18 @@ length - 8
 
 
 function iterateThroughWord(word) {
-  console.log(word);//umbrella
-  console.log(word[0]);// u
-  console.log(word[1]);// 1
+  // console.log(word);//umbrella
+  // console.log(word[0]);// u
+  // console.log(word[1]);// 1
   // console.log(word[word.length - 1])
 
-  for(let i = 0; i < 8; i++){
+  // i = 0; i < 4; i++
+  for(let i = 0; i < word.length; i++){
     // block scope
-    console.log(i, word[i]);
-  }
+    console.log('index: ',i, 'letter: ',word[i], word);
+  };
 }
 
 
-console.log('===>',iterateThroughWord('umbrella'));
+// console.log('===>',iterateThroughWord('umbrella'));
+// iterateThroughWord('cats')
