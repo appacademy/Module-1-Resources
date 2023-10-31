@@ -104,3 +104,14 @@ let num = 0;
 num++;
 console.log(num);
 // num += 2
+
+
+let animal = 'cat';
+animal = 'dog';
+
+// globally defined variable
+// ! avoid
+car = 'dodge';
+
+// But if you are reassigning
+animal = 'mouse'
