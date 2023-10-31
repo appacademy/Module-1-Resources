@@ -27,3 +27,53 @@
 
 */
 
+let randomNumber = Math.random();
+// console.log("random num:", randomNumber);
+
+// mutually exclusive condition
+// if (randomNumber > 0.5) {
+//   console.log("heads");
+// } else {
+//   console.log("tails");
+// }
+
+// non mutually exclusive condition
+let number = 5;
+// if (number > 1) {
+//   console.log("heads"); //heads
+// }
+// if (number > 2) {
+//   console.log("tails"); // tails
+// }
+
+// if you need multiple mutually exclusive conditions
+// use else if
+let number2 = 45;
+// if (number2 < 1) {
+//   console.log("less than 1"); //heads
+// } else if (number2 > 20) {
+//   console.log("greater than 20"); // tails
+// } else if(number2 > 30) {
+//   console.log('greater than 30')
+// } else {
+//   console.log('doesnt meet any conditions')
+// }
+
+function greaterThanFive(num) {
+  if (num > 5) {
+    return true;
+  }
+  return false;
+}
+
+console.log(greaterThanFive(6));
+
+
+// truthy and falsy
+if(12) {
+  console.log('is truthy')
+}
+
+if(0) {
+  console.log('does not print')
+}
