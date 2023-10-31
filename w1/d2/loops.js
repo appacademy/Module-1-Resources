@@ -20,31 +20,35 @@
 */
 
 
-// while loops
-// why would we use a while loop over a for loop?
-// whenever we dont know how many times we may need to iterate
-// if you want an action to repeat itself until certain condition is met
 
-// components of loop
-// Initial Expression - 0
-let i = 0;
+// While loops
+// * When would we use a while loop over a for loop?
+// * Whenever we don't know how many times we need to iterate
+// * If you want an action to repeat itself until a certain condition is met or while a condition is met
 
-// while(true) {
-//   // console.log(i);
-//   // Step towards completing the loop
-//   // is inside the while loop
-//   i++;
-// };
+// While loops will execute while their condition is true.
+// * You'll want to make sure the expression that steps your loop towards completion is embedded within the body of your loop.
 
-//ctrl + c - stop terminal from running infinite loop
+// Components of a loop
+let i = 0; // A condition where to start
+// * we can start anywhere
+
+while (i <= 5) {
+  // while this is condition is true, execute the code in this block
+  console.log(i); // print the value to the console
+  i++; // step towards meeting the condition
+  // increment our i variable by 1 after each iteration
+  // same thing as, i += 1, i = i + 1
+}
 
 // for loop
-// start - 0
-// condition - i <= 5
-// step towards condition - i++;
-for(let i = 0; i < 8; i++){
-  // block scope
-  console.log(i);// 0 1 2 3 4 5
+// * let i = 0; initial expression, where to start
+// * i <= 5; condition to be met
+// * i++; increment i by 1, step to completing the loop
+// ! remember index's start at 0
+// print every number between 0 up to 5 an increments of 1
+for (let i = 0; i <= 5; i++) {
+  console.log(i); // 0 1 2 3 4 5
 }
 
 
