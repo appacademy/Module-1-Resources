@@ -39,7 +39,7 @@
 
 // defining the function
 function myFunc() {
-  console.log('hello from my func')
+  // console.log('hello from my func')
   return true;
   // return false;
 }
@@ -59,11 +59,17 @@ let returnVal = myFunc();
 
 
 // let banana = 'cats'
-function lastIndex(banana) {
-  console.log(banana)
+function lastIndex(word) {
+  // console.log(word);// cats
+  // console.log(word[0]);// c
+  // console.log(word[3]);// s
+  return word[word.length - 1]// cats[3] s
 };
 
-lastIndex('cats');
+console.log(lastIndex('cats'));// s
+console.log(lastIndex('mouse'));// e
 
+let lastIndexofCat = lastIndex('cats')
+let lastIndexofMouse = lastIndex('mouse')
 
-console.log('the return value of', lastIndex('cats') );
+// console.log(lastIndexofCat, lastIndexofMouse);// s e
