@@ -36,3 +36,34 @@
 
 
 */
+
+// defining the function
+function myFunc() {
+  console.log('hello from my func')
+  return true;
+  // return false;
+}
+
+
+// invoke/call
+// myFunc();
+// console.log('return value of my Func',myFunc());// true
+let returnVal = myFunc();
+
+// console.log(returnVal);// true
+
+// console.log(myFunc);// [Function: myFunc]
+// console.log(myFunc());// true
+
+
+
+
+
+function lastIndex(banana) {
+
+};
+
+lastIndex('cats');
+
+
+console.log('the return value of', lastIndex('cats') );
