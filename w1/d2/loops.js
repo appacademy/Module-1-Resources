@@ -20,7 +20,6 @@
 */
 
 
-
 // While loops
 // * When would we use a while loop over a for loop?
 // * Whenever we don't know how many times we need to iterate
@@ -50,6 +49,7 @@ while (i <= 5) {
 for (let i = 0; i <= 5; i++) {
   console.log(i); // 0 1 2 3 4 5
 }
+
 
 
 /*
