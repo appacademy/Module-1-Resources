@@ -58,9 +58,9 @@ let returnVal = myFunc();
 
 
 
-
+// let banana = 'cats'
 function lastIndex(banana) {
-
+  console.log(banana)
 };
 
 lastIndex('cats');
