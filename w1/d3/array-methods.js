@@ -37,3 +37,17 @@ pushArr.push('🍅')
 
 let returnOfPush = pushArr.push(true)
 // console.log(returnOfPush, pushArr);
+
+
+
+// pop
+// The pop() method of Array instances removes the last element from an array and returns that element. This method changes the length of the array.
+// return the element removed
+// removed the last element from an array
+
+let popArr = [true, 1, 'off'];
+console.log('og array:', popArr);
+
+let lastEle = popArr.pop();
+
+console.log('mutated arr:', popArr, 'last ele', lastEle);
