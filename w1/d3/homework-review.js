@@ -41,13 +41,16 @@ should return the difference between the first and last elements of the array.
 // your code here...
 function firstAndLast(numbers) {
 
+  // this is an edge case that handles empty arrays
   if(numbers.length === 0) {
     return null;
   };
+
   if(numbers.length === 1) {
     return 0;
   }
 
+  //
   let first = numbers[0];
   let last = numbers[numbers.length - 1];
 
