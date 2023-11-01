@@ -45,9 +45,30 @@ let returnOfPush = pushArr.push(true)
 // return the element removed
 // removed the last element from an array
 
-let popArr = [true, 1, 'off'];
-console.log('og array:', popArr);
+// let popArr = [true, 1, 'off'];
+// console.log('og array:', popArr);// [ true, 1, 'off' ]
 
-let lastEle = popArr.pop();
+// let lastEle = popArr.pop();
 
-console.log('mutated arr:', popArr, 'last ele', lastEle);
+// console.log('mutated arr:', popArr, 'last ele', lastEle);
+// //[ true, 1 ] last ele off
+
+// popArr.pop();//[ true ]
+
+// console.log(popArr);// [ ]
+
+// let test = popArr.pop();
+// console.log(test);// true
+
+// let test2 = popArr.pop(); //
+// console.log(test2, popArr);
+
+
+let example = [1,2,3,4,5];
+// let res1 = example.pop()
+// console.log(res1);
+// example.pop()
+// example.pop()
+// example.pop()
+// example.pop()
+// console.log(example)
