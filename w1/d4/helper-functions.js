@@ -50,8 +50,8 @@ function deposit(initialBalance, amount) {
     return initialBalance;
 }
 
-console.log(transaction("withdraw", 5));
-console.log('final balance: ', balance);
+// console.log(transaction("withdraw", 5));
+// console.log('final balance: ', balance);
 // console.log(transaction("deposit", 10));
 
 // console.log(transaction("deposit", 500000));
@@ -101,3 +101,38 @@ console.log('final balance: ', balance);
     - Take a break!
 
 */
+
+function math(num1, num2, operation) {
+    if (operation === "addition") {
+        return add(num1, num2);
+    } else if (operation === "subtraction") {
+        return subtract(num1, num2);
+    } else if (operation === "muliplication") {
+        return multiply(num1, num2);
+    } else if (operation === "division") {
+        return divide(num1, num2);
+    }
+    return "Invalid operation"
+}
+
+function add(num1, num2) {
+    return num1 + num2;
+}
+
+function subtract(num1, num2) {
+    return num1 - num2;
+}
+
+function multiply(banana, apple) {
+    return banana * apple;
+}
+
+function divide(num1, num2) {
+    return num1 / num2;
+}
+
+console.log(math(1, 2, "addition"));
+console.log(math(10, 5, "subtraction"));
+console.log(math(3, 2, "muliplication"));
+console.log(math(3, 2, "division"));
+console.log(math(3, 2, "invalid92386"));
