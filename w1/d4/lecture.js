@@ -36,3 +36,16 @@ let matrix = [
 // let i = 0;
 // let j = 0;
 // console.log(matrix[i][j]);// a
+// cmd + / - mac
+// ctrl + / - windows
+
+for(let i = 0; i < matrix.length; i++){
+  let subArr = matrix[i];
+  console.log(subArr);
+
+  for(let j = 0; j < subArr.length; j++){
+    let letter = subArr[j];
+    // console.log('i:',i,'j:',j,  letter);
+    console.log( matrix[i][j])
+  }
+}
