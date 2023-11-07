@@ -77,7 +77,7 @@ console.log(arr3); // [ 0, [ 1, 2, 3 ], [ 4, 5, 6 ] ];
 // * Use spread instead
 let arr4 = [0, ...arr1, arr2];
 // * spread into an array literal the number 0, the elements of arr1 and the elements of arr2 and store in the variable arr4
-console.log(arr4); //  [ 0, 1, 2, 3 , 4, 5, 6  ];
+console.log(arr4); //  [ 0, 1, 2, 3 , [4, 5, 6]];
 
 // * Spread can be used to create a shallow copy
 // *  old way to make copy
