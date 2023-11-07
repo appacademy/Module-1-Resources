@@ -116,19 +116,16 @@ let batmanObj = {
 
 // console.log(batman)
 
-
 // let name = batman.name;
 // let age = batman.age;
 // let state = batman.location.state
-
-
 
 let {
   name,
   age,
   middleName,
   location: { city, state },
-} = {...batmanObj, name:'bruce'};
+} = { ...batmanObj, name: "bruce" };
 
 // let {
 //   name,
@@ -145,7 +142,6 @@ city = gotham
 state = NY
 */
 
-
 //{ sidekick: 'robin' }
 // console.log(name)
 
@@ -155,3 +151,46 @@ state = NY
 // console.log(batmanObj);
 
 // console.log(city, middleName);// gotham
+
+// destructing
+
+let entries = Object.entries(batmanObj);
+//array - array literal - [];
+//object literal - {};
+// console.log(entries);
+for (let [key, value] of entries) {
+  // let key = entry[0];
+  // let value = entry[1];
+  // console.log(key, value);
+}
+
+/*
+let batmanObj = {
+  name: "batman",
+  location: {
+    city: "gotham",
+    state: "NY",
+  },
+  age: 40,
+};
+*/
+
+function destructure({
+  name,
+  location: { city, state },
+  age,
+}) {
+  // console.log(prop);
+
+  console.log(name, city, state, age);
+}
+
+destructure(batmanObj);
+
+/*
+[
+  [ 'name', 'batman' ],
+  [ 'location', { city: 'gotham', state: 'NY' } ],
+  [ 'age', 40 ]
+]
+*/
