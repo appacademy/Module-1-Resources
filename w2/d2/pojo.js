@@ -37,6 +37,7 @@ function countScores(people) {
 
   for(let personObj of people) {
 
+    console.log(personObj)
     let score = personObj.score;
     let name = personObj.name;
 
