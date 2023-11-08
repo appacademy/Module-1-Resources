@@ -40,6 +40,18 @@
   * Whatever function is currently at the top of the stack, is js focus of attention
   * stack - first in last out
 
+
+  not using an array or return
+  for each
+
+  Using array
+  filter or map
+  
+  map when there is no condition
+  filter when there is a condition
+  reduce used on anything
+
+
 */
 
 

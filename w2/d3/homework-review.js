@@ -21,7 +21,6 @@
 
 //higher order function
 function doubleNumbers(array, callback) {
-
   let result = [];
 
   for (let i = 0; i < array.length; i++) {
@@ -34,17 +33,29 @@ function doubleNumbers(array, callback) {
   return result;
 }
 
-
-
-
 let numbers = [1, 2, 3];
 let double = (num) => num * 2;
 
-
-
 // console.log(doubleNumbers(numbers, double));// [ 2, 4, 6 ]
 
-console.log(doubleNumbers(numbers, (num) => num * 2));// [ 2, 4, 6 ]
+// console.log(numbers.map((num) => num * 2)); // [ 2, 4, 6 ]
 
+// console.log(doubleNumbers(numbers, (num) => num * 2)); // [ 2, 4, 6 ]
 
-console.log(numbers.map((num) => num * 2));// [ 2, 4, 6 ]
+// console.log(
+//   doubleNumbers(numbers, (num) => {
+//     return num * 2;
+//   })
+// ); // [ 2, 4, 6 ]
+
+// console.log(
+//   doubleNumbers(numbers, function (num) {
+//     return num * 2;
+//   })
+// ); // [ 2, 4, 6 ]
+
+// console.log(
+//   doubleNumbers(numbers, function name(num) {
+//     return num * 2;
+//   })
+// ); // [ 2, 4, 6 ]
