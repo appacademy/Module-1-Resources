@@ -157,7 +157,7 @@ const age = 28;
 
 const obj = {name:'batman'};
 obj.city = 'gotham';
-console.log(obj);
+// console.log(obj);
 // arr1.push(4);
 // console.log(arr1);// [ 1, 2, 3, 4 ]
 
