@@ -65,20 +65,24 @@ let elephantParade1 = elephantCollector();
 // console.log(elephantParade2('maica'));//[ 'dumbo', 'ganesha' ]
 
 
-function createCounter() {
+function createCounter(param) {
+  console.log('outer func',param);
+  let count = 0;
 
-  return function () {
-    let count = 0;
+  return function (param2) {
+    console.log('inner func',param2);
     count++;
     return count;
   };
 }
 
 // LE: count = 1
-let counter1 = createCounter();
-console.log(counter1()); // 1
+let counter1 = createCounter('Outer funcs arg');
 
-console.log(counter1()); // 1
+// console.log(counter1('inner func arg')); // 1
+
+// console.log(counter1()); // 1
+// console.log(counter1()); // 1
 
 // // LE: count = 2
 // let counter1 = createCounter();
@@ -89,3 +93,21 @@ console.log(counter1()); // 1
 // let counter2 = createCounter();
 // console.log(counter2());// 1
 // console.log(counter2());// 2
+
+
+// function countDown(num) {
+
+//   console.log(num);
+
+//   return function inner() {
+//     num--;
+//     if(num === 0) {
+//       return 'do something'
+//     } else {
+//       return inner;
+//     }
+//   }
+// }
+
+
+console.log(countDown(3));
