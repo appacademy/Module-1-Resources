@@ -75,7 +75,11 @@ function baz(word) { // define function baz that accepts param word
 
 foo("food");
 
-let names = ['brandon', 'charles', 'Anabel', 'trevor'];
+let names = ['brandon', 'charles', 'Maica', 'trevor'];
+names.forEach((name) => {
+  debugger;
+  console.log(name)
+})
 for(let i = 0; i < names.length; i++){
   console.log(names[i]);
   debugger;
@@ -107,3 +111,12 @@ function test() {
 }
 
 test();
+
+
+function recurse(){
+  console.log('hi')
+  debugger;
+  recurse();
+}
+
+// recurse();
