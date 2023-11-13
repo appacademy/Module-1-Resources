@@ -33,5 +33,5 @@ let newGreeting2 = `${hello().toUpperCase()} ${firstName} ${lastName}!`
 let names = ['celebi', 'pumpkin', 'mochi', 'jazz'];
 
 for(let i = 0;  i < names.length; i++){
-  console.log(`hello ${names[i]}`);
+  console.log(`hello ${names[i]}`)
 }
