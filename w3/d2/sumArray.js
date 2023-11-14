@@ -29,7 +29,7 @@ function sumArray(arr) {
   return first + sec;
 }
 
-console.log(sumArray([1, 2, 3])); //  6
+// console.log(sumArray([1, 2, 3])); //  6
 /*
 sumArray([1, 2, 3]) => 1 + sumArray([2, 3]);
 sumArray([2, 3])    => 2 + sumArray([3]);
@@ -38,4 +38,26 @@ sumArray([]])       => return 0
 sumArray([3])       => 3 + 0 = 3;
 sumArray([2, 3])    => 2 + 3 = 5;
 sumArray([1, 2, 3]) => 6;
+*/
+
+
+// Default params
+function sumArray(arr, sum = 0){
+  // console.log(arr, sum);
+  if(!arr.length) return sum;
+
+  sum += arr.pop();
+
+  return sumArray(arr, sum);
+}
+
+// console.log(sumArray([1, 2, 3])); //  6
+/*
+sumArray([1, 2, 3], 0) => sumArray([1, 2], 3);
+sumArray([1, 2], 3);   => sumArray([1], 5);
+sumArray([1], 5);      => sumArray([], 6);
+sumArray([], 6);       => return 6
+sumArray([1], 5);      => 6
+sumArray([1, 2], 3);   => 6
+sumArray([1, 2, 3], 0) => 6
 */
