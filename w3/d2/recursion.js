@@ -53,3 +53,47 @@
     https://www.youtube.com/watch?v=FVZ-A_Akros&list=PL7mu5NfYICcGphu5CaYj52Ex2nrcCUFZV&index=1&t=110s
 
 */
+
+
+// Iterating an arbitrary amount of time
+// * we control the boundaries of a loop
+// * Start - we are starting at the 0th index
+// * Stop - we stop when the condition is no longer true: i < 3
+// * Step - we works towards the condition using i++
+// for(let i = 0; i < 5; i++){
+//   // console.log(i);
+// }
+
+
+// Recursing an arbitrary amount of times
+// * In a way we can control the boundaries
+// * we can do so with our
+// * Start - a staring value
+// * Stop - base case
+// * Step - recursive step
+
+function recurse(num){
+
+  if(num === 10) return true;
+
+  console.log(num);
+
+ recurse(num + 1);// num - 1 === --num  (num-- wont work) passing value before changed
+}
+// console.log(recurse(0));
+
+/*
+recurse(5) => recurse(4)
+recurse(4) => recurse(3)
+recurse(3) => recurse(2)
+recurse(2) => recurse(1)
+recurse(1) => recurse(0)
+recurse(0) => return undefined
+recurse(1) => undefined
+recurse(2) => undefined
+recurse(3) => undefined
+recurse(4) => undefined
+recurse(5) => undefined
+*/
+
+
