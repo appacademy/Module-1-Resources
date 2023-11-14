@@ -99,13 +99,16 @@ recurse(5) => undefined
 // console.log("cat".slice(1)); // 'at'
 
 function reverse(string) {
-
+  console.log(string);
   if (string.length === 0) return string;
   let first = string[0];
+  console.log(first, string);
 
-  return reverse(string.slice(1)) + first;
+  let result = reverse(string.slice(1)) + first;
+  console.log("==>", result);
+  return result;
 }
-console.log(reverse("cat"));//tac
+// console.log(reverse("cat"));//tac
 /*
 Bottom Of Stack
 reverse('cat') => reverse('at') + 'c';
@@ -120,7 +123,18 @@ reverse('cat') => 'ta' + 'c' = 'tac';
 Bottom of Stack
 */
 
-
-let ex = () => 'hello';
+// let ex = () => 'hello';
 
 // console.log(ex() + 'world');
+
+function reverseDebugger(string) {
+  debugger;
+  if (string.length === 0) return string;
+  let first = string[0];
+  debugger;
+  let result = reverseDebugger(string.slice(1));
+  debugger;
+  return result + first;
+}
+
+console.log(reverseDebugger('cat'));
