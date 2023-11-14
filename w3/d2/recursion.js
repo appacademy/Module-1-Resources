@@ -54,7 +54,6 @@
 
 */
 
-
 // Iterating an arbitrary amount of time
 // * we control the boundaries of a loop
 // * Start - we are starting at the 0th index
@@ -64,7 +63,6 @@
 //   // console.log(i);
 // }
 
-
 // Recursing an arbitrary amount of times
 // * In a way we can control the boundaries
 // * we can do so with our
@@ -72,13 +70,12 @@
 // * Stop - base case
 // * Step - recursive step
 
-function recurse(num){
-
-  if(num === 10) return true;
+function recurse(num) {
+  if (num === 10) return true;
 
   console.log(num);
 
- recurse(num + 1);// num - 1 === --num  (num-- wont work) passing value before changed
+  recurse(num + 1); // num - 1 === --num  (num-- wont work) passing value before changed
 }
 // console.log(recurse(0));
 
@@ -96,4 +93,34 @@ recurse(4) => undefined
 recurse(5) => undefined
 */
 
+// starting  - 'cat'
+// base case - str.length === 0 -> ''
+// recursive step - slice - string.slice()
+// console.log("cat".slice(1)); // 'at'
 
+function reverse(string) {
+
+  if (string.length === 0) return string;
+  let first = string[0];
+
+  return reverse(string.slice(1)) + first;
+}
+console.log(reverse("cat"));//tac
+/*
+Bottom Of Stack
+reverse('cat') => reverse('at') + 'c';
+reverse('at')  => reverse('t') + 'a';
+reverse('t')   => reverse('') + 't';
+reverse('')    => '' <- we hit the base case!!
+Top Of Stack
+reverse('t')   => '' + 't' = 't'
+reverse('at')  => 't' + 'a' = 'ta';
+reverse('cat') => 'ta' + 'c' = 'tac';
+
+Bottom of Stack
+*/
+
+
+let ex = () => 'hello';
+
+// console.log(ex() + 'world');
