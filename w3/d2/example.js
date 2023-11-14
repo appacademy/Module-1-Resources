@@ -1,12 +1,4 @@
 
-
-
-
-
-
-
-
-
 // turn a string into an array
 function stringToArr(string) {
   //base case
