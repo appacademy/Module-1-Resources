@@ -37,18 +37,17 @@ function baz() {
 }
 
 // foo(); //a,b,c,d,e
-count = 0;
-function test(){
-  count++;
-  // return true;
-  if(count === 10) return;
-  console.log(count)
-  return test();
-}
+// count = 0;
+// function test(){
+//   count++;
+//   // return true;
+//   if(count === 10) return;
+//   console.log(count)
+//   return test();
+// }
 
 
 // console.log(test);// [Function: test]
-
 // console.log(test());// true
-
 // console.log(test());// [Function: test]
+
