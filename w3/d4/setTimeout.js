@@ -128,4 +128,4 @@ function delayedPrinter(delaysArr) {
 }
 
 
-delayedPrinter(delaysArr);
+// delayedPrinter(delaysArr);
