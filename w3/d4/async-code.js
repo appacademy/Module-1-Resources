@@ -46,21 +46,21 @@
       * DOM
       * ajax
       * setTimeout
-      * 
+      *
 */
 
-console.log('first');
+// console.log('first');
 
-setTimeout(() => {
-  console.log('second')
-}, 5000);
-// 5000 / 1000 = 5seconds
-// milliseconds to seconds
+// setTimeout(() => {
+//   console.log('second')
+// }, 0);
+// // 5000 / 1000 = 5seconds
+// // milliseconds to seconds
 
-setTimeout(() => {
-  console.log('third');
-},0)
+// setTimeout(() => {
+//   console.log('third');
+// },0)
 
-console.log('fourth');
-// first -> fourth -> third -> second
-// console.log(global);//
+// console.log('fourth');
+// // first -> fourth -> third -> second
+// // console.log(global);//
