@@ -23,7 +23,7 @@ function time(name){
   console.log('wasssup ' + name)
 }
 
-// setTimeout(time, 3000, 'maica');
+setTimeout(time, 3000, 'maica');
 
 
 // function sayHi(name1, name2){

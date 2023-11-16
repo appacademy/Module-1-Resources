@@ -12,29 +12,29 @@
 
 */
 
-
+count = 5;
 function imHungry(food1, food2) {
+  count--;
+  console.log(`I want ${food1} and ${food2}`);
 
-  console.log(`I want ${food1} and ${food2}`)
-};
+  if (count === 0) {
+    clearInterval(res);
+  }
+}
 
 // imHungry('chicken', 'mac and cheese')
 
+let res = setInterval(imHungry, 2000, "chicken", "mac and cheese");
 
-// setInterval(imHungry, 2000, 'chicken', 'mac and cheese');
-
-
-function timer(count){
-
+function timer(count) {
   let timeId = setInterval(() => {
     count--;
     console.log(count);
-    if(count === 0) {
+    if (count === 0) {
       clearInterval(timeId);
     }
   }, 2000);
   console.log(timeId);
-};
+}
 
-
-timer(5);
+// timer(5);
