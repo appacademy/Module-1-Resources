@@ -75,13 +75,14 @@ function iterateThroughWord(string) {
     // console.log(i);//
     // console.log('===>',string[i]);
     let letter = string[i];
+
     // console.log(letter);
-    return letter;
+    // return letter;
   }
 
 
 };
 
 
-// iterateThroughWord('cats');
-console.log(iterateThroughWord('umbrella'));
+iterateThroughWord('cats');
+// console.log(iterateThroughWord('umbrella'));
