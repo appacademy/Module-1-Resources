@@ -36,3 +36,48 @@
     * which is its return value
 
 */
+
+// basic function
+// define a function
+// hold this logic
+// doesnt do anything till its called
+function myFunc() {
+
+  // once we hit a return we exit the function
+  return 'a string'
+  // return true;
+  // return 12;
+
+}
+
+// call the function
+myFunc();
+
+// if i want to see what my function evaluates too
+// im console.log the function call
+// console.log(myFunc);// [Function: myFunc]
+// console.log('return value of myFunc =>',myFunc())
+
+// weve stored the return value of a function in a variable
+// let res = myFunc();
+// console.log(res);// a string
+
+
+
+// let param1 = maica
+// let param2 = trevor
+// param1 and param2 are paramters
+// which represented the arguments passed
+function printNames(param1, param2) {
+
+  let result = 'hello ' + param1 + ' ' + param2;
+  // let result = 'hello ' + maica + ' ' + trevor;
+  return result;
+
+};
+
+// console.log(printNames());
+// hello undefined undefined
+// maica and trevor are the arguments
+console.log('1 ==>',printNames('maica', 'trevor'));// hello maica trevor
+console.log('2 ==>',printNames('brandon', 'charles'))// hello brandon charles
