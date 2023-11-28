@@ -1,4 +1,3 @@
-
 /*
 
  Conditionals
@@ -28,39 +27,88 @@
 */
 
 // generate random number between 0 and 1
-let randomNumber = Math.random();
-console.log('random num =>',randomNumber)
+// let randomNumber = Math.random();
+// console.log('random num =>',randomNumber)
 
 // use else if; if you want to check if something is one thing or another but not both
 // mutually exclusive condition
-if(randomNumber > .5){
-  //if condition is true
-  console.log('heads')
-} else {
-  //if condition is false
-  console.log('tails');
-};
-
+// if(randomNumber > .5){
+//   //if condition is true
+//   console.log('heads')
+// } else {
+//   //if condition is false
+//   console.log('tails');
+// };
 
 // not mutually exclusive condition
 // dont use else if you want to meet more than one condition
-if(randomNumber > .1) {
-  console.log('greater than .1')
-}
+// if(randomNumber > .1) {
+//   console.log('greater than .1')
+// }
 
-if(randomNumber > .2) {
-  console.log('greater than .2')
-};
+// if(randomNumber > .2) {
+//   console.log('greater than .2')
+// };
 
 // check more than one condition
 // else if
 // stop at first condition met
-if(randomNumber > .1) {
-  console.log('greater than .1')
-} else if(randomNumber > .2) {
-  console.log('greater than .2')
-} else if(randomNumber > .3) {
-  console.log('greater than .3')
-} else {
-  console.log('no condition was met')
+// if(randomNumber > .1) {
+//   console.log('greater than .1')
+// } else if(randomNumber > .2) {
+//   console.log('greater than .2')
+// } else if(randomNumber > .3) {
+//   console.log('greater than .3')
+// } else {
+//   console.log('no condition was met')
+// }
+
+// many things we can compare in a conditional
+
+// if(true) {
+
+// };
+
+// if(10 > 5) {
+//   console.log('10 is greater than 5')
+// } else {
+//   console.log('less than 5')
+// };
+
+// console.log(name.length > 5);// true
+// if(name.length > 5) {
+//   console.log('name is greater than 5')
+// }
+
+// let math = 2 + -2
+// console.log(math);
+// if(math) {
+//   console.log('condition met')
+// } else {
+//   console.log('condition not met')
+// }
+
+// let name = 'brandon';
+
+// if(name){
+//   console.log('hello ' + name)
+// } else {
+//   console.log('nobody to say hello to...')
+// }
+// let num = 11
+function greaterThan5(num) {
+  console.log(num);
+  if (num > 5) {
+    return 'greater than 5';
+  } else if(num > 10) {
+    return 'greater than 10';
+  } else {
+    return 'neither condition is true'
+  }
+
+  console.log('we will not reach this')
 }
+
+// console.log(greaterThan5(10));// true
+// console.log(greaterThan5(1));// false
+// console.log(greaterThan5(4));//
