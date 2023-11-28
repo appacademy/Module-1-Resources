@@ -84,5 +84,35 @@ function iterateThroughWord(string) {
 };
 
 
-iterateThroughWord('cats');
+// iterateThroughWord('cats');
 // console.log(iterateThroughWord('umbrella'));
+
+
+
+
+function reverseString(string){
+
+  // console.log(string[string.length - 1], string.length - 1)
+  // console.log(string);
+  // for(let i = 0; i < string.length; i++ ){
+  //   let letter = string[i];
+  //   console.log(letter, i);
+  // }
+  let reversedName = '';
+
+  for(let i = string.length - 1; i >= 0; i-- ){
+    let letter = string[i];
+    // console.log(letter, i);
+    reversedName += letter;
+    console.log(reversedName)
+  }
+
+  return reversedName;
+};
+
+
+/*
+VALUE - d o g s
+INDEX - 0 1 2 3
+*/
+console.log(reverseString('dogs'));//sgod
