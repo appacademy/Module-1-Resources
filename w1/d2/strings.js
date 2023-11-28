@@ -46,7 +46,7 @@ let animal = "cats";
 // console.log(animal[3]);//s
 // console.log(animal[4]);// undefined
 
-// console.log(animal[animal.length - 1]);// s
+console.log(animal[animal.length - 1]);// s
 // console.log('cats'[3]);// s
 
 let animal2 = "rhino";
@@ -78,3 +78,8 @@ console.log(res2);// whiteboards are remarkable
 let res3 = `${word1} are ${word2}`;
 // let res3 = `${whiteboards} are ${remarkable}`;
 console.log(res3);// whiteboards are remarkable
+
+
+let sentence2 = `Hey did you know ${word1 + ' are ' + word2} ${4  * 3} ${word1.indexOf('w')}`
+console.log(sentence2);
+// Hey did you know whiteboards are remarkable
