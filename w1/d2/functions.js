@@ -79,5 +79,23 @@ function printNames(param1, param2) {
 // console.log(printNames());
 // hello undefined undefined
 // maica and trevor are the arguments
-console.log('1 ==>',printNames('maica', 'trevor'));// hello maica trevor
-console.log('2 ==>',printNames('brandon', 'charles'))// hello brandon charles
+// console.log('1 ==>',printNames('maica', 'trevor'));// hello maica trevor
+// console.log('2 ==>',printNames('brandon', 'charles'))// hello brandon charles
+
+
+
+
+// let num = 2
+function addTwo(num){
+
+  return num + 2;
+};
+
+// we need to wait for the return before printing this log
+// console.log('return value of a function',addTwo(2));
+
+// console.log('==>',addTwo(100))
+
+// let res = addTwo(900);
+// console.log(res);
+
