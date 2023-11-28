@@ -55,6 +55,33 @@ let i = 0;
 // 2. Condition for which we keep looping
 // 3. Step towards completing the loop/meeting the condition
 
-for(let i = 0; i < 4; i++){
-  console.log(i);
-}
+// for(let i = 0; i < 4; i++){
+//   console.log(i);
+// }
+
+
+
+function iterateThroughWord(string) {
+
+  // console.log(string.length);
+  // console.log(string[0]);// c
+  // console.log(string[1]);// a
+  // console.log(string[2]);// t
+  // console.log(string[3]);// s
+  // let i = 0;
+  // console.log(string[i]);// c
+
+  for(let i = 0; i < string.length; i++){
+    // console.log(i);//
+    // console.log('===>',string[i]);
+    let letter = string[i];
+    // console.log(letter);
+    return letter;
+  }
+
+
+};
+
+
+// iterateThroughWord('cats');
+console.log(iterateThroughWord('umbrella'));
