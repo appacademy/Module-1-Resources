@@ -58,7 +58,10 @@ let i = 0;
 // for(let i = 0; i < 4; i++){
 //   console.log(i);
 // }
-
+/*
+index - 
+value -
+*/
 
 
 function iterateThroughWord(string) {
@@ -102,9 +105,11 @@ function reverseString(string){
 
   for(let i = string.length - 1; i >= 0; i-- ){
     let letter = string[i];
+    let char = string[i];
     // console.log(letter, i);
-    reversedName += letter;
-    console.log(reversedName)
+    // reversedName += letter;
+    reversedName += string[i]
+    console.log('index: ',i, 'letter: ', letter)
   }
 
   return reversedName;
@@ -116,3 +121,11 @@ VALUE - d o g s
 INDEX - 0 1 2 3
 */
 console.log(reverseString('dogs'));//sgod
+
+
+// let string = '12'
+// console.log(typeof string);
+// string = Number(string);
+
+// console.log(typeof string);
+// string = +string;
