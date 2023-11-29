@@ -19,8 +19,6 @@ function sayHello(){
 
 let sayHello2 = function () {
   console.log('hello from sayHello 2');
-
-  return true;
 }
 
 let sayHello3 = () => console.log('hello from sayHello 3')
@@ -30,6 +28,11 @@ let age = 27;
 let bool = true
 let myFunc = function(){}
 
+console.log('==>',name, age, bool, myFunc);
+
+myFunc();
+
+sayHello2();
 // But what does this all mean? This brings us around to the concept of first
 // class objects. A first class object is defined as:
 // * 1. It can be stored in a variable
