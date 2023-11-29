@@ -15,21 +15,28 @@
 
 */
 
-
-let sequence = ['T','A','C','G'];
-console.log(sequence);// [ 'T', 'A', 'C', 'G' ]
-sequence[0] = 'C';
-console.log(sequence);//[ 'C', 'A', 'C', 'G' ]
+let sequence = ["T", "A", "C", "G"];
+console.log(sequence); // [ 'T', 'A', 'C', 'G' ]
+sequence[0] = "C";
+console.log(sequence); //[ 'C', 'A', 'C', 'G' ]
 //* mutated the sequence
 //* alters whats there
 
 // strings however dont have the same behavior
-let name = 'brandon';
-console.log(name);// brandon
-name[0] = 'k';
-console.log(name);//brandon
+let name = "brandon";
+console.log(name); // brandon
+name[0] = "k";
+console.log(name); //brandon
 // * this doesnt work
 // all we can is reassign the string
-name = 'krandon'
-console.log(name);// krandon
+name = "krandon";
+console.log(name); // krandon
 
+let newName = [];
+for (let i = 0; i < name.length; i++) {
+  let letter = name[i];
+  newName.push(letter);
+  // newName += letter.toUpperCase();
+  console.log(newName);
+}
+console.log(newName)
