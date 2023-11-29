@@ -52,21 +52,29 @@ let newLength = pushArr.push('array!')
 // The pop() method of Array instances removes the last element from an array and returns that element. This method changes the length of the array.
 
 
-let popArr = [true, 1 , 'off'];
-console.log('og array', popArr, 'length', popArr.length);
+// let popArr = [true, 1 , 'off'];
+// console.log('og array', popArr, 'length', popArr.length);
 
-let lastEle = popArr.pop();
+// let lastEle = popArr.pop();
 
-console.log('mutated array', popArr, 'length:', lastEle);
+// console.log('mutated array', popArr, 'length:', lastEle);
 
-let one = popArr.pop();
+// let one = popArr.pop();
 
-console.log(popArr, one);
+// console.log(popArr, one);
 
-let bool = popArr.pop();
+// let bool = popArr.pop();
 
-console.log(popArr, bool);// [] true
+// console.log(popArr, bool);// [] true
 
-console.log(popArr.pop());// undefined
+// console.log(popArr.pop());// undefined
 
-console.log(popArr);// []
+// console.log(popArr);// []
+
+
+let arr = [true];
+console.log(arr);
+arr.concat([]);
+console.log(arr);
+// arr[0].unshift(100)
+// console.log(arr);
