@@ -9,8 +9,8 @@
 */
 
 // function declaration
-function sayHello(){
-  console.log('hello from say hello')
+function sayHello() {
+  console.log("hello from say hello");
 }
 
 // sayHello();
@@ -18,17 +18,17 @@ function sayHello(){
 // function expression
 
 let sayHello2 = function () {
-  console.log('hello from sayHello 2');
-}
+  console.log("hello from sayHello 2");
+};
 
-let sayHello3 = () => console.log('hello from sayHello 3')
+let sayHello3 = () => console.log("hello from sayHello 3");
 
-let name = 'brandon';
+let name = "brandon";
 let age = 27;
-let bool = true
-let myFunc = function(){}
+let bool = true;
+let myFunc = function () {};
 
-console.log('==>',name, age, bool, myFunc);
+console.log("==>", name, age, bool, myFunc);
 
 myFunc();
 
@@ -43,21 +43,27 @@ sayHello2();
 // console.log(sayHello);// [Function: sayHello]
 // sayHello2();
 
-
-console.log(math1(10, 20));// 30
+console.log(math1(10, 20)); // 30
 // ! ReferenceError: Cannot access 'math' before initialization
 
 // function expression
 // will thrown error when hoisting
-let math1 = function (num1, num2){
-
+let math1 = function (num1, num2) {
   return num1 + num2;
-}
+};
 
-console.log(math2(10, 20));// 30
+console.log(math2(10, 20)); // 30
 // function declaration will not thrown an error when hoisted
 // hoisting - to access a variable before its been defined
-function math2(num1, num2){
-
+function math2(num1, num2) {
   return num1 + num2;
 }
+
+// function callback() {}
+
+function higherOrder(callback) {
+
+
+}
+
+higherOrder(() => {});
