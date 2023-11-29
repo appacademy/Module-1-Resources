@@ -42,3 +42,22 @@ sayHello2();
 // console.log(sayHello2);// [Function: sayHello2]
 // console.log(sayHello);// [Function: sayHello]
 // sayHello2();
+
+
+console.log(math1(10, 20));// 30
+// ! ReferenceError: Cannot access 'math' before initialization
+
+// function expression
+// will thrown error when hoisting
+let math1 = function (num1, num2){
+
+  return num1 + num2;
+}
+
+console.log(math2(10, 20));// 30
+// function declaration will not thrown an error when hoisted
+// hoisting - to access a variable before its been defined
+function math2(num1, num2){
+
+  return num1 + num2;
+}
