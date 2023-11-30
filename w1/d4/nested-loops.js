@@ -1,15 +1,9 @@
-
-
-
-
-
 /*
 
  Nested Loops
   * Sometimes a single loop is not enough to access a nested array
 //[ 'what', 'a', 'wonderful', 'life' ]
 */
-
 
 // for(let i = 0; i < 3; i++){
 //   console.log('i:',i);// outer loop controlled by i
@@ -24,26 +18,22 @@
 // loop, the full cycle of our inner loop is part of each individual iteration
 // of our outer loop. Let's explore how we can use this a bit more practically
 
+let arr = ["what", "a", "wonderful", "life"];
 
-let arr = [ 'what', 'a', 'wonderful', 'life' ]
-
-for(let i = 0; i < arr.length; i++){
-
+for (let i = 0; i < arr.length; i++) {
   let word = arr[i];
 
-  for(let j = 0 ; j < word.length; j++){
-
+  for (let j = 0; j < word.length; j++) {
     // let letter = word[j];
     // console.log(i, j);
     let letter = arr[i][j];
     // console.log(letter);
   }
-
 }
 
-console.log(arr);// [ 'what', 'a', 'wonderful', 'life' ]
-console.log(arr[0])// what
-console.log(arr[0][0])// w
+// console.log(arr);// [ 'what', 'a', 'wonderful', 'life' ]
+// console.log(arr[0])// what
+// console.log(arr[0][0])// w
 // console.log(arr[0][0])
 
 // console.log(arr[0]);//'what'
@@ -60,9 +50,18 @@ console.log(arr[0][0])// w
 // console.log(arr[2]);
 // console.log(arr[3]);
 
-
 let matrix = [
   ["a", "b", "c"],
   ["d", "e", "f"],
   ["g", "h", "i"],
 ];
+
+for (let i = 0; i < matrix.length; i++) {
+  let subArr = matrix[i];
+  console.log(subArr);// [ 'a', 'b', 'c' ]
+  // console.table(subArr);
+  for(let j = 0; j < subArr.length; j++){
+    let letter = subArr[j]
+   console.log(letter);
+  }
+}
