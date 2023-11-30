@@ -65,3 +65,36 @@ for (let i = 0; i < matrix.length; i++) {
    console.log(letter);
   }
 }
+
+
+
+
+
+// for (let i = 0; i < matrix.length; i++){
+//   let subArr = matrix[i];
+//   // console.log(subArr)
+//   for (let j = 0; j < subArr.length; j++){
+//     let word = subArr[j];
+//     // console.log(word)
+//     for(let k = 0; k < word.length; k++) {
+//      let letter = word[k];
+//      console.log(letter)
+//     }
+//   }
+// };
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let arr = [[1,2,3],[4,5,6]]
+for (let i= 0; i < arr.length; i++) {
+  let subArr = arr[i];
+  // console.log(num)
+
+  for (let j = 0; j < subArr.length; j++) {
+    // let num = arr[i][j];
+    let ele = subArr[j];
+    console.log(subArr, ele)
+  }
+
+};
+
+// console.log(matrix[0][1][2])
