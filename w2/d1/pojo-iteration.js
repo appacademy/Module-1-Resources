@@ -36,16 +36,16 @@ for (let i = 0; i < arr.length; i++) {
 
 // console.log(people);
 
-// let keysArr = Object.keys(people);
-// console.log(keysArr);
-// [ 'person1', 'person2', 'person3', 'person4' ]
+let keysArr = Object.keys(people);
+console.log(keysArr);
+[ 'person1', 'person2', 'person3', 'person4' ]
 
-// for (let i = 0; i < keysArr.length; i++) {
-//   let key = keysArr[i];
-//   // console.log(key)
-//   let value = people[key];
-//   // console.log(value); // { name: 'brandon' }
-// };
+for (let i = 0; i < keysArr.length; i++) {
+  let key = keysArr[i];
+  // console.log(key)
+  let value = people[key];
+  // console.log(value); // { name: 'brandon' }
+};
 
 // for of loop only used to on arrays
 // let ele = keysArr[i];
