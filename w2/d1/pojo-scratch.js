@@ -60,7 +60,7 @@ let object = {
 
 function makeObj(param) {
 
-  // console.log(object.name);
+  console.log(object.param);
   // console.log(object['name']);
   // console.log(param);// name
 
@@ -69,9 +69,9 @@ function makeObj(param) {
 
 };
 
-// makeObj('name');
-// makeObj('age');
-// makeObj('location');
+makeObj('name');
+makeObj('age');
+makeObj('location');
 
 
 
@@ -109,3 +109,42 @@ let arr = {
 };
 
 // console.log(arr[0])
+
+
+let car = {};
+// console.log(car);
+
+// car.model = 'mustang';
+// console.log(car);
+
+car.model = 'challenger'
+car['year'] = 2016
+// console.log(car);
+
+let variable = 'make';
+car['make'] = 'dodge';
+// console.log(car)
+
+
+car.model = 'mustang';
+car['year'] = 2023;
+car['make'] = 'ford';
+
+car.nestedObj = { hp: 500 }
+// console.log(car)
+// { model: 'mustang', year: 2023, make: 'ford', nestedObj: { hp: 500 } }
+
+
+car.nestedObj.hp = 1000;
+// console.log(car);
+
+
+car.nestObj = { key: 'nested value'}
+// console.log(car);
+
+
+console.log(car);
+
+delete car.model;
+
+console.log(car);
