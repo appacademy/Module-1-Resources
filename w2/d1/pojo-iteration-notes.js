@@ -40,6 +40,8 @@ let people = {
 // console.log(people.person3);// { name: 'charles' }
 
 // console.log(people.length);// undefined
+
+
 // ! cant loop through object
 // for(let i = 0; i < people.length; i++){
 //   console.log('hello');
