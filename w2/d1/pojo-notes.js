@@ -36,17 +36,25 @@
     * favorite bands
 
   * Key : Value
-    name : 'brandon'
-    age : 27
-    favoriteBands : ["Joyce Manor", "Neck Deep", "Idles"]
+    name : 'brandon',
+    age : 27,
+    favoriteBands : ["Joyce Manor", "Neck Deep", "Idles"],
     location : { city: "Tampa", state: "Florida" }
 
 */
 
+// array literal - let arr = []
 
 // create our own object
 // object literal - {}
+
 // key: value,
+let brandon2 = {
+  name: 'brandon',
+  key: 'value',
+};
+
+
 let brandon = {
   name: 'brandon',
   age: 27,
