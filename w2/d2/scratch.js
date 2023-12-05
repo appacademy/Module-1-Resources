@@ -128,12 +128,23 @@ let lastName = 'brandon';
 // console.log(firstName, lastName);// brandon laursen
 
 let arr = [10, 20, 30];
-console.log(arr);// [ 10, 20, 30 ]
+// console.log(arr);// [ 10, 20, 30 ]
 
 // let temp = arr[0];
 // arr[0] = arr[1];
 // arr[1] = temp;
 // console.log(arr);
 
-[arr[0], arr[1]] = [arr[1], arr[0]];
-console.log(arr);// [ 20, 10, 30 ]
+// [arr[0], arr[1]] = [arr[1], arr[0]];
+// console.log(arr);// [ 20, 10, 30 ]
+
+let numbers = [1,2,3];
+
+// [num1, ...restOfNumbers] = numbers;
+
+// console.log(num1, restOfNumbers);// 1 [ 2, 3 ]
+
+[num1, ...restOfNumbers] = [...numbers, 4]
+// [1, [2,3,4]] = [1,2,3,4]
+//num1 = 1
+//restOfNumbers = [2,3,4]
