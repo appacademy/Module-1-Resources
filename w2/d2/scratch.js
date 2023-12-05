@@ -62,7 +62,7 @@ let arr4 = [0, ...arr1, 'middle',...arr2, 7,8,9, ...arr1.reverse()];
 
 // use spread to make a copy
 let copy = arr4.slice();
-console.log(copy);
+// console.log(copy);
 copy[0] = true;
 
 // console.log(arr4);
@@ -70,3 +70,70 @@ copy[0] = true;
 
 // let copy1 = [...arr4]
 // console.log(copy1);
+
+
+
+// let obj1 = {name: 'brandon'}
+// let obj2 = {age: 27, favColor:'red'};
+// let obj3 = {obj1, obj2, city:'tampa'}
+// // console.log(obj3)
+
+// let obj4 = {...obj1, ...obj2, city:'tampa'};
+// console.log(obj4);
+// // { name: 'brandon', age: 27, favColor: 'red', city: 'tampa' }
+// // { name: 'brandon', age: 27, favColor: 'red', city:'tampa' };
+
+// let copyObj = {...obj4};
+// // console.log(copyObj);
+
+// // let example = [...obj4];
+// // console.log(example)
+
+// let arr = [1,2,3];
+// let example = {...arr};
+// console.log(example);
+// // { '0': 1, '1': 2, '2': 3 }
+
+
+
+
+
+
+
+
+
+let array = [1, true, 'hello world'];
+
+// let num = array[0];
+// let bool = array[1];
+// let string = array[2];
+
+// let [num, bool, string] = array
+// console.log(num, bool, string);
+
+
+let [num, , string] = array
+// console.log(num, string);// 1 hello world
+
+let firstName = 'laursen';
+let lastName = 'brandon';
+
+// let temp = firstName;
+// firstName = lastName;
+// lastName = temp;
+
+// console.log(firstName, lastName);// laursen brandon
+
+// [firstName, lastName] = [lastName, firstName];
+// console.log(firstName, lastName);// brandon laursen
+
+let arr = [10, 20, 30];
+console.log(arr);// [ 10, 20, 30 ]
+
+// let temp = arr[0];
+// arr[0] = arr[1];
+// arr[1] = temp;
+// console.log(arr);
+
+[arr[0], arr[1]] = [arr[1], arr[0]];
+console.log(arr);// [ 20, 10, 30 ]
