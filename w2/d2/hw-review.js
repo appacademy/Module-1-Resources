@@ -72,3 +72,68 @@ console.log(friends.map(function functionName(friend) {
 // return false;
 // }
 console.log(goodFriendsOrNot);          // [false, false, true, true];
+
+
+
+const filteredResult = friends.filter(friend => friend.yearsOfFriendship > 5 && friend.name[0] === 'A')
+  // Write your solution here.
+// console.log(friend)
+// console.log(friend.name[0] === 'A')
+// if(friend.yearsOfFriendship > 5 && friend.name[0] === 'A') {
+//  return true;
+// }
+//  return false;
+// return friend.yearsOfFriendship > 5 && friend.name[0] === 'A'
+
+// })
+
+console.log(filteredResult);
+/*
+Should print:
+[
+  {
+      name: "Agatha",
+      yearsOfFriendship: 6
+  }
+];
+*/
+
+
+
+// Hint: create an array of vowels to use in your solution.
+let vowels = 'aeiouAEIOU';
+const threeVowelFriend = friends.reverse().find(friend => {
+  // Write your solution here.
+  // console.log(friend);
+
+  let count = 0;
+  for(let letter of friend.name) {
+   // console.log(friend.name[i])
+    if(vowels.includes(letter.toLowerCase())){
+      count++;
+    }
+  }
+  // console.log(friend.name, count)
+// if(count >= 3) return true;
+
+return count >= 3
+
+});
+console.log(threeVowelFriend);             // Angela
+
+// console.log(friends.find(friend => {
+//     // Write your solution here.
+//   	console.log(friend);
+
+//   	let count = 0;
+//   	for(let i = 0; i < friend.name.length; i++) {
+//      // console.log(friend.name[i])
+//       let letter = friend.name[i];
+//       if(vowels.includes(letter.toLowerCase())){
+//       	count++;
+//       }
+//     }
+//   	// console.log(friend.name, count)
+//   // if(count >= 3) return true;
+
+//   return count >= 3
