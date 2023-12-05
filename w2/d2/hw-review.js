@@ -137,3 +137,26 @@ console.log(threeVowelFriend);             // Angela
 //   // if(count >= 3) return true;
 
 //   return count >= 3
+
+
+// const friends = [
+//   {
+//       name: "Albert",
+//       yearsOfFriendship: 3
+//   },
+//   {
+//       name: "Angela",
+//       yearsOfFriendship: 2
+//   },
+//   {
+//       name: "Freddy",
+//       yearsOfFriendship: 8
+//   },
+//   {
+//       name: "Agatha",
+//       yearsOfFriendship: 6
+//   }
+// ];
+
+const totalYears = friends.reduce((acc, friend) => acc + friend.yearsOfFriendship,0);
+console.log(totalYears);                        // 19

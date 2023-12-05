@@ -9,7 +9,7 @@
     * Allow us to perform commonly used calculations/functions
     * quality of life
     * array methods iterate under the hood to pass each element of an array to a callback function
- 
+
    What is a callback function?
     * A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
 
@@ -141,3 +141,6 @@
    };
 
    console.log(onlyOdds(1,2,3,4,5,6,7,8));// [1,3,5,7]
+
+
+   
