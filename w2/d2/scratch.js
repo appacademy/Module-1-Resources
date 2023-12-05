@@ -147,4 +147,42 @@ let numbers = [1,2,3];
 [num1, ...restOfNumbers] = [...numbers, 4]
 // [1, [2,3,4]] = [1,2,3,4]
 //num1 = 1
-//restOfNumbers = [2,3,4]
+//restOfNumbers
+// Would …rest always have to be on the left side of the equation and …spread on the right? YES!
+
+
+
+let user = {
+  name: 'john',
+  address: {
+    street: '123 broad st',
+    city:'orlando'
+  },
+  age: 30
+}
+
+let { name, address: { street, city }, age } = user;
+console.log(street, city);
+
+
+// console.log(user);
+// let name = user.name;
+// let address = user.address;
+// let age = user.age;
+// let { name, address, age } = user;
+
+// console.log(name, address, age);
+// john { street: '123 broad st', city: 'orlando' } 30
+
+// let { name, ...restOfObj } = user;
+// console.log(name, restOfObj);
+//john { address: { street: '123 broad st', city: 'orlando' }, age: 30 }
+// console.log(user);
+
+/*
+{
+  name: 'john',
+  address: { street: '123 broad st', city: 'orlando' },
+  age: 30
+}
+*/
