@@ -46,7 +46,7 @@
 
   Using array
   filter or map
-  
+
   map when there is no condition
   filter when there is a condition
   reduce used on anything
