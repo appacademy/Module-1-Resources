@@ -102,3 +102,39 @@ const myFilter = (arr, cb) => {
 
 
 console.log(myFilter(names, (name => name.includes('e') )))
+
+
+
+/*
+
+	Use this names array
+
+	let names = ["brandon", "maica", "charles", "trevor"];
+
+	Implement the logic using the function and the array method
+
+	myEvery - use every to check if every name includes a 'o'
+*/
+
+let names = ["brandon", "maica", "charles", "trevor"];
+
+// let boolean = names.every( name => name.includes('o'));
+
+// console.log(boolean);
+
+
+
+const myEvery = (arr, cb) => {
+
+  for(let i = 0; i < arr.length; i++) {
+    let name = arr[i];
+
+    // console.log(cb(name))
+    if(cb(name) === false) {
+      return false
+    }
+  }
+  return true;
+};
+
+// console.log(myEvery(names, name => name.includes('o')));
