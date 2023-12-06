@@ -67,3 +67,38 @@ const myMap = (arr, cb) => {
 }
 
 console.log(myMap(names,  (name) => name.toUpperCase()))
+
+
+/*
+
+let names = ["brandon", "maica", "charles", "trevor"];
+
+Implement the logic using the function and the array method
+
+myFilter - use filter to return an array of names that include 'e'
+
+*/
+// let names = ["brandon", "maica", "charles", "trevor"];
+// filter
+let includesE = names.filter(name => name.includes('e'))
+// console.log(includesE);
+
+const myFilter = (arr, cb) => {
+	// console.log(arr, cb);
+  let includesE = [];
+
+  for(let i = 0; i < arr.length; i++) {
+   let name = arr[i];
+
+    // console.log(cb(name))
+    if(cb(name) === true){
+    	includesE.push(name)
+    }
+
+  };
+
+  return includesE
+};
+
+
+console.log(myFilter(names, (name => name.includes('e') )))
