@@ -116,7 +116,7 @@ console.log(myFilter(names, (name => name.includes('e') )))
 	myEvery - use every to check if every name includes a 'o'
 */
 
-let names = ["brandon", "maica", "charles", "trevor"];
+// let names = ["brandon", "maica", "charles", "trevor"];
 
 // let boolean = names.every( name => name.includes('o'));
 
