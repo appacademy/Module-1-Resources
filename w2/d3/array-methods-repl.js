@@ -37,3 +37,33 @@ myForEach(names,(name, i, arr) => {
 })
 
 
+let upperCasedNames = names.map( (name) => name.toUpperCase() )
+
+// console.log(upperCasedNames)// [ 'BRANDON', 'MAICA', 'CHARLES', 'TREVOR' ]
+
+// function cb('brandon') {
+
+// 	return 'BRANDON'
+
+// }
+
+// let upperCasedNames = names.map( (name) => name.toUpperCase() )
+const myMap = (arr, cb) => {
+
+  // console.log(cb);// [Function (anonymous)]
+  // console.log(cb());
+  // console.log(cb('brandon'));// BRANDON
+  let newArr = [];
+
+  for(let i = 0; i < arr.length; i++) {
+    let name = arr[i];
+    // console.log(name);
+    let upperCasedName = cb(name);
+    // console.log(name, upperCasedName);
+    newArr.push(upperCasedName);
+  };
+
+  return newArr;
+}
+
+console.log(myMap(names,  (name) => name.toUpperCase()))
