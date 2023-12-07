@@ -108,6 +108,12 @@ function createCounter() {
   }
 */
 let counter1 = createCounter();
+/*
+let counter1 = function() {
+    count++;
+    return count;
+  }
+*/
 console.log(counter1);// [Function (anonymous)]
 console.log(counter1());// 1
 console.log(counter1());// 2
@@ -119,7 +125,15 @@ console.log(counter1());// 3
   }
 */
 let counter2 = createCounter();
-console.log(counter2);
-console.log(counter2());// 1
-console.log(counter2());// 2
-console.log(counter2());// 3
+/*
+let counter2 = function() {
+    count++;
+    return count;
+  }
+*/
+// console.log(counter2 === counter1);
+// console.log(counter1 === counter1);
+// console.log(counter2);
+// console.log(counter2());// 1
+// console.log(counter2());// 2
+// console.log(counter2());// 3
