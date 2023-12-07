@@ -173,3 +173,12 @@ myFunc4();
 // console.log(global4);
 
 
+
+const obj = {};
+
+obj.name = 'brandon';
+console.log(obj);
+
+obj = {};
+
+console.log(obj);
