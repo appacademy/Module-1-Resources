@@ -123,7 +123,6 @@ reverse('cat') => 'ta' + 'c' = 'tac';
 Bottom of Stack
 */
 
-// let ex = () => 'hello';
 
 // console.log(ex() + 'world');
 
