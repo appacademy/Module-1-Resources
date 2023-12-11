@@ -36,3 +36,5 @@ let names = ['celebi', 'pumpkin', 'mochi', 'jazz'];
 for(let name of names) {
   console.log(`${myFunc()} ${name}`);
 }
+
+// console.log(typeof evenCoolerGreeting)
