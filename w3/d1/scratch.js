@@ -96,3 +96,28 @@ function test() {
 }
 
 // test();
+
+
+
+
+function debuggerFunc(){
+  debugger;
+  function innerOne(){
+    let name = 'inner one'
+  };
+
+  innerOne();
+
+  function innerTwo(){
+    let name = 'inner two'
+  };
+
+  innerTwo();
+
+
+};
+
+debuggerFunc();
+
+// step over - step over func call
+// step into - step into function call
