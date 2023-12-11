@@ -26,15 +26,20 @@
 
   Continue
     * will go debugger statement to debugger statement
+
   Step Over
     * go line by line and if there is a function call, step over it
     * If there is a debugger statement; the debugger will enter the function regardless if using step over
     * Step over: steps over function calls
     * Wont step over functions that have a debugger statement
+
+
   Step Into
     * Go line by line and if there is a function call, step into it
     * Regardless if there is a debugger statement or not; step into will enter the function
     * Step into: steps into function calls
+
+  
   Step out
     * step out of any function you stepped into
   Stop

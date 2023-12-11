@@ -1,40 +1,98 @@
+// let value = 0;
 
+// let expression = 1 + 2 + 4;
 
-let value = 0;
+// console.log(expression)
 
-let expression = 1 + 2 + 4;
+// let arr = [];
+// let obj = {};
+// let templateLiteral = ` The result of the expression: ${expression} ${!true}`;
 
-console.log(expression)
+// // console.log(templateLiteral);
+// //The result of the expression: 7
 
+// const name = 'brandon'
+// const age = 28;
 
-let arr = [];
-let obj = {};
-let templateLiteral = ` The result of the expression: ${expression} ${!true}`;
+// let greeting = 'Hello my name is, ' + name + ' and i am ' + age;
+// // console.log(greeting);// Hello brandon
 
+// let coolerGreeting = `Hello my name is, ${name} and i am ${age}`
+// console.log(coolerGreeting)
+// // Hello my name is, brandon and i am 28
 
-// console.log(templateLiteral);
-//The result of the expression: 7
+// let myFunc = () => 'hello'
+// let evenCoolerGreeting = `${myFunc()} ${name}`
+// // hello brandon
 
-const name = 'brandon'
-const age = 28;
+// // console.log(evenCoolerGreeting);
 
-let greeting = 'Hello my name is, ' + name + ' and i am ' + age;
-// console.log(greeting);// Hello brandon
+// let names = ['celebi', 'pumpkin', 'mochi', 'jazz'];
 
-let coolerGreeting = `Hello my name is, ${name} and i am ${age}`
-console.log(coolerGreeting)
-// Hello my name is, brandon and i am 28
+// for(let name of names) {
+//   console.log(`${myFunc()} ${name}`);
+// }
 
-let myFunc = () => 'hello'
-let evenCoolerGreeting = `${myFunc()} ${name}`
-// hello brandon
+// // console.log(typeof evenCoolerGreeting)
 
-// console.log(evenCoolerGreeting);
-
-let names = ['celebi', 'pumpkin', 'mochi', 'jazz'];
-
-for(let name of names) {
-  console.log(`${myFunc()} ${name}`);
+function foo(word) {
+  debugger;
+  console.log(word);
+  bar("barber");
 }
 
-// console.log(typeof evenCoolerGreeting)
+function baz(word) {
+  console.log(word);
+  // debugger; // trigger debugger
+}
+
+function bar(word) {
+  debugger;
+  console.log(word);
+  baz("bazaar");
+}
+
+// foo("food");
+
+
+function myfunc(){
+  debugger;
+
+  let arr = [1,2,3];
+  let sum = 0;
+  for(let num of arr) {
+    debugger;
+    // console.log(num);
+    sum += num;
+  }
+
+  debugger;
+  return sum;
+}
+
+// myfunc();
+
+
+
+function test() {
+  let name = "brandon";
+  debugger;
+
+  if (false) {
+    name = "false";
+    debugger;
+  }
+  if (true) {
+    name = "krandon";
+    debugger;
+  }
+
+  if (1) {
+    let name = "1";
+    debugger;
+  }
+
+  debugger;
+}
+
+// test();
