@@ -22,6 +22,7 @@ function foo() {
   debugger;
   bar();
   console.log("e");
+  return 'foo function popped off stack'
 }
 
 function bar() {
@@ -29,10 +30,26 @@ function bar() {
   debugger;
   baz();
   console.log("d");
+  return 'bar function popped off stack'
 }
 
 function baz() {
   debugger;
   console.log("c");
+  return 'baz function popped off stack'
 }
 
+foo();
+
+
+
+
+// function evaluates to return
+// passing return values down the stack
+
+function myFunc(){
+
+  return 'return value of myFunc'
+};
+
+console.log(myFunc())//?
