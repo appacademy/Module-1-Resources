@@ -11,6 +11,7 @@
     * stack of plates
     * when a function is called - it gets pushed to the top
     * when a function is returned - it gets popped off the stack
+      * if a function does not have a return, it will still return and just to default its value to undefined
 
 */
 
@@ -39,17 +40,19 @@ function baz() {
   return 'baz function popped off stack'
 }
 
-foo();
-
-
+// foo();
 
 
 // function evaluates to return
 // passing return values down the stack
 
 function myFunc(){
+  console.log('whats happening?')
 
-  return 'return value of myFunc'
+  return myFunc();
+  // return 'return value of myFunc'
+  // return true;
+  // return 12;
+
 };
 
-console.log(myFunc())//?
