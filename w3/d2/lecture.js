@@ -149,10 +149,10 @@ recursion(5) => true
 
 
 
-for(let i = 0; i < arr.length; i++){
-  console.log(arr[i]);
-  if(arr[i] === 6) return arr[i];
-}
+// for(let i = 0; i < arr.length; i++){
+//   console.log(arr[i]);
+//   if(arr[i] === 6) return arr[i];
+// }
 
 
 // add edge base case
@@ -172,7 +172,7 @@ function recurseArr(arr) {
 };
 
 // console.log(recurseArr([1,2,3]));
-console.log(recurseArr([5,6,7]))
+// console.log(recurseArr([5,6,7]));
 /*
 recurseArr([1,2,3]) => 'hit base case'
 recurseArr([1,2])   => 'hit base case'
@@ -181,4 +181,95 @@ recurseArr([])      => 'hit base case'
 
 recurseArr([5,6,7])  => 6
 recurseArr([6,7])    => return 6
+*/
+
+
+
+/*
+
+  Reversing a string
+
+*/
+
+function reverseString(string) {
+
+  //base case
+  if(string.length === 0) return '';
+
+  let firstLetter  = string[0];
+  console.log(firstLetter);
+
+  //recursive call + recursive step
+  return reverseString(string.slice(1)) + firstLetter;
+
+};
+
+
+// console.log(reverseString('cat'));// tac
+/*
+Bottom of stack
+reverseString('cat') => reverseString('at') + c;
+reverseString('at')  => reverseString('t') + a;
+reverseString('t')   => reverseString('') + t
+reverseString('')    => '' <-- base case Top of stack
+reverseString('t')   => ' '+ t = 't';
+reverseString('at')  => 't' + a; = 'ta';
+reverseString('cat') => 'ta' + c = 'tac';
+Bottom of stack
+*/
+
+// function test(num){
+//   return 10 + num
+// }
+
+// console.log(10 + test(12))
+
+
+function reverseStringLog(string) {
+
+  // console.log(string);
+  if(string.length === 0) return '';
+
+  let firstLetter  = string[0];
+  console.log(firstLetter);
+
+  let result = reverseString(string.slice(1)) + firstLetter;
+
+  console.log('==>',result);
+  return result;
+
+};
+
+
+// console.log(reverseStringLog('cat'));
+
+
+function reverseStringDebug(string) {
+
+  debugger;
+  if(string.length === 0) return '';
+
+  let firstLetter  = string[0];
+
+  debugger;
+  let result = reverseStringDebug(string.slice(1)) + firstLetter;
+
+  debugger;
+  return result;
+
+};
+
+console.log(reverseStringDebug('cat')); //tac
+console.log(reverseStringDebug('at'))// ta
+console.log(reverseStringDebug('t'))// t
+console.log(reverseStringDebug('')) // ' '
+// console.log(reverseStringDebug('cat'))
+// console.log(reverseStringDebug('cat'))
+/*
+Bottom of stack
+reverseString('cat') => 'ta' + c = 'tac'
+reverseString('at')  => 't' + a = 'ta'
+reverseString('t')   => '' + t = 't'
+reverseString('')    => '' <-- base case Top of stack
+
 */
