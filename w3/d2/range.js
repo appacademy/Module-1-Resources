@@ -17,17 +17,22 @@ range(7, 6); // []
 // 1 2
 // 1 1
 
-function range(start, end) {
+function range(start, end, arr = []) {
   console.log(start);
 
-  if(start >= end) return [];
+  if(start >= end) return arr;
 
 
-  let result = range(start + 1, end);
-  result.unshift(start);
+  // let result = range(start + 1, end);
+  // result.unshift(start);
+  // return result;
 
-  return result;
+  // return [start].concat(range(start + 1, end));
+  // return [start, ...range(start + 1, end)]
+  arr.push(start);
+  // return range(start + 1, end, arr)
 };
+
 /*
 range(1, 5) => range(2, 5) 1
 range(2, 5) => range(3, 5) 2
@@ -42,3 +47,11 @@ range(1, 5) =>  [2,3,4].unshift(1) [1,2,3,4]
 console.log(range(1, 5)); // [1, 2, 3, 4]
 // console.log(range(3, 4)); // [3]
 // console.log(range(7, 6)); // []
+
+
+
+// function myFunc(){
+
+
+//   return myFunc() + myFunc();
+// }
