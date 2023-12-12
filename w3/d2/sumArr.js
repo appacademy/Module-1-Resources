@@ -38,9 +38,15 @@ function sumArray(arr, sum = 0) {
   return sumArray(arr, sum);
 
 };
-console.log(sumArray([1, 2, 3])); //  6
-
+// console.log(sumArray([1, 2, 3])); //  6
 /*
+sumArray([1, 2, 3]) => sumArray([1, 2], 3);
+sumArray([1, 2], 3) => sumArray([1], 5)
+sumArray([1], 5)    => sumArray([], 6)
+sumArray([], 6)     => return 6
+sumArray([1], 5)    => 6
+sumArray([1, 2], 3) => 6
+sumArray([1, 2, 3]) => 6
 
 
 
@@ -50,3 +56,9 @@ Bottom of stack
 
 // console.log(sumArray([0, 1, -3])); //  -2
 // console.log(sumArray([1, 2, 3, 4, 5])); // 15
+
+
+
+
+
+
