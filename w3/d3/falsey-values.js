@@ -20,6 +20,11 @@ JavaScript uses type conversion to coerce any value to a Boolean in contexts tha
 */
 
 
+if('false'){
+  console.log('will reach')
+};
+
+
 if (false) {
   // Not reachable
 }
