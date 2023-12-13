@@ -9,6 +9,7 @@
 */
 
 
+
 function hoistVar(){
   console.log(name); //undefined
   var name = 'brandon'
@@ -25,11 +26,11 @@ function hoistConstAndLet() {
 // hoistConstAndLet()
 
 //hoist the function declaration but not the assignment
-notHoisted(); //Cannot access 'notHoisted' before initialization
+// notHoisted(); //Cannot access 'notHoisted' before initialization
 let notHoisted = () => console.log('function will not get hoisted')
 
 
-hoisted();//hoisted!
+// hoisted();//hoisted!
 //function declaration
 function hoisted() {
   console.log('hoisted!')
