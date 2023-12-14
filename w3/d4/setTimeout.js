@@ -97,9 +97,73 @@ function baz() {
   console.log("bazaar");
 }
 
-setTimeout(foo, 1500);
-setTimeout(bar, 1000);
+// setTimeout(foo, 0);
+// setTimeout(bar, 0);
 // * tree recursion
-console.log(somethingSlow(44));
+// console.log(somethingSlow(44));
 // Try to predict the output? //
 // ignore what fib output is just when it would be outputted
+// fib => bark => bazaar => food
+
+
+let count = 0;
+
+function delayedPrinter(delaysArr) {
+  count++;
+
+  // if(count === 10) return;
+  if(!delaysArr.length) return;
+
+  const currentDelay = delaysArr.shift();
+  // console.log('hello')
+  console.log(currentDelay);
+
+  // delayedPrinter(delaysArr);
+  setTimeout(delayedPrinter, 1000, delaysArr)
+}
+// setTimeout(callbackFunction, delayInMilliseconds, param1, param2);
+
+
+// delayedPrinter(delaysArr)
+
+
+
+function delayedPrinterIteration(delaysArr){
+  let totalDelay = 0;
+
+  delaysArr.forEach(delay => {
+    totalDelay += delay;
+    setTimeout(console.log, totalDelay, `waiting for ${delay}ms`);
+
+  })
+}
+
+const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
+
+// console.log(delayedPrinterIteration(delaysArr))
+
+
+
+
+
+
+setTimeout(() => {
+  for(let i = 0; i < 3; i++){
+    console.log(i);
+    }
+}
+, 1000);
+
+
+// console.log('hello');
+// setTimeout(console.log, 1000, 'hello');
+
+// setTimeout(Math.sqrt, 1000, 100);
+
+// (param) => {
+//   console.log(Math.sqrt(param))
+// }
+
+setTimeout((param) => {
+  console.log(Math.sqrt(param))
+}, 1000, 100);
