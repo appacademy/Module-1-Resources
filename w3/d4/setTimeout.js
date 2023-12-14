@@ -1,5 +1,4 @@
 
-
 /*
 
   setTimeout
@@ -14,118 +13,45 @@
 
 */
 
+// console.log(global.setTimeout);
 
-// setTimeout(() => {
-//   console.log('hello');
-// }, 5000);
+// setTimeout(callbackFunction, delayInMilliseconds, param1, param2);
 
-function time(name){
-  console.log('wasssup ' + name)
-}
+// setTimeout(() => console.log('hello'), 4000);
 
-setTimeout(time, 3000, 'maica');
-
-
-// function sayHi(name1, name2){
-//   console.log(`hello ${name1} and ${name2}`)
-// };
-
-
-// setTimeout((...names) => {
-//   console.log(`hello ${names.join(' and ')}`)
-// }, 4000, 'charles', 'trevor', 'brandon')
-
-
-// setTimeout(setTimeout, 1000, console.log('hello'));
-
-
-
-// clearTimeout
-// prevent function from ever being called
-
-// let timer = setTimeout((name) => {
-//   console.log('hello ' + name)
-// }, 1000, 'brandon');
-
-
-// console.log(timer);
-
-// if(isMember){
-//   clearTimeout(timer);
+// function myFunc(){
+//   console.log('wassup');
 // }
 
-// delay = 420000
-// setInterval(() => {
-//   delay--;
-//   console.log(delay)
-// }, 1000)
+// setTimeout(myFunc, 3000);
+
+// setTimeout(console.log, 2000, 'hello world');
 
 
 
-// fib
-function somethingSlow(n) {
-  if (n === 1 || n === 2) return 1;
+function sayHi(name1, name2, name3) {
+  console.log(name1, name2, name3)
+};
 
-  return somethingSlow(n - 1) + somethingSlow(n - 2);
-}
-
-function foo() {
-  console.log("food");
-}
-
-function bar() {
-  console.log("bark");
-  baz();
-}
-
-function baz() {
-  console.log("bazaar");
-}
-
-// setTimeout(foo, 1500);
-// setTimeout(bar, 1000);
-// * tree recursion
-// console.log(somethingSlow(44));
-// predict what would we be the output?<--
+// setTimeout(sayHi, 2000, 'trevor', 'charles', 'maica');
 
 
+// let myFunc = (name1, name2, name3) => console.log(name1, name2, name3);
+
+// setTimeout(myFunc, 2000,'trevor', 'charles', 'maica'  )
+
+let timerId = setTimeout((name1, name2, name3) => console.log(name1, name2, name3), 2000,'trevor', 'charles', 'maica' )
+
+// let timerId2 = setTimeout((name1, name2, name3) => console.log(name1, name2, name3), 2000,'trevor', 'charles', 'maica' )
+// // console.log(timerId);
+
+// let timerId3 = setTimeout((name1, name2, name3) => console.log(name1, name2, name3), 2000,'trevor', 'charles', 'maica' )
 
 
+setTimeout(clearTimeout, 3000, timerId);
 
 
+/*
 
-
-
-// function delayedPrinter(delaysArr){
-//   debugger;
-//   if(delaysArr.length === 0) return;
-
-//   const currentDelay = delaysArr.shift();
-//   console.log(currentDelay);
-//   debugger;
-
-//   setTimeout(delayedPrinter, currentDelay, delaysArr)
-// };
-
-
-
-// delayedPrinter(delaysArr);
-
-const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
-
-
-
-function delayedPrinter(delaysArr) {
-
-  let totalDelay = 0;
-  delaysArr.forEach((delay) => {
-    totalDelay += delay;
-    setTimeout(() => {
-      console.log(`waiting for ${delay}ms`)
-    }, totalDelay);
-
-  })
-}
-
-
-// delayedPrinter(delaysArr);
+  timerId1{} => timerId3{}
+*/
