@@ -40,7 +40,7 @@ function sayHi(name1, name2, name3) {
 
 // setTimeout(myFunc, 2000,'trevor', 'charles', 'maica'  )
 
-let timerId = setTimeout((name1, name2, name3) => console.log(name1, name2, name3), 2000,'trevor', 'charles', 'maica' )
+// let timerId = setTimeout((name1, name2, name3) => console.log(name1, name2, name3), 2000,'trevor', 'charles', 'maica' )
 
 // let timerId2 = setTimeout((name1, name2, name3) => console.log(name1, name2, name3), 2000,'trevor', 'charles', 'maica' )
 // // console.log(timerId);
@@ -48,10 +48,58 @@ let timerId = setTimeout((name1, name2, name3) => console.log(name1, name2, name
 // let timerId3 = setTimeout((name1, name2, name3) => console.log(name1, name2, name3), 2000,'trevor', 'charles', 'maica' )
 
 
-setTimeout(clearTimeout, 3000, timerId);
+// setTimeout(clearTimeout, 3000, timerId);
 
 
 /*
 
   timerId1{} => timerId3{}
 */
+
+
+
+// setTimeout
+// run a function after a given delay passing these arguemnts
+// setTimeout(callbackFunc, delay, arg1, arg2, arg...)
+
+
+// pass some kind of function to setTimeout
+//anon
+// setTimeout((name) => console.log('hello ' + name), 1000,'brandon' );
+
+// pass named func
+function myFunc2(name){
+  console.log('hello ' + name)
+};
+
+// setInterval(myFunc2, 2000, 'maica');
+
+
+
+
+// fib
+function somethingSlow(n) {
+  if (n === 1 || n === 2) return 1;
+
+  return somethingSlow(n - 1) + somethingSlow(n - 2);
+}
+
+function foo() {
+  console.log("food");
+}
+
+function bar() {
+  console.log("bark");
+  baz();
+}
+
+function baz() {
+  console.log("bazaar");
+}
+
+setTimeout(foo, 1500);
+setTimeout(bar, 1000);
+// * tree recursion
+console.log(somethingSlow(44));
+// Try to predict the output? //
+// ignore what fib output is just when it would be outputted
