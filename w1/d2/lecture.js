@@ -73,3 +73,31 @@
     * When we want to see something in the terminal
 
 */
+
+
+// comments - single line comment
+// you can use this command mac - cmd + / windows  ctrl + /
+
+/*
+
+this
+a
+multi line
+comment
+
+*/
+
+
+// console.logs
+// we use to see something in terminal
+// console.log('hello world');
+
+let string = 'hello world';
+let sentence = 'a really long sentence'
+console.log('a really long sentence')
+console.log('a really long sentence')
+console.log('a really long sentence')
+// use variables to save typing
+console.log(string);
+console.log(string);
+console.log(string);
