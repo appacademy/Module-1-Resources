@@ -35,4 +35,13 @@ if(10 % 2 === 0) {
   console.log('is even');
 }
 
+// null undefined
+let name;
+console.log(name);// undefined
 
+
+console.log(null + 12);// 12
+console.log(null && true);// null
+//null is treated as zero
+
+console.log(10**2);// 100
