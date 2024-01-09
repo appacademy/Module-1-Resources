@@ -71,9 +71,26 @@ function greaterThanFive(num) {
     return `${num} is greater than 5`
   }
     return `${num} is not greater than 5`
-  
+
 }
 
 
-console.log(greaterThanFive(1));// 1 is not greater than 5
-console.log(greaterThanFive(10));// 10 is greater than 5
+// console.log(greaterThanFive(1));// 1 is not greater than 5
+// console.log(greaterThanFive(10));// 10 is greater than 5
+
+let randomNumber2 = Math.random();
+// console.log(randomNumber);
+
+//mutually exclusive condition
+// console.log(randomNumber);
+// if(randomNumber2 > 0.5) {
+//   console.log('heads')
+// } else {
+//   console.log('tails')
+// }
+
+//                 <condition> ? <if condition is true> : <if condition is false>
+// let coinSide = Math.random() < .5 ? 'heads' : 'tails'
+// console.log(coinSide);
+
+Math.random() < .5 ? console.log('heads') : console.log('tails');
