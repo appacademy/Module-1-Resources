@@ -5,9 +5,9 @@
     * We can perform actions based on true/false
 
   Logical operators
-    ! - not (bang)
-    && - and
-    || - or
+    ! - not (bang) === `
+    && - and       === *
+    || - or        === +
 
   Order of operators
     * not, and, or
