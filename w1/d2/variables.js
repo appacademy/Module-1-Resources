@@ -132,3 +132,12 @@ let num1 = 10;
 num1 + 10;
 console.log('string',12, true, () => {}, num1);
 // string 12 true [Function (anonymous)] 10
+
+
+console.log('12' + 4);// 124 - string
+let result = '12' + 4;
+console.log(+result);// 124 - number
+//type casted number into a string
+
+console.log(null + +'10');
+console.log(Number('10'))
