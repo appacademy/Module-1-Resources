@@ -94,3 +94,14 @@ let randomNumber2 = Math.random();
 // console.log(coinSide);
 
 Math.random() < .5 ? console.log('heads') : console.log('tails');
+
+function threeOrSeven(num){
+  // console.log(num);
+  // console.log(num % 3)
+  if(num === 0) return 0;
+  if(num % 7 === 0 && num % 3 === 0 && num !== 0) return 21
+  else if(num % 7 === 0) return 7
+  else if (num % 3 === 0) return 3
+  else return num;
+
+}
