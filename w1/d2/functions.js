@@ -37,3 +37,58 @@
 
    talk about order of execution of code
 */
+
+// function declared
+// logic is ran
+// params are used to represent args
+// string = cats
+function lastIndex(string){
+  // console.log(string);//cats
+
+  // console.log(string[0]);c
+  // console.log(string,string[string.length - 1]);s
+  return string[string.length - 1]
+}
+
+
+//function call/invocation
+// where we pass arguments
+// console.log('the return value of lastIndex 1', lastIndex('cats'));//s
+// console.log('the return value of lastIndex 2', lastIndex('hippopotamuses'));// p
+// console.log('the return value of lastIndex 3', lastIndex('ant'));// t
+
+// return value
+// take an input
+// run logic
+// give us an output
+// the return is the output
+
+//num1 = 1
+//num2 = 2
+//num3 = 3
+function multiply(num1, num2, num3, banana){
+  console.log(num1, num2, num3, banana)
+  if(typeof num1 === 'number'){
+    console.log(console.log('do something'))
+  }
+  return num1 * num2 * num3 * banana
+}
+
+console.log(multiply(1, 2, 3, 4));// 6
+
+// let returnValueOfMultiply = multiply(1,2,3);
+// console.log(returnValueOfMultiply)
+
+// undefined is like a holder for a variable that will eventually be defined
+// null as the absence of a value
+
+/*
+ Read/Watch/Code: 35min
+  - Functions Lecture REPL
+  - Intro to functions quiz
+  - Goodbye
+  - Repeat Name
+  - Parameters and Arguments Quiz
+  - Hello
+  - Be Cool
+*/
