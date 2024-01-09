@@ -67,31 +67,88 @@ INDEX - 0 1 2 3    4    5
 */
 
 let string = 'cats';
-console.log(string);
+// console.log(string);
 
-console.log(string.length);
+// console.log(string.length);
 
 // we can index a string to get the value at that index
-console.log(string[0]);// c
-console.log(string[1]);// a
-console.log(string[2]);// t
-console.log(string[3]);// s
-console.log(string[4]);// undefined
-console.log(string[5]);// undefined
+// console.log(string[0]);// c
+// console.log(string[1]);// a
+// console.log(string[2]);// t
+// console.log(string[3]);// s
+// console.log(string[4]);// undefined
+// console.log(string[5]);// undefined
 
 // we can access the last value of string
-console.log(string[string.length - 1]);// s
+// console.log(string[string.length - 1]);// s
 /*
 string[string.length - 1]
 'cats'[3]
 */
 
 let randomString = 'afdljkashflkajsdf';
-console.log(randomString[randomString.length - 1]);// f
+// console.log(randomString[randomString.length - 1]);// f
 // * were basically saying, hey whats the length of the animal string, whatever it is subtract 1 and index and give me that value
 // * we are evaluating an expression and logging it the terminal
 
-console.log(randomString[randomString.length - 1]);// f
-// console.log(randomString.length);//17
-console.log('afdljkashflkajsdf'[15]);// d
-console.log(randomString[randomString.length - 12 + 2]);// f
+// console.log(randomString[randomString.length - 1]);// f
+// // console.log(randomString.length);//17
+// console.log('afdljkashflkajsdf'[15]);// d
+// console.log(randomString[randomString.length - 12 + 2]);// f
+let name = 'brandon'
+// let memory = ['b','r','a','n','d','o','n']
+
+// string methods!
+// * .indexOf method returns the first index at which a given element can be found an array, -1 if it is not present
+
+
+let animal = 'rhino';
+let array = [1,2,3,4,5]
+/*
+value - r h i n o undefined
+index - 0 1 2 3 4 5
+
+value - 1 2 3 4 5
+index - 0 1 2 3 4
+*/
+
+// console.log('rhino'.indexOf('r'));// 0
+// console.log(animal.indexOf('r'));// 0
+// console.log(animal.indexOf('h'));// 1
+// console.log(animal.indexOf('z'));// -1
+
+// console.log(animal.indexOf('z') === -1);// true
+
+let result = animal.indexOf('z')
+// console.log(result);// -1
+
+// -1 represented the absent of that character
+
+
+// concatenation
+let word1 = 'whiteboards';
+let word2 = 'remarkable';
+
+let combinedWords = word1 + ' are ' + word2;
+// 'whiteboards are remarkable';
+console.log(combinedWords);// whiteboards are remarkable
+
+
+// alt concat
+let combinedWords2 = word1.concat(' are ', word2);
+// 'whiteboards are remarkable);
+console.log(combinedWords2);
+
+// template literals
+// embeded expression/variables - ${<variable>};
+
+let combinedWords3 = `${word1} are ${word2}`;
+console.log(combinedWords3);// whiteboards are remarkable
+
+console.log([1,2,3].concat([4,5,6]));// [ 1, 2, 3, 4, 5, 6 ]
+
+let wordConca = 'str' + 4 ;
+console.log(wordConca);// str4
+
+const pi = 3.14;
+var num1 = 12;
