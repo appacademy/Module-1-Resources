@@ -152,3 +152,15 @@ console.log(wordConca);// str4
 
 const pi = 3.14;
 var num1 = 12;
+
+
+
+let person = {
+  age: '30',
+  speak: function (){ return 'hey'}
+}
+console.log(person.speak());
+console.log(person.age);
+
+//methods - verb - action to perform on a class
+//property - adjective - describes the class
