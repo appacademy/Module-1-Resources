@@ -92,3 +92,12 @@ console.log(multiply(1, 2, 3, 4));// 6
   - Hello
   - Be Cool
 */
+
+
+function myFunc(){
+
+};
+
+let myFunc2 = function() {
+  
+}
