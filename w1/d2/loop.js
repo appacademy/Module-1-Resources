@@ -31,7 +31,7 @@
     // 2. Condition for which we keep looping
     while(i <= 4) {
 
-      console.log(i);
+      // console.log(i);
       // 3. Step towards completing the loop/meeting the condition
       i++;
     };
@@ -43,6 +43,59 @@
     // 1. Initial Expression
     // 2. Condition for which we keep looping
     // 3. Step towards completing the loop/meeting the condition
-    for(let i = 0; i <= 4; i++) {
-      console.log(i);
+    // for(let i = 3; i >= 0; i --) {
+    //   console.log(i);
+    // }
+
+    // for(let i = 0; i < 3; i++) {
+    //   console.log(i);
+    // }
+
+
+
+    let animal = 'cats';
+    let animal2 = 'rhino'
+    /*
+    index - 0 1 2 3
+    value - c a t s
+    */
+  //  console.log(animal[0]);// c
+  //  console.log(animal[1]);// a
+  //  console.log(animal[2]);// t
+  //  console.log(animal[3]);// s
+  //animal2.length === 5
+
+  function iterateThroughWord(word) {
+
+
+    for(let i = 0; i < word.length; i++) {
+      let letter = word[i];
+      console.log('index', i, 'value', letter);
     }
+
+  }
+
+  // iterateThroughWord('cats');
+  // iterateThroughWord('rhino');
+
+
+ function iterateThroughWordBackwards(word) {
+
+
+    for(let i = word.length - 1; i >= 0; i--) {
+      let letter = word[i];
+      console.log('index', i, 'value', letter);
+    }
+
+  }
+
+  iterateThroughWordBackwards('cats');
+    /*
+    3 - s
+    2 - t
+    1 - a
+    0 - c
+
+    index - 0 1 2 3
+    value - c a t s
+    */
