@@ -85,8 +85,14 @@ function sayHello2(){
 
 
 let numbers = [1,2,3];
+//need index or need to modify i use for let i = 0
 for(let i = 0; i < numbers.length; i++){
   let number = numbers[i];
 };
 
+// only need value use for of
 for(let number of numbers) console.log(number)
+
+
+// for each quicker version of standard for loop and you need i
+numbers.forEach((number, i, array) => console.log(number))
