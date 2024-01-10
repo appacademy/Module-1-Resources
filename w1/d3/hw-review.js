@@ -58,3 +58,50 @@ console.log(hasElement(['a', 'b', 'c', 'e'], 'z')); // false
 console.log(hasElement([43, -7, 11, 13], 11));      // true
 console.log(hasElement([43, -7, 11, 13], 1));       // false
 console.log(hasElement([], 3));                     // false
+
+
+
+
+
+
+/*
+
+
+	Understanding the problem
+    input: ['a', 'b', 'c', 'e'], 'c')
+    output: an index 2
+
+    Make a plan
+    1. define a function getIndexOF
+    2. iterate through the array
+    	a. create a variable for element at i
+        b. use if statement to check if the current element is the target element
+        	a. if it is return the index
+    3. if we exit the loop return -1
+
+    exectuing the plan
+    refactor
+*/
+
+//  1. define a function getIndexOF
+function getIndexOf(array, targetEle) {
+  return array.indexOf(targetEle)
+  //     2. iterate through the array
+  for(let i = 0; i < array.length; i++) {
+    //  a. create a variable for element at i
+    let element = array[i];
+//   b. use if statement to check if the current element is the target element
+    // a. if it is return the index
+    if(array[i] === targetEle) return i;
+  };
+
+  // 3. if we exit the loop return -1
+  return -1;
+}
+
+console.log(getIndexOf(['a', 'b', 'c', 'e'], 'c')); // 2
+console.log(getIndexOf(['a', 'b', 'c', 'e'], 'e')); // 3
+console.log(getIndexOf(['a', 'b', 'c', 'e'], 'z')); // -1
+console.log(getIndexOf([43, -7, 11, 13, 43], 43));  // 0
+console.log(getIndexOf([43, -7, 11, 13], 1));       // -1
+console.log(getIndexOf([], 3));                     // -1
