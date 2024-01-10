@@ -55,7 +55,7 @@ console.log(sum([1, 2, 3])); // 6
 //   return 'hey'
 // }));
 
-// console.log(myFunc(() =>'hey'));
+console.log(myFunc(() =>'hey'));
 // for of - ONLY ON ARRAYS
 // for in - ONLY ON OBJECTS
 console.log('========')
@@ -73,10 +73,20 @@ console.log(sayHello2());// THIS DOES WORK WILL NOT THROW ERROR
 function sayHello2(){
   return 'hello';
 }
-
+// let sayHello = function (){
+//   return 'hello';
+// }
 
 // But what does this all mean? This brings us around to the concept of first
 // class objects. A first class object is defined as:
 // * 1. It can be stored in a variable
 // * 2. it can be passed as an argument to a function (coming up next week!)
 // * 3. It can be returned from a function (also coming up next week!)
+
+
+let numbers = [1,2,3];
+for(let i = 0; i < numbers.length; i++){
+  let number = numbers[i];
+};
+
+for(let number of numbers) console.log(number)
