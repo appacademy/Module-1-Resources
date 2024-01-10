@@ -26,71 +26,60 @@
 // While loops will execute while their condition is true.
 // * You'll want to make sure the expression that steps your loop towards completion is embedded within the body of your loop.
 
-    // 1. Initial Expression
-    let i = 0;
-    // 2. Condition for which we keep looping
-    while(i <= 4) {
-
-      // console.log(i);
-      // 3. Step towards completing the loop/meeting the condition
-      i++;
-    };
+// 1. Initial Expression
+let i = 0;
+// 2. Condition for which we keep looping
+while (i <= 4) {
+  // console.log(i);
+  // 3. Step towards completing the loop/meeting the condition
+  i++;
+}
 
 // console.log('exiting loop')
 // exit loop control + c
 
+// 1. Initial Expression
+// 2. Condition for which we keep looping
+// 3. Step towards completing the loop/meeting the condition
+// for(let i = 3; i >= 0; i --) {
+//   console.log(i);
+// }
 
-    // 1. Initial Expression
-    // 2. Condition for which we keep looping
-    // 3. Step towards completing the loop/meeting the condition
-    // for(let i = 3; i >= 0; i --) {
-    //   console.log(i);
-    // }
+// for(let i = 0; i < 3; i++) {
+//   console.log(i);
+// }
 
-    // for(let i = 0; i < 3; i++) {
-    //   console.log(i);
-    // }
-
-
-
-    let animal = 'cats';
-    let animal2 = 'rhino'
-    /*
+let animal = "cats";
+let animal2 = "rhino";
+/*
     index - 0 1 2 3
     value - c a t s
     */
-  //  console.log(animal[0]);// c
-  //  console.log(animal[1]);// a
-  //  console.log(animal[2]);// t
-  //  console.log(animal[3]);// s
-  //animal2.length === 5
+//  console.log(animal[0]);// c
+//  console.log(animal[1]);// a
+//  console.log(animal[2]);// t
+//  console.log(animal[3]);// s
+//animal2.length === 5
 
-  function iterateThroughWord(word) {
-
-
-    for(let i = 0; i < word.length; i++) {
-      let letter = word[i];
-      console.log('index', i, 'value', letter);
-    }
-
+function iterateThroughWord(word) {
+  for (let i = 0; i < word.length; i++) {
+    let letter = word[i];
+    console.log("index", i, "value", letter);
   }
+}
 
-  // iterateThroughWord('cats');
-  // iterateThroughWord('rhino');
+// iterateThroughWord('cats');
+// iterateThroughWord('rhino');
 
-
- function iterateThroughWordBackwards(word) {
-
-
-    for(let i = word.length - 1; i >= 0; i--) {
-      let letter = word[i];
-      console.log('index', i, 'value', letter);
-    }
-
+function iterateThroughWordBackwards(word) {
+  for (let i = word.length - 1; i >= 0; i--) {
+    let letter = word[i];
+    console.log("index", i, "value", letter);
   }
+}
 
-  iterateThroughWordBackwards('cats');
-    /*
+iterateThroughWordBackwards("cats");
+/*
     3 - s
     2 - t
     1 - a
