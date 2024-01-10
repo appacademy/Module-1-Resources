@@ -105,3 +105,55 @@ console.log(getIndexOf(['a', 'b', 'c', 'e'], 'z')); // -1
 console.log(getIndexOf([43, -7, 11, 13, 43], 43));  // 0
 console.log(getIndexOf([43, -7, 11, 13], 1));       // -1
 console.log(getIndexOf([], 3));                     // -1
+
+
+
+
+// Your code here
+/*
+
+	understand the problem
+    input: [3, 2, 11, 12, 13, 2, 4]
+    output: true
+
+    make a plan
+    1. define a function threeIncreasing
+    2. iterate through the array
+    	a. create variable for the current element at i
+        b. create variable for the current element at i + 1
+        c. create variable for the current element at i + 2
+        d. check conditionally if first element is equal to the next element + 1
+        and if the third element is equal to the second element + 1
+        	a. return true
+    3. exit the loop return false;
+
+    execute the plan
+    refactor
+*/
+
+  // 1. define a function threeIncreasing
+  function threeIncreasing(numbers) {
+    //   2. iterate through the array
+  	for(let i = 0; i < numbers.length; i++) {
+        //a. create variable for the current element at i
+      // let number1 = numbers[i];
+      // let number2 = numbers[i + 1];
+      // let number3 = numbers[i + 2];
+        // a. create variable for the current element at i
+  //       b. create variable for the current element at i + 1
+  //       c. create variable for the current element at i + 2
+  //       d. check conditionally if first element is equal to the next element + 1
+        //       and if the third element is equal to the second element + 1
+      // console.log(number1, number2, number3);
+        //       	a. return true
+      if(numbers[i] + 1 === numbers[i + 1] && numbers[i + 1] + 1 ===  numbers[i + 2]) return true
+
+    }
+  //   3. exit the loop return false;
+  return false;
+}
+
+console.log(threeIncreasing([3, 2, 11, 12, 13, 2, 4]));     // true
+console.log(threeIncreasing([2, 7, 8, 9]));                 // true
+console.log(threeIncreasing([7, 2, 4, 5, 2, 1, 6]));        // false
+console.log(threeIncreasing([1, 2, 4, 5, 2, 7, 8]));        // false
