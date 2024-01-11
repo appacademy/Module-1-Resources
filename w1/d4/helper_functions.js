@@ -119,3 +119,37 @@ Valid Operations
     Code out Prompt! 25mins
       - Take a break!
 */
+
+function math(num1,num2, operation){
+    if(operation === 'addition') {
+        return add(num1,num2)
+    } else if (operation === 'subtraction') {
+        return subtract(num1,num2)
+    } else if (operation === 'multiplication'){
+        return multiply(num1,num2)
+    } else if (operation === 'division') {
+        return divide(num1,num2)
+    }
+
+    return `I'm not sure what you mean?`
+}
+
+function add(num1,num2){
+    return num1+num2
+}
+
+function subtract(num1,num2){
+    return num1-num2
+}
+
+function multiply(num1,num2){
+    return num1 * num2
+}
+
+function divide(num1,num2){
+    return num1 / num2
+}
+
+// console.log(math(33,1,'addition'))
+console.log(math(50,23, 'subtraction'))
+
