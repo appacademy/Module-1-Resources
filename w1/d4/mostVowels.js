@@ -65,3 +65,21 @@ if(vowels.includes(letter)) {
 }
 
 console.log(mostVowels("what a wonderful life")); // "wonderful"
+
+
+function test(){
+  return 1;
+ }
+ console.log(test())
+
+ for(let i = test(); i<3; i+= test()) {
+   console.log(i)
+ }
+ // console.log(mostVowels("what a wonderful life")); // "wonderful
+
+ // for(let letter of word) {}
+ // for(let i = 0; i < word.length; i++) {
+ //    let letter = word[i];
+
+ // }
+ //   // check if the letter is a
