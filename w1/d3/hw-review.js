@@ -51,12 +51,12 @@ function hasElement(array, targetElement) {
   //   return false;
 }
 
-console.log("return value =>", hasElement(["a", "b", "c", "e"], "c")); // true
-console.log(hasElement(["a", "b", "c", "e"], "a")); // true
-console.log(hasElement(["a", "b", "c", "e"], "z")); // false
-console.log(hasElement([43, -7, 11, 13], 11)); // true
-console.log(hasElement([43, -7, 11, 13], 1)); // false
-console.log(hasElement([], 3)); // false
+// console.log("return value =>", hasElement(["a", "b", "c", "e"], "c")); // true
+// console.log(hasElement(["a", "b", "c", "e"], "a")); // true
+// console.log(hasElement(["a", "b", "c", "e"], "z")); // false
+// console.log(hasElement([43, -7, 11, 13], 11)); // true
+// console.log(hasElement([43, -7, 11, 13], 1)); // false
+// console.log(hasElement([], 3)); // false
 
 /*
 
@@ -93,12 +93,12 @@ function getIndexOf(array, targetEle) {
   return -1;
 }
 
-console.log(getIndexOf(["a", "b", "c", "e"], "c")); // 2
-console.log(getIndexOf(["a", "b", "c", "e"], "e")); // 3
-console.log(getIndexOf(["a", "b", "c", "e"], "z")); // -1
-console.log(getIndexOf([43, -7, 11, 13, 43], 43)); // 0
-console.log(getIndexOf([43, -7, 11, 13], 1)); // -1
-console.log(getIndexOf([], 3)); // -1
+// console.log(getIndexOf(["a", "b", "c", "e"], "c")); // 2
+// console.log(getIndexOf(["a", "b", "c", "e"], "e")); // 3
+// console.log(getIndexOf(["a", "b", "c", "e"], "z")); // -1
+// console.log(getIndexOf([43, -7, 11, 13, 43], 43)); // 0
+// console.log(getIndexOf([43, -7, 11, 13], 1)); // -1
+// console.log(getIndexOf([], 3)); // -1
 
 // Your code here
 /*
@@ -125,7 +125,7 @@ console.log(getIndexOf([], 3)); // -1
 // 1. define a function threeIncreasing
 function threeIncreasing(numbers) {
   //   2. iterate through the array
-  for (let i = 0; i < numbers.length - 2; i++) {
+  for (let i = 0; i < numbers.length; i++) {
     //a. create variable for the current element at i
     // let number1 = numbers[i];
     // let number2 = numbers[i + 1];
