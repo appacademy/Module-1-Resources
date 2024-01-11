@@ -12,11 +12,10 @@
     of our outer loop. Let's explore how we can use this a bit more practically
 */
 
-
-for(let i = 0; i < 3; i++) {
+for (let i = 0; i < 3; i++) {
   // console.log('i:',i);// outer loop controlled by i
 
-  for(let j = 0; j < 2; j++) {
+  for (let j = 0; j < 2; j++) {
     // console.log('j: ',j);// inner loop controlled by j
   }
 }
@@ -46,14 +45,38 @@ let matrix = [
 // console.log(matrix[i][j]);// a
 // console.log(matrix[0][0]);// a
 
-
 let matrix1 = [
   ["a", "b", "c"],
   ["d", "e", "f"],
   ["g", "h", "i"],
 ];
+// can access outer loop variable from inner loop; but not inner loop from outer loop
 
+for (let i = 0; i < matrix1.length; i++) {
+  let subArr = matrix1[i];
+  // console.log('at index ',i,'there is', subArr);
 
-for(let i = 0; i < matrix1.length; i++){
-  console.log(i);
+  for (let j = 0; j < subArr.length; j++) {
+    let letter = subArr[j];
+    // console.log('outer index ', i,'inner index',j, 'there is', letter);
+    // console.log('i ', i,'j',j, 'value', letter, matrix[i][j]);
+  }
+}
+
+let threeDMatrix = [
+  [[1], [4]],
+  [[2], [5]],
+  [[3], [6]],
+];
+// console.log(threeDMatrix[0]);//[[1], [ 4 ] ]
+// console.log(threeDMatrix[0][0]);
+// console.log(threeDMatrix[0][0][0]);
+for (let i = 0; i < threeDMatrix.length; i++) {
+  // console.log(threeDMatrix[i])
+  for(let j = 0; j < threeDMatrix[j].length; j++) {
+    // console.log(threeDMatrix[i][j]);
+    for(let k = 0; k < threeDMatrix[i][j].length; k++) {
+      console.log(threeDMatrix[i][j][k]);
+    }
+  }
 }
