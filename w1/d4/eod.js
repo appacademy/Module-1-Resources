@@ -31,7 +31,6 @@ function uncompress(string){
         let num = string[i+1]
         console.log(typeof num)
 
-        // console.log(typeof num)
         for (let j = 0; j < num; j++){
             res += char
             // console.log('---->',res)

@@ -1,0 +1,12 @@
+{
+  "name": "coding-problems",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "mocha"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0"
+  }
+}
