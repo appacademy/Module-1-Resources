@@ -57,3 +57,12 @@ let returnObj = (name) => ({ firstName: name})
 console.log(returnObj("Maica"))
 
 // console.log(returnObj())
+
+/*
+ * Multiple statement arrow function
+    (parameters, go, here) => {
+      statement1;
+      statement2;
+      return <a value>;
+    }
+*/
