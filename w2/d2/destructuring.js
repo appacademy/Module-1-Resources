@@ -46,4 +46,50 @@ let [firstNum, ...rest] = [ ...numbers, 4]
 
 // we are saying to the RIGHT, SPREAD all of the elements of the numbers into this array literal, but also add the number 4
 // on the left, store the first element of the array literal to the right of the = sign in firstNum
-console.log(firstNum, rest)
+// store the REST of the elements in an array called rest
+// console.log(firstNum, rest) // 1 [2,3,4];
+
+// Destructuring With Objects
+let user = {
+    name : "John",
+    address: {
+        street: "123 Street Rd",
+        city: "San Francisco"
+    },
+    age: 30
+};
+
+// lets destructure some values out of the user object
+
+// "name" cannot be bananable because we have to ref an existing key within the user obj
+// let { name, ...restOfObject  } = user
+
+// this will not work :(
+// let [ name, ...restOfObject ] = user
+
+
+// console.log(name)// john
+// console.log(restOfObject) // { address: { street: '123 Street Rd', city: 'San Francisco' }, age: 30}
+// console.log(user) // user obj is not affected by our destructuring
+
+// lets take this one step further
+// to get the values with in the original object
+let {name, address : { street, city }} = user
+
+// console.log(street)
+// console.log(city)
+
+// destructuring within a loop!
+for (let [key,value] of Object.entries(user)) {
+    console.log("key -> ",key)
+    console.log("value -> ", value)
+}
+
+
+// destructuring a function argument
+function destructure({ name }){
+    // console.log(name)
+}
+
+
+destructure({ name : "maica"})
