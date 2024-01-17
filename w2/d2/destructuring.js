@@ -7,6 +7,21 @@
 
 */
 
+let fruitObj = { fruit1: "apple", fruit2: "pear", fruit3: "strawberry"};
+//OLD VERSION
+//let fruit1 = fruitObj.fruit1
+//let fruit1 = fruitObj[fruit1]
+//let fruit2 = fruitObj.fruit2
+//NEW VERSION USING DESTRUCTURING
+let { ...restOfTheFruits } = fruitObj;
+//console.log(fruit1)
+//console.log(restOfTheFruits)
+let veggieArr = ["tomato", "lettuce", "celery"]
+//OLD VERSION
+//let tomato = veggieArr[0]
+//NEW WAY
+let [ pickle, ...bananas ] = veggieArr;
+console.log(bananas)
 
 // ! Destructuring with Arrays
 let array = [1, true, "hello word"];
@@ -17,15 +32,17 @@ let [num, bool, str] = array;
 // extracting from the array to the right of the equal sign
 // the values from the array turned into variables positionally
 
-// console.log(num); // 1
-// console.log(bool); // true
-// console.log(str); // hello world
+console.log(num); // 1
+console.log(bool); // true
+console.log(str); // hello world
 
 // can skip elements
 let array2 = ["blue", 100, false];
+
 let [color, , boolean] = array2 // we want just "blue" and false
-// console.log(color);
-// console.log(boolean)
+
+console.log(color);
+console.log(boolean)
 
 // Destructuring with rest
 // * we can use rest outside of function parameters
@@ -88,7 +105,7 @@ for (let [key,value] of Object.entries(user)) {
 
 // destructuring a function argument
 function destructure({ name }){
-    // console.log(name)
+    console.log(name)
 }
 
 
