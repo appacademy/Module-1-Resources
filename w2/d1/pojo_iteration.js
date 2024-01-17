@@ -53,6 +53,7 @@ let people = {
 for (let key in people){
     // key is referring to the keys in the obj
     // console.log(key)
+
     // accessing the values of the each ele/property in the obj
     let personObj = people[key];
     // console.log(personObj)
@@ -127,7 +128,7 @@ let values = Object.values(brandon)
 // The Object.entries() static method returns an array of a given object's own enumerable string-keyed property key-value pairs.
 
 let entries = Object.entries(brandon)
-// console.log(entries)
+// console.log(entries) -> Result is one big ol' 2D array
 /*
 
 
@@ -147,7 +148,7 @@ for (let i = 0; i < entries.length; i++){
     // console.log(entry)
 
     // how to isolate just the val
-    // console.log(entry[1])
+    console.log(entry[1])
 
     //how to isolate just the key
     console.log(entry[0])

@@ -49,12 +49,12 @@ let implicit = (name) => "Hello " + name;
 
 let addition = (num1, num2) => num1 + num2
 
-console.log(addition(5,7))
+// console.log(addition(5,7))
 
 
 let returnObj = (name) => ({ firstName: name})
 
-console.log(returnObj("Maica"))
+// console.log(returnObj("Maica"))
 
 // console.log(returnObj())
 

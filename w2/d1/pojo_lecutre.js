@@ -57,26 +57,26 @@ let brandon = {
 // * in order to access the value, we will need the key
 // * can use either bracket or dot notation
 
-// console.log(brandon.name)
+console.log(brandon.name)
 // //when using bracket notation, must a string
-// console.log(brandon["name"])
+console.log(brandon["name"])
 
 // access brandon's age
-// console.log(brandon.age) // 100
-// console.log(brandon["age"]) // 100
+console.log(brandon.age) // 100
+console.log(brandon["age"]) // 100
 
 // access Brandon's fav bands
-// console.log(brandon.favoriteBands)
-// console.log(brandon[`favoriteBands`])
+console.log(brandon.favoriteBands)
+console.log(brandon[`favoriteBands`])
 
 // access Brandon's location
-// console.log(brandon.location.city)
+console.log(brandon.location.city)
 
 // mix and match notation
-// console.log(brandon.location.city)
-// console.log(brandon["location"]["city"])
-// console.log(brandon.location["state"])
-// console.log(brandon["location"].state)
+console.log(brandon.location.city)
+console.log(brandon["location"]["city"])
+console.log(brandon.location["state"])
+console.log(brandon["location"].state)
 
 /*
 
@@ -90,14 +90,15 @@ let brandon = {
 
 */
 
-// can we see the function object?
-// console.log(brandon.sayHello)
+// can we see the function in the object?
+console.log(brandon.sayHello)
 
 
 //let run the function~!
-// console.log(brandon.sayHello("Riley"))
+console.log(brandon.sayHello("Riley"))
 
 
+// we've been using object methods all along!
 let numbers = [1,2,3];
 numbers.push(4)
 numbers["push"](5)
@@ -134,12 +135,13 @@ Whats the difference between bracket and dot notation?
 
 */
 
-// let variable = 'name';
+let variable = 'name';
 
-// let object = { name: 'brandon' };
+let object = { name: 'brandon' };
 
         // console.log(object[variable]);// brandon
         // console.log(object.name)
+
         // using . notation on an object with a variable will not work
         // console.log(object.variable)
         // console.log(variable);// name
@@ -176,8 +178,8 @@ car["year"] = "2016"
 
 
 // assign using bracket notation with a variable
-let variable = "make";
-car[variable] = "dodge"
+let variable1 = "make";
+car[variable1] = "dodge"
 // console.log(car) // { model: 'challenger', year: '2016', make: 'dodge' }
 
 
@@ -195,11 +197,11 @@ car[variable] = "dodge"
 
 // change the model to mustang
 car.model = "mustang"
-// console.log(car) // { model: 'mustang', year: '2016', make: 'dodge' }
+console.log(car) // { model: 'mustang', year: '2016', make: 'dodge' }
 
 // reassign the year to 2024 using bracket notation
 car["year"] = "2024"
-// console.log(car)
+console.log(car) 
 
 // reassign the make
 car.make = "ford"
