@@ -80,7 +80,12 @@ let user = {
 // let name = user.name;
 // let address = user.address;
 // let age = user.age;
+let { name, address: {street, city}, age, ...rest} = user;
+// console.log(name, street, city, age, rest);// John 123 Street Rd Orlando { age: 30 }
 
-let { name, address: {street, city}, ...rest } = user;
 
-console.log(name, street, city, rest);// John 123 Street Rd Orlando { age: 30 }
+for(let [val1, val2] of Object.entries(user)){
+
+  // let [val1, val2] = ele;
+  console.log(val1, val2)
+}
