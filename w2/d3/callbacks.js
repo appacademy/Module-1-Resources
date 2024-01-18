@@ -34,3 +34,40 @@
     * Callbacks must be explicitly passed as an argument to a function
 
 */
+
+// callback = cb = function() {}
+// numbers = arr = [1,2,3]
+function higherOrder(callback, numbers) {
+
+  // console.log('inside higher order',callback);// [Function: cb]
+  // console.log(callback());// NaN
+  // console.log(callback(10));// 11
+  // let result = callback(20);
+  // console.log(result);// 21
+  // console.log(numbers);
+  let array = [];
+  for(let i = 0; i < numbers.length; i++){
+
+    let number = numbers[i];
+    // console.log(number);
+    // console.log(callback);//[Function: cb] || [Function: cb] || [Function: cb]
+    // console.log(callback());// NaN | NaN | NaN
+    // console.log(callback(10));// 11 | 11 | 11
+    // console.log(callback(number));// 2 | 3 | 4
+    let numPlusOne = callback(number);
+    // console.log(numPlusOne);//<---????
+    array.push(numPlusOne);
+  };
+
+  console.log(array);//<----????
+  return array;
+};
+// let value = true
+let cb = function(num) {
+
+  return num + 1;
+};
+
+console.log('before passing to func', cb);
+let arr = [1,2,3]
+higherOrder(cb, arr)
