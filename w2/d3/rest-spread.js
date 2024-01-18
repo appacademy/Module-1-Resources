@@ -82,10 +82,41 @@ let user = {
 // let age = user.age;
 let { name, address: {street, city}, age, ...rest} = user;
 // console.log(name, street, city, age, rest);// John 123 Street Rd Orlando { age: 30 }
-
+// console.log(Object.entries(user))
 
 for(let [val1, val2] of Object.entries(user)){
 
   // let [val1, val2] = ele;
-  console.log(val1, val2)
+  // console.log(val1, val2)
 }
+
+/*
+
+  Spread Operator
+
+  What is the Spread Operator?
+    * The spread operator allows you to break down a data type into the elements that make it up.
+  Two Basic Behaviors
+    * Take a data type (i.e. an array, an object) and spread the values of that type where elements are expected
+    * Take an iterable data type (an array or a string) and spread the elements of that type where arguments are expected.
+
+    * Create a shallow copy
+
+*/
+
+
+let arr1 = [1,2,3];
+let copy = arr1.slice();
+console.log(copy);// [ 1, 2, 3 ]
+
+let copy2 = [...arr1];
+console.log(copy2);// [ 1, 2, 3 ]
+
+
+let obj1 = {nested: {name: 'brandon'}};
+let obj2 = { age: 28};
+//{name: 'brandon',  age: 28 }
+let obj3 = {...obj1, ...obj2 }
+console.log(obj3);// { name: 'brandon', age: 28 }
+
+// console.log(obj1.nested === obj3.nested)
