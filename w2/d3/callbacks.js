@@ -38,7 +38,6 @@
 // callback = cb = function() {}
 // numbers = arr = [1,2,3]
 function higherOrder(callback, numbers) {
-
   // console.log('inside higher order',callback);// [Function: cb]
   // console.log(callback());// NaN
   // console.log(callback(10));// 11
@@ -46,8 +45,7 @@ function higherOrder(callback, numbers) {
   // console.log(result);// 21
   // console.log(numbers);
   let array = [];
-  for(let i = 0; i < numbers.length; i++){
-
+  for (let i = 0; i < numbers.length; i++) {
     let number = numbers[i];
     // console.log(number);
     // console.log(callback);//[Function: cb] || [Function: cb] || [Function: cb]
@@ -57,17 +55,71 @@ function higherOrder(callback, numbers) {
     let numPlusOne = callback(number);
     // console.log(numPlusOne);//<---????
     array.push(numPlusOne);
-  };
+  }
 
-  console.log(array);//<----????
+  console.log(array); //<----????
   return array;
-};
+}
 // let value = true
-let cb = function(num) {
-
+let cb = function (num) {
   return num + 1;
 };
 
-console.log('before passing to func', cb);
-let arr = [1,2,3]
-higherOrder(cb, arr)
+// console.log('before passing to func', cb);
+let arr = [1, 2, 3];
+// higherOrder(cb, arr)
+
+// console.log(arr.map((num) =>  num + 1));//[ 2, 3, 4 ]
+
+//isPrime
+// TY Juan D!
+// function isPrime(num) {
+//   for(let i = 2, sqrt = Math.sqrt(num); i <= sqrt; i++)
+//       if(num % i === 0) return false;
+//   return num > 1;
+// }
+
+// let array2 = [1,2,3,4,5,6,7];
+
+// console.log(array2.filter(isPrime));//[ 2, 3, 5, 7 ]
+
+// let res = [];
+// for(let i = 0; i < array2.length; i++){
+//   let number = array2[i];
+//   if(isPrime(number)) res.push(number)
+// }
+// console.log('==>',res);
+
+function doubleNumbers(numbers, cb) {
+  let doubled = [];
+
+  for (let num of numbers) {
+    let doubledNum = cb(num);
+    doubled.push(doubledNum);
+  }
+
+  return doubled;
+}
+
+let double = (num) => num * 2;
+
+// passing callback as named function
+console.log(doubleNumbers([1,2,3], double))// [ 2, 4, 6 ]
+
+//passing callback as a anon function using function keyword
+console.log(
+  doubleNumbers([1, 2, 3], function (num) {
+    return num * 2;
+  })
+); // [ 2, 4, 6 ]
+
+
+//passing callback as anon function using fat arrow explicit
+console.log(
+  doubleNumbers([1, 2, 3], (num) => {
+    return num * 2;
+  })
+); // [ 2, 4, 6 ]
+
+// passing callback as anon function using fat arrow implicit
+console.log(doubleNumbers([1, 2, 3], (num) =>  num * 2)); // [ 2, 4, 6 ]
