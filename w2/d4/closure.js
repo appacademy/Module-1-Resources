@@ -140,3 +140,39 @@ function elephantCollector() {
 //   return elephants;
 // };
 // console.log(elephantParade1);//[Function: inner]
+
+/*
+<counter1> : {
+  count: 0
+}
+
+<counter2> : {
+  count: 0
+}
+
+<counter3> : {
+  count: 0
+}
+*/
+function createCounter() {
+
+  let count = 10;
+
+  return function() {
+    count++;
+    return count;
+  }
+}
+
+console.log(createCounter()())
+let counter1 = createCounter();
+console.log(counter1());
+console.log(counter1());
+console.log(counter1());
+
+let counter2 = createCounter();
+console.log(counter2());
+console.log(counter2());
+console.log(counter2());
+
+let counter3 = createCounter()
