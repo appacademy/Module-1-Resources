@@ -1,4 +1,3 @@
-
 /*
 
   Closures
@@ -27,7 +26,6 @@
 
 */
 
-
 // we can access the outer function variables
 // lexical env
 /* <pizzaMaker>: {
@@ -42,15 +40,103 @@
 
 */
 function pizzaMaker(food) {
-
-  let order = 'Id like a pizza with ';
+  let order = "Id like a pizza with ";
 
   function oven() {
     return order + food;
+  }
+
+  return oven(); // we are returning the return value of invoking the function
+}
+// console.log(pizzaMaker('mushrooms'));
+// console.log(pizzaMaker('mangos'));
+
+/* <groceryList>: {
+   list: ['bacon','mangos'],
+   addItem: [Function],
+  <addItem>: {
+    list: ['bacon','mangos'],
+  }
+}
+we can access and change the outer functions variables
+*/
+function groceryList(list) {
+  function addItem() {
+    list.push("ice cream");
+  }
+
+  addItem();
+  return list;
+}
+// console.log(groceryList(['bacon','mangos']));// [ 'bacon', 'mangos', 'ice cream' ]
+
+/* <>: {
+   : ['bacon','mangos'],
+   : [Function],
+  <>: {
+    : ,
+  }
+}
+
+ we can return a function and access the variables even after its returned
+*/
+/*
+  <elephantCollector>: {
+    elephants: ['dumbo'];
+    inner: <function>
+    <inner>:{
+       elephants: ['dumbo, undefined];
+       name: undefined
+    }
+  }
+*/
+let name = "name";
+let myFunc = () => "hey";
+
+function elephantCollector() {
+  let elephants = ["dumbo"];
+
+  // return named function
+  return function inner(name) {
+    elephants.push(name);
+    return elephants;
   };
 
-  return oven();// we are returning the return value of invoking the function
+  // return anonymous func
+  return function (name) {
+    elephants.push(name);
+    return elephants;
+  };
 
-};
-console.log(pizzaMaker('mushrooms'));
-// console.log(pizzaMaker('mangos'));
+  return (name) => {
+    elephants.push(name);
+    return elephants;
+  };
+
+  return inner
+
+}
+// console.log(elephantCollector);//[Function: elephantCollector]
+// console.log(elephantCollector());//[Function: inner]
+
+// let elephantParade1 = elephantCollector();
+// // console.log(elephantParade1());//<---[ 'dumbo', undefined ]
+// console.log(elephantParade1('funkfreed'));//[ 'dumbo', 'funkfreed' ]
+
+// let elephantParade2 = elephantCollector();
+// console.log(elephantParade2("zunesha")); //[ 'dumbo', 'zunesha' ]
+
+// Call Stack
+// * The call stack is a structure that js uses to keep track of evaluation of function calls
+// * function that is at the top of the stack is the function currently being executed
+//   * first in last out
+//   * last in first out
+// * stack of plates
+// * when a function is called - it gets pushed to the top
+// * when a function is returned - it gets popped off the stack
+//   * if a function does not have a return, it will still return and just to default its value to undefined
+// let elephantParade1 = function inner(name) {
+//   elephants.push(name);
+//   return elephants;
+// };
+// console.log(elephantParade1);//[Function: inner]

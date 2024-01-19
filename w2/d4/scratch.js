@@ -177,7 +177,6 @@ function testVar() {
 
 
 /*
-
    globally
     * any variable that is declared in the global scope will be globally available
     * any variable declared without let, const, or var will be globally available
@@ -201,3 +200,29 @@ function myFunc() {
 myFunc();
 
 // console.log(global4);
+
+
+/*
+  <elephantCollector>: {
+    elephants: ['dumbo'];
+    inner: <function>
+    <inner>:{
+       elephants: ['dumbo'];
+       name: param
+    }
+  }
+
+  <elephantParade1>:{
+       elephants: ['dumbo'];
+       name: funkfreed
+    }
+
+[ 'dumbo', 'funkfreed' ]
+
+    <elephantParade2>:{
+      elephants: ['dumbo'];
+      name: zunesha
+  }
+
+[ 'dumbo', 'zunesha' ]
+*/
