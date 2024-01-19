@@ -3,16 +3,18 @@
 
 
 
-let arr = [1, 1, 3, 2, 2, 1];
-let tracker = 0;
-const result = arr.reduce(function(obj, key) {
-  tracker++;
-  console.log(` Iteration ${tracker} current num: ${key}`, 'obj/acc:', obj );
-  if (obj[key]) {
-    obj[key]++;
+let arr = ['a','e','i','a', 'o','u', 'z','y'];
+
+let vowels = 'aeiou'
+const result = arr.reduce((obj, letter) => {
+
+  if(vowels.includes(letter)) {
+  if (obj[letter]) {
+    obj[letter]++;
   } else {
-    obj[key] = 1;
+    obj[letter] = 1;
   }
+}
   return obj;
 },{});
 
