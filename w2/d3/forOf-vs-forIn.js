@@ -28,12 +28,12 @@ let array2 = {
   0:'HELLO',
   1:'WORLD',
   2: true,
-  length: Object.keys(array2).length
+  lengthW: Object.keys(this).length
 }
 
 // console.log(array2[0]);//HELLO
 // console.log(array1[0]);//HELLO
-console.log(array2.length())
+console.log(array2.lengthW)
 
 // for(let index in numbers) {
 //   console.log(index, typeof index);

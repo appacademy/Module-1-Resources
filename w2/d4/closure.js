@@ -158,10 +158,16 @@ function createCounter() {
 
   let count = 10;
 
-  return function() {
+  return function inner() {
     count++;
     return count;
+
+
+    //reminder can return name of function your within ex:
+    return inner; 
   }
+
+
 }
 
 console.log(createCounter()())
