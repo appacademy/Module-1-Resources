@@ -61,8 +61,6 @@ function bar(word) { // define function bar that accepts param word
   console.log(word); // console.log the value stored in word param
   baz("bazaar");  // invoke baz function with string "bazaar"
 }
-
-
 // ! leave out debugger to show that step into will
 // step into the function and go line by line
 // step over will step over the function
@@ -75,11 +73,11 @@ function baz(word) { // define function baz that accepts param word
 
 foo("food");
 
-let names = ['brandon', 'charles', 'Anabel', 'trevor'];
-for(let i = 0; i < names.length; i++){
-  console.log(names[i]);
-  debugger;
-}
+// let names = ['brandon', 'charles', 'Anabel', 'trevor'];
+// for(let i = 0; i < names.length; i++){
+//   console.log(names[i]);
+//   debugger;
+// }
 
 
 
@@ -106,7 +104,7 @@ function test() {
   debugger;
 }
 
-test();
+// test();
 
 
 /*
@@ -128,4 +126,4 @@ function recursiveFunc(num) {
   return recursiveFunc(num - 1);
 }
 
-recursiveFunc(10)
+// recursiveFunc(10)
