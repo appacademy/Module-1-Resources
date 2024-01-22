@@ -56,4 +56,4 @@ function recursiveFunc(num) {
 }
 
 
-// recursiveFunc(5);
+recursiveFunc(5);
