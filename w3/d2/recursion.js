@@ -82,7 +82,20 @@ function recurse(number) {
   return recurse(number - 1);
 };
 
-console.log(recurse(3));
+// recursive case
+function recursiveCase(number) {
+
+  if(number > 0) {
+    console.log(number);
+
+    return recurse(number - 1);
+  };
+
+  return 'done recursing';
+};
+
+
+console.log(recursiveCase(3));
 
 /*
 Top of stack
