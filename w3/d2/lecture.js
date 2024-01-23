@@ -13,8 +13,6 @@
 
 */
 
-
-
 // Observe stack
 // * Can watch stack using debugger
 
@@ -37,4 +35,11 @@ function baz() {
   console.log("c");
 }
 
-foo(); //a,b,c,d,e
+// foo(); //a,b,c,d,e
+
+
+function test() {
+  return true;
+};
+
+// console.log(test());//<---true
