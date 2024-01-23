@@ -20,6 +20,8 @@ function sumToN(n) {
   return n + sumToN(n - 1);
 }
 
+let example = (num) => num + 5;
+// console.log(example(10));
 
 console.log(sumToN(5)) // returns 15
 /*
