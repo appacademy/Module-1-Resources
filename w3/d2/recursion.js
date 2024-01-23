@@ -55,3 +55,40 @@
 */
 
 
+// Iterating an arbitrary amount of time
+// * we control the boundaries of a loop
+// * Start - we are starting at the 0th index
+// * Stop - we stop when the condition is no longer true: i < 3
+// * Step - we works towards the condition using i++
+for (let i = 0; i < 3; i++) {
+  // console.log("i: ", i);
+}
+
+
+// Recursing an arbitrary amount of times
+// * In a way we can control the boundaries
+// * we can do so with our
+// * Start - a staring value
+// * Stop - base case
+// * Step - recursive step
+
+function recurse(number) {
+
+  if(number === 0) {
+    return 'done recursing';
+  };
+  console.log(number);
+
+  return recurse(number - 1);
+};
+
+console.log(recurse(3));
+
+/*
+Top of stack
+
+
+
+recurse(3) => 'done recursing'
+Bottom of stack
+*/
