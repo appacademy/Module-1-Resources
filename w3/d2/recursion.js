@@ -134,20 +134,26 @@ Bottom of stack
 
 function reverseString(string) {
 
-  if(!string.length) return '';
+  if(string.length === 1) return string;
 
   let firstLetter = string[0];
-  console.log(firstLetter)
+  console.log('up call stack',firstLetter, string);
 
-  return reverseString(string.slice(1)) + firstLetter;
+  let res = reverseString(string.slice(1)) + firstLetter;
+
+  console.log('down the stack',res)
+  return res;
 };
 
 
+console.log(reverseString('cat'));// 'tac'
 /*
 reverseString('')    => '' <-- base case
 reverseString('t')   => '' + 't' = 't'
 reverseString('at')  => 't' + 'a' = 'ta'
+reverseString('cat') => 'ta' + 'c' = 'tac'
 
+reverseString('t')   => 't' + 'a' = 'ta'
+reverseString('at')  => 'ta' + 'a' = 'ta'
 reverseString('cat') => 'ta' + 'c' = 'tac'
 */
-console.log(reverseString('cat'));// 'tac'
