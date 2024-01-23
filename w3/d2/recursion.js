@@ -113,19 +113,41 @@ function recurseArr(arr) {
   if(arr.length === 0) return 'done recursing';
 
   // how do we shorten the array - pop, shift, slice rest, spread
-  // let popped = arr.pop();
-  // console.log(popped, arr);
-  let shifted = arr.shift()
-  console.log(shifted, arr);
+  let popped = arr.pop();
+  console.log(popped, arr);
 
-  return recurseArr(arr);
+  recurseArr(arr);
 };
 
-console.log(recurseArr([1,2,3]));
+// console.log(recurseArr([1,2,3]));
 /*
 Top of stack
-
-
-recurseArr([1,2,3]) => 'done recursing'
+recurseArr([])      => 'done recursing'
+recurseArr([1]])    => undefined
+recurseArr([1,2]])  => recurseArr([1]])
+recurseArr([1,2,3]) => recurseArr([1,2]])
 Bottom of stack
 */
+
+
+// console.log('cat'.slice(1));// at
+
+function reverseString(string) {
+
+  if(!string.length) return '';
+
+  let firstLetter = string[0];
+  console.log(firstLetter)
+
+  return reverseString(string.slice(1)) + firstLetter;
+};
+
+
+/*
+reverseString('')    => '' <-- base case
+reverseString('t')   => '' + 't' = 't'
+reverseString('at')  => 't' + 'a' = 'ta'
+
+reverseString('cat') => 'ta' + 'c' = 'tac'
+*/
+console.log(reverseString('cat'));// 'tac'
