@@ -95,7 +95,7 @@ function recursiveCase(number) {
 };
 
 
-console.log(recursiveCase(3));
+// console.log(recursiveCase(3));
 
 /*
 Top of stack
@@ -103,5 +103,29 @@ Top of stack
 
 
 recurse(3) => 'done recursing'
+Bottom of stack
+*/
+
+// base case
+// recursive step
+function recurseArr(arr) {
+
+  if(arr.length === 0) return 'done recursing';
+
+  // how do we shorten the array - pop, shift, slice rest, spread
+  // let popped = arr.pop();
+  // console.log(popped, arr);
+  let shifted = arr.shift()
+  console.log(shifted, arr);
+
+  return recurseArr(arr);
+};
+
+console.log(recurseArr([1,2,3]));
+/*
+Top of stack
+
+
+recurseArr([1,2,3]) => 'done recursing'
 Bottom of stack
 */
