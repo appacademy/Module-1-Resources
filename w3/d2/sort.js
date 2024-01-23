@@ -40,9 +40,12 @@ function sort(nums) {
  let index = nums.indexOf(largestNum);
 
  nums.splice(index, 1)
+ let largest = [];
+ largest.push(largestNum)
 
-//  return sort(nums).concat([largestNum])
-return [...sort(nums), largestNum];
+ sort(nums) + sort(nums)
+   return sort(nums).concat(largest)
+  // return [...sort(nums), largestNum];
 }
 /*
 
