@@ -29,8 +29,9 @@ let hello = (name) => console.log(`hello ${name}`)
 
 
 function time(count){
-
+  debugger;
   let timerId = setInterval(() => {
+    debugger;
     count--;
     console.log(count);
     if(count === 0) return clearInterval(timerId);
