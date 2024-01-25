@@ -1,4 +1,3 @@
-
 /*
 
   What does it mean for javascript to be a single threaded language?
@@ -82,7 +81,6 @@ function synchronous() {
       * setTimeout
 */
 
-
 // console.log("first");
 
 // // This does not block the execution of the call stack
@@ -95,7 +93,96 @@ function synchronous() {
 //   console.log("third");
 // }, 0);
 
-
 // console.log("fourth");
 // first => fourth => second => third
 // * not what we expect
+
+// console.log(global)
+
+/*
+
+  setTimeout
+
+  What is a setTimeout?
+    * The global setTimeout() method sets a timer which executes a function or specified piece of code once the timer expires.
+    * setTimeout(callbackFunction, delayInMilliseconds, param1, param2);
+    * you can pass anon callback to a setTimeout
+
+  What does a setTimeout return?
+    * The returned timeoutID is a positive integer value which identifies the timer created by the call to setTimeout(). This value can be passed to clearTimeout() to cancel the timeout
+
+*/
+
+// global.setTimeout(console.log, 3000, 'hello world')
+// convert from millisecond to seconds divide by 1000
+
+// setTimeout(console.log, 3000, 'hello world')
+
+// setTimeout(() => console.log('anon function'), 4000)
+
+function timesUp(name1, name2) {
+  console.log(`hello ${name1} and ${name2}`);
+}
+
+// setTimeout(timesUp, 3000, "brandon", "maica");
+
+// clear timeout
+
+// let timerId = setTimeout((name) => {
+//   console.log(`hello ${name}`)
+// }, 1000, 'Alexi')
+
+// console.log(timerId);
+// clearTimeout(timerId);
+
+
+
+
+
+
+// fib
+function somethingSlow(n) {
+  if (n === 1 || n === 2) return 1;
+
+  return somethingSlow(n - 1) + somethingSlow(n - 2);
+}
+
+function foo() {
+  console.log("food");
+}
+
+function bar() {
+  console.log("bark");
+  baz();
+}
+
+function baz() {
+  console.log("bazaar");
+}
+
+// setTimeout(foo, 1500);
+// setTimeout(bar, 1000);
+// // * tree recursion
+// console.log(somethingSlow(50));// 12586269025
+// Predict the output?
+// dont worry what fib prints?
+//  701408733 -> bark -> bazaar -> food
+
+
+
+
+function delayedPrinter(delaysArr) {
+
+  if(!delaysArr.length) return;
+
+  const currentDelay = delaysArr.shift();
+  console.log(currentDelay);
+
+  // delayedPrinter(delaysArr);
+  setTimeout(delayedPrinter, currentDelay, delaysArr);
+
+}
+
+
+const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
+// delayedPrinter(delaysArr)
