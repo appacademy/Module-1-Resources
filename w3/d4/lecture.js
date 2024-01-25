@@ -135,16 +135,15 @@ function timesUp(name1, name2) {
 // console.log(timerId);
 // clearTimeout(timerId);
 
-
-
-
-
-
 // fib
-function somethingSlow(n) {
+let count = 0;
+function somethingSlow(n, memo = {}) {
+  count++;
   if (n === 1 || n === 2) return 1;
-
-  return somethingSlow(n - 1) + somethingSlow(n - 2);
+  // console.log('memo =>',memo)
+  if (memo[n]) return memo[n];
+  memo[n] = somethingSlow(n - 1, memo) + somethingSlow(n - 2, memo);
+  return memo[n];
 }
 
 function foo() {
@@ -163,42 +162,33 @@ function baz() {
 // setTimeout(foo, 1500);
 // setTimeout(bar, 1000);
 // // * tree recursion
-// console.log(somethingSlow(50));// 12586269025
+console.log(somethingSlow(100)); // 12586269025
+console.log(count)
 // Predict the output?
 // dont worry what fib prints?
 //  701408733 -> bark -> bazaar -> food
 
-
-
-
 function delayedPrinter(delaysArr) {
-
-  if(!delaysArr.length) return;
+  if (!delaysArr.length) return;
 
   const currentDelay = delaysArr.shift();
   console.log(currentDelay);
 
   // delayedPrinter(delaysArr);
   setTimeout(delayedPrinter, currentDelay, delaysArr);
-
 }
-
 
 // const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
 // delayedPrinter(delaysArr)
 
+// function delayedPrinterIteration(delaysArr) {
 
+//    let totalDelay = 0;
+//     delaysArr.forEach((delay) => {
+//       totalDelay += delay;
+//       setTimeout(console.log, totalDelay, `Waiting for ${delay}ms`)
+//     })
+// }
 
-function delayedPrinterIteration(delaysArr) {
-
-   let totalDelay = 0;
-    delaysArr.forEach((delay) => {
-      totalDelay += delay;
-      setTimeout(console.log, totalDelay, `Waiting for ${delay}ms`)
-    })
-}
-
-
-
-const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
-delayedPrinterIteration(delaysArr)
+// const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
+// delayedPrinterIteration(delaysArr)
