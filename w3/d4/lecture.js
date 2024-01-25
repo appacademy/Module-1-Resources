@@ -146,6 +146,9 @@ function somethingSlow(n, memo = {}) {
   return memo[n];
 }
 
+console.log(somethingSlow(10000)); // 12586269025
+// console.log(count)
+
 function foo() {
   console.log("food");
 }
@@ -162,8 +165,7 @@ function baz() {
 // setTimeout(foo, 1500);
 // setTimeout(bar, 1000);
 // // * tree recursion
-console.log(somethingSlow(100)); // 12586269025
-console.log(count)
+
 // Predict the output?
 // dont worry what fib prints?
 //  701408733 -> bark -> bazaar -> food
