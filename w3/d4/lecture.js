@@ -184,5 +184,21 @@ function delayedPrinter(delaysArr) {
 }
 
 
-const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
+// const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
 // delayedPrinter(delaysArr)
+
+
+
+function delayedPrinterIteration(delaysArr) {
+
+   let totalDelay = 0;
+    delaysArr.forEach((delay) => {
+      totalDelay += delay;
+      setTimeout(console.log, totalDelay, `Waiting for ${delay}ms`)
+    })
+}
+
+
+
+const delaysArr = [1000, 900, 800, 700, 600, 500, 400, 300, 200, 100];
+delayedPrinterIteration(delaysArr)
