@@ -2,4 +2,5 @@
 .DS_Store
 .vscode
 notes.js
+node_modules/
 

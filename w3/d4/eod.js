@@ -117,8 +117,8 @@ const bottlesOfBeer = (num) =>
     ? (console.log('go get more beer'), rl.close())
     : num < 0
     ? console.log('cant have negative beer')
-    : (console.log(`${num} bottles of beer on the wall...:beers:`),
-      setTimeout(console.log, 1000, `${num} bottles of beer...:beers:`),
-      setTimeout(console.log, 2000, `Take one down and pass it around...:beer:`),
+    : (console.log(`${num} bottles of beer on the wall...🍻`),
+      setTimeout(console.log, 1000, `${num} bottles of beer...🍻`),
+      setTimeout(console.log, 2000, `Take one down and pass it around...🍻`),
       setTimeout(console.log, 3000, `${num - 1} bottles of beer on the wall`),
       setTimeout(bottlesOfBeer, 4000, num - 1));
